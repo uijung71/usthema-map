@@ -5,7 +5,6 @@ US Stock Theme Map Dashboard
 """
 
 import streamlit as st
-import streamlit.components.v1 as components
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
@@ -450,6 +449,39 @@ def inject_css():
         background: linear-gradient(135deg, #9b59b6, #00d4ff) !important;
         border: none !important;
         box-shadow: 0 3px 15px rgba(0, 212, 255, 0.25) !important;
+    }
+    /* ── K-TREND US Nav Bar (link_button override) ──── */
+    div[data-testid="stHorizontalBlock"]:has(> div > div[data-testid="stLinkButton"]) {
+        background: rgba(20, 22, 30, 0.88);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 14px;
+        padding: 6px 20px;
+        margin-bottom: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        align-items: center;
+    }
+    div[data-testid="stLinkButton"] a {
+        background: transparent !important;
+        border: 1px solid rgba(255,255,255,0.1) !important;
+        border-radius: 30px !important;
+        padding: 6px 16px !important;
+        font-size: 0.85rem !important;
+        font-weight: 700 !important;
+        color: #a0b0c0 !important;
+        text-decoration: none !important;
+        transition: all 0.2s ease !important;
+    }
+    div[data-testid="stLinkButton"] a:hover {
+        color: #ffffff !important;
+        background: rgba(255,255,255,0.08) !important;
+        border-color: rgba(255,255,255,0.2) !important;
+    }
+    div[data-testid="stLinkButton"].nav-active a {
+        background: linear-gradient(135deg, #9b59b6, #00d4ff) !important;
+        border: none !important;
+        color: #ffffff !important;
+        box-shadow: 0 3px 15px rgba(0,212,255,0.3) !important;
     }
     </style>""", unsafe_allow_html=True)
 
@@ -1088,59 +1120,14 @@ def show_etf_details_dialog(ticker, theme_id, theme_name):
 def main():
     inject_css()
     
-    # Render premium glassmorphism top navigation bar
-    components.html("""
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700;900&display=swap');
-        body { margin: 0; padding: 0; background: transparent; }
-        .ktrend-nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(26, 28, 36, 0.85);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255,255,255,0.08);
-            border-radius: 14px;
-            padding: 10px 24px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-            font-family: 'Noto Sans KR', sans-serif;
-        }
-        .brand {
-            font-size: 1.2rem;
-            font-weight: 900;
-            letter-spacing: 1.5px;
-            background: linear-gradient(90deg, #ffffff, #00d4ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .tabs { display: flex; gap: 10px; }
-        .tab {
-            text-decoration: none;
-            font-size: 0.88rem;
-            font-weight: 700;
-            color: #a0b0c0;
-            padding: 7px 16px;
-            border-radius: 30px;
-            border: 1px solid transparent;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-family: 'Noto Sans KR', sans-serif;
-        }
-        .tab:hover { color: #fff; background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); }
-        .tab.active {
-            color: #fff;
-            background: linear-gradient(135deg, #9b59b6, #00d4ff);
-            box-shadow: 0 3px 15px rgba(0,212,255,0.3);
-        }
-    </style>
-    <div class="ktrend-nav">
-        <div class="brand">K-TREND <span style="color:#00d4ff;">US</span></div>
-        <div class="tabs">
-            <span class="tab" onclick="window.top.location.href='https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/'">🏢 서학 100 지수</span>
-            <span class="tab active" onclick="window.top.location.href='https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/'">🗺️ 미국주식 60대 테마</span>
-        </div>
-    </div>
-    """, height=60)
+    # K-TREND US top navigation bar using native st.link_button
+    nav_col1, nav_col2, nav_col3 = st.columns([3, 1, 1])
+    with nav_col1:
+        st.markdown('<p style="margin:0; padding:6px 0; font-size:1.1rem; font-weight:900; letter-spacing:1.5px; background:linear-gradient(90deg,#fff,#00d4ff); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">K-TREND <span style=\'color:#00d4ff;\'>US</span></p>', unsafe_allow_html=True)
+    with nav_col2:
+        st.link_button("🏢 서학 100 지수", "https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/", use_container_width=True)
+    with nav_col3:
+        st.link_button("🗺️ 미국 60대 테마 ▼", "https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/", use_container_width=True)
     
     if BANNER_FILE.exists():
         st.image(str(BANNER_FILE), use_container_width=True)
