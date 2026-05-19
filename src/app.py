@@ -1092,8 +1092,8 @@ def main():
         <div class="ktrend-nav-container">
             <div class="ktrend-brand">K-TREND <span style="color:#00d4ff;">US</span></div>
             <div class="ktrend-nav-tabs">
-                <a href="https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/" target="_self" class="nav-tab">🏢 서학 100 지수</a>
-                <a href="https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/" target="_self" class="nav-tab active">🗺️ 미국주식 60대 테마</a>
+                <a href="https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/" target="_top" class="nav-tab">🏢 서학 100 지수</a>
+                <a href="https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/" target="_top" class="nav-tab active">🗺️ 미국주식 60대 테마</a>
             </div>
         </div>
     """, unsafe_allow_html=True)
