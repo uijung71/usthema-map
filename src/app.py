@@ -1187,6 +1187,26 @@ def main():
     if view_mode == "🏢 개별 주식 테마 지도":
         header_text = f"🗺️ {selected_cat} 주식 테마 지도 ({st.session_state.period} 수익률)" if selected_cat != '전체' else f"🗺️ 60개 주식 테마 실시간 지도 ({st.session_state.period} 수익률)"
         st.markdown(f'<div class="section-header">{header_text}</div>', unsafe_allow_html=True)
+
+        # ── Data date / update time info bar ──────────────────────────
+        from datetime import timezone as _tz, timedelta as _td
+        _KST = _tz(_td(hours=9))
+        _data_date = "-"
+        if not returns_df.empty and 'date' in returns_df.columns:
+            try:
+                _data_date = pd.to_datetime(returns_df['date']).max().strftime('%Y-%m-%d')
+            except Exception:
+                pass
+        _now_kst = __import__('datetime').datetime.now(_KST).strftime('%Y-%m-%d %H:%M')
+        st.markdown(
+            f'<div class="date-info" style="text-align:left; margin:-8px 0 10px 2px; font-size:0.85rem; color:#888;">'
+            f'데이터 기준일: <span style="color:#00d4ff; font-weight:700;">{_data_date}</span>'
+            f'&nbsp;|&nbsp;업데이트: <span style="color:#9b59b6; font-weight:700;">{_now_kst}</span>'
+            f'</div>',
+            unsafe_allow_html=True
+        )
+        # ───────────────────────────────────────────────────────────────
+
         st.info("💡 지도의 테마 블록을 클릭하시면 하단에 실시간 상세 리포트와 구성 종목 시세가 나타납니다.")
         st.radio("기간 설정", list(PERIOD_MAP.keys()), key='period', horizontal=True, label_visibility="collapsed")
         render_theme_heatmap(return_col, selected_cat)
