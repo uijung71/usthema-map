@@ -397,7 +397,61 @@ def inject_css():
         div[aria-label="기간 설정"][role="radiogroup"] label:nth-child(5) p::after { content: "6M"; }
         div[aria-label="기간 설정"][role="radiogroup"] label:nth-child(6) p::after { content: "1Y"; }
     }
+    
+    /* ── K-TREND US Top Navigation Bar ──── */
+    .ktrend-nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(26, 28, 36, 0.75) !important;
+        backdrop-filter: blur(12px) !important;
+        -webkit-backdrop-filter: blur(12px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        border-radius: 14px !important;
+        padding: 10px 24px !important;
+        margin-bottom: 15px !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+    }
+    .ktrend-brand {
+        font-size: 1.3rem !important;
+        font-weight: 900 !important;
+        letter-spacing: 1.5px !important;
+        color: #ffffff !important;
+        background: linear-gradient(90deg, #ffffff, #00d4ff) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        margin: 0 !important;
+    }
+    .ktrend-nav-tabs {
+        display: flex !important;
+        gap: 12px !important;
+    }
+    .nav-tab {
+        text-decoration: none !important;
+        font-size: 0.92rem !important;
+        font-weight: 700 !important;
+        color: #a0b0c0 !important;
+        padding: 8px 18px !important;
+        border-radius: 30px !important;
+        border: 1px solid transparent !important;
+        transition: all 0.25s ease !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+    }
+    .nav-tab:hover {
+        color: #ffffff !important;
+        background: rgba(255, 255, 255, 0.05) !important;
+        border-color: rgba(255, 255, 255, 0.1) !important;
+    }
+    .nav-tab.active {
+        color: #ffffff !important;
+        background: linear-gradient(135deg, #9b59b6, #00d4ff) !important;
+        border: none !important;
+        box-shadow: 0 3px 15px rgba(0, 212, 255, 0.25) !important;
+    }
     </style>""", unsafe_allow_html=True)
+
 
 
 # ── Helper Functions ───────────────────────────────────────────
@@ -1032,6 +1086,18 @@ def show_etf_details_dialog(ticker, theme_id, theme_name):
 # ── Main ───────────────────────────────────────────────────────
 def main():
     inject_css()
+    
+    # Render premium glassmorphism top navigation bar
+    st.markdown("""
+        <div class="ktrend-nav-container">
+            <div class="ktrend-brand">K-TREND <span style="color:#00d4ff;">US</span></div>
+            <div class="ktrend-nav-tabs">
+                <a href="https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/" target="_self" class="nav-tab">🏢 서학 100 지수</a>
+                <a href="https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/" target="_self" class="nav-tab active">🗺️ 미국주식 60대 테마</a>
+            </div>
+        </div>
+    """, unsafe_allow_html=True)
+    
     if BANNER_FILE.exists():
         st.image(str(BANNER_FILE), use_container_width=True)
     
