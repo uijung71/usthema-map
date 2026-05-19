@@ -450,40 +450,47 @@ def inject_css():
         border: none !important;
         box-shadow: 0 3px 15px rgba(0, 212, 255, 0.25) !important;
     }
-    /* ── K-TREND US Nav Bar (link_button override) ──── */
+    /* ── K-TREND US Top Navigation Bar ──── */
+    /* Outer container row */
     div[data-testid="stHorizontalBlock"]:has(> div > div[data-testid="stLinkButton"]) {
-        background: rgba(20, 22, 30, 0.88);
-        backdrop-filter: blur(12px);
-        border: 1px solid rgba(255,255,255,0.08);
-        border-radius: 14px;
-        padding: 6px 20px;
-        margin-bottom: 12px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-        align-items: center;
+        background: linear-gradient(90deg, #0d0f1a 0%, #12192b 50%, #0d0f1a 100%) !important;
+        border-bottom: 1px solid rgba(0, 212, 255, 0.2) !important;
+        padding: 10px 28px !important;
+        margin-bottom: 0 !important;
+        align-items: center !important;
     }
+    /* All link buttons in nav */
     div[data-testid="stLinkButton"] a {
-        background: transparent !important;
-        border: 1px solid rgba(255,255,255,0.1) !important;
-        border-radius: 30px !important;
-        padding: 6px 16px !important;
-        font-size: 0.85rem !important;
-        font-weight: 700 !important;
-        color: #a0b0c0 !important;
+        display: inline-block !important;
+        background: rgba(255,255,255,0.06) !important;
+        border: 1px solid rgba(255,255,255,0.15) !important;
+        border-radius: 50px !important;
+        padding: 9px 22px !important;
+        font-size: 0.95rem !important;
+        font-weight: 800 !important;
+        color: #c8d0e0 !important;
         text-decoration: none !important;
-        transition: all 0.2s ease !important;
+        letter-spacing: 0.3px !important;
+        transition: all 0.25s ease !important;
+        white-space: nowrap !important;
     }
     div[data-testid="stLinkButton"] a:hover {
+        background: rgba(0, 212, 255, 0.12) !important;
+        border-color: rgba(0, 212, 255, 0.4) !important;
         color: #ffffff !important;
-        background: rgba(255,255,255,0.08) !important;
-        border-color: rgba(255,255,255,0.2) !important;
+        box-shadow: 0 0 20px rgba(0, 212, 255, 0.2) !important;
+        transform: translateY(-1px) !important;
     }
-    div[data-testid="stLinkButton"].nav-active a {
-        background: linear-gradient(135deg, #9b59b6, #00d4ff) !important;
+    /* Active tab - last link_button (the one for the current page) */
+    div[data-testid="stColumn"]:last-child div[data-testid="stLinkButton"] a {
+        background: linear-gradient(135deg, #7c3aed, #00d4ff) !important;
         border: none !important;
         color: #ffffff !important;
-        box-shadow: 0 3px 15px rgba(0,212,255,0.3) !important;
+        box-shadow: 0 4px 20px rgba(0, 212, 255, 0.35), 0 0 0 1px rgba(0,212,255,0.2) !important;
+        font-weight: 900 !important;
     }
     </style>""", unsafe_allow_html=True)
+
 
 
 
@@ -1120,15 +1127,26 @@ def show_etf_details_dialog(ticker, theme_id, theme_name):
 def main():
     inject_css()
     
-    # K-TREND US top navigation bar using native st.link_button
-    nav_col1, nav_col2, nav_col3 = st.columns([3, 1, 1])
+    # K-TREND US premium top navigation bar
+    nav_col1, nav_col2, nav_col3 = st.columns([2.2, 1, 1])
     with nav_col1:
-        st.markdown('<p style="margin:0; padding:6px 0; font-size:1.1rem; font-weight:900; letter-spacing:1.5px; background:linear-gradient(90deg,#fff,#00d4ff); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">K-TREND <span style=\'color:#00d4ff;\'>US</span></p>', unsafe_allow_html=True)
+        st.markdown(
+            '<div style="padding:4px 0 2px 4px;">' 
+            '<span style="font-size:1.25rem;font-weight:900;letter-spacing:2px;'
+            'background:linear-gradient(90deg,#ffffff,#00d4ff);'
+            '-webkit-background-clip:text;-webkit-text-fill-color:transparent;">K-TREND</span>'
+            '<span style="font-size:1.25rem;font-weight:900;color:#00d4ff;letter-spacing:2px;"> US</span>'
+            '<span style="font-size:0.75rem;color:#556;margin-left:10px;font-weight:500;'
+            'vertical-align:middle;">by KTrend Research</span>'
+            '</div>',
+            unsafe_allow_html=True
+        )
     with nav_col2:
-        st.link_button("🏢 서학 100 지수", "https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/", use_container_width=True)
+        st.link_button("🏢  서학 100 지수", "https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/", use_container_width=True)
     with nav_col3:
-        st.link_button("🗺️ 미국 60대 테마 ▼", "https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/", use_container_width=True)
-    
+        st.link_button("🗺️  미국 60대 테마", "https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/", use_container_width=True)
+    st.markdown("<div style='margin-bottom:8px'></div>", unsafe_allow_html=True)
+
     if BANNER_FILE.exists():
         st.image(str(BANNER_FILE), use_container_width=True)
     
