@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K-TREND US | 미국주식 핵심 인사이트 플랫폼</title>
+  <meta name="description" content="서학 100 지수와 미국주식 60대 테마 분석을 하나로. 케이트렌드 US — 미국주식 투자자를 위한 데이터 기반 인사이트 플랫폼." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cyan: #00d4ff;
+      --purple: #7c3aed;
+      --dark: #080c14;
+      --card-bg: rgba(255,255,255,0.04);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background: var(--dark);
+      color: #e8eaf0;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ── Background particles / gradient ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 20% 10%, rgba(124,58,237,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 80%, rgba(0,212,255,0.12) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 48px;
+      background: rgba(8,12,20,0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(0,212,255,0.15);
+    }
+
+    .nav-brand {
+      font-size: 1.4rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      background: linear-gradient(90deg, #fff, var(--cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-links { display: flex; gap: 12px; }
+
+    .nav-btn {
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 700;
+      padding: 8px 20px;
+      border-radius: 50px;
+      border: 1px solid rgba(255,255,255,0.15);
+      color: #c8d0e0;
+      background: rgba(255,255,255,0.05);
+      transition: all 0.22s ease;
+      cursor: pointer;
+    }
+    .nav-btn:hover {
+      background: rgba(0,212,255,0.1);
+      border-color: rgba(0,212,255,0.4);
+      color: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 0 18px rgba(0,212,255,0.2);
+    }
+    .nav-btn.primary {
+      background: linear-gradient(135deg, var(--purple), var(--cyan));
+      border: none;
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(0,212,255,0.3);
+    }
+    .nav-btn.primary:hover { opacity: 0.9; box-shadow: 0 6px 28px rgba(0,212,255,0.45); }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 100px 24px 80px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--cyan);
+      background: rgba(0,212,255,0.1);
+      border: 1px solid rgba(0,212,255,0.3);
+      border-radius: 50px;
+      padding: 6px 18px;
+      margin-bottom: 28px;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 24px;
+    }
+
+    .hero-title .accent {
+      background: linear-gradient(90deg, var(--cyan), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-desc {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: #9aa3b5;
+      max-width: 560px;
+      margin: 0 auto 48px;
+      line-height: 1.7;
+    }
+
+    .hero-cta { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 800;
+      padding: 14px 32px;
+      border-radius: 50px;
+      transition: all 0.25s ease;
+    }
+    .cta-primary {
+      background: linear-gradient(135deg, var(--purple), var(--cyan));
+      color: #fff;
+      box-shadow: 0 6px 30px rgba(0,212,255,0.35);
+    }
+    .cta-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0,212,255,0.5); }
+
+    .cta-secondary {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: #c8d0e0;
+    }
+    .cta-secondary:hover {
+      background: rgba(0,212,255,0.08);
+      border-color: rgba(0,212,255,0.35);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    /* ── Stats bar ── */
+    .stats-bar {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      background: rgba(255,255,255,0.02);
+      padding: 28px 0;
+      margin-bottom: 80px;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 10px 48px;
+      border-right: 1px solid rgba(255,255,255,0.06);
+    }
+    .stat-item:last-child { border-right: none; }
+
+    .stat-num {
+      font-size: 2rem;
+      font-weight: 900;
+      background: linear-gradient(90deg, var(--cyan), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .stat-label { font-size: 0.82rem; color: #6b7485; margin-top: 4px; font-weight: 600; }
+
+    /* ── Section ── */
+    section {
+      position: relative;
+      z-index: 1;
+      max-width: 1100px;
+      margin: 0 auto 100px;
+      padding: 0 24px;
+    }
+
+    .section-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .section-sub {
+      font-size: 1rem;
+      color: #7a8599;
+      margin-bottom: 48px;
+      line-height: 1.6;
+    }
+
+    /* ── Product Cards ── */
+    .products { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+
+    .product-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 24px;
+      padding: 40px 36px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .product-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      border-radius: 24px 24px 0 0;
+    }
+    .product-card.seohak::before { background: linear-gradient(90deg, #7c3aed, #00d4ff); }
+    .product-card.theme::before  { background: linear-gradient(90deg, #ff6b35, #f7931e); }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      border-color: rgba(255,255,255,0.15);
+    }
+
+    .product-icon { font-size: 2.8rem; margin-bottom: 20px; }
+    .product-name { font-size: 1.5rem; font-weight: 900; margin-bottom: 10px; }
+    .product-desc { font-size: 0.93rem; color: #7a8599; line-height: 1.65; margin-bottom: 28px; }
+
+    .product-features { list-style: none; margin-bottom: 32px; }
+    .product-features li {
+      font-size: 0.88rem;
+      color: #a0aec0;
+      padding: 6px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .product-features li::before { content: '✓'; color: var(--cyan); font-weight: 900; flex-shrink: 0; }
+
+    .product-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 800;
+      padding: 11px 26px;
+      border-radius: 50px;
+      transition: all 0.22s ease;
+      width: 100%;
+      justify-content: center;
+    }
+    .product-btn.seohak-btn {
+      background: linear-gradient(135deg, #7c3aed, #00d4ff);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(0,212,255,0.3);
+    }
+    .product-btn.theme-btn {
+      background: linear-gradient(135deg, #ff6b35, #f7931e);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(255,107,53,0.3);
+    }
+    .product-btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
+
+    /* ── Feature list ── */
+    .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+    .feature-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 18px;
+      padding: 28px 24px;
+      transition: transform 0.25s, border-color 0.25s;
+    }
+    .feature-card:hover { transform: translateY(-4px); border-color: rgba(0,212,255,0.2); }
+
+    .feature-icon { font-size: 2rem; margin-bottom: 14px; }
+    .feature-name { font-size: 1rem; font-weight: 800; margin-bottom: 8px; color: #e8eaf0; }
+    .feature-desc { font-size: 0.85rem; color: #6b7485; line-height: 1.55; }
+
+    /* ── Footer ── */
+    footer {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 48px 24px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      color: #3a4255;
+      font-size: 0.82rem;
+    }
+    footer .brand { font-size: 1.1rem; font-weight: 900; color: #5a6380; letter-spacing: 1.5px; margin-bottom: 10px; }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      nav { padding: 12px 20px; }
+      .nav-brand { font-size: 1.1rem; }
+      .hero { padding: 70px 20px 60px; }
+      .stat-item { padding: 10px 24px; }
+      .products { grid-template-columns: 1fr; }
+      .features { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .features { grid-template-columns: 1fr; }
+      .nav-links { gap: 8px; }
+      .nav-btn { padding: 7px 14px; font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+  <div class="nav-brand">K-TREND US</div>
+  <div class="nav-links">
+    <a href="https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/" class="nav-btn">⚡ 서학 100 지수</a>
+    <a href="https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/" class="nav-btn primary">🗺️ 60대 테마지도</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="hero-badge">🚀 미국주식 데이터 인사이트 플랫폼</div>
+  <h1 class="hero-title">
+    미국주식의 흐름을,<br>
+    <span class="accent">데이터로 읽다</span>
+  </h1>
+  <p class="hero-desc">
+    서학 100 지수와 60대 핵심 테마 분석을 하나로.<br>
+    케이트렌드 US는 서학개미를 위한 실시간 데이터 기반 투자 인사이트 플랫폼입니다.
+  </p>
+  <div class="hero-cta">
+    <a href="https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/" class="cta-btn cta-primary">⚡ 서학 100 지수 보기</a>
+    <a href="https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/" class="cta-btn cta-secondary">🗺️ 60대 테마지도 보기</a>
+  </div>
+</div>
+
+<!-- Stats -->
+<div class="stats-bar">
+  <div class="stat-item"><div class="stat-num">100+</div><div class="stat-label">서학 지수 구성 종목</div></div>
+  <div class="stat-item"><div class="stat-num">60개</div><div class="stat-label">핵심 투자 테마</div></div>
+  <div class="stat-item"><div class="stat-num">420+</div><div class="stat-label">추적 티커 수</div></div>
+  <div class="stat-item"><div class="stat-num">매일</div><div class="stat-label">AI 리포트 자동 생성</div></div>
+</div>
+
+<!-- Products -->
+<section>
+  <div class="section-tag">서비스 소개</div>
+  <h2 class="section-title">두 가지 핵심 대시보드</h2>
+  <p class="section-sub">서학개미의 시각으로 설계된, 국내 유일 미국주식 데이터 분석 플랫폼</p>
+
+  <div class="products">
+    <!-- 서학 100 -->
+    <div class="product-card seohak">
+      <div class="product-icon">⚡</div>
+      <div class="product-name">서학 100 지수</div>
+      <p class="product-desc">
+        국내 투자자가 가장 많이 보유한 미국 주식 100종목으로 구성된 자체 지수.
+        나스닥·S&amp;P 500과 실시간 비교 분석하고, AI가 매일 시장 흐름을 리포트합니다.
+      </p>
+      <ul class="product-features">
+        <li>Base 1000 정규화 지수 실시간 추적</li>
+        <li>나스닥 100 · S&P 500 · 코스피 비교</li>
+        <li>20일/60일 이동평균선 기술적 분석</li>
+        <li>AI 자동 생성 일일 시장 분석 리포트</li>
+        <li>상승/하락 TOP 10 종목 랭킹</li>
+        <li>100개 보유 종목 섹터 포트폴리오 분석</li>
+      </ul>
+      <a href="https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/" class="product-btn seohak-btn">⚡ 지금 바로 확인하기 →</a>
+    </div>
+
+    <!-- 60대 테마 -->
+    <div class="product-card theme">
+      <div class="product-icon">🗺️</div>
+      <div class="product-name">미국주식 60대 테마지도</div>
+      <p class="product-desc">
+        AI·반도체·우주항공·바이오 등 60개 핵심 테마의 수익률을 실시간 히트맵으로 시각화.
+        어떤 섹터에 돈이 몰리는지 테마 단위로 한눈에 파악합니다.
+      </p>
+      <ul class="product-features">
+        <li>60개 테마 × 420종목 실시간 수익률 히트맵</li>
+        <li>1일/1주/1개월/3개월/6개월/1년 기간별 분석</li>
+        <li>테마별 ETF 연동 (AUM · 보수 · 구성 종목)</li>
+        <li>테마 누적 수익률 추이 비교 차트</li>
+        <li>상승/하락 테마 TOP 10 랭킹</li>
+        <li>노션 기반 테마 상세 리포트 연동</li>
+      </ul>
+      <a href="https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/" class="product-btn theme-btn">🗺️ 테마지도 탐색하기 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section>
+  <div class="section-tag">플랫폼 특징</div>
+  <h2 class="section-title">왜 케이트렌드 US인가</h2>
+  <p class="section-sub">데이터 수집부터 시각화, AI 분석까지 자동화된 파이프라인</p>
+
+  <div class="features">
+    <div class="feature-card">
+      <div class="feature-icon">🤖</div>
+      <div class="feature-name">AI 자동 리포트</div>
+      <div class="feature-desc">매일 새벽 AI가 시장 데이터를 분석하여 한국어 리포트를 자동 생성합니다.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">⚡</div>
+      <div class="feature-name">실시간 데이터</div>
+      <div class="feature-desc">EODHD API와 yfinance를 통해 미국 시장 데이터를 실시간으로 수집·업데이트합니다.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📊</div>
+      <div class="feature-name">직관적 시각화</div>
+      <div class="feature-desc">복잡한 시장 데이터를 트리맵·히트맵·선형차트로 즉각 이해 가능하게 시각화합니다.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎯</div>
+      <div class="feature-name">서학개미 최적화</div>
+      <div class="feature-desc">국내 투자자가 실제 보유한 종목 기반으로 설계된, 서학개미를 위한 전용 지수입니다.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔄</div>
+      <div class="feature-name">매일 자동 업데이트</div>
+      <div class="feature-desc">데이터 파이프라인이 매일 오전 자동 실행되어 항상 최신 정보를 제공합니다.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🆓</div>
+      <div class="feature-name">완전 무료</div>
+      <div class="feature-desc">서학개미를 위해 무료로 제공됩니다. 가입 없이 누구나 즉시 이용 가능합니다.</div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="brand">K-TREND US</div>
+  <p>미국주식 데이터 인사이트 플랫폼 · 서학개미를 위한 무료 서비스</p>
+  <p style="margin-top:8px;">
+    <a href="https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/" style="color:#3a4255;margin:0 12px;text-decoration:none;">서학 100 지수</a>
+    <a href="https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/" style="color:#3a4255;margin:0 12px;text-decoration:none;">60대 테마지도</a>
+  </p>
+</footer>
+
+</body>
+</html>

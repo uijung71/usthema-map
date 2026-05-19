@@ -1131,11 +1131,13 @@ def main():
     nav_col1, nav_col2, nav_col3 = st.columns([2.2, 1, 1])
     with nav_col1:
         st.markdown(
-            '<div style="padding:4px 0 2px 4px;">' 
+            '<div style="padding:4px 0 2px 4px;">'
+            '<a href="https://uijung71.github.io/usthema-map/" target="_blank" style="text-decoration:none;">'
             '<span style="font-size:1.25rem;font-weight:900;letter-spacing:2px;'
             'background:linear-gradient(90deg,#ffffff,#00d4ff);'
             '-webkit-background-clip:text;-webkit-text-fill-color:transparent;">K-TREND</span>'
             '<span style="font-size:1.25rem;font-weight:900;color:#00d4ff;letter-spacing:2px;"> US</span>'
+            '</a>'
             '<span style="font-size:0.75rem;color:#556;margin-left:10px;font-weight:500;'
             'vertical-align:middle;">by KTrend Research</span>'
             '</div>',
