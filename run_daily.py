@@ -19,7 +19,7 @@ TG_CHAT_ID = "8356746472"
 
 
 def tg(message: str):
-    """Send a Telegram message (silent on failure)."""
+    """Send a single Telegram message (silent on failure)."""
     try:
         requests.post(
             f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage",
@@ -30,30 +30,23 @@ def tg(message: str):
         print(f"[TG WARN] {e}")
 
 
-def now_str():
-    return datetime.datetime.now(KST).strftime("%H:%M:%S")
-
-
 def main():
     start = datetime.datetime.now(KST)
     date_str = start.strftime("%Y-%m-%d")
+
     print(f"{'='*60}")
     print(f"US Theme Map Daily Pipeline")
     print(f"Started: {start.strftime('%Y-%m-%d %H:%M:%S KST')}")
     print(f"{'='*60}")
 
-    # ── 시작 알림 ──────────────────────────────────────────────
-    tg(
-        f"<b>🗺️ US 테마맵 일일 업데이트 시작</b>\n"
-        f"📅 기준일: {date_str}\n"
-        f"⏰ 시작: {now_str()} KST\n"
-        f"━━━━━━━━━━━━━━━━━━━━"
-    )
+    # ── 결과 추적용 변수 ────────────────────────────────────────
+    step1_ok     = False
+    step1_detail = ""
+    step2_ok     = False
+    step2_detail = ""
 
     # ── Step 1: 가격 수집 & 수익률 계산 ───────────────────────
     print("\n[1/2] Fetching EODHD prices & calculating returns...")
-    tg(f"<b>📡 [1/2] EODHD 가격 수집 중...</b>\n⏰ {now_str()} KST")
-
     try:
         result = subprocess.run(
             [sys.executable, str(BASE_DIR / "src" / "data_fetcher.py")],
@@ -62,20 +55,15 @@ def main():
         )
         output = result.stdout
         print(output)
-        if result.stderr:
-            print("[STDERR]", result.stderr[:500])
 
-        # Parse results from output
-        success_count = "-"
-        fail_count = "-"
-        rows = "-"
+        # Parse counts from stdout
+        success_count, fail_count, rows = "-", "-", "-"
         for line in output.splitlines():
             if "Done:" in line:
-                # "[EODHD] Done: 395 success, 0 failed"
                 parts = line.split()
                 try:
                     success_count = parts[parts.index("success,")-1]
-                    fail_count = parts[parts.index("failed")-1]
+                    fail_count    = parts[parts.index("failed")-1]
                 except Exception:
                     pass
             if "returns_latest.csv" in line:
@@ -84,72 +72,70 @@ def main():
                 except Exception:
                     pass
 
-        print("    [OK] Price fetch & return calculation completed.")
-        tg(
-            f"<b>✅ [1/2] 가격 수집 완료</b>\n"
-            f"  • 성공: {success_count}개 종목\n"
-            f"  • 실패: {fail_count}개\n"
-            f"  • 수익률 행수: {rows}개\n"
-            f"  ⏰ {now_str()} KST"
-        )
+        step1_ok     = True
+        step1_detail = f"종목 {success_count}개 수집 / 실패 {fail_count}개 / 수익률 {rows}행"
+        print("    [OK] Completed.")
 
     except subprocess.CalledProcessError as e:
-        err_msg = (e.stderr or e.stdout or "")[:500]
-        print(f"    [FAIL] Price fetch failed:\n{e.stdout}\n{e.stderr}")
-        tg(
-            f"<b>❌ [1/2] 가격 수집 실패!</b>\n"
-            f"<pre>{err_msg}</pre>\n"
-            f"⏰ {now_str()} KST"
-        )
-        return
+        err = (e.stderr or e.stdout or "")[:200]
+        step1_detail = err
+        print(f"    [FAIL] {err}")
 
     # ── Step 2: Git push ────────────────────────────────────────
-    print("\n[2/2] Git push to GitHub (master branch)...")
-    tg(f"<b>📤 [2/2] GitHub 업로드 중...</b>\n⏰ {now_str()} KST")
-
-    try:
-        subprocess.run(
-            ["git", "add", "data/", "output/"],
-            cwd=str(BASE_DIR), capture_output=True, text=True, check=True
-        )
-        ts = start.strftime('%Y-%m-%d %H:%M KST')
-        result = subprocess.run(
-            ["git", "commit", "-m", f"auto: daily theme update {ts}"],
-            cwd=str(BASE_DIR), capture_output=True, text=True
-        )
-        if result.returncode == 0:
+    print("\n[2/2] Git push to GitHub (master)...")
+    if step1_ok:
+        try:
             subprocess.run(
-                ["git", "push", "origin", "master"],
+                ["git", "add", "data/", "output/"],
                 cwd=str(BASE_DIR), capture_output=True, text=True, check=True
             )
-            print("    [OK] Git push to master completed.")
-            push_status = "완료"
-        else:
-            print("    [SKIP] Nothing new to commit.")
-            push_status = "변경사항 없음 (스킵)"
+            ts = start.strftime('%Y-%m-%d %H:%M KST')
+            commit_result = subprocess.run(
+                ["git", "commit", "-m", f"auto: daily theme update {ts}"],
+                cwd=str(BASE_DIR), capture_output=True, text=True
+            )
+            if commit_result.returncode == 0:
+                subprocess.run(
+                    ["git", "push", "origin", "master"],
+                    cwd=str(BASE_DIR), capture_output=True, text=True, check=True
+                )
+                step2_ok     = True
+                step2_detail = "master 브랜치 push 완료"
+                print("    [OK] Git push completed.")
+            else:
+                step2_ok     = True
+                step2_detail = "변경사항 없음 (commit 스킵)"
+                print("    [SKIP] Nothing to commit.")
+        except Exception as e:
+            step2_detail = str(e)[:200]
+            print(f"    [WARN] Git push failed: {e}")
+    else:
+        step2_detail = "Step 1 실패로 스킵"
+        print("    [SKIP] Skipped due to Step 1 failure.")
 
-    except Exception as e:
-        print(f"    [WARN] Git push failed: {e}")
-        push_status = f"실패: {e}"
-
-    # ── 완료 알림 ──────────────────────────────────────────────
-    elapsed = (datetime.datetime.now(KST) - start).total_seconds()
+    # ── 최종 완료 텔레그램 (한 번만) ───────────────────────────
+    elapsed  = (datetime.datetime.now(KST) - start).total_seconds()
+    end_time = datetime.datetime.now(KST).strftime("%H:%M KST")
     elapsed_str = f"{int(elapsed//60)}분 {int(elapsed%60)}초"
 
+    s1_icon = "✅" if step1_ok else "❌"
+    s2_icon = "✅" if step2_ok else "❌"
+    all_ok  = step1_ok and step2_ok
+
     tg(
-        f"<b>🎉 US 테마맵 업데이트 완료!</b>\n"
+        f"<b>{'🎉' if all_ok else '⚠️'} US 테마맵 일일 업데이트 결과</b>\n"
         f"━━━━━━━━━━━━━━━━━━━━\n"
-        f"📅 데이터 기준일: <b>{date_str}</b>\n"
-        f"✅ 가격 수집: {success_count}개 종목\n"
-        f"📤 GitHub push: {push_status}\n"
-        f"⏱️ 소요시간: {elapsed_str}\n"
-        f"⏰ 완료: {now_str()} KST\n"
+        f"{s1_icon} <b>Step 1</b> 가격 수집\n"
+        f"    {step1_detail}\n\n"
+        f"{s2_icon} <b>Step 2</b> GitHub Push\n"
+        f"    {step2_detail}\n"
         f"━━━━━━━━━━━━━━━━━━━━\n"
-        f"🔗 https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/"
+        f"📅 기준일: <b>{date_str}</b>\n"
+        f"⏱️ 소요: {elapsed_str}  |  완료: {end_time}"
     )
 
     print(f"\n{'='*60}")
-    print(f"Pipeline finished in {elapsed:.1f}s  ({datetime.datetime.now(KST).strftime('%H:%M:%S KST')})")
+    print(f"Pipeline finished in {elapsed:.1f}s  ({end_time})")
     print(f"{'='*60}")
 
 
