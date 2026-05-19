@@ -4,3 +4,7 @@ __pycache__/
 data/prices/
 build_master.py
 scratch/
+.streamlit/
+data/cache/
+debug_notion.md
+debug_para.json

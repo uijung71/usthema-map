@@ -1,421 +1,418 @@
 ﻿category,theme_id,theme_name,ticker,type,rank
-기술 패권 & 디지털 혁신,1,AI & 데이터 지능,NVDA,stock,1
-기술 패권 & 디지털 혁신,1,AI & 데이터 지능,MSFT,stock,2
-기술 패권 & 디지털 혁신,1,AI & 데이터 지능,PLTR,stock,3
-기술 패권 & 디지털 혁신,1,AI & 데이터 지능,GOOGL,stock,4
-기술 패권 & 디지털 혁신,1,AI & 데이터 지능,000660.KS,stock,5
-기술 패권 & 디지털 혁신,1,AI & 데이터 지능,AIQ,etf,1
-기술 패권 & 디지털 혁신,1,AI & 데이터 지능,ARTY,etf,2
-기술 패권 & 디지털 혁신,2,반도체 하드웨어,NVDA,stock,1
-기술 패권 & 디지털 혁신,2,반도체 하드웨어,TSM,stock,2
-기술 패권 & 디지털 혁신,2,반도체 하드웨어,ARM,stock,3
-기술 패권 & 디지털 혁신,2,반도체 하드웨어,ASML,stock,4
-기술 패권 & 디지털 혁신,2,반도체 하드웨어,AVGO,stock,5
-기술 패권 & 디지털 혁신,2,반도체 하드웨어,SMH,etf,1
-기술 패권 & 디지털 혁신,2,반도체 하드웨어,SOXX,etf,2
-기술 패권 & 디지털 혁신,3,로봇 & 자동화,ISRG,stock,1
-기술 패권 & 디지털 혁신,3,로봇 & 자동화,ROK,stock,2
-기술 패권 & 디지털 혁신,3,로봇 & 자동화,SYM,stock,3
-기술 패권 & 디지털 혁신,3,로봇 & 자동화,TER,stock,4
-기술 패권 & 디지털 혁신,3,로봇 & 자동화,ZBRA,stock,5
-기술 패권 & 디지털 혁신,3,로봇 & 자동화,BOTZ,etf,1
-기술 패권 & 디지털 혁신,3,로봇 & 자동화,ROBO,etf,2
-기술 패권 & 디지털 혁신,4,사이버 보안,PANW,stock,1
-기술 패권 & 디지털 혁신,4,사이버 보안,CRWD,stock,2
-기술 패권 & 디지털 혁신,4,사이버 보안,FTNT,stock,3
-기술 패권 & 디지털 혁신,4,사이버 보안,ZS,stock,4
-기술 패권 & 디지털 혁신,4,사이버 보안,S,stock,5
-기술 패권 & 디지털 혁신,4,사이버 보안,CIBR,etf,1
-기술 패권 & 디지털 혁신,4,사이버 보안,BUG,etf,2
-기술 패권 & 디지털 혁신,5,클라우드 & SW,MSFT,stock,1
-기술 패권 & 디지털 혁신,5,클라우드 & SW,AMZN,stock,2
-기술 패권 & 디지털 혁신,5,클라우드 & SW,ORCL,stock,3
-기술 패권 & 디지털 혁신,5,클라우드 & SW,CRM,stock,4
-기술 패권 & 디지털 혁신,5,클라우드 & SW,SNOW,stock,5
-기술 패권 & 디지털 혁신,5,클라우드 & SW,SKYY,etf,1
-기술 패권 & 디지털 혁신,5,클라우드 & SW,WCLD,etf,2
-기술 패권 & 디지털 혁신,6,디지털 금융,V,stock,1
-기술 패권 & 디지털 혁신,6,디지털 금융,ADYEN,stock,2
-기술 패권 & 디지털 혁신,6,디지털 금융,INTU,stock,3
-기술 패권 & 디지털 혁신,6,디지털 금융,NU,stock,4
-기술 패권 & 디지털 혁신,6,디지털 금융,SOFI,stock,5
-기술 패권 & 디지털 혁신,6,디지털 금융,FINX,etf,1
-기술 패권 & 디지털 혁신,6,디지털 금융,IPAY,etf,2
-기술 패권 & 디지털 혁신,7,블록체인,MSTR,stock,1
-기술 패권 & 디지털 혁신,7,블록체인,COIN,stock,2
-기술 패권 & 디지털 혁신,7,블록체인,CLSK,stock,3
-기술 패권 & 디지털 혁신,7,블록체인,RIOT,stock,4
-기술 패권 & 디지털 혁신,7,블록체인,CORZ,stock,5
-기술 패권 & 디지털 혁신,7,블록체인,BLOK,etf,1
-기술 패권 & 디지털 혁신,7,블록체인,BITQ,etf,2
-기술 패권 & 디지털 혁신,8,게임 & 메타버스,AAPL,stock,1
-기술 패권 & 디지털 혁신,8,게임 & 메타버스,META,stock,2
-기술 패권 & 디지털 혁신,8,게임 & 메타버스,RBLX,stock,3
-기술 패권 & 디지털 혁신,8,게임 & 메타버스,TTWO,stock,4
-기술 패권 & 디지털 혁신,8,게임 & 메타버스,U,stock,5
-기술 패권 & 디지털 혁신,8,게임 & 메타버스,HERO,etf,1
-기술 패권 & 디지털 혁신,8,게임 & 메타버스,METV,etf,2
-기술 패권 & 디지털 혁신,9,AI 수익화,NOW,stock,1
-기술 패권 & 디지털 혁신,9,AI 수익화,APP,stock,2
-기술 패권 & 디지털 혁신,9,AI 수익화,ADBE,stock,3
-기술 패권 & 디지털 혁신,9,AI 수익화,HUBS,stock,4
-기술 패권 & 디지털 혁신,9,AI 수익화,MNDY,stock,5
-기술 패권 & 디지털 혁신,9,AI 수익화,THNQ,etf,1
-기술 패권 & 디지털 혁신,9,AI 수익화,IGV,etf,2
-기술 패권 & 디지털 혁신,10,양자 컴퓨터,IONQ,stock,1
-기술 패권 & 디지털 혁신,10,양자 컴퓨터,QBTS,stock,2
-기술 패권 & 디지털 혁신,10,양자 컴퓨터,KEYS,stock,3
-기술 패권 & 디지털 혁신,10,양자 컴퓨터,HON,stock,4
-기술 패권 & 디지털 혁신,10,양자 컴퓨터,LSCC,stock,5
-기술 패권 & 디지털 혁신,10,양자 컴퓨터,QTUM,etf,1
-기술 패권 & 디지털 혁신,10,양자 컴퓨터,WQTM,etf,2
-기술 패권 & 디지털 혁신,11,디지털 트윈,SNPS,stock,1
-기술 패권 & 디지털 혁신,11,디지털 트윈,IOT,stock,2
-기술 패권 & 디지털 혁신,11,디지털 트윈,ADSK,stock,3
-기술 패권 & 디지털 혁신,11,디지털 트윈,BSY,stock,4
-기술 패권 & 디지털 혁신,11,디지털 트윈,PTC,stock,5
-기술 패권 & 디지털 혁신,11,디지털 트윈,SNSR,etf,1
-기술 패권 & 디지털 혁신,11,디지털 트윈,KOMP,etf,2
-기술 패권 & 디지털 혁신,12,RWA 토큰화,COIN,stock,1
-기술 패권 & 디지털 혁신,12,RWA 토큰화,ICE,stock,2
-기술 패권 & 디지털 혁신,12,RWA 토큰화,BLK,stock,3
-기술 패권 & 디지털 혁신,12,RWA 토큰화,WT,stock,4
-기술 패권 & 디지털 혁신,12,RWA 토큰화,HOOD,stock,5
-기술 패권 & 디지털 혁신,12,RWA 토큰화,BLOK,etf,1
-기술 패권 & 디지털 혁신,12,RWA 토큰화,TOKN,etf,2
-기술 패권 & 디지털 혁신,13,AI 엣지 디바이스,QCOM,stock,1
-기술 패권 & 디지털 혁신,13,AI 엣지 디바이스,DELL,stock,2
-기술 패권 & 디지털 혁신,13,AI 엣지 디바이스,AMD,stock,3
-기술 패권 & 디지털 혁신,13,AI 엣지 디바이스,NXPI,stock,4
-기술 패권 & 디지털 혁신,13,AI 엣지 디바이스,MU,stock,5
-기술 패권 & 디지털 혁신,13,AI 엣지 디바이스,SOXQ,etf,1
-기술 패권 & 디지털 혁신,13,AI 엣지 디바이스,XSD,etf,2
-기술 패권 & 디지털 혁신,14,반도체 패키징,AMAT,stock,1
-기술 패권 & 디지털 혁신,14,반도체 패키징,AMKR,stock,2
-기술 패권 & 디지털 혁신,14,반도체 패키징,ONTO,stock,3
-기술 패권 & 디지털 혁신,14,반도체 패키징,CAMT,stock,4
-기술 패권 & 디지털 혁신,14,반도체 패키징,LRCX,stock,5
-기술 패권 & 디지털 혁신,14,반도체 패키징,PSI,etf,1
-기술 패권 & 디지털 혁신,14,반도체 패키징,FTXL,etf,2
-기술 패권 & 디지털 혁신,15,스마트 시티,ITRI,stock,1
-기술 패권 & 디지털 혁신,15,스마트 시티,JCI,stock,2
-기술 패권 & 디지털 혁신,15,스마트 시티,TYL,stock,3
-기술 패권 & 디지털 혁신,15,스마트 시티,ROP,stock,4
-기술 패권 & 디지털 혁신,15,스마트 시티,EQIX,stock,5
-기술 패권 & 디지털 혁신,15,스마트 시티,GRID,etf,1
-기술 패권 & 디지털 혁신,15,스마트 시티,SIMS,etf,2
-기술 패권 & 디지털 혁신,16,데이터 프라이버시,VRNS,stock,1
-기술 패권 & 디지털 혁신,16,데이터 프라이버시,OKTA,stock,2
-기술 패권 & 디지털 혁신,16,데이터 프라이버시,CHKP,stock,3
-기술 패권 & 디지털 혁신,16,데이터 프라이버시,NET,stock,4
-기술 패권 & 디지털 혁신,16,데이터 프라이버시,RBRK,stock,5
-기술 패권 & 디지털 혁신,16,데이터 프라이버시,IHAK,etf,1
-기술 패권 & 디지털 혁신,16,데이터 프라이버시,CYBP,etf,2
-기술 패권 & 디지털 혁신,17,AI 가상 비서,NICE,stock,1
-기술 패권 & 디지털 혁신,17,AI 가상 비서,FIVN,stock,2
-기술 패권 & 디지털 혁신,17,AI 가상 비서,CXM,stock,3
-기술 패권 & 디지털 혁신,17,AI 가상 비서,FRSH,stock,4
-기술 패권 & 디지털 혁신,17,AI 가상 비서,AI,stock,5
-기술 패권 & 디지털 혁신,17,AI 가상 비서,CHAT,etf,1
-기술 패권 & 디지털 혁신,17,AI 가상 비서,XSW,etf,2
-기술 패권 & 디지털 혁신,18,반도체 설계 소프트웨어,CDNS,stock,1
-기술 패권 & 디지털 혁신,18,반도체 설계 소프트웨어,PDFS,stock,2
-기술 패권 & 디지털 혁신,18,반도체 설계 소프트웨어,SVCO,stock,3
-기술 패권 & 디지털 혁신,18,반도체 설계 소프트웨어,LSCC,stock,4
-기술 패권 & 디지털 혁신,18,반도체 설계 소프트웨어,CEVA,stock,5
-기술 패권 & 디지털 혁신,18,반도체 설계 소프트웨어,RSPT,etf,1
-기술 패권 & 디지털 혁신,18,반도체 설계 소프트웨어,SMHX,etf,2
-에너지 주권 & 지구의 미래,19,차세대 원자력,CEG,stock,1
-에너지 주권 & 지구의 미래,19,차세대 원자력,CCJ,stock,2
-에너지 주권 & 지구의 미래,19,차세대 원자력,VST,stock,3
-에너지 주권 & 지구의 미래,19,차세대 원자력,OKLO,stock,4
-에너지 주권 & 지구의 미래,19,차세대 원자력,BWXT,stock,5
-에너지 주권 & 지구의 미래,19,차세대 원자력,URA,etf,1
-에너지 주권 & 지구의 미래,19,차세대 원자력,URNM,etf,2
-에너지 주권 & 지구의 미래,20,청정 에너지,FSLR,stock,1
-에너지 주권 & 지구의 미래,20,청정 에너지,NEE,stock,2
-에너지 주권 & 지구의 미래,20,청정 에너지,BEP,stock,3
-에너지 주권 & 지구의 미래,20,청정 에너지,GEV,stock,4
-에너지 주권 & 지구의 미래,20,청정 에너지,ENPH,stock,5
-에너지 주권 & 지구의 미래,20,청정 에너지,ICLN,etf,1
-에너지 주권 & 지구의 미래,20,청정 에너지,QCLN,etf,2
-에너지 주권 & 지구의 미래,21,기후 변화,OXY,stock,1
-에너지 주권 & 지구의 미래,21,기후 변화,ORA,stock,2
-에너지 주권 & 지구의 미래,21,기후 변화,EMR,stock,3
-에너지 주권 & 지구의 미래,21,기후 변화,PWR,stock,4
-에너지 주권 & 지구의 미래,21,기후 변화,MORN,stock,5
-에너지 주권 & 지구의 미래,21,기후 변화,KRBN,etf,1
-에너지 주권 & 지구의 미래,21,기후 변화,ERTH,etf,2
-에너지 주권 & 지구의 미래,22,전력망 인프라,ETN,stock,1
-에너지 주권 & 지구의 미래,22,전력망 인프라,PWR,stock,2
-에너지 주권 & 지구의 미래,22,전력망 인프라,VRT,stock,3
-에너지 주권 & 지구의 미래,22,전력망 인프라,HUBB,stock,4
-에너지 주권 & 지구의 미래,22,전력망 인프라,AEP,stock,5
-에너지 주권 & 지구의 미래,22,전력망 인프라,POWR,etf,1
-에너지 주권 & 지구의 미래,22,전력망 인프라,XLU,etf,2
-에너지 주권 & 지구의 미래,23,구리 / 희토류,FCX,stock,1
-에너지 주권 & 지구의 미래,23,구리 / 희토류,SCCO,stock,2
-에너지 주권 & 지구의 미래,23,구리 / 희토류,MP,stock,3
-에너지 주권 & 지구의 미래,23,구리 / 희토류,TECK,stock,4
-에너지 주권 & 지구의 미래,23,구리 / 희토류,ALB,stock,5
-에너지 주권 & 지구의 미래,23,구리 / 희토류,COPX,etf,1
-에너지 주권 & 지구의 미래,23,구리 / 희토류,REMX,etf,2
-에너지 주권 & 지구의 미래,24,수소 경제,BE,stock,1
-에너지 주권 & 지구의 미래,24,수소 경제,LIN,stock,2
-에너지 주권 & 지구의 미래,24,수소 경제,PLUG,stock,3
-에너지 주권 & 지구의 미래,24,수소 경제,APD,stock,4
-에너지 주권 & 지구의 미래,24,수소 경제,BLDP,stock,5
-에너지 주권 & 지구의 미래,24,수소 경제,HYDR,etf,1
-에너지 주권 & 지구의 미래,24,수소 경제,HJEN,etf,2
-에너지 주권 & 지구의 미래,25,데이터센터 열관리,MOD,stock,1
-에너지 주권 & 지구의 미래,25,데이터센터 열관리,NVT,stock,2
-에너지 주권 & 지구의 미래,25,데이터센터 열관리,SMCI,stock,3
-에너지 주권 & 지구의 미래,25,데이터센터 열관리,TT,stock,4
-에너지 주권 & 지구의 미래,25,데이터센터 열관리,CARR,stock,5
-에너지 주권 & 지구의 미래,25,데이터센터 열관리,DTCR,etf,1
-에너지 주권 & 지구의 미래,25,데이터센터 열관리,SRVR,etf,2
-에너지 주권 & 지구의 미래,26,순환 경제,WM,stock,1
-에너지 주권 & 지구의 미래,26,순환 경제,RSG,stock,2
-에너지 주권 & 지구의 미래,26,순환 경제,CLH,stock,3
-에너지 주권 & 지구의 미래,26,순환 경제,DAR,stock,4
-에너지 주권 & 지구의 미래,26,순환 경제,PCT,stock,5
-에너지 주권 & 지구의 미래,26,순환 경제,EVX,etf,1
-에너지 주권 & 지구의 미래,26,순환 경제,EFRA,etf,2
-에너지 주권 & 지구의 미래,27,폐배터리 리사이클,ABAT,stock,1
-에너지 주권 & 지구의 미래,27,폐배터리 리사이클,ALB,stock,2
-에너지 주권 & 지구의 미래,27,폐배터리 리사이클,FCX,stock,3
-에너지 주권 & 지구의 미래,27,폐배터리 리사이클,MVST,stock,4
-에너지 주권 & 지구의 미래,27,폐배터리 리사이클,DFLI,stock,5
-에너지 주권 & 지구의 미래,27,폐배터리 리사이클,LIT,etf,1
-에너지 주권 & 지구의 미래,27,폐배터리 리사이클,BATT,etf,2
-에너지 주권 & 지구의 미래,28,수자원 인프라,XYL,stock,1
-에너지 주권 & 지구의 미래,28,수자원 인프라,PNR,stock,2
-에너지 주권 & 지구의 미래,28,수자원 인프라,BMI,stock,3
-에너지 주권 & 지구의 미래,28,수자원 인프라,WTRG,stock,4
-에너지 주권 & 지구의 미래,28,수자원 인프라,WTS,stock,5
-에너지 주권 & 지구의 미래,28,수자원 인프라,PHO,etf,1
-에너지 주권 & 지구의 미래,28,수자원 인프라,FIW,etf,2
-에너지 주권 & 지구의 미래,29,폐기물 관리,CWST,stock,1
-에너지 주권 & 지구의 미래,29,폐기물 관리,GFL,stock,2
-에너지 주권 & 지구의 미래,29,폐기물 관리,WCN,stock,3
-에너지 주권 & 지구의 미래,29,폐기물 관리,TTEK,stock,4
-에너지 주권 & 지구의 미래,29,폐기물 관리,MEG,stock,5
-에너지 주권 & 지구의 미래,29,폐기물 관리,IDU,etf,1
-에너지 주권 & 지구의 미래,29,폐기물 관리,XLI,etf,2
-에너지 주권 & 지구의 미래,30,해상 풍력,EQNR,stock,1
-에너지 주권 & 지구의 미래,30,해상 풍력,CDLR,stock,2
-에너지 주권 & 지구의 미래,30,해상 풍력,HLX,stock,3
-에너지 주권 & 지구의 미래,30,해상 풍력,STLD,stock,4
-에너지 주권 & 지구의 미래,30,해상 풍력,POWL,stock,5
-에너지 주권 & 지구의 미래,30,해상 풍력,FAN,etf,1
-에너지 주권 & 지구의 미래,30,해상 풍력,WNDY,etf,2
-바이오 혁명 & 인류의 진화,31,바이오 혁신,VRTX,stock,1
-바이오 혁명 & 인류의 진화,31,바이오 혁신,CRSP,stock,2
-바이오 혁명 & 인류의 진화,31,바이오 혁신,NTLA,stock,3
-바이오 혁명 & 인류의 진화,31,바이오 혁신,NTRA,stock,4
-바이오 혁명 & 인류의 진화,31,바이오 혁신,BEAM,stock,5
-바이오 혁명 & 인류의 진화,31,바이오 혁신,IBB,etf,1
-바이오 혁명 & 인류의 진화,31,바이오 혁신,XBI,etf,2
-바이오 혁명 & 인류의 진화,32,헬스케어,BSX,stock,1
-바이오 혁명 & 인류의 진화,32,헬스케어,SYK,stock,2
-바이오 혁명 & 인류의 진화,32,헬스케어,LLY,stock,3
-바이오 혁명 & 인류의 진화,32,헬스케어,PODD,stock,4
-바이오 혁명 & 인류의 진화,32,헬스케어,DXCM,stock,5
-바이오 혁명 & 인류의 진화,32,헬스케어,XLV,etf,1
-바이오 혁명 & 인류의 진화,32,헬스케어,VHT,etf,2
-바이오 혁명 & 인류의 진화,33,다이어트약,AMGN,stock,1
-바이오 혁명 & 인류의 진화,33,다이어트약,VKTX,stock,2
-바이오 혁명 & 인류의 진화,33,다이어트약,GPCR,stock,3
-바이오 혁명 & 인류의 진화,33,다이어트약,ZEAL,stock,4
-바이오 혁명 & 인류의 진화,33,다이어트약,NVO,stock,5
-바이오 혁명 & 인류의 진화,33,다이어트약,OZEM,etf,1
-바이오 혁명 & 인류의 진화,33,다이어트약,HRTS,etf,2
-바이오 혁명 & 인류의 진화,34,항노화,DNA,stock,1
-바이오 혁명 & 인류의 진화,34,항노화,BIOA,stock,2
-바이오 혁명 & 인류의 진화,34,항노화,LCTX,stock,3
-바이오 혁명 & 인류의 진화,34,항노화,MGTX,stock,4
-바이오 혁명 & 인류의 진화,34,항노화,UBX,stock,5
-바이오 혁명 & 인류의 진화,34,항노화,IDNA,etf,1
-바이오 혁명 & 인류의 진화,34,항노화,ARKG,etf,2
-바이오 혁명 & 인류의 진화,35,디지털 헬스,DOCS,stock,1
-바이오 혁명 & 인류의 진화,35,디지털 헬스,HIMS,stock,2
-바이오 혁명 & 인류의 진화,35,디지털 헬스,TDOC,stock,3
-바이오 혁명 & 인류의 진화,35,디지털 헬스,TALK,stock,4
-바이오 혁명 & 인류의 진화,35,디지털 헬스,VEEV,stock,5
-바이오 혁명 & 인류의 진화,35,디지털 헬스,EDOC,etf,1
-바이오 혁명 & 인류의 진화,35,디지털 헬스,CHPS,etf,2
-바이오 혁명 & 인류의 진화,36,마리화나,TLRY,stock,1
-바이오 혁명 & 인류의 진화,36,마리화나,VFF,stock,2
-바이오 혁명 & 인류의 진화,36,마리화나,IIPR,stock,3
-바이오 혁명 & 인류의 진화,36,마리화나,TLRY,stock,4
-바이오 혁명 & 인류의 진화,36,마리화나,CRON,stock,5
-바이오 혁명 & 인류의 진화,36,마리화나,MSOS,etf,1
-바이오 혁명 & 인류의 진화,36,마리화나,MJ,etf,2
-바이오 혁명 & 인류의 진화,37,바이오 시밀러,AMGN,stock,1
-바이오 혁명 & 인류의 진화,37,바이오 시밀러,OGN,stock,2
-바이오 혁명 & 인류의 진화,37,바이오 시밀러,CHRS,stock,3
-바이오 혁명 & 인류의 진화,37,바이오 시밀러,LZAGY,stock,4
-바이오 혁명 & 인류의 진화,37,바이오 시밀러,207940.KS,stock,5
-바이오 혁명 & 인류의 진화,37,바이오 시밀러,BBP,etf,1
-바이오 혁명 & 인류의 진화,37,바이오 시밀러,PBE,etf,2
-바이오 혁명 & 인류의 진화,38,가정용 로봇,SERV,stock,1
-바이오 혁명 & 인류의 진화,38,가정용 로봇,LAZR,stock,2
-바이오 혁명 & 인류의 진화,38,가정용 로봇,SN,stock,3
-바이오 혁명 & 인류의 진화,38,가정용 로봇,SYM,stock,4
-바이오 혁명 & 인류의 진화,38,가정용 로봇,ENVX,stock,5
-바이오 혁명 & 인류의 진화,38,가정용 로봇,IRBO,etf,1
-바이오 혁명 & 인류의 진화,38,가정용 로봇,BOTS,etf,2
-바이오 혁명 & 인류의 진화,39,핵융합 에너지,ASMC,stock,1
-바이오 혁명 & 인류의 진화,39,핵융합 에너지,VST,stock,2
-바이오 혁명 & 인류의 진화,39,핵융합 에너지,APD,stock,3
-바이오 혁명 & 인류의 진화,39,핵융합 에너지,AEIS,stock,4
-바이오 혁명 & 인류의 진화,39,핵융합 에너지,BWXT,stock,5
-바이오 혁명 & 인류의 진화,39,핵융합 에너지,URA,etf,1
-바이오 혁명 & 인류의 진화,39,핵융합 에너지,NLR,etf,2
-바이오 혁명 & 인류의 진화,40,마이크로 LED,COHR,stock,1
-바이오 혁명 & 인류의 진화,40,마이크로 LED,VUZI,stock,2
-바이오 혁명 & 인류의 진화,40,마이크로 LED,LITE,stock,3
-바이오 혁명 & 인류의 진화,40,마이크로 LED,KOPN,stock,4
-바이오 혁명 & 인류의 진화,40,마이크로 LED,OLED,stock,5
-바이오 혁명 & 인류의 진화,40,마이크로 LED,METV,etf,1
-바이오 혁명 & 인류의 진화,40,마이크로 LED,LIT,etf,2
-신공급망 & 국가 안보,41,우주 항공 & 방산,LMT,stock,1
-신공급망 & 국가 안보,41,우주 항공 & 방산,RTX,stock,2
-신공급망 & 국가 안보,41,우주 항공 & 방산,RDW,stock,3
-신공급망 & 국가 안보,41,우주 항공 & 방산,KTOS,stock,4
-신공급망 & 국가 안보,41,우주 항공 & 방산,GD,stock,5
-신공급망 & 국가 안보,41,우주 항공 & 방산,ARKX,etf,1
-신공급망 & 국가 안보,41,우주 항공 & 방산,PPA,etf,2
-신공급망 & 국가 안보,42,물리적 인프라,CAT,stock,1
-신공급망 & 국가 안보,42,물리적 인프라,URI,stock,2
-신공급망 & 국가 안보,42,물리적 인프라,VMC,stock,3
-신공급망 & 국가 안보,42,물리적 인프라,ETN,stock,4
-신공급망 & 국가 안보,42,물리적 인프라,NUE,stock,5
-신공급망 & 국가 안보,42,물리적 인프라,PAVE,etf,1
-신공급망 & 국가 안보,42,물리적 인프라,IFRA,etf,2
-신공급망 & 국가 안보,43,소버린 AI,EQIX,stock,1
-신공급망 & 국가 안보,43,소버린 AI,SMCI,stock,2
-신공급망 & 국가 안보,43,소버린 AI,ARM,stock,3
-신공급망 & 국가 안보,43,소버린 AI,DLR,stock,4
-신공급망 & 국가 안보,43,소버린 AI,CSCO,stock,5
-신공급망 & 국가 안보,43,소버린 AI,XT,etf,1
-신공급망 & 국가 안보,43,소버린 AI,LOUP,etf,2
-신공급망 & 국가 안보,44,차세대 드론,AVAV,stock,1
-신공급망 & 국가 안보,44,차세대 드론,KTOS,stock,2
-신공급망 & 국가 안보,44,차세대 드론,RCAT,stock,3
-신공급망 & 국가 안보,44,차세대 드론,TXT,stock,4
-신공급망 & 국가 안보,44,차세대 드론,ONDS,stock,5
-신공급망 & 국가 안보,44,차세대 드론,DFEN,etf,1
-신공급망 & 국가 안보,44,차세대 드론,ARKQ,etf,2
-신공급망 & 국가 안보,45,우주 경제,LUNR,stock,1
-신공급망 & 국가 안보,45,우주 경제,ASTS,stock,2
-신공급망 & 국가 안보,45,우주 경제,BKSY,stock,3
-신공급망 & 국가 안보,45,우주 경제,RKLB,stock,4
-신공급망 & 국가 안보,45,우주 경제,PL,stock,5
-신공급망 & 국가 안보,45,우주 경제,UFO,etf,1
-신공급망 & 국가 안보,45,우주 경제,ROKT,etf,2
-신공급망 & 국가 안보,46,리쇼어링,EMR,stock,1
-신공급망 & 국가 안보,46,리쇼어링,FAST,stock,2
-신공급망 & 국가 안보,46,리쇼어링,PH,stock,3
-신공급망 & 국가 안보,46,리쇼어링,TRMB,stock,4
-신공급망 & 국가 안보,46,리쇼어링,STRL,stock,5
-신공급망 & 국가 안보,46,리쇼어링,AIRR,etf,1
-신공급망 & 국가 안보,46,리쇼어링,LRNZ,etf,2
-신공급망 & 국가 안보,47,UAM,JOBY,stock,1
-신공급망 & 국가 안보,47,UAM,ACHR,stock,2
-신공급망 & 국가 안보,47,UAM,EVEX,stock,3
-신공급망 & 국가 안보,47,UAM,EVTL,stock,4
-신공급망 & 국가 안보,47,UAM,EH,stock,5
-신공급망 & 국가 안보,47,UAM,KARS,etf,1
-신공급망 & 국가 안보,47,UAM,HAIL,etf,2
-신공급망 & 국가 안보,48,사이버 보험,CB,stock,1
-신공급망 & 국가 안보,48,사이버 보험,TRV,stock,2
-신공급망 & 국가 안보,48,사이버 보험,GWRE,stock,3
-신공급망 & 국가 안보,48,사이버 보험,AKAM,stock,4
-신공급망 & 국가 안보,48,사이버 보험,MMC,stock,5
-신공급망 & 국가 안보,48,사이버 보험,IAK,etf,1
-신공급망 & 국가 안보,48,사이버 보험,KIE,etf,2
-신공급망 & 국가 안보,49,인공위성 통신,GSAT,stock,1
-신공급망 & 국가 안보,49,인공위성 통신,IRDM,stock,2
-신공급망 & 국가 안보,49,인공위성 통신,VSAT,stock,3
-신공급망 & 국가 안보,49,인공위성 통신,SATS,stock,4
-신공급망 & 국가 안보,49,인공위성 통신,GILT,stock,5
-신공급망 & 국가 안보,49,인공위성 통신,IXP,etf,1
-신공급망 & 국가 안보,49,인공위성 통신,SRVR,etf,2
-신공급망 & 국가 안보,50,심해 채굴,TMC,stock,1
-신공급망 & 국가 안보,50,심해 채굴,OMEX,stock,2
-신공급망 & 국가 안보,50,심해 채굴,FTI,stock,3
-신공급망 & 국가 안보,50,심해 채굴,LZM,stock,4
-신공급망 & 국가 안보,50,심해 채굴,OII,stock,5
-신공급망 & 국가 안보,50,심해 채굴,PICK,etf,1
-신공급망 & 국가 안보,50,심해 채굴,XME,etf,2
-미래 소비 & 라이프스타일,51,디지털 커머스,MELI,stock,1
-미래 소비 & 라이프스타일,51,디지털 커머스,GLBE,stock,2
-미래 소비 & 라이프스타일,51,디지털 커머스,GCT,stock,3
-미래 소비 & 라이프스타일,51,디지털 커머스,EXPE,stock,4
-미래 소비 & 라이프스타일,51,디지털 커머스,SHOP,stock,5
-미래 소비 & 라이프스타일,51,디지털 커머스,EBIZ,etf,1
-미래 소비 & 라이프스타일,51,디지털 커머스,CLIX,etf,2
-미래 소비 & 라이프스타일,52,전기차 & 배터리,ALB,stock,1
-미래 소비 & 라이프스타일,52,전기차 & 배터리,QS,stock,2
-미래 소비 & 라이프스타일,52,전기차 & 배터리,RIVN,stock,3
-미래 소비 & 라이프스타일,52,전기차 & 배터리,TSLA,stock,4
-미래 소비 & 라이프스타일,52,전기차 & 배터리,1211.HK,stock,5
-미래 소비 & 라이프스타일,52,전기차 & 배터리,DRIV,etf,1
-미래 소비 & 라이프스타일,52,전기차 & 배터리,IDRV,etf,2
-미래 소비 & 라이프스타일,53,브랜드 소비재,WMT,stock,1
-미래 소비 & 라이프스타일,53,브랜드 소비재,COST,stock,2
-미래 소비 & 라이프스타일,53,브랜드 소비재,PG,stock,3
-미래 소비 & 라이프스타일,53,브랜드 소비재,ULTA,stock,4
-미래 소비 & 라이프스타일,53,브랜드 소비재,KO,stock,5
-미래 소비 & 라이프스타일,53,브랜드 소비재,XLY,etf,1
-미래 소비 & 라이프스타일,53,브랜드 소비재,VCR,etf,2
-미래 소비 & 라이프스타일,54,리츠 & 부동산,PLD,stock,1
-미래 소비 & 라이프스타일,54,리츠 & 부동산,AMT,stock,2
-미래 소비 & 라이프스타일,54,리츠 & 부동산,O,stock,3
-미래 소비 & 라이프스타일,54,리츠 & 부동산,WELL,stock,4
-미래 소비 & 라이프스타일,54,리츠 & 부동산,IRM,stock,5
-미래 소비 & 라이프스타일,54,리츠 & 부동산,VNQ,etf,1
-미래 소비 & 라이프스타일,54,리츠 & 부동산,XLRE,etf,2
-미래 소비 & 라이프스타일,55,원자재 & 자원,XOM,stock,1
-미래 소비 & 라이프스타일,55,원자재 & 자원,NEM,stock,2
-미래 소비 & 라이프스타일,55,원자재 & 자원,CTVA,stock,3
-미래 소비 & 라이프스타일,55,원자재 & 자원,NTRA,stock,4
-미래 소비 & 라이프스타일,55,원자재 & 자원,FCX,stock,5
-미래 소비 & 라이프스타일,55,원자재 & 자원,GNR,etf,1
-미래 소비 & 라이프스타일,55,원자재 & 자원,GUNR,etf,2
-미래 소비 & 라이프스타일,56,펫 케어,IDXX,stock,1
-미래 소비 & 라이프스타일,56,펫 케어,ZTS,stock,2
-미래 소비 & 라이프스타일,56,펫 케어,CHWY,stock,3
-미래 소비 & 라이프스타일,56,펫 케어,FRPT,stock,4
-미래 소비 & 라이프스타일,56,펫 케어,ELAN,stock,5
-미래 소비 & 라이프스타일,56,펫 케어,PAWZ,etf,1
-미래 소비 & 라이프스타일,56,펫 케어,IBUY,etf,2
-미래 소비 & 라이프스타일,57,럭셔리 소비,RACE,stock,1
-미래 소비 & 라이프스타일,57,럭셔리 소비,RL,stock,2
-미래 소비 & 라이프스타일,57,럭셔리 소비,TPR,stock,3
-미래 소비 & 라이프스타일,57,럭셔리 소비,EL,stock,4
-미래 소비 & 라이프스타일,57,럭셔리 소비,GOOS,stock,5
-미래 소비 & 라이프스타일,57,럭셔리 소비,LUXE,etf,1
-미래 소비 & 라이프스타일,57,럭셔리 소비,GLUX,etf,2
-미래 소비 & 라이프스타일,58,스마트 농업,DE,stock,1
-미래 소비 & 라이프스타일,58,스마트 농업,CNH,stock,2
-미래 소비 & 라이프스타일,58,스마트 농업,AGCO,stock,3
-미래 소비 & 라이프스타일,58,스마트 농업,DAR,stock,4
-미래 소비 & 라이프스타일,58,스마트 농업,VMI,stock,5
-미래 소비 & 라이프스타일,58,스마트 농업,VEGI,etf,1
-미래 소비 & 라이프스타일,58,스마트 농업,MOO,etf,2
-미래 소비 & 라이프스타일,59,스포츠 베팅,DKNG,stock,1
-미래 소비 & 라이프스타일,59,스포츠 베팅,FLUT,stock,2
-미래 소비 & 라이프스타일,59,스포츠 베팅,MGM,stock,3
-미래 소비 & 라이프스타일,59,스포츠 베팅,SRAD,stock,4
-미래 소비 & 라이프스타일,59,스포츠 베팅,PENN,stock,5
-미래 소비 & 라이프스타일,59,스포츠 베팅,BETZ,etf,1
-미래 소비 & 라이프스타일,59,스포츠 베팅,BJK,etf,2
-미래 소비 & 라이프스타일,60,중고거래,EBAY,stock,1
-미래 소비 & 라이프스타일,60,중고거래,REAL,stock,2
-미래 소비 & 라이프스타일,60,중고거래,ETSY,stock,3
-미래 소비 & 라이프스타일,60,중고거래,TDUP,stock,4
-미래 소비 & 라이프스타일,60,중고거래,PYPL,stock,5
-미래 소비 & 라이프스타일,60,중고거래,ONLN,etf,1
-미래 소비 & 라이프스타일,60,중고거래,IBUY,etf,2
+기술 패권 & 디지털 혁신 (Technological Disruption),1,AI & 데이터 지능,NVDA,stock,1
+기술 패권 & 디지털 혁신 (Technological Disruption),1,AI & 데이터 지능,MSFT,stock,2
+기술 패권 & 디지털 혁신 (Technological Disruption),1,AI & 데이터 지능,PLTR,stock,3
+기술 패권 & 디지털 혁신 (Technological Disruption),1,AI & 데이터 지능,GOOGL,stock,4
+기술 패권 & 디지털 혁신 (Technological Disruption),1,AI & 데이터 지능,SK하이닉스,stock,5
+기술 패권 & 디지털 혁신 (Technological Disruption),1,AI & 데이터 지능,AIQ,etf,1
+기술 패권 & 디지털 혁신 (Technological Disruption),1,AI & 데이터 지능,ARTY,etf,2
+기술 패권 & 디지털 혁신 (Technological Disruption),2,반도체 하드웨어,NVDA,stock,1
+기술 패권 & 디지털 혁신 (Technological Disruption),2,반도체 하드웨어,TSMC,stock,2
+기술 패권 & 디지털 혁신 (Technological Disruption),2,반도체 하드웨어,ARM,stock,3
+기술 패권 & 디지털 혁신 (Technological Disruption),2,반도체 하드웨어,ASML,stock,4
+기술 패권 & 디지털 혁신 (Technological Disruption),2,반도체 하드웨어,AVGO,stock,5
+기술 패권 & 디지털 혁신 (Technological Disruption),2,반도체 하드웨어,SMH,etf,1
+기술 패권 & 디지털 혁신 (Technological Disruption),2,반도체 하드웨어,SOXX,etf,2
+기술 패권 & 디지털 혁신 (Technological Disruption),3,로봇 & 자동화,ISRG,stock,1
+기술 패권 & 디지털 혁신 (Technological Disruption),3,로봇 & 자동화,ROK,stock,2
+기술 패권 & 디지털 혁신 (Technological Disruption),3,로봇 & 자동화,SYM,stock,3
+기술 패권 & 디지털 혁신 (Technological Disruption),3,로봇 & 자동화,TER,stock,4
+기술 패권 & 디지털 혁신 (Technological Disruption),3,로봇 & 자동화,ZBRA,stock,5
+기술 패권 & 디지털 혁신 (Technological Disruption),3,로봇 & 자동화,BOTZ,etf,1
+기술 패권 & 디지털 혁신 (Technological Disruption),3,로봇 & 자동화,ROBO,etf,2
+기술 패권 & 디지털 혁신 (Technological Disruption),4,사이버 보안,PANW,stock,1
+기술 패권 & 디지털 혁신 (Technological Disruption),4,사이버 보안,CRWD,stock,2
+기술 패권 & 디지털 혁신 (Technological Disruption),4,사이버 보안,FTNT,stock,3
+기술 패권 & 디지털 혁신 (Technological Disruption),4,사이버 보안,ZS,stock,4
+기술 패권 & 디지털 혁신 (Technological Disruption),4,사이버 보안,S,stock,5
+기술 패권 & 디지털 혁신 (Technological Disruption),4,사이버 보안,CIBR,etf,1
+기술 패권 & 디지털 혁신 (Technological Disruption),4,사이버 보안,BUG,etf,2
+기술 패권 & 디지털 혁신 (Technological Disruption),5,클라우드 & SW,MSFT,stock,1
+기술 패권 & 디지털 혁신 (Technological Disruption),5,클라우드 & SW,AMZN,stock,2
+기술 패권 & 디지털 혁신 (Technological Disruption),5,클라우드 & SW,ORCL,stock,3
+기술 패권 & 디지털 혁신 (Technological Disruption),5,클라우드 & SW,CRM,stock,4
+기술 패권 & 디지털 혁신 (Technological Disruption),5,클라우드 & SW,SNOW,stock,5
+기술 패권 & 디지털 혁신 (Technological Disruption),5,클라우드 & SW,SKYY,etf,1
+기술 패권 & 디지털 혁신 (Technological Disruption),5,클라우드 & SW,WCLD,etf,2
+기술 패권 & 디지털 혁신 (Technological Disruption),6,디지털 금융,V,stock,1
+기술 패권 & 디지털 혁신 (Technological Disruption),6,디지털 금융,ADYEY,stock,2
+기술 패권 & 디지털 혁신 (Technological Disruption),6,디지털 금융,INTU,stock,3
+기술 패권 & 디지털 혁신 (Technological Disruption),6,디지털 금융,NU,stock,4
+기술 패권 & 디지털 혁신 (Technological Disruption),6,디지털 금융,SOFI,stock,5
+기술 패권 & 디지털 혁신 (Technological Disruption),6,디지털 금융,FINX,etf,1
+기술 패권 & 디지털 혁신 (Technological Disruption),6,디지털 금융,IPAY,etf,2
+기술 패권 & 디지털 혁신 (Technological Disruption),7,블록체인,MSTR,stock,1
+기술 패권 & 디지털 혁신 (Technological Disruption),7,블록체인,COIN,stock,2
+기술 패권 & 디지털 혁신 (Technological Disruption),7,블록체인,CLSK,stock,3
+기술 패권 & 디지털 혁신 (Technological Disruption),7,블록체인,RIOT,stock,4
+기술 패권 & 디지털 혁신 (Technological Disruption),7,블록체인,CORZ,stock,5
+기술 패권 & 디지털 혁신 (Technological Disruption),7,블록체인,IBLC,etf,1
+기술 패권 & 디지털 혁신 (Technological Disruption),7,블록체인,BITQ,etf,2
+기술 패권 & 디지털 혁신 (Technological Disruption),8,게임 & 메타버스,AAPL,stock,1
+기술 패권 & 디지털 혁신 (Technological Disruption),8,게임 & 메타버스,META,stock,2
+기술 패권 & 디지털 혁신 (Technological Disruption),8,게임 & 메타버스,RBLX,stock,3
+기술 패권 & 디지털 혁신 (Technological Disruption),8,게임 & 메타버스,TTWO,stock,4
+기술 패권 & 디지털 혁신 (Technological Disruption),8,게임 & 메타버스,U,stock,5
+기술 패권 & 디지털 혁신 (Technological Disruption),8,게임 & 메타버스,HERO,etf,1
+기술 패권 & 디지털 혁신 (Technological Disruption),8,게임 & 메타버스,METV,etf,2
+기술 패권 & 디지털 혁신 (Technological Disruption),9,AI 수익화,NOW,stock,1
+기술 패권 & 디지털 혁신 (Technological Disruption),9,AI 수익화,APP,stock,2
+기술 패권 & 디지털 혁신 (Technological Disruption),9,AI 수익화,ADBE,stock,3
+기술 패권 & 디지털 혁신 (Technological Disruption),9,AI 수익화,HUBS,stock,4
+기술 패권 & 디지털 혁신 (Technological Disruption),9,AI 수익화,MNDY,stock,5
+기술 패권 & 디지털 혁신 (Technological Disruption),9,AI 수익화,THNQ,etf,1
+기술 패권 & 디지털 혁신 (Technological Disruption),9,AI 수익화,IGV,etf,2
+기술 패권 & 디지털 혁신 (Technological Disruption),10,양자 컴퓨터,IONQ,stock,1
+기술 패권 & 디지털 혁신 (Technological Disruption),10,양자 컴퓨터,QBTS,stock,2
+기술 패권 & 디지털 혁신 (Technological Disruption),10,양자 컴퓨터,KEYS,stock,3
+기술 패권 & 디지털 혁신 (Technological Disruption),10,양자 컴퓨터,HON,stock,4
+기술 패권 & 디지털 혁신 (Technological Disruption),10,양자 컴퓨터,LSCC,stock,5
+기술 패권 & 디지털 혁신 (Technological Disruption),10,양자 컴퓨터,QTUM,etf,1
+기술 패권 & 디지털 혁신 (Technological Disruption),10,양자 컴퓨터,WQTM,etf,2
+기술 패권 & 디지털 혁신 (Technological Disruption),11,디지털 트윈,SNPS,stock,1
+기술 패권 & 디지털 혁신 (Technological Disruption),11,디지털 트윈,IOT,stock,2
+기술 패권 & 디지털 혁신 (Technological Disruption),11,디지털 트윈,ADSK,stock,3
+기술 패권 & 디지털 혁신 (Technological Disruption),11,디지털 트윈,BSY,stock,4
+기술 패권 & 디지털 혁신 (Technological Disruption),11,디지털 트윈,PTC,stock,5
+기술 패권 & 디지털 혁신 (Technological Disruption),11,디지털 트윈,SNSR,etf,1
+기술 패권 & 디지털 혁신 (Technological Disruption),11,디지털 트윈,KOMP,etf,2
+기술 패권 & 디지털 혁신 (Technological Disruption),12,RWA 토큰화,COIN,stock,1
+기술 패권 & 디지털 혁신 (Technological Disruption),12,RWA 토큰화,ICE,stock,2
+기술 패권 & 디지털 혁신 (Technological Disruption),12,RWA 토큰화,BLK,stock,3
+기술 패권 & 디지털 혁신 (Technological Disruption),12,RWA 토큰화,WT,stock,4
+기술 패권 & 디지털 혁신 (Technological Disruption),12,RWA 토큰화,HOOD,stock,5
+기술 패권 & 디지털 혁신 (Technological Disruption),12,RWA 토큰화,BLOK,etf,1
+기술 패권 & 디지털 혁신 (Technological Disruption),12,RWA 토큰화,BKCH,etf,2
+기술 패권 & 디지털 혁신 (Technological Disruption),13,AI 엣지 디바이스,QCOM,stock,1
+기술 패권 & 디지털 혁신 (Technological Disruption),13,AI 엣지 디바이스,DELL,stock,2
+기술 패권 & 디지털 혁신 (Technological Disruption),13,AI 엣지 디바이스,AMD,stock,3
+기술 패권 & 디지털 혁신 (Technological Disruption),13,AI 엣지 디바이스,NXPI,stock,4
+기술 패권 & 디지털 혁신 (Technological Disruption),13,AI 엣지 디바이스,MU,stock,5
+기술 패권 & 디지털 혁신 (Technological Disruption),13,AI 엣지 디바이스,SOXQ,etf,1
+기술 패권 & 디지털 혁신 (Technological Disruption),13,AI 엣지 디바이스,XSD,etf,2
+기술 패권 & 디지털 혁신 (Technological Disruption),14,반도체 패키징,AMAT,stock,1
+기술 패권 & 디지털 혁신 (Technological Disruption),14,반도체 패키징,AMKR,stock,2
+기술 패권 & 디지털 혁신 (Technological Disruption),14,반도체 패키징,ONTO,stock,3
+기술 패권 & 디지털 혁신 (Technological Disruption),14,반도체 패키징,CAMT,stock,4
+기술 패권 & 디지털 혁신 (Technological Disruption),14,반도체 패키징,LRCX,stock,5
+기술 패권 & 디지털 혁신 (Technological Disruption),14,반도체 패키징,PSI,etf,1
+기술 패권 & 디지털 혁신 (Technological Disruption),14,반도체 패키징,FTXL,etf,2
+기술 패권 & 디지털 혁신 (Technological Disruption),15,스마트 시티,ITRI,stock,1
+기술 패권 & 디지털 혁신 (Technological Disruption),15,스마트 시티,JCI,stock,2
+기술 패권 & 디지털 혁신 (Technological Disruption),15,스마트 시티,TYL,stock,3
+기술 패권 & 디지털 혁신 (Technological Disruption),15,스마트 시티,ROP,stock,4
+기술 패권 & 디지털 혁신 (Technological Disruption),15,스마트 시티,EQIX,stock,5
+기술 패권 & 디지털 혁신 (Technological Disruption),15,스마트 시티,GRID,etf,1
+기술 패권 & 디지털 혁신 (Technological Disruption),15,스마트 시티,SIMS,etf,2
+기술 패권 & 디지털 혁신 (Technological Disruption),16,데이터 프라이버시,VRNS,stock,1
+기술 패권 & 디지털 혁신 (Technological Disruption),16,데이터 프라이버시,OKTA,stock,2
+기술 패권 & 디지털 혁신 (Technological Disruption),16,데이터 프라이버시,CHKP,stock,3
+기술 패권 & 디지털 혁신 (Technological Disruption),16,데이터 프라이버시,NET,stock,4
+기술 패권 & 디지털 혁신 (Technological Disruption),16,데이터 프라이버시,RBRK,stock,5
+기술 패권 & 디지털 혁신 (Technological Disruption),16,데이터 프라이버시,IHAK,etf,1
+기술 패권 & 디지털 혁신 (Technological Disruption),16,데이터 프라이버시,HACK,etf,2
+기술 패권 & 디지털 혁신 (Technological Disruption),17,AI 가상 비서,NICE,stock,1
+기술 패권 & 디지털 혁신 (Technological Disruption),17,AI 가상 비서,FIVN,stock,2
+기술 패권 & 디지털 혁신 (Technological Disruption),17,AI 가상 비서,CXM,stock,3
+기술 패권 & 디지털 혁신 (Technological Disruption),17,AI 가상 비서,FRSH,stock,4
+기술 패권 & 디지털 혁신 (Technological Disruption),17,AI 가상 비서,AI,stock,5
+기술 패권 & 디지털 혁신 (Technological Disruption),17,AI 가상 비서,CHAT,etf,1
+기술 패권 & 디지털 혁신 (Technological Disruption),17,AI 가상 비서,XSW,etf,2
+기술 패권 & 디지털 혁신 (Technological Disruption),18,반도체 설계 소프트웨어,CDNS,stock,1
+기술 패권 & 디지털 혁신 (Technological Disruption),18,반도체 설계 소프트웨어,PDFS,stock,2
+기술 패권 & 디지털 혁신 (Technological Disruption),18,반도체 설계 소프트웨어,SVCO,stock,3
+기술 패권 & 디지털 혁신 (Technological Disruption),18,반도체 설계 소프트웨어,LSCC,stock,4
+기술 패권 & 디지털 혁신 (Technological Disruption),18,반도체 설계 소프트웨어,CEVA,stock,5
+기술 패권 & 디지털 혁신 (Technological Disruption),18,반도체 설계 소프트웨어,RSPT,etf,1
+기술 패권 & 디지털 혁신 (Technological Disruption),18,반도체 설계 소프트웨어,SMHX,etf,2
+에너지 주권 & 지구의 미래 (Energy Transition),19,차세대 원자력,CEG,stock,1
+에너지 주권 & 지구의 미래 (Energy Transition),19,차세대 원자력,CCJ,stock,2
+에너지 주권 & 지구의 미래 (Energy Transition),19,차세대 원자력,VST,stock,3
+에너지 주권 & 지구의 미래 (Energy Transition),19,차세대 원자력,OKLO,stock,4
+에너지 주권 & 지구의 미래 (Energy Transition),19,차세대 원자력,BWXT,stock,5
+에너지 주권 & 지구의 미래 (Energy Transition),19,차세대 원자력,URA,etf,1
+에너지 주권 & 지구의 미래 (Energy Transition),19,차세대 원자력,URNM,etf,2
+에너지 주권 & 지구의 미래 (Energy Transition),20,청정 에너지,FSLR,stock,1
+에너지 주권 & 지구의 미래 (Energy Transition),20,청정 에너지,NEE,stock,2
+에너지 주권 & 지구의 미래 (Energy Transition),20,청정 에너지,BEP,stock,3
+에너지 주권 & 지구의 미래 (Energy Transition),20,청정 에너지,GEV,stock,4
+에너지 주권 & 지구의 미래 (Energy Transition),20,청정 에너지,ENPH,stock,5
+에너지 주권 & 지구의 미래 (Energy Transition),20,청정 에너지,ICLN,etf,1
+에너지 주권 & 지구의 미래 (Energy Transition),20,청정 에너지,QCLN,etf,2
+에너지 주권 & 지구의 미래 (Energy Transition),21,기후 변화,OXY,stock,1
+에너지 주권 & 지구의 미래 (Energy Transition),21,기후 변화,ORA,stock,2
+에너지 주권 & 지구의 미래 (Energy Transition),21,기후 변화,EMR,stock,3
+에너지 주권 & 지구의 미래 (Energy Transition),21,기후 변화,PWR,stock,4
+에너지 주권 & 지구의 미래 (Energy Transition),21,기후 변화,MORN,stock,5
+에너지 주권 & 지구의 미래 (Energy Transition),21,기후 변화,KRBN,etf,1
+에너지 주권 & 지구의 미래 (Energy Transition),21,기후 변화,ERTH,etf,2
+에너지 주권 & 지구의 미래 (Energy Transition),22,전력망 인프라,ETN,stock,1
+에너지 주권 & 지구의 미래 (Energy Transition),22,전력망 인프라,PWR,stock,2
+에너지 주권 & 지구의 미래 (Energy Transition),22,전력망 인프라,VRT,stock,3
+에너지 주권 & 지구의 미래 (Energy Transition),22,전력망 인프라,HUBB,stock,4
+에너지 주권 & 지구의 미래 (Energy Transition),22,전력망 인프라,AEP,stock,5
+에너지 주권 & 지구의 미래 (Energy Transition),22,전력망 인프라,POWR,etf,1
+에너지 주권 & 지구의 미래 (Energy Transition),22,전력망 인프라,XLU,etf,2
+에너지 주권 & 지구의 미래 (Energy Transition),23,구리 / 희토류,FCX,stock,1
+에너지 주권 & 지구의 미래 (Energy Transition),23,구리 / 희토류,SCCO,stock,2
+에너지 주권 & 지구의 미래 (Energy Transition),23,구리 / 희토류,MP,stock,3
+에너지 주권 & 지구의 미래 (Energy Transition),23,구리 / 희토류,TECK,stock,4
+에너지 주권 & 지구의 미래 (Energy Transition),23,구리 / 희토류,ALB,stock,5
+에너지 주권 & 지구의 미래 (Energy Transition),23,구리 / 희토류,COPX,etf,1
+에너지 주권 & 지구의 미래 (Energy Transition),23,구리 / 희토류,REMX,etf,2
+에너지 주권 & 지구의 미래 (Energy Transition),24,수소 경제,BE,stock,1
+에너지 주권 & 지구의 미래 (Energy Transition),24,수소 경제,LIN,stock,2
+에너지 주권 & 지구의 미래 (Energy Transition),24,수소 경제,PLUG,stock,3
+에너지 주권 & 지구의 미래 (Energy Transition),24,수소 경제,APD,stock,4
+에너지 주권 & 지구의 미래 (Energy Transition),24,수소 경제,BLDP,stock,5
+에너지 주권 & 지구의 미래 (Energy Transition),24,수소 경제,HYDR,etf,1
+에너지 주권 & 지구의 미래 (Energy Transition),25,데이터센터 열관리,MOD,stock,1
+에너지 주권 & 지구의 미래 (Energy Transition),25,데이터센터 열관리,NVT,stock,2
+에너지 주권 & 지구의 미래 (Energy Transition),25,데이터센터 열관리,SMCI,stock,3
+에너지 주권 & 지구의 미래 (Energy Transition),25,데이터센터 열관리,TT,stock,4
+에너지 주권 & 지구의 미래 (Energy Transition),25,데이터센터 열관리,CARR,stock,5
+에너지 주권 & 지구의 미래 (Energy Transition),25,데이터센터 열관리,DTCR,etf,1
+에너지 주권 & 지구의 미래 (Energy Transition),25,데이터센터 열관리,IDGT,etf,2
+에너지 주권 & 지구의 미래 (Energy Transition),26,순환 경제,WM,stock,1
+에너지 주권 & 지구의 미래 (Energy Transition),26,순환 경제,RSG,stock,2
+에너지 주권 & 지구의 미래 (Energy Transition),26,순환 경제,CLH,stock,3
+에너지 주권 & 지구의 미래 (Energy Transition),26,순환 경제,DAR,stock,4
+에너지 주권 & 지구의 미래 (Energy Transition),26,순환 경제,PCT,stock,5
+에너지 주권 & 지구의 미래 (Energy Transition),26,순환 경제,EVX,etf,1
+에너지 주권 & 지구의 미래 (Energy Transition),26,순환 경제,EFRA,etf,2
+에너지 주권 & 지구의 미래 (Energy Transition),27,폐배터리 리사이클,ABAT,stock,1
+에너지 주권 & 지구의 미래 (Energy Transition),27,폐배터리 리사이클,ALB,stock,2
+에너지 주권 & 지구의 미래 (Energy Transition),27,폐배터리 리사이클,FCX,stock,3
+에너지 주권 & 지구의 미래 (Energy Transition),27,폐배터리 리사이클,MVST,stock,4
+에너지 주권 & 지구의 미래 (Energy Transition),27,폐배터리 리사이클,DFLI,stock,5
+에너지 주권 & 지구의 미래 (Energy Transition),27,폐배터리 리사이클,LIT,etf,1
+에너지 주권 & 지구의 미래 (Energy Transition),27,폐배터리 리사이클,BATT,etf,2
+에너지 주권 & 지구의 미래 (Energy Transition),28,수자원 인프라,XYL,stock,1
+에너지 주권 & 지구의 미래 (Energy Transition),28,수자원 인프라,PNR,stock,2
+에너지 주권 & 지구의 미래 (Energy Transition),28,수자원 인프라,BMI,stock,3
+에너지 주권 & 지구의 미래 (Energy Transition),28,수자원 인프라,WTRG,stock,4
+에너지 주권 & 지구의 미래 (Energy Transition),28,수자원 인프라,WTS,stock,5
+에너지 주권 & 지구의 미래 (Energy Transition),28,수자원 인프라,PHO,etf,1
+에너지 주권 & 지구의 미래 (Energy Transition),28,수자원 인프라,FIW,etf,2
+에너지 주권 & 지구의 미래 (Energy Transition),29,폐기물 관리,CWST,stock,1
+에너지 주권 & 지구의 미래 (Energy Transition),29,폐기물 관리,GFL,stock,2
+에너지 주권 & 지구의 미래 (Energy Transition),29,폐기물 관리,WCN,stock,3
+에너지 주권 & 지구의 미래 (Energy Transition),29,폐기물 관리,TTEK,stock,4
+에너지 주권 & 지구의 미래 (Energy Transition),29,폐기물 관리,MEG,stock,5
+에너지 주권 & 지구의 미래 (Energy Transition),29,폐기물 관리,IDU,etf,1
+에너지 주권 & 지구의 미래 (Energy Transition),29,폐기물 관리,XLI,etf,2
+에너지 주권 & 지구의 미래 (Energy Transition),30,해상 풍력,EQNR,stock,1
+에너지 주권 & 지구의 미래 (Energy Transition),30,해상 풍력,CDLR,stock,2
+에너지 주권 & 지구의 미래 (Energy Transition),30,해상 풍력,HLX,stock,3
+에너지 주권 & 지구의 미래 (Energy Transition),30,해상 풍력,STLD,stock,4
+에너지 주권 & 지구의 미래 (Energy Transition),30,해상 풍력,POWL,stock,5
+에너지 주권 & 지구의 미래 (Energy Transition),30,해상 풍력,FAN,etf,1
+에너지 주권 & 지구의 미래 (Energy Transition),30,해상 풍력,RNRG,etf,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),31,바이오 혁신,VRTX,stock,1
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),31,바이오 혁신,CRSP,stock,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),31,바이오 혁신,NTLA,stock,3
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),31,바이오 혁신,NTRA,stock,4
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),31,바이오 혁신,BEAM,stock,5
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),31,바이오 혁신,IBB,etf,1
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),31,바이오 혁신,XBI,etf,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),32,헬스케어,BSX,stock,1
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),32,헬스케어,SYK,stock,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),32,헬스케어,LLY,stock,3
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),32,헬스케어,PODD,stock,4
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),32,헬스케어,DXCM,stock,5
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),32,헬스케어,XLV,etf,1
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),32,헬스케어,VHT,etf,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),33,다이어트약,AMGN,stock,1
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),33,다이어트약,VKTX,stock,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),33,다이어트약,GPCR,stock,3
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),33,다이어트약,ALT,stock,4
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),33,다이어트약,NVO,stock,5
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),33,다이어트약,OZEM,etf,1
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),33,다이어트약,HRTS,etf,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),34,항노화,DNA,stock,1
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),34,항노화,BIOA,stock,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),34,항노화,LCTX,stock,3
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),34,항노화,MGTX,stock,4
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),34,항노화,GERN,stock,5
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),34,항노화,IDNA,etf,1
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),34,항노화,ARKG,etf,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),35,디지털 헬스,DOCS,stock,1
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),35,디지털 헬스,HIMS,stock,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),35,디지털 헬스,TDOC,stock,3
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),35,디지털 헬스,TALK,stock,4
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),35,디지털 헬스,VEEV,stock,5
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),35,디지털 헬스,HEAL,etf,1
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),35,디지털 헬스,CHPS,etf,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),36,마리화나,TLRY,stock,1
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),36,마리화나,VFF,stock,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),36,마리화나,IIPR,stock,3
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),36,마리화나,CGC,stock,4
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),36,마리화나,CRON,stock,5
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),36,마리화나,MSOS,etf,1
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),36,마리화나,MJ,etf,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),37,바이오 시밀러,AMGN,stock,1
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),37,바이오 시밀러,OGN,stock,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),37,바이오 시밀러,CHRS,stock,3
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),37,바이오 시밀러,LZAGY,stock,4
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),37,바이오 시밀러,삼성바이오로직스,stock,5
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),37,바이오 시밀러,BBP,etf,1
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),37,바이오 시밀러,PBE,etf,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),38,가정용 로봇,SERV,stock,1
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),38,가정용 로봇,PATH,stock,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),38,가정용 로봇,SN,stock,3
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),38,가정용 로봇,SYM,stock,4
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),38,가정용 로봇,ENVX,stock,5
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),38,가정용 로봇,ROBT,etf,1
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),38,가정용 로봇,BOTT,etf,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),39,핵융합 에너지,AMSC,stock,1
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),39,핵융합 에너지,VST,stock,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),39,핵융합 에너지,APD,stock,3
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),39,핵융합 에너지,AEIS,stock,4
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),39,핵융합 에너지,BWXT,stock,5
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),39,핵융합 에너지,NUKZ,etf,1
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),39,핵융합 에너지,NLR,etf,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),40,마이크로 LED,COHR,stock,1
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),40,마이크로 LED,VUZI,stock,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),40,마이크로 LED,LITE,stock,3
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),40,마이크로 LED,KOPN,stock,4
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),40,마이크로 LED,OLED,stock,5
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),40,마이크로 LED,ARVR,etf,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),41,우주 항공 & 방산,LMT,stock,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),41,우주 항공 & 방산,RTX,stock,2
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),41,우주 항공 & 방산,RDW,stock,3
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),41,우주 항공 & 방산,KTOS,stock,4
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),41,우주 항공 & 방산,GD,stock,5
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),41,우주 항공 & 방산,ARKX,etf,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),41,우주 항공 & 방산,PPA,etf,2
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),42,물리적 인프라,CAT,stock,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),42,물리적 인프라,URI,stock,2
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),42,물리적 인프라,VMC,stock,3
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),42,물리적 인프라,ETN,stock,4
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),42,물리적 인프라,NUE,stock,5
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),42,물리적 인프라,PAVE,etf,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),42,물리적 인프라,IFRA,etf,2
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),43,소버린 AI,EQIX,stock,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),43,소버린 AI,SMCI,stock,2
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),43,소버린 AI,ARM,stock,3
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),43,소버린 AI,DLR,stock,4
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),43,소버린 AI,CSCO,stock,5
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),43,소버린 AI,XT,etf,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),43,소버린 AI,LOUP,etf,2
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),44,차세대 드론,AVAV,stock,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),44,차세대 드론,KTOS,stock,2
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),44,차세대 드론,RCAT,stock,3
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),44,차세대 드론,TXT,stock,4
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),44,차세대 드론,ONDS,stock,5
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),44,차세대 드론,DFEN,etf,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),44,차세대 드론,ARKQ,etf,2
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),45,우주 경제,LUNR,stock,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),45,우주 경제,ASTS,stock,2
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),45,우주 경제,BKSY,stock,3
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),45,우주 경제,RKLB,stock,4
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),45,우주 경제,PL,stock,5
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),45,우주 경제,UFO,etf,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),45,우주 경제,ROKT,etf,2
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),46,리쇼어링,EMR,stock,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),46,리쇼어링,FAST,stock,2
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),46,리쇼어링,PH,stock,3
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),46,리쇼어링,TRMB,stock,4
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),46,리쇼어링,STRL,stock,5
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),46,리쇼어링,AIRR,etf,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),46,리쇼어링,LRNZ,etf,2
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),47,UAM,JOBY,stock,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),47,UAM,ACHR,stock,2
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),47,UAM,EVEX,stock,3
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),47,UAM,EVTL,stock,4
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),47,UAM,EH,stock,5
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),47,UAM,KARS,etf,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),47,UAM,HAIL,etf,2
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),48,사이버 보험,CB,stock,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),48,사이버 보험,TRV,stock,2
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),48,사이버 보험,GWRE,stock,3
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),48,사이버 보험,AKAM,stock,4
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),48,사이버 보험,MRSH,stock,5
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),48,사이버 보험,IAK,etf,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),48,사이버 보험,KIE,etf,2
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),49,인공위성 통신,GSAT,stock,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),49,인공위성 통신,IRDM,stock,2
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),49,인공위성 통신,VSAT,stock,3
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),49,인공위성 통신,SATS,stock,4
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),49,인공위성 통신,GILT,stock,5
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),49,인공위성 통신,IXP,etf,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),49,인공위성 통신,MARS,etf,2
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),50,심해 채굴,TMC,stock,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),50,심해 채굴,OMEX,stock,2
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),50,심해 채굴,FTI,stock,3
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),50,심해 채굴,LZM,stock,4
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),50,심해 채굴,OII,stock,5
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),50,심해 채굴,PICK,etf,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),50,심해 채굴,XME,etf,2
+미래 소비 & 라이프스타일 (Future Lifestyle),51,디지털 커머스,MELI,stock,1
+미래 소비 & 라이프스타일 (Future Lifestyle),51,디지털 커머스,GLBE,stock,2
+미래 소비 & 라이프스타일 (Future Lifestyle),51,디지털 커머스,GCT,stock,3
+미래 소비 & 라이프스타일 (Future Lifestyle),51,디지털 커머스,EXPE,stock,4
+미래 소비 & 라이프스타일 (Future Lifestyle),51,디지털 커머스,SHOP,stock,5
+미래 소비 & 라이프스타일 (Future Lifestyle),51,디지털 커머스,EBIZ,etf,1
+미래 소비 & 라이프스타일 (Future Lifestyle),51,디지털 커머스,CLIX,etf,2
+미래 소비 & 라이프스타일 (Future Lifestyle),52,전기차 & 배터리,ALB,stock,1
+미래 소비 & 라이프스타일 (Future Lifestyle),52,전기차 & 배터리,QS,stock,2
+미래 소비 & 라이프스타일 (Future Lifestyle),52,전기차 & 배터리,RIVN,stock,3
+미래 소비 & 라이프스타일 (Future Lifestyle),52,전기차 & 배터리,TSLA,stock,4
+미래 소비 & 라이프스타일 (Future Lifestyle),52,전기차 & 배터리,BYDDY,stock,5
+미래 소비 & 라이프스타일 (Future Lifestyle),52,전기차 & 배터리,DRIV,etf,1
+미래 소비 & 라이프스타일 (Future Lifestyle),52,전기차 & 배터리,IDRV,etf,2
+미래 소비 & 라이프스타일 (Future Lifestyle),53,브랜드 소비재,WMT,stock,1
+미래 소비 & 라이프스타일 (Future Lifestyle),53,브랜드 소비재,COST,stock,2
+미래 소비 & 라이프스타일 (Future Lifestyle),53,브랜드 소비재,PG,stock,3
+미래 소비 & 라이프스타일 (Future Lifestyle),53,브랜드 소비재,ULTA,stock,4
+미래 소비 & 라이프스타일 (Future Lifestyle),53,브랜드 소비재,KO,stock,5
+미래 소비 & 라이프스타일 (Future Lifestyle),53,브랜드 소비재,XLY,etf,1
+미래 소비 & 라이프스타일 (Future Lifestyle),53,브랜드 소비재,VCR,etf,2
+미래 소비 & 라이프스타일 (Future Lifestyle),54,리츠 & 부동산,PLD,stock,1
+미래 소비 & 라이프스타일 (Future Lifestyle),54,리츠 & 부동산,AMT,stock,2
+미래 소비 & 라이프스타일 (Future Lifestyle),54,리츠 & 부동산,O,stock,3
+미래 소비 & 라이프스타일 (Future Lifestyle),54,리츠 & 부동산,WELL,stock,4
+미래 소비 & 라이프스타일 (Future Lifestyle),54,리츠 & 부동산,IRM,stock,5
+미래 소비 & 라이프스타일 (Future Lifestyle),54,리츠 & 부동산,VNQ,etf,1
+미래 소비 & 라이프스타일 (Future Lifestyle),54,리츠 & 부동산,XLRE,etf,2
+미래 소비 & 라이프스타일 (Future Lifestyle),55,원자재 & 자원,XOM,stock,1
+미래 소비 & 라이프스타일 (Future Lifestyle),55,원자재 & 자원,NEM,stock,2
+미래 소비 & 라이프스타일 (Future Lifestyle),55,원자재 & 자원,CTVA,stock,3
+미래 소비 & 라이프스타일 (Future Lifestyle),55,원자재 & 자원,NTRA,stock,4
+미래 소비 & 라이프스타일 (Future Lifestyle),55,원자재 & 자원,FCX,stock,5
+미래 소비 & 라이프스타일 (Future Lifestyle),55,원자재 & 자원,GNR,etf,1
+미래 소비 & 라이프스타일 (Future Lifestyle),55,원자재 & 자원,GUNR,etf,2
+미래 소비 & 라이프스타일 (Future Lifestyle),56,펫 케어,IDXX,stock,1
+미래 소비 & 라이프스타일 (Future Lifestyle),56,펫 케어,ZTS,stock,2
+미래 소비 & 라이프스타일 (Future Lifestyle),56,펫 케어,CHWY,stock,3
+미래 소비 & 라이프스타일 (Future Lifestyle),56,펫 케어,FRPT,stock,4
+미래 소비 & 라이프스타일 (Future Lifestyle),56,펫 케어,ELAN,stock,5
+미래 소비 & 라이프스타일 (Future Lifestyle),56,펫 케어,PAWZ,etf,1
+미래 소비 & 라이프스타일 (Future Lifestyle),56,펫 케어,IBUY,etf,2
+미래 소비 & 라이프스타일 (Future Lifestyle),57,럭셔리 소비,RACE,stock,1
+미래 소비 & 라이프스타일 (Future Lifestyle),57,럭셔리 소비,RL,stock,2
+미래 소비 & 라이프스타일 (Future Lifestyle),57,럭셔리 소비,TPR,stock,3
+미래 소비 & 라이프스타일 (Future Lifestyle),57,럭셔리 소비,EL,stock,4
+미래 소비 & 라이프스타일 (Future Lifestyle),57,럭셔리 소비,GOOS,stock,5
+미래 소비 & 라이프스타일 (Future Lifestyle),57,럭셔리 소비,LUXE,etf,1
+미래 소비 & 라이프스타일 (Future Lifestyle),57,럭셔리 소비,GLUX,etf,2
+미래 소비 & 라이프스타일 (Future Lifestyle),58,스마트 농업,DE,stock,1
+미래 소비 & 라이프스타일 (Future Lifestyle),58,스마트 농업,CNH,stock,2
+미래 소비 & 라이프스타일 (Future Lifestyle),58,스마트 농업,AGCO,stock,3
+미래 소비 & 라이프스타일 (Future Lifestyle),58,스마트 농업,DAR,stock,4
+미래 소비 & 라이프스타일 (Future Lifestyle),58,스마트 농업,VMI,stock,5
+미래 소비 & 라이프스타일 (Future Lifestyle),58,스마트 농업,VEGI,etf,1
+미래 소비 & 라이프스타일 (Future Lifestyle),58,스마트 농업,MOO,etf,2
+미래 소비 & 라이프스타일 (Future Lifestyle),59,스포츠 베팅,DKNG,stock,1
+미래 소비 & 라이프스타일 (Future Lifestyle),59,스포츠 베팅,FLUT,stock,2
+미래 소비 & 라이프스타일 (Future Lifestyle),59,스포츠 베팅,MGM,stock,3
+미래 소비 & 라이프스타일 (Future Lifestyle),59,스포츠 베팅,SRAD,stock,4
+미래 소비 & 라이프스타일 (Future Lifestyle),59,스포츠 베팅,PENN,stock,5
+미래 소비 & 라이프스타일 (Future Lifestyle),59,스포츠 베팅,BETZ,etf,1
+미래 소비 & 라이프스타일 (Future Lifestyle),59,스포츠 베팅,BJK,etf,2
+미래 소비 & 라이프스타일 (Future Lifestyle),60,중고거래,EBAY,stock,1
+미래 소비 & 라이프스타일 (Future Lifestyle),60,중고거래,REAL,stock,2
+미래 소비 & 라이프스타일 (Future Lifestyle),60,중고거래,ETSY,stock,3
+미래 소비 & 라이프스타일 (Future Lifestyle),60,중고거래,TDUP,stock,4
+미래 소비 & 라이프스타일 (Future Lifestyle),60,중고거래,PYPL,stock,5
+미래 소비 & 라이프스타일 (Future Lifestyle),60,중고거래,ONLN,etf,1
