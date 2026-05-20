@@ -1296,7 +1296,7 @@ def main():
                     if not theme_stocks.empty:
                         score_html = (
                             '<div style="display:grid; grid-template-columns:repeat(6,1fr); '
-                            'gap:6px; margin-bottom:20px;">'
+                            'gap:6px; margin-bottom:8px;">'
                         )
                         for period_label, period_col in ALL_PERIODS.items():
                             avg_r = theme_stocks[period_col].mean() if period_col in theme_stocks.columns else 0
@@ -1315,6 +1315,19 @@ def main():
                             )
                         score_html += '</div>'
                         st.markdown(score_html, unsafe_allow_html=True)
+                        
+                        # 기간 인터랙티브 연동 (Pills)
+                        sel_period = st.pills(
+                            "기간 연동", 
+                            options=list(ALL_PERIODS.keys()), 
+                            default=st.session_state.period, 
+                            key=f"theme_pill_{active_theme}_{st.session_state.period}", 
+                            label_visibility="collapsed"
+                        )
+                        if sel_period and sel_period != st.session_state.period:
+                            st.session_state.period = sel_period
+                            st.rerun()
+                        st.markdown('<div style="margin-bottom:12px;"></div>', unsafe_allow_html=True)
 
                     # ── ② 구성 종목 카드 (2열, 큰 텍스트) ─────────────────
                     if not theme_stocks.empty:
