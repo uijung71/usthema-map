@@ -1223,8 +1223,8 @@ def main():
                 
                 # Fetch details using get_theme_detail
                 meta, theme_stocks, theme_etfs = get_theme_detail(theme_id)
-                
-                # Beautiful Header for Theme Details
+
+                # ── Header ────────────────────────────────────────────────
                 st.markdown(f"""
                     <div style="margin: 40px 0 20px 0; padding: 15px 20px; background: linear-gradient(90deg, rgba(255, 215, 0, 0.15), transparent); border-left: 6px solid #FFD700; border-radius: 8px;">
                         <span style="font-size: 2.2rem; margin-right: 15px;">🎯</span>
@@ -1232,67 +1232,81 @@ def main():
                         <span style="float: right; font-size: 1.8rem; font-weight: 900; color: {'#ff4b4b' if theme_avg_ret >= 0 else '#4ba3ff'};">{fmt_return(theme_avg_ret)}</span>
                     </div>
                 """, unsafe_allow_html=True)
-                
-                # Split content into two columns: Left for Notion Story & ETFs, Right for Stocks
-                col_left, col_right = st.columns([1.1, 0.9])
-                
+
+                # ── Notion에서 YouTube URL + 텍스트 가져오기 ─────────────
+                from src.notion_engine import get_notion_markdown
+                with st.spinner("테마 스토리 로딩 중..."):
+                    md_text, youtube_url = get_notion_markdown(theme_id)
+
+                # ── 2-컬럼 레이아웃: 왼쪽=영상, 오른쪽=종목+ETF ─────────
+                col_left, col_right = st.columns([1.15, 0.85])
+
                 with col_left:
-                    # Notion Story Box
-                    st.markdown("### 📖 테마 스토리 (노션)")
-                    from src.notion_engine import get_notion_markdown
-                    with st.spinner("노션 테마 스토리를 실시간으로 불러오는 중..."):
-                        md_text = get_notion_markdown(theme_id)
-                    
-                    st.markdown(f"""
-                        <div style="background:rgba(255,255,255,0.03); padding:20px; border-radius:12px; border:1px solid rgba(255,255,255,0.06); max-height: 500px; overflow-y: auto; margin-bottom: 20px;">
-                            <div style="font-size:0.95rem; line-height:1.7; color:#ddd;">{md_text}</div>
-                        </div>
-                    """, unsafe_allow_html=True)
-                    
-                    # ETFs
-                    st.markdown("### 📦 관련 ETF")
+                    st.markdown("#### 🎬 테마 스토리")
+                    if youtube_url:
+                        st.video(youtube_url)
+                    else:
+                        # 준비중 플레이스홀더
+                        st.markdown("""
+                            <div style="
+                                aspect-ratio: 16/9;
+                                background: linear-gradient(135deg, #1a1f2e, #12192b);
+                                border: 1px dashed rgba(0,212,255,0.25);
+                                border-radius: 14px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 12px;
+                                margin-bottom: 8px;
+                            ">
+                                <div style="font-size:2.5rem;">🎬</div>
+                                <div style="font-size:1.05rem; font-weight:800; color:#a0b0c0;">테마 영상 준비 중</div>
+                                <div style="font-size:0.82rem; color:#556; text-align:center; padding:0 20px;">
+                                    노션 페이지에 YouTube 영상을 추가하면<br>이 자리에 자동으로 표시됩니다.
+                                </div>
+                            </div>
+                        """, unsafe_allow_html=True)
+
+                with col_right:
+                    # ── 구성 종목 (한 줄 칩) ───────────────────────────
+                    st.markdown(f"#### 📊 구성 종목 ({st.session_state.period})")
+                    if not theme_stocks.empty:
+                        stocks_sorted = theme_stocks.sort_values(by=return_col, ascending=False)
+                        chips_html = '<div style="display:flex; flex-wrap:wrap; gap:7px; margin-bottom:18px;">'
+                        for _, row in stocks_sorted.iterrows():
+                            ret = row[return_col]
+                            color  = '#ff4b4b' if ret > 0 else ('#4ba3ff' if ret < 0 else '#888')
+                            arrow  = '▲' if ret > 0 else ('▼' if ret < 0 else '–')
+                            g_url  = get_google_finance_url(row['ticker'], is_etf=False)
+                            chips_html += (
+                                f'<a href="{g_url}" target="_blank" style="'
+                                f'text-decoration:none; display:inline-flex; align-items:center; gap:5px;'
+                                f'background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1);'
+                                f'border-radius:50px; padding:5px 13px; font-size:0.84rem; font-weight:700;'
+                                f'color:#c8d0e0; transition:all 0.2s;">'
+                                f'<span style="color:#00d4ff;">{row["ticker"]}</span>'
+                                f'<span style="color:{color}; font-size:0.78rem;">{arrow}{abs(ret):.1f}%</span>'
+                                f'</a>'
+                            )
+                        chips_html += '</div>'
+                        st.markdown(chips_html, unsafe_allow_html=True)
+                    else:
+                        st.info("구성 종목 정보가 없습니다.")
+
+                    # ── 관련 ETF (한 줄 칩 + 클릭 버튼) ──────────────
+                    st.markdown("#### 📦 관련 ETF")
                     if not theme_etfs.empty:
-                        etf_cols = st.columns(len(theme_etfs))
+                        etf_cols = st.columns(min(len(theme_etfs), 4))
                         for idx, (_, etf) in enumerate(theme_etfs.iterrows()):
                             eret = etf[return_col]
-                            with etf_cols[idx]:
+                            with etf_cols[idx % 4]:
                                 btn_label = f"{etf['ticker']} {fmt_return(eret)}"
                                 if st.button(btn_label, key=f"active_theme_etf_{etf['ticker']}", type="secondary", use_container_width=True):
                                     show_etf_details_dialog(etf['ticker'], theme_id, active_theme)
                     else:
-                        st.info("이 테마에 등록된 관련 ETF가 없습니다.")
-                        
-                with col_right:
-                    # Constituent Stocks
-                    st.markdown(f"### 📊 구성 종목 {st.session_state.period} 수익률")
-                    if not theme_stocks.empty:
-                        # Sort stocks by return
-                        theme_stocks_sorted = theme_stocks.sort_values(by=return_col, ascending=False)
-                        
-                        st.markdown('<div style="max-height: 600px; overflow-y: auto; padding-right: 5px;">', unsafe_allow_html=True)
-                        for _, row in theme_stocks_sorted.iterrows():
-                            ret = row[return_col]
-                            ret_color = '#ff4b4b' if ret > 0 else ('#4ba3ff' if ret < 0 else '#888')
-                            ret_arrow = '▲' if ret > 0 else ('▼' if ret < 0 else '-')
-                            
-                            # Fetch Google Finance URL
-                            google_url = get_google_finance_url(row['ticker'], is_etf=False)
-                            
-                            st.markdown(f"""
-                                <div style="display:flex; justify-content:space-between; align-items:center; padding:12px 16px; background:linear-gradient(145deg, #1e2130, #14161f); border-radius:10px; margin-bottom:8px; border:1px solid rgba(255,255,255,0.05); border-left:4px solid {ret_color};">
-                                    <div>
-                                        <div style="font-weight:800; font-size:1.1rem; color:#00d4ff;">
-                                            <a href="{google_url}" target="_blank" style="text-decoration:none; color:#00d4ff;">{row['ticker']} ↗</a>
-                                        </div>
-                                    </div>
-                                    <div style="text-align:right;">
-                                        <span style="font-weight:900; font-size:1.1rem; color:{ret_color};">{ret_arrow} {fmt_return(ret)}</span>
-                                    </div>
-                                </div>
-                            """, unsafe_allow_html=True)
-                        st.markdown('</div>', unsafe_allow_html=True)
-                    else:
-                        st.warning("구성 종목 정보를 표시할 수 없습니다.")
+                        st.info("등록된 관련 ETF가 없습니다.")
+
         
         theme_df_all = get_theme_returns(return_col)
         theme_df = theme_df_all.copy()
