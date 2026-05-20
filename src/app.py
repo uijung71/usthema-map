@@ -1242,9 +1242,24 @@ def main():
                 col_left, col_right = st.columns([1.15, 0.85])
 
                 with col_left:
-                    st.markdown("#### 🎬 테마 스토리")
+                    st.markdown('<div style="font-size:1.05rem; font-weight:900; color:#e8eaf0; margin-bottom:10px;">🎬 테마 스토리</div>', unsafe_allow_html=True)
                     if youtube_url:
                         st.video(youtube_url)
+                        
+                        # Add summary text below video
+                        if md_text:
+                            summary_lines = [p for p in md_text.split('\n\n') if p.strip() and not p.strip().startswith('#') and not p.strip().startswith('!')]
+                            if summary_lines:
+                                summary_text = summary_lines[0]
+                                if len(summary_text) > 200:
+                                    summary_text = summary_text[:200] + "..."
+                                st.markdown(
+                                    '<div style="margin-top:12px; padding:16px; background:rgba(255,255,255,0.02); '
+                                    'border-radius:10px; border:1px solid rgba(255,255,255,0.05);">',
+                                    unsafe_allow_html=True
+                                )
+                                st.markdown(f"**💡 핵심 요약**\n\n<span style='font-size:0.92rem; color:#a0b0c0; line-height:1.6;'>{summary_text}</span>", unsafe_allow_html=True)
+                                st.markdown('</div>', unsafe_allow_html=True)
                     else:
                         # 준비중 플레이스홀더
                         st.markdown("""
@@ -1270,6 +1285,7 @@ def main():
 
                 with col_right:
                     # ── ① 기간별 수익률 스코어보드 ────────────────────────
+                    st.markdown('<div style="font-size:1.05rem; font-weight:900; color:#e8eaf0; margin-bottom:10px;">📈 기간별 평균 수익률</div>', unsafe_allow_html=True)
                     ALL_PERIODS = {
                         '1일': 'return_1d', '1주': 'return_1w', '1개월': 'return_1m',
                         '3개월': 'return_3m', '6개월': 'return_6m', '1년': 'return_1y'
@@ -1313,7 +1329,7 @@ def main():
                             f'<div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">'
                             f'<span style="font-size:1.05rem; font-weight:900; color:#e8eaf0;">📊 구성 종목</span>'
                             f'<span style="font-size:0.82rem; background:rgba(255,75,75,0.18); color:#ff4b4b; '
-                            f'border-radius:50px; padding:3px 10px; font-weight:800;">▲ {up_cnt}</span>'
+                            f'border-radius:50px; padding:3px 10px; font-weight:800; margin-left:8px;">▲ {up_cnt}</span>'
                             f'<span style="font-size:0.82rem; background:rgba(75,161,255,0.18); color:#4ba3ff; '
                             f'border-radius:50px; padding:3px 10px; font-weight:800;">▼ {dn_cnt}</span>'
                             f'{badge_flat}'
@@ -1369,37 +1385,21 @@ def main():
                             e_color = '#ff4b4b' if eret > 0 else ('#4ba3ff' if eret < 0 else '#888')
                             e_arrow = '▲' if eret > 0 else ('▼' if eret < 0 else '–')
 
-                            # 4개 기간 배지
-                            badges_html = '<div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;">'
-                            for plabel, pcol in [('1일','return_1d'),('1주','return_1w'),('1개월','return_1m'),('3개월','return_3m')]:
-                                if pcol in etf.index:
-                                    pv = etf[pcol]
-                                    pc = '#ff4b4b' if pv > 0 else ('#4ba3ff' if pv < 0 else '#888')
-                                    pa = '+' if pv > 0 else ''
-                                    pbg = 'rgba(255,75,75,0.1)' if pv > 0 else ('rgba(75,161,255,0.1)' if pv < 0 else 'rgba(255,255,255,0.05)')
-                                    badges_html += (
-                                        f'<span style="background:{pbg}; border:1px solid {pc}33; '
-                                        f'border-radius:6px; padding:3px 10px; '
-                                        f'font-size:0.82rem; font-weight:700; color:{pc};">'
-                                        f'{plabel}&nbsp;&nbsp;{pa}{pv:.1f}%</span>'
-                                    )
-                            badges_html += '</div>'
-
                             st.markdown(
                                 f'<div style="background:linear-gradient(145deg,#1a1f2e,#13182a); '
-                                f'border:1px solid rgba(255,255,255,0.08); '
+                                f'border:1px solid rgba(255,255,255,0.08); border-bottom:none; '
                                 f'border-left:4px solid {e_color}; '
-                                f'border-radius:12px; padding:14px 18px; margin-bottom:6px;">'
+                                f'border-radius:12px 12px 0 0; padding:14px 18px; margin-bottom:-15px; position:relative; z-index:1;">'
                                 f'<div style="display:flex; justify-content:space-between; align-items:center;">'
                                 f'<span style="font-size:1.35rem; font-weight:900; color:#00d4ff; letter-spacing:1px;">{etf["ticker"]}</span>'
                                 f'<span style="font-size:1.35rem; font-weight:900; color:{e_color};">{e_arrow}&nbsp;{abs(eret):.2f}%</span>'
                                 f'</div>'
-                                f'{badges_html}'
                                 f'</div>',
                                 unsafe_allow_html=True
                             )
                             if st.button(f"📋 {etf['ticker']} 상세 분석 보기", key=f"active_theme_etf_{etf['ticker']}", use_container_width=True):
                                 show_etf_details_dialog(etf['ticker'], theme_id, active_theme)
+                            st.markdown('<div style="margin-bottom:10px;"></div>', unsafe_allow_html=True)
                     else:
                         st.info("등록된 관련 ETF가 없습니다.")
 
