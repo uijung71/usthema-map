@@ -1248,18 +1248,21 @@ def main():
                         
                         # Add summary text below video
                         if md_text:
-                            summary_lines = [p for p in md_text.split('\n\n') if p.strip() and not p.strip().startswith('#') and not p.strip().startswith('!')]
+                            summary_lines = [p.strip() for p in md_text.split('\n\n') if p.strip() and not p.strip().startswith('#') and not p.strip().startswith('!') and not p.strip().startswith('[')]
                             if summary_lines:
-                                summary_text = summary_lines[0]
-                                if len(summary_text) > 200:
-                                    summary_text = summary_text[:200] + "..."
-                                st.markdown(
-                                    '<div style="margin-top:12px; padding:16px; background:rgba(255,255,255,0.02); '
-                                    'border-radius:10px; border:1px solid rgba(255,255,255,0.05);">',
-                                    unsafe_allow_html=True
+                                summary_text = " ".join(summary_lines)
+                                if len(summary_text) > 350:
+                                    summary_text = summary_text[:350] + "..."
+                                summary_text = summary_text.replace('**', '')
+                                
+                                html_content = (
+                                    f'<div style="margin-top:12px; padding:20px 24px; background:rgba(255,255,255,0.02); '
+                                    f'border-radius:12px; border:1px solid rgba(255,255,255,0.05); min-height:240px;">'
+                                    f'<div style="font-size:1.0rem; font-weight:800; color:#e8eaf0; margin-bottom:12px;">💡 핵심 요약</div>'
+                                    f'<div style="font-size:0.95rem; color:#a0b0c0; line-height:1.7;">{summary_text}</div>'
+                                    f'</div>'
                                 )
-                                st.markdown(f"**💡 핵심 요약**\n\n<span style='font-size:0.92rem; color:#a0b0c0; line-height:1.6;'>{summary_text}</span>", unsafe_allow_html=True)
-                                st.markdown('</div>', unsafe_allow_html=True)
+                                st.markdown(html_content, unsafe_allow_html=True)
                     else:
                         # 준비중 플레이스홀더
                         st.markdown("""
