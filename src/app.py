@@ -1316,17 +1316,21 @@ def main():
                         score_html += '</div>'
                         st.markdown(score_html, unsafe_allow_html=True)
                         
+                        def sync_period_from_pills():
+                            pill_key = f"theme_pill_{active_theme}_{st.session_state.period}"
+                            new_val = st.session_state.get(pill_key)
+                            if new_val:
+                                st.session_state.period = new_val
+
                         # 기간 인터랙티브 연동 (Pills)
-                        sel_period = st.pills(
+                        st.pills(
                             "기간 연동", 
                             options=list(ALL_PERIODS.keys()), 
                             default=st.session_state.period, 
                             key=f"theme_pill_{active_theme}_{st.session_state.period}", 
-                            label_visibility="collapsed"
+                            label_visibility="collapsed",
+                            on_change=sync_period_from_pills
                         )
-                        if sel_period and sel_period != st.session_state.period:
-                            st.session_state.period = sel_period
-                            st.rerun()
                         st.markdown('<div style="margin-bottom:12px;"></div>', unsafe_allow_html=True)
 
                     # ── ② 구성 종목 카드 (2열, 큰 텍스트) ─────────────────
