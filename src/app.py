@@ -1269,7 +1269,7 @@ def main():
                         """, unsafe_allow_html=True)
 
                 with col_right:
-                    # ── ① 기간별 수익률 스코어보드 ───────────────────────
+                    # ── ① 기간별 수익률 스코어보드 ────────────────────────
                     ALL_PERIODS = {
                         '1일': 'return_1d', '1주': 'return_1w', '1개월': 'return_1m',
                         '3개월': 'return_3m', '6개월': 'return_6m', '1년': 'return_1y'
@@ -1277,109 +1277,132 @@ def main():
                     if not theme_stocks.empty:
                         score_html = (
                             '<div style="display:grid; grid-template-columns:repeat(6,1fr); '
-                            'gap:6px; margin-bottom:16px;">'
+                            'gap:6px; margin-bottom:20px;">'
                         )
                         for period_label, period_col in ALL_PERIODS.items():
-                            if period_col in theme_stocks.columns:
-                                avg_r = theme_stocks[period_col].mean()
-                            else:
-                                avg_r = 0
-                            p_color = '#ff4b4b' if avg_r > 0 else ('#4ba3ff' if avg_r < 0 else '#888')
-                            p_arrow = '▲' if avg_r > 0 else ('▼' if avg_r < 0 else '–')
-                            active_bg = 'rgba(0,212,255,0.12)' if period_label == st.session_state.period else 'rgba(255,255,255,0.04)'
-                            active_border = 'rgba(0,212,255,0.4)' if period_label == st.session_state.period else 'rgba(255,255,255,0.08)'
+                            avg_r = theme_stocks[period_col].mean() if period_col in theme_stocks.columns else 0
+                            p_color  = '#ff4b4b' if avg_r > 0 else ('#4ba3ff' if avg_r < 0 else '#888')
+                            p_arrow  = '▲' if avg_r > 0 else ('▼' if avg_r < 0 else '–')
+                            is_active = (period_label == st.session_state.period)
+                            a_bg  = 'linear-gradient(135deg,rgba(0,212,255,0.18),rgba(124,58,237,0.12))' if is_active else 'rgba(255,255,255,0.04)'
+                            a_bd  = 'rgba(0,212,255,0.5)' if is_active else 'rgba(255,255,255,0.07)'
+                            a_lbl = '#00d4ff' if is_active else '#5a6480'
                             score_html += (
-                                f'<div style="background:{active_bg}; border:1px solid {active_border}; '
-                                f'border-radius:10px; padding:8px 4px; text-align:center;">'
-                                f'<div style="font-size:0.7rem; color:#6b7485; font-weight:600; margin-bottom:3px;">{period_label}</div>'
-                                f'<div style="font-size:0.88rem; font-weight:900; color:{p_color};">{p_arrow}{abs(avg_r):.1f}%</div>'
+                                f'<div style="background:{a_bg}; border:1px solid {a_bd}; '
+                                f'border-radius:12px; padding:10px 4px; text-align:center;">'
+                                f'<div style="font-size:0.72rem; color:{a_lbl}; font-weight:700; margin-bottom:4px;">{period_label}</div>'
+                                f'<div style="font-size:1.0rem; font-weight:900; color:{p_color}; letter-spacing:-0.5px;">{p_arrow}{abs(avg_r):.1f}%</div>'
                                 f'</div>'
                             )
                         score_html += '</div>'
                         st.markdown(score_html, unsafe_allow_html=True)
 
-                    # ── ② 구성 종목 칩 (현재가 + 수익률 + 상승/하락 배지) ──
+                    # ── ② 구성 종목 카드 (2열, 큰 텍스트) ─────────────────
                     if not theme_stocks.empty:
                         stocks_sorted = theme_stocks.sort_values(by=return_col, ascending=False)
                         up_cnt   = int((stocks_sorted[return_col] > 0).sum())
                         dn_cnt   = int((stocks_sorted[return_col] < 0).sum())
                         flat_cnt = int((stocks_sorted[return_col] == 0).sum())
 
+                        # 섹션 라벨 + 상승/하락 배지
+                        badge_flat = (
+                            f'<span style="font-size:0.82rem; background:rgba(255,255,255,0.07); '
+                            f'color:#888; border-radius:50px; padding:3px 10px; font-weight:700;">– {flat_cnt}</span>'
+                        ) if flat_cnt else ''
                         st.markdown(
-                            f'<div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">'
-                            f'<span style="font-size:0.95rem; font-weight:800; color:#e8eaf0;">📊 구성 종목</span>'
-                            f'<span style="font-size:0.78rem; background:rgba(255,75,75,0.15); color:#ff4b4b; '
-                            f'border-radius:50px; padding:2px 9px; font-weight:700;">▲ {up_cnt}개</span>'
-                            f'<span style="font-size:0.78rem; background:rgba(75,161,255,0.15); color:#4ba3ff; '
-                            f'border-radius:50px; padding:2px 9px; font-weight:700;">▼ {dn_cnt}개</span>'
-                            + (f'<span style="font-size:0.78rem; background:rgba(255,255,255,0.06); color:#888; '
-                               f'border-radius:50px; padding:2px 9px; font-weight:700;">– {flat_cnt}개</span>' if flat_cnt else '')
-                            + f'<span style="font-size:0.75rem; color:#4a5568; margin-left:auto;">({st.session_state.period})</span>'
+                            f'<div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">'
+                            f'<span style="font-size:1.05rem; font-weight:900; color:#e8eaf0;">📊 구성 종목</span>'
+                            f'<span style="font-size:0.82rem; background:rgba(255,75,75,0.18); color:#ff4b4b; '
+                            f'border-radius:50px; padding:3px 10px; font-weight:800;">▲ {up_cnt}</span>'
+                            f'<span style="font-size:0.82rem; background:rgba(75,161,255,0.18); color:#4ba3ff; '
+                            f'border-radius:50px; padding:3px 10px; font-weight:800;">▼ {dn_cnt}</span>'
+                            f'{badge_flat}'
+                            f'<span style="font-size:0.78rem; color:#3a4255; margin-left:auto;">{st.session_state.period} 기준</span>'
                             f'</div>',
                             unsafe_allow_html=True
                         )
 
-                        chips_html = '<div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;">'
+                        # 2열 카드 그리드
+                        cards_html = '<div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:20px;">'
                         for _, row in stocks_sorted.iterrows():
                             ret   = row[return_col]
                             close = row.get('close', None)
                             color = '#ff4b4b' if ret > 0 else ('#4ba3ff' if ret < 0 else '#888')
                             arrow = '▲' if ret > 0 else ('▼' if ret < 0 else '–')
                             g_url = get_google_finance_url(row['ticker'], is_etf=False)
-                            price_str = f'${close:,.1f} · ' if (close and close > 0) else ''
-                            chips_html += (
-                                f'<a href="{g_url}" target="_blank" style="'
-                                f'text-decoration:none; display:inline-flex; align-items:center; gap:5px;'
-                                f'background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.09);'
-                                f'border-left:3px solid {color};'
-                                f'border-radius:8px; padding:5px 11px; font-size:0.82rem; font-weight:700;'
-                                f'color:#c8d0e0;">'
-                                f'<span style="color:#00d4ff;">{row["ticker"]}</span>'
-                                f'<span style="color:#5a6380; font-size:0.74rem;">{price_str}</span>'
-                                f'<span style="color:{color}; font-size:0.8rem;">{arrow}{abs(ret):.1f}%</span>'
-                                f'</a>'
+                            price_html = (
+                                f'<div style="font-size:0.82rem; color:#6b7485; font-weight:500; margin-top:1px;">'
+                                f'${close:,.2f}</div>'
+                            ) if (close and close > 0) else ''
+                            cards_html += (
+                                f'<a href="{g_url}" target="_blank" style="text-decoration:none;">'
+                                f'<div style="'
+                                f'background:linear-gradient(145deg,#1a1f2e,#13182a);'
+                                f'border:1px solid rgba(255,255,255,0.07);'
+                                f'border-top:2px solid {color};'
+                                f'border-radius:10px; padding:11px 14px;'
+                                f'display:flex; justify-content:space-between; align-items:center;">'
+                                f'<div>'
+                                f'<div style="font-size:1.05rem; font-weight:900; color:#00d4ff; letter-spacing:0.3px;">{row["ticker"]}</div>'
+                                f'{price_html}'
+                                f'</div>'
+                                f'<div style="text-align:right;">'
+                                f'<div style="font-size:1.15rem; font-weight:900; color:{color};">'
+                                f'{arrow}{abs(ret):.1f}%</div>'
+                                f'</div>'
+                                f'</div></a>'
                             )
-                        chips_html += '</div>'
-                        st.markdown(chips_html, unsafe_allow_html=True)
+                        cards_html += '</div>'
+                        st.markdown(cards_html, unsafe_allow_html=True)
                     else:
                         st.info("구성 종목 정보가 없습니다.")
 
-                    # ── ③ 관련 ETF (기간별 수익률 + 클릭) ────────────────
-                    st.markdown('<div style="font-size:0.95rem; font-weight:800; color:#e8eaf0; margin-bottom:8px;">📦 관련 ETF</div>', unsafe_allow_html=True)
+                    # ── ③ 관련 ETF — 통합 카드 (버튼 내장) ──────────────
+                    st.markdown(
+                        '<div style="font-size:1.05rem; font-weight:900; color:#e8eaf0; '
+                        'margin-bottom:10px;">📦 관련 ETF</div>',
+                        unsafe_allow_html=True
+                    )
                     if not theme_etfs.empty:
                         for _, etf in theme_etfs.iterrows():
-                            eret = etf[return_col]
+                            eret    = etf[return_col]
                             e_color = '#ff4b4b' if eret > 0 else ('#4ba3ff' if eret < 0 else '#888')
                             e_arrow = '▲' if eret > 0 else ('▼' if eret < 0 else '–')
 
-                            # 기간별 수익률 미니 배지 (1d/1w/1m/3m)
-                            mini_badges = ''
+                            # 4개 기간 배지
+                            badges_html = '<div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;">'
                             for plabel, pcol in [('1일','return_1d'),('1주','return_1w'),('1개월','return_1m'),('3개월','return_3m')]:
                                 if pcol in etf.index:
                                     pv = etf[pcol]
                                     pc = '#ff4b4b' if pv > 0 else ('#4ba3ff' if pv < 0 else '#888')
-                                    mini_badges += (
-                                        f'<span style="font-size:0.72rem; color:{pc}; font-weight:700;">'
-                                        f'{plabel} {("+" if pv>0 else "")}{pv:.1f}%</span>'
+                                    pa = '+' if pv > 0 else ''
+                                    pbg = 'rgba(255,75,75,0.1)' if pv > 0 else ('rgba(75,161,255,0.1)' if pv < 0 else 'rgba(255,255,255,0.05)')
+                                    badges_html += (
+                                        f'<span style="background:{pbg}; border:1px solid {pc}33; '
+                                        f'border-radius:6px; padding:3px 10px; '
+                                        f'font-size:0.82rem; font-weight:700; color:{pc};">'
+                                        f'{plabel}&nbsp;&nbsp;{pa}{pv:.1f}%</span>'
                                     )
-                                    if plabel != '3개월':
-                                        mini_badges += '<span style="color:#2a3040; margin:0 4px;">|</span>'
+                            badges_html += '</div>'
 
-                            etf_row_html = (
-                                f'<div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); '
-                                f'border-left:3px solid {e_color}; border-radius:10px; padding:10px 14px; margin-bottom:8px;">'
-                                f'<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">'
-                                f'<span style="font-size:1rem; font-weight:900; color:#00d4ff;">{etf["ticker"]}</span>'
-                                f'<span style="font-size:0.95rem; font-weight:900; color:{e_color};">{e_arrow}{abs(eret):.2f}%</span>'
+                            st.markdown(
+                                f'<div style="background:linear-gradient(145deg,#1a1f2e,#13182a); '
+                                f'border:1px solid rgba(255,255,255,0.08); '
+                                f'border-left:4px solid {e_color}; '
+                                f'border-radius:12px; padding:14px 18px; margin-bottom:6px;">'
+                                f'<div style="display:flex; justify-content:space-between; align-items:center;">'
+                                f'<span style="font-size:1.35rem; font-weight:900; color:#00d4ff; letter-spacing:1px;">{etf["ticker"]}</span>'
+                                f'<span style="font-size:1.35rem; font-weight:900; color:{e_color};">{e_arrow}&nbsp;{abs(eret):.2f}%</span>'
                                 f'</div>'
-                                f'<div style="display:flex; gap:4px; flex-wrap:wrap;">{mini_badges}</div>'
-                                f'</div>'
+                                f'{badges_html}'
+                                f'</div>',
+                                unsafe_allow_html=True
                             )
-                            st.markdown(etf_row_html, unsafe_allow_html=True)
-                            if st.button(f"📋 {etf['ticker']} 상세 보기", key=f"active_theme_etf_{etf['ticker']}", use_container_width=True):
+                            if st.button(f"📋 {etf['ticker']} 상세 분석 보기", key=f"active_theme_etf_{etf['ticker']}", use_container_width=True):
                                 show_etf_details_dialog(etf['ticker'], theme_id, active_theme)
                     else:
                         st.info("등록된 관련 ETF가 없습니다.")
+
 
 
         
