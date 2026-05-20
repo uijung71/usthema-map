@@ -1388,13 +1388,13 @@ def main():
                             e_color = '#ff4b4b' if eret > 0 else ('#4ba3ff' if eret < 0 else '#888')
                             e_arrow = '▲' if eret > 0 else ('▼' if eret < 0 else '–')
 
-                            ecol1, ecol2 = st.columns([2.5, 1.2])
+                            ecol1, ecol2 = st.columns([2.5, 1.2], vertical_alignment="center")
                             with ecol1:
                                 st.markdown(
                                     f'<div style="background:linear-gradient(145deg,#1a1f2e,#13182a); '
                                     f'border:1px solid rgba(255,255,255,0.08); '
                                     f'border-left:4px solid {e_color}; '
-                                    f'border-radius:10px; padding:7px 16px; margin-bottom:8px;'
+                                    f'border-radius:10px; padding:8px 16px; '
                                     f'display:flex; justify-content:space-between; align-items:center;">'
                                     f'<span style="font-size:1.25rem; font-weight:900; color:#00d4ff; letter-spacing:1px;">{etf["ticker"]}</span>'
                                     f'<span style="font-size:1.2rem; font-weight:900; color:{e_color};">{e_arrow}&nbsp;{abs(eret):.2f}%</span>'
@@ -1402,9 +1402,10 @@ def main():
                                     unsafe_allow_html=True
                                 )
                             with ecol2:
-                                st.markdown('<div style="height:3px;"></div>', unsafe_allow_html=True)
                                 if st.button(f"📋 상세 분석", key=f"active_theme_etf_{etf['ticker']}", use_container_width=True):
                                     show_etf_details_dialog(etf['ticker'], theme_id, active_theme)
+                            
+                            st.markdown('<div style="margin-bottom:6px;"></div>', unsafe_allow_html=True)
                     else:
                         st.info("등록된 관련 ETF가 없습니다.")
 
