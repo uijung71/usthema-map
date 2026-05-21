@@ -763,7 +763,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "KO": {
         "symbol": "KO",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "KOMP": {
         "symbol": "KOMP",
@@ -1063,7 +1063,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "PG": {
         "symbol": "PG",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "PH": {
         "symbol": "PH",

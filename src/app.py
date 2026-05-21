@@ -1360,7 +1360,7 @@ def main():
                         st.markdown('<div style="margin-bottom:4px;"></div>', unsafe_allow_html=True)
 
                         # 2열 카드 그리드
-                        cards_html = '<div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:20px;">'
+                        cards_html = '<div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:20px;">'
                         for _, row in stocks_sorted.iterrows():
                             ret   = row[return_col]
                             close = row.get('close', None)
