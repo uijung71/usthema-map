@@ -490,15 +490,15 @@ def inject_css():
         font-weight: 900 !important;
     }
     /* ── Responsive Layout Overrides ── */
-    @media (max-width: 1024px) {
-        /* 강제 상하단 배치 (2단 레이아웃 풀기) */
-        div[data-testid="stHorizontalBlock"] {
-            flex-direction: column !important;
-            gap: 1.5rem !important;
+    @media (max-width: 768px) {
+        /* ETF 보드: 모바일에서 1열로 */
+        .etf-board {
+            grid-template-columns: 1fr !important;
         }
-        div[data-testid="column"] {
-            width: 100% !important;
-            min-width: 100% !important;
+        /* 네비게이션 링크 버튼 크기 축소 */
+        div[data-testid="stLinkButton"] a {
+            padding: 7px 12px !important;
+            font-size: 0.82rem !important;
         }
     }
     </style>""", unsafe_allow_html=True)
