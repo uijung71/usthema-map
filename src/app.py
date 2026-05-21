@@ -1341,9 +1341,26 @@ def main():
                             f'</div>',
                             unsafe_allow_html=True
                         )
+                        
+                        def sync_period_from_pills():
+                            pill_key = f"theme_pill_{active_theme}_{st.session_state.period}"
+                            new_val = st.session_state.get(pill_key)
+                            if new_val:
+                                st.session_state.period = new_val
+
+                        # 기간 인터랙티브 연동 (Pills)
+                        st.pills(
+                            "기간 연동", 
+                            options=list(ALL_PERIODS.keys()), 
+                            default=st.session_state.period, 
+                            key=f"theme_pill_{active_theme}_{st.session_state.period}", 
+                            label_visibility="collapsed",
+                            on_change=sync_period_from_pills
+                        )
+                        st.markdown('<div style="margin-bottom:4px;"></div>', unsafe_allow_html=True)
 
                         # 2열 카드 그리드
-                        cards_html = '<div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:20px;">'
+                        cards_html = '<div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:20px;">'
                         for _, row in stocks_sorted.iterrows():
                             ret   = row[return_col]
                             close = row.get('close', None)
@@ -1374,23 +1391,6 @@ def main():
                             )
                         cards_html += '</div>'
                         st.markdown(cards_html, unsafe_allow_html=True)
-                        
-                        def sync_period_from_pills():
-                            pill_key = f"theme_pill_{active_theme}_{st.session_state.period}"
-                            new_val = st.session_state.get(pill_key)
-                            if new_val:
-                                st.session_state.period = new_val
-
-                        # 기간 인터랙티브 연동 (Pills)
-                        st.pills(
-                            "기간 연동", 
-                            options=list(ALL_PERIODS.keys()), 
-                            default=st.session_state.period, 
-                            key=f"theme_pill_{active_theme}_{st.session_state.period}", 
-                            label_visibility="collapsed",
-                            on_change=sync_period_from_pills
-                        )
-                        st.markdown('<div style="margin-bottom:12px;"></div>', unsafe_allow_html=True)
                     else:
                         st.info("구성 종목 정보가 없습니다.")
 
