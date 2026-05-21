@@ -1055,17 +1055,11 @@ def show_etf_details_dialog(ticker, theme_id, theme_name):
         
     # Check if API returned data
     is_fallback = False
-    if not details:
+    if not details or not details.get('holdings'):
         is_fallback = True
-        details = {
-            'ticker': ticker,
-            'full_name': f"{ticker} (실시간 데이터 제한됨)",
-            'expense_ratio': 0,
-            'aum': 0,
-            'description': f"현재 EODHD API 권한 문제로 인해 실시간 ETF 정보를 가져올 수 없습니다. 대신 **'{theme_name}'** 테마의 핵심 구성 종목들을 지수 구성 요소로 표시합니다.",
-            'holdings': []
-        }
+        
         # Get theme stocks as fallback holdings
+        from src.theme_engine import get_stock_level_data
         stocks_df = get_stock_level_data()
         theme_stocks = stocks_df[stocks_df['theme_id'] == theme_id].sort_values('mcap', ascending=False)
         for _, s in theme_stocks.head(10).iterrows():
