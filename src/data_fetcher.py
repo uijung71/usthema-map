@@ -261,8 +261,8 @@ def get_etf_fundamentals(ticker: str) -> dict:
         except Exception:
             pass
 
-    # 4. Save to Cache if success
-    if data:
+    # 4. Save to Cache if success and data is valid
+    if data and 'ETF_Data' in data:
         try:
             import json
             with open(cache_file, 'w', encoding='utf-8') as f:
