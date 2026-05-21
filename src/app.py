@@ -33,7 +33,7 @@ def inject_css():
     html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
     [data-testid="stAppViewBlockContainer"] { max-width: 1200px; margin: auto; }
     .section-header {
-        font-size: 1.8rem; font-weight: 900; margin: 30px 0 15px 0;
+        font-size: clamp(1.4rem, 5vw, 1.8rem); font-weight: 900; margin: 30px 0 15px 0;
         background: linear-gradient(90deg, #00d4ff, #9b59b6);
         -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     }
@@ -640,13 +640,13 @@ def render_theme_heatmap(return_col='avg_return', selected_cat='전체'):
         with col_a:
             if is_zoomed:
                 st.markdown(f"""
-                    <div style="font-size: 2.2rem; font-weight: 950; color: #FFD700; padding: 10px 0; letter-spacing: -1.5px; text-shadow: 0 0 15px rgba(255, 215, 0, 0.4); margin-bottom: 10px; line-height: 1.2;">
+                    <div style="font-size: clamp(1.4rem, 6vw, 2.2rem); font-weight: 950; color: #FFD700; padding: 10px 0; letter-spacing: -1.5px; text-shadow: 0 0 15px rgba(255, 215, 0, 0.4); margin-bottom: 10px; line-height: 1.2;">
                         🔍 {st.session_state.active_theme} 테마 선택됨
                     </div>
                 """, unsafe_allow_html=True)
             else:
                 st.markdown(f"""
-                    <div style="font-size: 2.2rem; font-weight: 950; color: #FFD700; padding: 10px 0; letter-spacing: -1.5px; text-shadow: 0 0 15px rgba(255, 215, 0, 0.4); margin-bottom: 10px; line-height: 1.2;">
+                    <div style="font-size: clamp(1.4rem, 6vw, 2.2rem); font-weight: 950; color: #FFD700; padding: 10px 0; letter-spacing: -1.5px; text-shadow: 0 0 15px rgba(255, 215, 0, 0.4); margin-bottom: 10px; line-height: 1.2;">
                         🔍 {selected_cat} 대분류 선택됨
                     </div>
                 """, unsafe_allow_html=True)
@@ -1240,10 +1240,10 @@ def main():
                 st.markdown(f"""
                     <div style="margin: 40px 0 20px 0; padding: 15px 20px; background: linear-gradient(90deg, rgba(255, 215, 0, 0.15), transparent); border-left: 6px solid #FFD700; border-radius: 8px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px;">
                         <div style="display: flex; align-items: center;">
-                            <span style="font-size: 2.2rem; margin-right: 15px;">🎯</span>
-                            <span style="font-size: 2.0rem; font-weight: 950; color: #fff; letter-spacing: -1.5px; line-height: 1.2; word-break: keep-all;">{active_theme} 테마 상세 분석</span>
+                            <span style="font-size: clamp(1.4rem, 6vw, 2.2rem); margin-right: 15px;">🎯</span>
+                            <span style="font-size: clamp(1.3rem, 5.5vw, 2.0rem); font-weight: 950; color: #fff; letter-spacing: -1.5px; line-height: 1.2; word-break: keep-all;">{active_theme} 테마 상세 분석</span>
                         </div>
-                        <span style="font-size: 1.8rem; font-weight: 900; color: {'#ff4b4b' if theme_avg_ret >= 0 else '#4ba3ff'}; white-space: nowrap;">{fmt_return(theme_avg_ret)}</span>
+                        <span style="font-size: clamp(1.3rem, 5vw, 1.8rem); font-weight: 900; color: {'#ff4b4b' if theme_avg_ret >= 0 else '#4ba3ff'}; white-space: nowrap;">{fmt_return(theme_avg_ret)}</span>
                     </div>
                 """, unsafe_allow_html=True)
 
