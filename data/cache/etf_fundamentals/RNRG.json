@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Renewable Energy Producers ETF",
+    "Description": "The fund invests at least 80% of its total assets in the securities of the underlying index and in ADRs and GDRs based on the securities in the underlying index. The underlying index is designed to provide exposure to publicly traded companies that produce energy from renewable sources including wind, solar, hydroelectric, geothermal, and biofuels (including publicly traded companies that are formed to own operating assets that produce defined cash flows. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.65,
+    "Asset_Under_Management": 31202696,
+    "Holdings": [
+      {
+        "Code": "ORSTED.CO",
+        "Name": "Orsted AS",
+        "Assets_%": 6.96344
+      },
+      {
+        "Code": "ENLT.TA",
+        "Name": "Enlight Renewable Energy Ltd",
+        "Assets_%": 6.8619
+      },
+      {
+        "Code": "AXIA3.SA",
+        "Name": "Axia Energia",
+        "Assets_%": 6.6566399999999994
+      },
+      {
+        "Code": "EDPR.LS",
+        "Name": "EDP Renovaveis SA",
+        "Assets_%": 6.05612
+      },
+      {
+        "Code": "VER.VI",
+        "Name": "Verbund AG Class A",
+        "Assets_%": 5.84058
+      },
+      {
+        "Code": "MEL.NZ",
+        "Name": "Meridian Energy Ltd",
+        "Assets_%": 5.51617
+      },
+      {
+        "Code": "BEP-UN.TO",
+        "Name": "Brookfield Renewable Partners LP",
+        "Assets_%": 4.87279
+      },
+      {
+        "Code": "EGIE3.SA",
+        "Name": "ENGIE Brasil Energia SA",
+        "Assets_%": 4.6889199999999995
+      },
+      {
+        "Code": "MCY.NZ",
+        "Name": "Mercury NZ Ltd",
+        "Assets_%": 4.1034497000000005
+      },
+      {
+        "Code": "CEN.NZ",
+        "Name": "Contact Energy Ltd",
+        "Assets_%": 4.0820397
+      }
+    ]
+  }
+}

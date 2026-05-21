@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Range Nuclear Renaissance ETF",
+    "Description": "The fund normally invests in securities comprising the index. The index is designed to track the performance of companies that are involved in the nuclear fuel and energy industry, particularly in the areas of (i) advanced reactors; (ii) utilities; (iii) construction and services; and/or (iv) fuel. Under normal circumstances, the fund invests at least 80% of its net assets in securities of nuclear companies. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.85,
+    "Asset_Under_Management": 861014080,
+    "Holdings": [
+      {
+        "Code": "CCO.TO",
+        "Name": "Cameco Corp",
+        "Assets_%": 9.84581
+      },
+      {
+        "Code": "GEV",
+        "Name": "GE Vernova Inc",
+        "Assets_%": 3.70165
+      },
+      {
+        "Code": "TLN",
+        "Name": "Talen Energy Corp Ordinary Shares New",
+        "Assets_%": 3.1200299
+      },
+      {
+        "Code": "ELE.MC",
+        "Name": "Endesa SA",
+        "Assets_%": 3.0417099999999997
+      },
+      {
+        "Code": "CEG",
+        "Name": "Constellation Energy Corp",
+        "Assets_%": 2.82129
+      },
+      {
+        "Code": "CEZ.PR",
+        "Name": "CEZ AS",
+        "Assets_%": 2.82003
+      },
+      {
+        "Code": "FORTUM.HE",
+        "Name": "Fortum Oyj",
+        "Assets_%": 2.8025301
+      },
+      {
+        "Code": "D",
+        "Name": "Dominion Energy Inc",
+        "Assets_%": 2.7897501
+      },
+      {
+        "Code": "VST",
+        "Name": "Vistra Corp",
+        "Assets_%": 2.6884200000000003
+      },
+      {
+        "Code": "DUK",
+        "Name": "Duke Energy Corp",
+        "Assets_%": 2.6711099
+      }
+    ]
+  }
+}

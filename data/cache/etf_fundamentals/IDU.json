@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "U.S. Utilities ETF",
+    "Description": "The fund generally will invest at least 80% of its assets in the component securities of its underlying index. The underlying index measures the performance of the utilities sector of the U.S. equity market. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.38,
+    "Asset_Under_Management": 1620289536,
+    "Holdings": [
+      {
+        "Code": "NEE",
+        "Name": "NextEra Energy Inc",
+        "Assets_%": 12.22115
+      },
+      {
+        "Code": "SO",
+        "Name": "Southern Co",
+        "Assets_%": 6.3770999999999995
+      },
+      {
+        "Code": "DUK",
+        "Name": "Duke Energy Corp",
+        "Assets_%": 6.0319400000000005
+      },
+      {
+        "Code": "CEG",
+        "Name": "Constellation Energy Corp",
+        "Assets_%": 5.84413
+      },
+      {
+        "Code": "WM",
+        "Name": "Waste Management Inc",
+        "Assets_%": 5.14893
+      },
+      {
+        "Code": "AEP",
+        "Name": "American Electric Power Co Inc",
+        "Assets_%": 4.39015
+      },
+      {
+        "Code": "SRE",
+        "Name": "Sempra",
+        "Assets_%": 3.7160699999999998
+      },
+      {
+        "Code": "D",
+        "Name": "Dominion Energy Inc",
+        "Assets_%": 3.29466
+      },
+      {
+        "Code": "VST",
+        "Name": "Vistra Corp",
+        "Assets_%": 3.1960599999999997
+      },
+      {
+        "Code": "ETR",
+        "Name": "Entergy Corp",
+        "Assets_%": 3.13402
+      }
+    ]
+  }
+}

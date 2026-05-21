@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Vanguard Consumer Discretionary Index Fund ETF Shares",
+    "Description": "The fund employs an indexing investment approach designed to track the performance of the index, an index made up of stocks of large, mid-size, and small U.S. companies within the consumer discretionary sector, as classified under the GICS. The Advisor attempts to replicate the target index by seeking to invest all of its assets in the stocks that make up the index, in order to hold each stock in approximately the same proportion as its weighting in the index. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.09,
+    "Asset_Under_Management": 7110979584,
+    "Holdings": [
+      {
+        "Code": "AMZN",
+        "Name": "Amazon.com Inc",
+        "Assets_%": 24.323429
+      },
+      {
+        "Code": "TSLA",
+        "Name": "Tesla Inc",
+        "Assets_%": 15.790019999999998
+      },
+      {
+        "Code": "HD",
+        "Name": "The Home Depot Inc",
+        "Assets_%": 4.8241302
+      },
+      {
+        "Code": "MCD",
+        "Name": "McDonald's Corp",
+        "Assets_%": 3.10176
+      },
+      {
+        "Code": "TJX",
+        "Name": "TJX Companies Inc",
+        "Assets_%": 2.5926299999999998
+      },
+      {
+        "Code": "BKNG",
+        "Name": "Booking Holdings Inc",
+        "Assets_%": 2.0295
+      },
+      {
+        "Code": "LOW",
+        "Name": "Lowe's Companies Inc",
+        "Assets_%": 2.00333
+      },
+      {
+        "Code": "SBUX",
+        "Name": "Starbucks Corp",
+        "Assets_%": 1.8028
+      },
+      {
+        "Code": "ORLY",
+        "Name": "O'Reilly Automotive Inc",
+        "Assets_%": 1.2801099999999999
+      },
+      {
+        "Code": "MAR",
+        "Name": "Marriott International Inc Class A",
+        "Assets_%": 1.25516
+      }
+    ]
+  }
+}

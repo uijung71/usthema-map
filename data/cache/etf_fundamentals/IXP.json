@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Global Comm Services ETF",
+    "Description": "The fund invests at least 80% of its assets in the component securities of its underlying index and in investments that have economic characteristics that are substantially identical to the component securities of its underlying index. The index is designed to measure the performance of global equities in the communication services sector. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.4,
+    "Asset_Under_Management": 598768256,
+    "Holdings": [
+      {
+        "Code": "META",
+        "Name": "Meta Platforms Inc Class A",
+        "Assets_%": 14.82497
+      },
+      {
+        "Code": "GOOGL",
+        "Name": "Alphabet Inc Class A",
+        "Assets_%": 13.150809999999998
+      },
+      {
+        "Code": "GOOG",
+        "Name": "Alphabet Inc Class C",
+        "Assets_%": 10.4852505
+      },
+      {
+        "Code": "DIS",
+        "Name": "The Walt Disney Co",
+        "Assets_%": 4.53374
+      },
+      {
+        "Code": "NFLX",
+        "Name": "Netflix Inc",
+        "Assets_%": 4.378010000000001
+      },
+      {
+        "Code": "T",
+        "Name": "AT&T Inc",
+        "Assets_%": 4.24156
+      },
+      {
+        "Code": "VZ",
+        "Name": "Verizon Communications Inc",
+        "Assets_%": 4.1782297
+      },
+      {
+        "Code": "0700.HK",
+        "Name": "Tencent Holdings Ltd",
+        "Assets_%": 4.04004
+      },
+      {
+        "Code": "9984.T",
+        "Name": "SoftBank Group Corp",
+        "Assets_%": 3.40572
+      },
+      {
+        "Code": "DTE.DE",
+        "Name": "Deutsche Telekom AG",
+        "Assets_%": 2.9229099
+      }
+    ]
+  }
+}

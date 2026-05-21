@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Water Resources ETF",
+    "Description": "The fund generally will invest at least 90% of its total assets in securities that comprise the underlying index. The underlying index seeks to track the performance of companies that create products designed to conserve and purify water for homes, businesses and industries. The underlying index is designed to track the performance of U.S. exchange-listed companies that create products that conserve and purify water for homes, businesses, and industries. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.59,
+    "Asset_Under_Management": 2085784448,
+    "Holdings": [
+      {
+        "Code": "FERG",
+        "Name": "Ferguson Enterprises Inc",
+        "Assets_%": 8.67091
+      },
+      {
+        "Code": "ROP",
+        "Name": "Roper Technologies Inc",
+        "Assets_%": 8.5682094
+      },
+      {
+        "Code": "WAT",
+        "Name": "Waters Corp",
+        "Assets_%": 8.177339
+      },
+      {
+        "Code": "ECL",
+        "Name": "Ecolab Inc",
+        "Assets_%": 7.137490000000001
+      },
+      {
+        "Code": "AWK",
+        "Name": "American Water Works Co Inc",
+        "Assets_%": 6.94742
+      },
+      {
+        "Code": "IEX",
+        "Name": "IDEX Corp",
+        "Assets_%": 4.39197
+      },
+      {
+        "Code": "MLI",
+        "Name": "Mueller Industries Inc",
+        "Assets_%": 4.36552
+      },
+      {
+        "Code": "CNM",
+        "Name": "Core & Main Inc Class A",
+        "Assets_%": 3.9272799999999997
+      },
+      {
+        "Code": "XYL",
+        "Name": "Xylem Inc",
+        "Assets_%": 3.8511902
+      },
+      {
+        "Code": "VLTO",
+        "Name": "Veralto Corp",
+        "Assets_%": 3.8227501999999998
+      }
+    ]
+  }
+}

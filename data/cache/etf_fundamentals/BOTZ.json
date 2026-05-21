@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Robotics & Artificial Intelligence ETF",
+    "Description": "The fund invests at least 80% of its total assets in the securities of the underlying index. The underlying index is designed to provide exposure to exchange-listed companies in developed markets that are involved in the development of robotics and/or artificial intelligence as defined by Indxx, the provider of the underlying index. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.68,
+    "Asset_Under_Management": 3444418048,
+    "Holdings": [
+      {
+        "Code": "ABBN.SW",
+        "Name": "ABB Ltd",
+        "Assets_%": 8.884361
+      },
+      {
+        "Code": "6861.T",
+        "Name": "Keyence Corp",
+        "Assets_%": 8.82181
+      },
+      {
+        "Code": "6954.T",
+        "Name": "Fanuc Corp",
+        "Assets_%": 8.3409205
+      },
+      {
+        "Code": "NVDA",
+        "Name": "NVIDIA Corp",
+        "Assets_%": 8.2107805
+      },
+      {
+        "Code": "ISRG",
+        "Name": "Intuitive Surgical Inc",
+        "Assets_%": 6.9495104
+      },
+      {
+        "Code": "6273.T",
+        "Name": "SMC Corp",
+        "Assets_%": 4.71008
+      },
+      {
+        "Code": "300124.SZ",
+        "Name": "Shenzhen Inovance Technology Co Ltd Class A",
+        "Assets_%": 4.1640299999999995
+      },
+      {
+        "Code": "6383.T",
+        "Name": "Daifuku Co Ltd",
+        "Assets_%": 3.47545
+      },
+      {
+        "Code": "9660.HK",
+        "Name": "Horizon Robotics Class B",
+        "Assets_%": 2.45091
+      },
+      {
+        "Code": "GOOGL",
+        "Name": "Alphabet Inc Class A",
+        "Assets_%": 2.4117501
+      }
+    ]
+  }
+}

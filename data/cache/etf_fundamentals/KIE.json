@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "State Street S&P Insurance ETF",
+    "Description": "In seeking to track the performance of the S&P Insurance Select Industry Index (the \"index\"), the fund employs a sampling strategy. It generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index represents the insurance segment of the S&P Total Market Index (\"S&P TMI\").",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.35,
+    "Asset_Under_Management": 452629920,
+    "Holdings": [
+      {
+        "Code": "OSCR",
+        "Name": "Oscar Health Inc Class A",
+        "Assets_%": 2.4499
+      },
+      {
+        "Code": "KMPR",
+        "Name": "Kemper Corp",
+        "Assets_%": 2.0605499
+      },
+      {
+        "Code": "MET",
+        "Name": "MetLife Inc",
+        "Assets_%": 2.03918
+      },
+      {
+        "Code": "PFG",
+        "Name": "Principal Financial Group Inc",
+        "Assets_%": 2.0376898
+      },
+      {
+        "Code": "LNC",
+        "Name": "Lincoln National Corp",
+        "Assets_%": 2.0301199
+      },
+      {
+        "Code": "SPNT",
+        "Name": "SiriusPoint Ltd",
+        "Assets_%": 2.0270799999999998
+      },
+      {
+        "Code": "PRI",
+        "Name": "Primerica Inc",
+        "Assets_%": 1.99546
+      },
+      {
+        "Code": "CNO",
+        "Name": "CNO Financial Group Inc",
+        "Assets_%": 1.9826401
+      },
+      {
+        "Code": "STC",
+        "Name": "Stewart Information Services Corp",
+        "Assets_%": 1.9799400000000003
+      },
+      {
+        "Code": "EG",
+        "Name": "Everest Group Ltd",
+        "Assets_%": 1.9765000000000001
+      }
+    ]
+  }
+}

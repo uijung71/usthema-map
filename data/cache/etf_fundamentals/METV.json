@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Roundhill Ball Metaverse ETF",
+    "Description": "The index seeks to track the performance of equity securities of foreign and domestic issuers that engage in activities or provide products, services, technologies, or technological capabilities to enable the Metaverse, and benefit from its generated revenues. \"Metaverse\" is a term used to refer to a future iteration of the Internet. Under normal circumstances, at least 80% of the fund's net assets will be invested in Metaverse Companies, which may include investments in ADRs. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.59,
+    "Asset_Under_Management": 231990416,
+    "Holdings": [
+      {
+        "Code": "RBLX",
+        "Name": "Roblox Corp Ordinary Shares - Class A",
+        "Assets_%": 6.8921596
+      },
+      {
+        "Code": "AAPL",
+        "Name": "Apple Inc",
+        "Assets_%": 6.76263
+      },
+      {
+        "Code": "ETHQ/U.TO",
+        "Name": "3iQ Ether Staking ETF",
+        "Assets_%": 6.1884098
+      },
+      {
+        "Code": "SOLQ.TO",
+        "Name": "3iQ Solana Staking ETF",
+        "Assets_%": 5.59845
+      },
+      {
+        "Code": "GOOGL",
+        "Name": "Alphabet Inc Class A",
+        "Assets_%": 4.9039103
+      },
+      {
+        "Code": "NVDA",
+        "Name": "NVIDIA Corp",
+        "Assets_%": 4.5426402
+      },
+      {
+        "Code": "U",
+        "Name": "Unity Software Inc Ordinary Shares",
+        "Assets_%": 4.31668
+      },
+      {
+        "Code": "QCOM",
+        "Name": "Qualcomm Inc",
+        "Assets_%": 3.70167
+      },
+      {
+        "Code": "MSFT",
+        "Name": "Microsoft Corp",
+        "Assets_%": 3.6061898
+      },
+      {
+        "Code": "META",
+        "Name": "Meta Platforms Inc Class A",
+        "Assets_%": 3.5025402999999997
+      }
+    ]
+  }
+}

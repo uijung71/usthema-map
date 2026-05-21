@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Innovator Deepwater Frontier Tech ETF",
+    "Description": "The fund normally invests at least 80% of its net assets (including borrowings for investment purposes) in the equity securities of companies the fund's manager considers to be on the frontier of the development of new technologies (“Frontier Tech Companies”).",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.7,
+    "Asset_Under_Management": 176542032,
+    "Holdings": [
+      {
+        "Code": "CRDO",
+        "Name": "Credo Technology Group Holding Ltd",
+        "Assets_%": 7.1496904
+      },
+      {
+        "Code": "STRL",
+        "Name": "Sterling Infrastructure Inc",
+        "Assets_%": 5.515090000000001
+      },
+      {
+        "Code": "BESI.AS",
+        "Name": "BE Semiconductor Industries NV",
+        "Assets_%": 5.44216
+      },
+      {
+        "Code": "RDDT",
+        "Name": "Reddit Inc Class A Shares",
+        "Assets_%": 4.5979097
+      },
+      {
+        "Code": "NU",
+        "Name": "Nu Holdings Ltd Ordinary Shares Class A",
+        "Assets_%": 4.51889
+      },
+      {
+        "Code": "MRVL",
+        "Name": "Marvell Technology Inc",
+        "Assets_%": 3.92061
+      },
+      {
+        "Code": "VRT",
+        "Name": "Vertiv Holdings Co Class A",
+        "Assets_%": 3.1756699999999998
+      },
+      {
+        "Code": "APP",
+        "Name": "AppLovin Corp Ordinary Shares - Class A",
+        "Assets_%": 3.0998599000000002
+      },
+      {
+        "Code": "RMBS",
+        "Name": "Rambus Inc",
+        "Assets_%": 3.0834897999999997
+      },
+      {
+        "Code": "DDOG",
+        "Name": "Datadog Inc Class A",
+        "Assets_%": 3.0829001000000003
+      }
+    ]
+  }
+}

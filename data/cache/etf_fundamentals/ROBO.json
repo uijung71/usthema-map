@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Robo Global Robotics and Automation Index ETF",
+    "Description": "The fund will normally invest at least 80% of its total assets in securities of the index or in depositary receipts representing securities of the index. The index is designed to measure the performance of robotics-related and/or automation-related companies. The fund may invest up to 20% of its assets in investments that are not included in the index, but which the Adviser and Sub-Adviser believe will help it track the index. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.95,
+    "Asset_Under_Management": 1771024000,
+    "Holdings": [
+      {
+        "Code": "CELT",
+        "Name": "Celtic Investment Inc",
+        "Assets_%": 2.22024
+      },
+      {
+        "Code": "1590.TW",
+        "Name": "Airtac International Group",
+        "Assets_%": 1.93498
+      },
+      {
+        "Code": "098460.KQ",
+        "Name": "Koh Young Technology Inc",
+        "Assets_%": 1.8487099999999999
+      },
+      {
+        "Code": "TER",
+        "Name": "Teradyne Inc",
+        "Assets_%": 1.84087
+      },
+      {
+        "Code": "IFX.DE",
+        "Name": "Infineon Technologies AG",
+        "Assets_%": 1.8400900000000002
+      },
+      {
+        "Code": "2049.TW",
+        "Name": "Hiwin Technologies Corp",
+        "Assets_%": 1.82423
+      },
+      {
+        "Code": "6324.T",
+        "Name": "Harmonic Drive Systems Inc",
+        "Assets_%": 1.7900800000000001
+      },
+      {
+        "Code": "6954.T",
+        "Name": "Fanuc Corp",
+        "Assets_%": 1.7751
+      },
+      {
+        "Code": "AMBA",
+        "Name": "Ambarella Inc",
+        "Assets_%": 1.7736800000000001
+      },
+      {
+        "Code": "2308.TW",
+        "Name": "Delta Electronics Inc",
+        "Assets_%": 1.76434
+      }
+    ]
+  }
+}

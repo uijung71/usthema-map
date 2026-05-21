@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Lithium & Battery Tech ETF",
+    "Description": "The fund invests at least 80% of its total assets in the securities of the underlying index and in American Depositary Receipts (\"ADRs\") and Global Depositary Receipts (\"GDRs\") based on the securities in the underlying index. The underlying index is designed to measure broad-based equity market performance of global companies involved in the lithium industry. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.75,
+    "Asset_Under_Management": 2134236672,
+    "Holdings": [
+      {
+        "Code": "RIO",
+        "Name": "Rio Tinto PLC ADR",
+        "Assets_%": 20.214299999999998
+      },
+      {
+        "Code": "006400.KS",
+        "Name": "Samsung SDI Co Ltd",
+        "Assets_%": 7.1469896
+      },
+      {
+        "Code": "ALB",
+        "Name": "Albemarle Corp",
+        "Assets_%": 7.12135
+      },
+      {
+        "Code": "6752.T",
+        "Name": "Panasonic Holdings Corp",
+        "Assets_%": 4.67801
+      },
+      {
+        "Code": "002460.SZ",
+        "Name": "Ganfeng Lithium Group Co Ltd Class A",
+        "Assets_%": 4.1641302
+      },
+      {
+        "Code": "PLS.AX",
+        "Name": "PLS Group Ltd",
+        "Assets_%": 4.15233
+      },
+      {
+        "Code": "SQM",
+        "Name": "Sociedad Quimica Y Minera De Chile SA ADR",
+        "Assets_%": 4.06201
+      },
+      {
+        "Code": "002371.SZ",
+        "Name": "NAURA Technology Group Co Ltd Class A",
+        "Assets_%": 3.8407299999999998
+      },
+      {
+        "Code": "002466.SZ",
+        "Name": "Tianqi Lithium Corp Class A",
+        "Assets_%": 3.5105299999999997
+      },
+      {
+        "Code": "300750.SZ",
+        "Name": "Contemporary Amperex Technology Co Ltd Class A",
+        "Assets_%": 3.4904100000000002
+      }
+    ]
+  }
+}

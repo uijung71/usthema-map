@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "U.S. Infrastructure Development ETF",
+    "Description": "The fund invests at least 80% of its total assets in the securities of the underlying index. The underlying index is designed to measure the performance of U.S. listed companies that provide exposure to domestic infrastructure development, including companies involved in construction and engineering; production of infrastructure raw materials, composites and products; industrial transportation; and producers/distributors of heavy construction equipment.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.47,
+    "Asset_Under_Management": 13361818624,
+    "Holdings": [
+      {
+        "Code": "PWR",
+        "Name": "Quanta Services Inc",
+        "Assets_%": 4.23145
+      },
+      {
+        "Code": "ETN",
+        "Name": "Eaton Corp PLC",
+        "Assets_%": 3.53249
+      },
+      {
+        "Code": "CSX",
+        "Name": "CSX Corp",
+        "Assets_%": 3.4572400000000005
+      },
+      {
+        "Code": "TT",
+        "Name": "Trane Technologies PLC Class A",
+        "Assets_%": 3.4392699999999996
+      },
+      {
+        "Code": "UNP",
+        "Name": "Union Pacific Corp",
+        "Assets_%": 3.1710602
+      },
+      {
+        "Code": "DE",
+        "Name": "Deere & Co",
+        "Assets_%": 3.0776000000000003
+      },
+      {
+        "Code": "HWM",
+        "Name": "Howmet Aerospace Inc",
+        "Assets_%": 3.0428
+      },
+      {
+        "Code": "SRE",
+        "Name": "Sempra",
+        "Assets_%": 3.02075
+      },
+      {
+        "Code": "NSC",
+        "Name": "Norfolk Southern Corp",
+        "Assets_%": 2.97684
+      },
+      {
+        "Code": "NUE",
+        "Name": "Nucor Corp",
+        "Assets_%": 2.76227
+      }
+    ]
+  }
+}

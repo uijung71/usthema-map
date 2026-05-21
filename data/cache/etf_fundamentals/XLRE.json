@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "State Street Real Estate Select Sector ETF",
+    "Description": "Under normal market conditions, the fund generally invests substantially all, but at least 95%, of its total assets in the securities comprising the index. The index includes companies that have been identified as Real Estate companies by the Global Industry Classification Standard (GICS®). The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.08,
+    "Asset_Under_Management": 7712990720,
+    "Holdings": [
+      {
+        "Code": "WELL",
+        "Name": "Welltower Inc",
+        "Assets_%": 10.3208505
+      },
+      {
+        "Code": "PLD",
+        "Name": "Prologis Inc",
+        "Assets_%": 8.98456
+      },
+      {
+        "Code": "EQIX",
+        "Name": "Equinix Inc",
+        "Assets_%": 7.240779999999999
+      },
+      {
+        "Code": "AMT",
+        "Name": "American Tower Corp",
+        "Assets_%": 5.8212399999999995
+      },
+      {
+        "Code": "DLR",
+        "Name": "Digital Realty Trust Inc",
+        "Assets_%": 4.76269
+      },
+      {
+        "Code": "SPG",
+        "Name": "Simon Property Group Inc",
+        "Assets_%": 4.59993
+      },
+      {
+        "Code": "VTR",
+        "Name": "Ventas Inc",
+        "Assets_%": 4.3597497
+      },
+      {
+        "Code": "CBRE",
+        "Name": "CBRE Group Inc Class A",
+        "Assets_%": 4.3326101999999995
+      },
+      {
+        "Code": "PSA",
+        "Name": "Public Storage",
+        "Assets_%": 4.31658
+      },
+      {
+        "Code": "O",
+        "Name": "Realty Income Corp",
+        "Assets_%": 4.24928
+      }
+    ]
+  }
+}

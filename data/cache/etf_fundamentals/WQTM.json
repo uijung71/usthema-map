@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "WisdomTree Quantum Computing Fund",
+    "Description": "The fund manager employs a “passive management” – or indexing – investment approach designed to track the performance of the index. Under normal circumstances, the fund invests at least 80% of its net assets, plus any borrowings for investment purposes, in constituents of the index and/or investments that have economic characteristics that are substantially similar to the economic characteristics of such constituents. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.45,
+    "Asset_Under_Management": 47348120,
+    "Holdings": [
+      {
+        "Code": "IONQ",
+        "Name": "IonQ Inc Class A",
+        "Assets_%": 6.91361
+      },
+      {
+        "Code": "RGTI",
+        "Name": "Rigetti Computing Inc",
+        "Assets_%": 5.5687297
+      },
+      {
+        "Code": "INTC",
+        "Name": "Intel Corp",
+        "Assets_%": 5.26053
+      },
+      {
+        "Code": "QBTS",
+        "Name": "D-Wave Quantum Inc",
+        "Assets_%": 5.1609997
+      },
+      {
+        "Code": "QUBT",
+        "Name": "Quantum Computing Inc",
+        "Assets_%": 3.7655800000000004
+      },
+      {
+        "Code": "NOKIA.HE",
+        "Name": "Nokia Oyj",
+        "Assets_%": 3.56866
+      },
+      {
+        "Code": "AMZN",
+        "Name": "Amazon.com Inc",
+        "Assets_%": 3.45648
+      },
+      {
+        "Code": "AMD",
+        "Name": "Advanced Micro Devices Inc",
+        "Assets_%": 3.4275100000000003
+      },
+      {
+        "Code": "GOOGL",
+        "Name": "Alphabet Inc Class A",
+        "Assets_%": 3.2222800000000005
+      },
+      {
+        "Code": "NVDA",
+        "Name": "NVIDIA Corp",
+        "Assets_%": 2.75719
+      }
+    ]
+  }
+}

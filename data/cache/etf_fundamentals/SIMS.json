@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "State Street S&P Kensho Intelligent Structures ETF",
+    "Description": "Under normal market conditions, the fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index is comprised of U.S.-listed equity securities (including depositary receipts) of companies domiciled across developed and emerging markets worldwide which are included in the Intelligent Infrastructure sector as determined by a classification standard produced by the index provider.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.45,
+    "Asset_Under_Management": 8891562,
+    "Holdings": [
+      {
+        "Code": "BE",
+        "Name": "Bloom Energy Corp Class A",
+        "Assets_%": 7.8039
+      },
+      {
+        "Code": "GNRC",
+        "Name": "Generac Holdings Inc",
+        "Assets_%": 4.340740299999999
+      },
+      {
+        "Code": "SLAB",
+        "Name": "Silicon Laboratories Inc",
+        "Assets_%": 4.16435
+      },
+      {
+        "Code": "WTTR",
+        "Name": "Select Water Solutions Inc Class A",
+        "Assets_%": 3.87624
+      },
+      {
+        "Code": "JCI",
+        "Name": "Johnson Controls International PLC Registered Shares",
+        "Assets_%": 3.51759
+      },
+      {
+        "Code": "HWKN",
+        "Name": "Hawkins Inc",
+        "Assets_%": 3.3387000000000002
+      },
+      {
+        "Code": "REZI",
+        "Name": "Resideo Technologies Inc",
+        "Assets_%": 3.26453
+      },
+      {
+        "Code": "ON",
+        "Name": "ON Semiconductor Corp",
+        "Assets_%": 3.17768
+      },
+      {
+        "Code": "MWA",
+        "Name": "Mueller Water Products Inc Class A shares",
+        "Assets_%": 3.1549099999999997
+      },
+      {
+        "Code": "ARLO",
+        "Name": "Arlo Technologies Inc",
+        "Assets_%": 2.7293101
+      }
+    ]
+  }
+}

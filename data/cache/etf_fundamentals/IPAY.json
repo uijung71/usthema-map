@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Amplify Digital Payments ETF",
+    "Description": "The index tracks the performance of common stocks (or corresponding American Depositary Receipts (“ADRs”) or Global Depositary Receipts (“GDRs”)) of Mobile Payments Companies. Under normal circumstances, the fund invests at least 80% of its net assets (plus borrowings for investment purposes) in Mobile Payments Companies. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.75,
+    "Asset_Under_Management": 174386624,
+    "Holdings": [
+      {
+        "Code": "V",
+        "Name": "Visa Inc Class A",
+        "Assets_%": 5.96727
+      },
+      {
+        "Code": "XYZ",
+        "Name": "Block Inc Class A",
+        "Assets_%": 5.7696499999999995
+      },
+      {
+        "Code": "MA",
+        "Name": "Mastercard Inc Class A",
+        "Assets_%": 5.5472497
+      },
+      {
+        "Code": "ADYEN.AS",
+        "Name": "Adyen NV",
+        "Assets_%": 5.5300597
+      },
+      {
+        "Code": "AFRM",
+        "Name": "Affirm Holdings Inc Ordinary Shares - Class A",
+        "Assets_%": 5.47915
+      },
+      {
+        "Code": "AXP",
+        "Name": "American Express Co",
+        "Assets_%": 5.41854
+      },
+      {
+        "Code": "WISE",
+        "Name": "Wise PLC Class A",
+        "Assets_%": 5.3437
+      },
+      {
+        "Code": "COF",
+        "Name": "Capital One Financial Corp",
+        "Assets_%": 5.3295
+      },
+      {
+        "Code": "PYPL",
+        "Name": "PayPal Holdings Inc",
+        "Assets_%": 5.24253
+      },
+      {
+        "Code": "COIN",
+        "Name": "Coinbase Global Inc Ordinary Shares - Class A",
+        "Assets_%": 4.772139999999999
+      }
+    ]
+  }
+}

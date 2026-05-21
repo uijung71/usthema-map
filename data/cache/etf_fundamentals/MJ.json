@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Amplify Alternative Harvest ETF",
+    "Description": "The fund will normally invest at least 80% of its net assets in the securities that comprise the index. The index seeks to provide exposure to global and U.S. companies that (i) engage in the cultivation, production, marketing or distribution of cannabis, including industrial hemp; and/or (ii) engage in the production, marketing, transportation or distribution of products containing cannabis, including industrial hemp, for medical or non-medical purposes. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.75,
+    "Asset_Under_Management": 137392080,
+    "Holdings": [
+      {
+        "Code": "CNBS",
+        "Name": "Amplify Seymour Cannabis ETF",
+        "Assets_%": 55.42923
+      },
+      {
+        "Code": "TLRY",
+        "Name": "Tilray Brands Inc",
+        "Assets_%": 11.57189
+      },
+      {
+        "Code": "CRON.TO",
+        "Name": "Cronos Group Inc",
+        "Assets_%": 7.548109999999999
+      },
+      {
+        "Code": "WEED.TO",
+        "Name": "Canopy Growth Corp",
+        "Assets_%": 6.882439999999999
+      },
+      {
+        "Code": "SNDL",
+        "Name": "SNDL Inc Ordinary Shares",
+        "Assets_%": 5.2950002000000005
+      },
+      {
+        "Code": "VFF",
+        "Name": "Village Farms International Inc",
+        "Assets_%": 4.73424
+      },
+      {
+        "Code": "ACB.TO",
+        "Name": "Aurora Cannabis Inc",
+        "Assets_%": 3.1289
+      },
+      {
+        "Code": "HITI.V",
+        "Name": "High Tide Inc",
+        "Assets_%": 3.05642
+      },
+      {
+        "Code": "OGI.TO",
+        "Name": "Organigram Global Inc",
+        "Assets_%": 2.08155
+      },
+      {
+        "Code": "AGPXX",
+        "Name": "Invesco Shrt-Trm Inv Gov&Agcy Instl",
+        "Assets_%": 0.1592
+      }
+    ]
+  }
+}

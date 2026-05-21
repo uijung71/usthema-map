@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "First Trust NASDAQ Cybersecurity ETF",
+    "Description": "The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks and depositary receipts that comprise the index. The index includes securities of companies classified as \"cyber security\" companies by CTA. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.58,
+    "Asset_Under_Management": 10193096704,
+    "Holdings": [
+      {
+        "Code": "AVGO",
+        "Name": "Broadcom Inc",
+        "Assets_%": 9.57707
+      },
+      {
+        "Code": "PANW",
+        "Name": "Palo Alto Networks Inc",
+        "Assets_%": 8.82804
+      },
+      {
+        "Code": "CRWD",
+        "Name": "CrowdStrike Holdings Inc Class A",
+        "Assets_%": 8.78539
+      },
+      {
+        "Code": "CSCO",
+        "Name": "Cisco Systems Inc",
+        "Assets_%": 8.4423
+      },
+      {
+        "Code": "FTNT",
+        "Name": "Fortinet Inc",
+        "Assets_%": 7.12059
+      },
+      {
+        "Code": "NET",
+        "Name": "Cloudflare Inc",
+        "Assets_%": 4.3635703999999995
+      },
+      {
+        "Code": "FFIV",
+        "Name": "F5 Inc",
+        "Assets_%": 3.22282
+      },
+      {
+        "Code": "ZS",
+        "Name": "Zscaler Inc",
+        "Assets_%": 3.1706900000000005
+      },
+      {
+        "Code": "AKAM",
+        "Name": "Akamai Technologies Inc",
+        "Assets_%": 3.07703
+      },
+      {
+        "Code": "ANET",
+        "Name": "Arista Networks Inc",
+        "Assets_%": 2.3711800000000003
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "General": {
+    "Name": "Uranium ETF",
+    "Description": "The fund invests at least 80% of its total assets in the securities of the underlying index and in American Depositary Receipts (\"ADRs\") and Global Depositary Receipts (\"GDRs\") based on the securities in the underlying index. The underlying index is designed to measure broad based equity market performance of global companies involved in the uranium industry. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.69,
+    "Asset_Under_Management": 7810848256,
+    "Holdings": [
+      {
+        "Code": "CCO.TO",
+        "Name": "Cameco Corp",
+        "Assets_%": 23.128429
+      },
+      {
+        "Code": "OKLO",
+        "Name": "Oklo Inc Class A Shares",
+        "Assets_%": 7.309309999999999
+      },
+      {
+        "Code": "NXE.TO",
+        "Name": "NexGen Energy Ltd",
+        "Assets_%": 6.268619999999999
+      },
+      {
+        "Code": "UEC",
+        "Name": "Uranium Energy Corp",
+        "Assets_%": 5.79073
+      },
+      {
+        "Code": "KAP",
+        "Name": "National Atomic Co Kazatomprom JSC ADR",
+        "Assets_%": 4.8079
+      },
+      {
+        "Code": "EFR.TO",
+        "Name": "Energy Fuels Inc",
+        "Assets_%": 4.24053
+      },
+      {
+        "Code": "047040.KS",
+        "Name": "Daewoo Engineering & Construction Co Ltd",
+        "Assets_%": 4.0634498
+      },
+      {
+        "Code": "PDN.AX",
+        "Name": "Paladin Energy Ltd",
+        "Assets_%": 3.08568
+      },
+      {
+        "Code": "000720.KS",
+        "Name": "Hyundai Engineering & Construction Co Ltd",
+        "Assets_%": 3.03819
+      }
+    ]
+  }
+}

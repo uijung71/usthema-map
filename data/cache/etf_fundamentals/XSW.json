@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "State Street S&P Software & Services ETF",
+    "Description": "In seeking to track the performance of the S&P Software & Services Select Industry Index (the \"index\"), the fund employs a sampling strategy. It generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index represents the software and services segment of the S&P Total Market Index (\"S&P TMI\").",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.35,
+    "Asset_Under_Management": 364839456,
+    "Holdings": [
+      {
+        "Code": "AIP",
+        "Name": "Arteris Inc",
+        "Assets_%": 1.3948999
+      },
+      {
+        "Code": "HUT",
+        "Name": "Hut 8 Corp",
+        "Assets_%": 1.1153
+      },
+      {
+        "Code": "WULF",
+        "Name": "TeraWulf Inc",
+        "Assets_%": 1.07416
+      },
+      {
+        "Code": "MARA",
+        "Name": "MARA Holdings Inc",
+        "Assets_%": 1.05506005
+      },
+      {
+        "Code": "ADEA",
+        "Name": "Adeia Inc",
+        "Assets_%": 1.028
+      },
+      {
+        "Code": "AUR",
+        "Name": "Aurora Innovation Inc Class A",
+        "Assets_%": 0.99413
+      },
+      {
+        "Code": "U",
+        "Name": "Unity Software Inc Ordinary Shares",
+        "Assets_%": 0.99188
+      },
+      {
+        "Code": "CRNC",
+        "Name": "Cerence Inc Ordinary Shares",
+        "Assets_%": 0.9766700999999999
+      },
+      {
+        "Code": "ZM",
+        "Name": "Zoom Communications Inc",
+        "Assets_%": 0.9610999
+      },
+      {
+        "Code": "CLSK",
+        "Name": "Cleanspark Inc",
+        "Assets_%": 0.9609599999999999
+      }
+    ]
+  }
+}

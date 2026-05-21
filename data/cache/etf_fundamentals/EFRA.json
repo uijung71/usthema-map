@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Environmental Infrastructure and Industrials ETF",
+    "Description": "The fund seeks to track the investment results of the index, which has been developed by FTSE International Limited (the “index provider” or “FTSE”). It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.47,
+    "Asset_Under_Management": 5699487,
+    "Holdings": [
+      {
+        "Code": "WAB",
+        "Name": "Westinghouse Air Brake Technologies Corp",
+        "Assets_%": 6.5798305
+      },
+      {
+        "Code": "VIE.PA",
+        "Name": "Veolia Environnement SA",
+        "Assets_%": 6.4752795
+      },
+      {
+        "Code": "XYL",
+        "Name": "Xylem Inc",
+        "Assets_%": 5.6970302
+      },
+      {
+        "Code": "VLTO",
+        "Name": "Veralto Corp",
+        "Assets_%": 5.6462497
+      },
+      {
+        "Code": "SW",
+        "Name": "Smurfit WestRock PLC",
+        "Assets_%": 5.3990103
+      },
+      {
+        "Code": "AWK",
+        "Name": "American Water Works Co Inc",
+        "Assets_%": 5.31137
+      },
+      {
+        "Code": "CLH",
+        "Name": "Clean Harbors Inc",
+        "Assets_%": 4.27594
+      },
+      {
+        "Code": "SBSP3.SA",
+        "Name": "Companhia De Saneamento Basico Do Estado De Sao Paulo",
+        "Assets_%": 4.248169799999999
+      },
+      {
+        "Code": "UU.L",
+        "Name": "United Utilities Group PLC Class A",
+        "Assets_%": 3.65578
+      },
+      {
+        "Code": "PNR",
+        "Name": "Pentair PLC",
+        "Assets_%": 3.5636898
+      }
+    ]
+  }
+}

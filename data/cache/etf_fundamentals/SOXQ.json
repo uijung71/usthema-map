@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "PHLX Semiconductor ETF",
+    "Description": "The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. Strictly in accordance with its guidelines and mandated procedures, Nasdaq compiles the underlying index, which is a modified market-capitalization weighted index designed to measure the performance of the 30 largest companies listed in the United States that are engaged in the semiconductor business, as determined by the index Provider. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.19,
+    "Asset_Under_Management": 1628057856,
+    "Holdings": [
+      {
+        "Code": "NVDA",
+        "Name": "NVIDIA Corp",
+        "Assets_%": 10.3807494
+      },
+      {
+        "Code": "AVGO",
+        "Name": "Broadcom Inc",
+        "Assets_%": 10.031299
+      },
+      {
+        "Code": "MU",
+        "Name": "Micron Technology Inc",
+        "Assets_%": 7.70364
+      },
+      {
+        "Code": "INTC",
+        "Name": "Intel Corp",
+        "Assets_%": 6.36366
+      },
+      {
+        "Code": "MRVL",
+        "Name": "Marvell Technology Inc",
+        "Assets_%": 6.21165
+      },
+      {
+        "Code": "AMD",
+        "Name": "Advanced Micro Devices Inc",
+        "Assets_%": 5.4401896999999995
+      },
+      {
+        "Code": "TXN",
+        "Name": "Texas Instruments Inc",
+        "Assets_%": 4.06987
+      },
+      {
+        "Code": "QCOM",
+        "Name": "Qualcomm Inc",
+        "Assets_%": 3.87594
+      },
+      {
+        "Code": "MPWR",
+        "Name": "Monolithic Power Systems Inc",
+        "Assets_%": 3.5831500000000003
+      },
+      {
+        "Code": "KLAC",
+        "Name": "KLA Corp",
+        "Assets_%": 3.52151
+      }
+    ]
+  }
+}

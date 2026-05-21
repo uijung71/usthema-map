@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Genomic Revolution ETF",
+    "Description": "The fund is an actively-managed exchange-traded fund (\"ETF\") that will invest under normal circumstances primarily (at least 80% of its assets) in domestic and foreign equity securities of companies across multiple sectors, including healthcare, information technology, materials, energy and consumer discretionary, that are relevant to the fund's investment theme of the genomics revolution (\"Genomics Revolution Companies\"). It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.75,
+    "Asset_Under_Management": 1235872256,
+    "Holdings": [
+      {
+        "Code": "TEM",
+        "Name": "Tempus AI Inc Class A common stock",
+        "Assets_%": 9.44802
+      },
+      {
+        "Code": "TWST",
+        "Name": "Twist Bioscience Corp",
+        "Assets_%": 9.0150006
+      },
+      {
+        "Code": "CRSP",
+        "Name": "CRISPR Therapeutics AG",
+        "Assets_%": 8.9356005
+      },
+      {
+        "Code": "TXG",
+        "Name": "10x Genomics Inc Ordinary Shares - Class A",
+        "Assets_%": 5.784389999999999
+      },
+      {
+        "Code": "BEAM",
+        "Name": "Beam Therapeutics Inc",
+        "Assets_%": 5.44493
+      },
+      {
+        "Code": "ABSI",
+        "Name": "Absci Corp",
+        "Assets_%": 4.794849999999999
+      },
+      {
+        "Code": "NTRA",
+        "Name": "Natera Inc",
+        "Assets_%": 4.07753
+      },
+      {
+        "Code": "ILMN",
+        "Name": "Illumina Inc",
+        "Assets_%": 4.04044
+      },
+      {
+        "Code": "NTLA",
+        "Name": "Intellia Therapeutics Inc",
+        "Assets_%": 3.82705
+      },
+      {
+        "Code": "PSNL",
+        "Name": "Personalis Inc",
+        "Assets_%": 3.59144
+      }
+    ]
+  }
+}

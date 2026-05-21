@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "FinTech ETF",
+    "Description": "The fund invests at least 80% of its total assets in the securities of the underlying index. The underlying index is designed to provide exposure to exchange-listed companies in developed markets that provide financial technology products and services, including companies involved in mobile payments, peer-to-peer (P2P) and marketplace lending, financial analytics software and alternative currencies, as defined by the index provider. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.68,
+    "Asset_Under_Management": 190844016,
+    "Holdings": [
+      {
+        "Code": "PYPL",
+        "Name": "PayPal Holdings Inc",
+        "Assets_%": 6.41072
+      },
+      {
+        "Code": "XYZ",
+        "Name": "Block Inc Class A",
+        "Assets_%": 6.379219999999999
+      },
+      {
+        "Code": "FISV",
+        "Name": "Fiserv Inc",
+        "Assets_%": 5.979629999999999
+      },
+      {
+        "Code": "COIN",
+        "Name": "Coinbase Global Inc Ordinary Shares - Class A",
+        "Assets_%": 5.56035
+      },
+      {
+        "Code": "HOOD",
+        "Name": "Robinhood Markets Inc Class A",
+        "Assets_%": 5.5112901999999995
+      },
+      {
+        "Code": "INTU",
+        "Name": "Intuit Inc",
+        "Assets_%": 5.06922
+      },
+      {
+        "Code": "ADYEN.AS",
+        "Name": "Adyen NV",
+        "Assets_%": 4.7589302
+      },
+      {
+        "Code": "FIS",
+        "Name": "Fidelity National Information Services Inc",
+        "Assets_%": 4.2026
+      },
+      {
+        "Code": "SOFI",
+        "Name": "SoFi Technologies Inc Ordinary Shares",
+        "Assets_%": 3.7884700000000002
+      },
+      {
+        "Code": "GPN",
+        "Name": "Global Payments Inc",
+        "Assets_%": 3.7227499999999996
+      }
+    ]
+  }
+}

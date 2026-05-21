@@ -5,5 +5,7 @@ build_master.py
 scratch/
 .streamlit/
 data/cache/
+!data/cache/etf_fundamentals/
+data/prices/
 debug_notion.md
 debug_para.json

@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Themes Humanoid Robotics ETF",
+    "Description": "The index seeks to track the performance, before fees and expenses, of an index composed of companies which derive significant revenue from the design and development of humanoid and service robots. The fund will invest, under normal circumstances, at least 80% of its net assets, plus the amount of any borrowings for investment purposes, in securities that comprise the index and in ADRs and GDRs based on the securities in the index. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.35,
+    "Asset_Under_Management": 43405972,
+    "Holdings": [
+      {
+        "Code": "056080.KQ",
+        "Name": "Yujin Robot Co Ltd",
+        "Assets_%": 7.53923
+      },
+      {
+        "Code": "348340.KS",
+        "Name": "Neuromeka Co Ltd Ordinary Shares",
+        "Assets_%": 6.77071
+      },
+      {
+        "Code": "TER",
+        "Name": "Teradyne Inc",
+        "Assets_%": 6.4736
+      },
+      {
+        "Code": "277810.KS",
+        "Name": "Rainbow Robotics Ordinary Shares",
+        "Assets_%": 5.80461
+      },
+      {
+        "Code": "MDA.TO",
+        "Name": "MDA Space Ltd",
+        "Assets_%": 5.0368900000000005
+      },
+      {
+        "Code": "688017.SS",
+        "Name": "Leader Harmonious Drive Systems Co Ltd Class A",
+        "Assets_%": 5.016119799999999
+      },
+      {
+        "Code": "090710.KQ",
+        "Name": "Hyulim Robot Co Ltd",
+        "Assets_%": 4.82747
+      },
+      {
+        "Code": "NVDA",
+        "Name": "NVIDIA Corp",
+        "Assets_%": 4.76052
+      },
+      {
+        "Code": "PDYN",
+        "Name": "Palladyne AI Corp Class A",
+        "Assets_%": 4.72922
+      },
+      {
+        "Code": "TSLA",
+        "Name": "Tesla Inc",
+        "Assets_%": 4.04173
+      }
+    ]
+  }
+}

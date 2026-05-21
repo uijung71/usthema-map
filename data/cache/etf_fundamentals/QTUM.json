@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Defiance Quantum ETF",
+    "Description": "The fund uses a “passive management” (or indexing) approach to track the total return performance, before fees and expenses, of the index. The index consists of a modified equal-weighted portfolio of the stock of companies that derive at least 50% of their annual revenue or operating activity from the development of quantum computing and machine learning technology.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.4,
+    "Asset_Under_Management": 4276732928,
+    "Holdings": [
+      {
+        "Code": "INTC",
+        "Name": "Intel Corp",
+        "Assets_%": 2.3911100000000003
+      },
+      {
+        "Code": "STM",
+        "Name": "STMicroelectronics NV ADR",
+        "Assets_%": 2.1622098999999997
+      },
+      {
+        "Code": "NOK",
+        "Name": "Nokia Oyj ADR",
+        "Assets_%": 2.1421699
+      },
+      {
+        "Code": "MU",
+        "Name": "Micron Technology Inc",
+        "Assets_%": 2.02395
+      },
+      {
+        "Code": "3443.TW",
+        "Name": "Global Unichip Corp",
+        "Assets_%": 2.0057
+      },
+      {
+        "Code": "ON",
+        "Name": "ON Semiconductor Corp",
+        "Assets_%": 1.8882100999999998
+      },
+      {
+        "Code": "MRVL",
+        "Name": "Marvell Technology Inc",
+        "Assets_%": 1.84315
+      },
+      {
+        "Code": "ONTO",
+        "Name": "Onto Innovation Inc",
+        "Assets_%": 1.8082799999999999
+      },
+      {
+        "Code": "TSEM.TA",
+        "Name": "Tower Semiconductor Ltd",
+        "Assets_%": 1.8032901000000001
+      },
+      {
+        "Code": "COHR",
+        "Name": "Coherent Corp",
+        "Assets_%": 1.7698800000000001
+      }
+    ]
+  }
+}

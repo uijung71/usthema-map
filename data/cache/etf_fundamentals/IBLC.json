@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Blockchain and Tech ETF",
+    "Description": "The fund generally will invest at least 80% of its assets in the component securities of its underlying index and in investments that have economic characteristics that are substantially identical to the component securities of its underlying index and may invest up to 20% of its assets in certain futures, options and swap contracts, cash and cash equivalents. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.47,
+    "Asset_Under_Management": 83054848,
+    "Holdings": [
+      {
+        "Code": "COIN",
+        "Name": "Coinbase Global Inc Ordinary Shares - Class A",
+        "Assets_%": 9.79504
+      },
+      {
+        "Code": "CRCL",
+        "Name": "Circle Internet Group Inc Ordinary Shares - Class A",
+        "Assets_%": 9.1745704
+      },
+      {
+        "Code": "IREN",
+        "Name": "IREN Ltd",
+        "Assets_%": 8.71851
+      },
+      {
+        "Code": "AMD",
+        "Name": "Advanced Micro Devices Inc",
+        "Assets_%": 6.31763
+      },
+      {
+        "Code": "BMNR",
+        "Name": "BitMine Immersion Technologies Inc",
+        "Assets_%": 5.88909
+      },
+      {
+        "Code": "APLD",
+        "Name": "Applied Digital Corp",
+        "Assets_%": 5.5261202
+      },
+      {
+        "Code": "HUT",
+        "Name": "Hut 8 Corp",
+        "Assets_%": 5.34004
+      },
+      {
+        "Code": "NVDA",
+        "Name": "NVIDIA Corp",
+        "Assets_%": 3.8488700000000002
+      },
+      {
+        "Code": "RIOT",
+        "Name": "Riot Platforms Inc",
+        "Assets_%": 3.80671
+      },
+      {
+        "Code": "CORZ",
+        "Name": "Core Scientific Inc Ordinary Shares - New",
+        "Assets_%": 3.7841199999999997
+      }
+    ]
+  }
+}

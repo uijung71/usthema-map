@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Future Exponential Technologies ETF",
+    "Description": "The fund generally will invest at least 80% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The underlying index is a subset of the Morningstar Global Markets Index (the “Parent index”).",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.46,
+    "Asset_Under_Management": 3858212096,
+    "Holdings": [
+      {
+        "Code": "TXN",
+        "Name": "Texas Instruments Inc",
+        "Assets_%": 5.053719999999999
+      },
+      {
+        "Code": "NVDA",
+        "Name": "NVIDIA Corp",
+        "Assets_%": 4.0170997
+      },
+      {
+        "Code": "ADI",
+        "Name": "Analog Devices Inc",
+        "Assets_%": 4.0019304
+      },
+      {
+        "Code": "MSFT",
+        "Name": "Microsoft Corp",
+        "Assets_%": 3.6145598000000003
+      },
+      {
+        "Code": "TSLA",
+        "Name": "Tesla Inc",
+        "Assets_%": 3.51927
+      },
+      {
+        "Code": "LLY",
+        "Name": "Eli Lilly and Co",
+        "Assets_%": 3.4074899999999997
+      },
+      {
+        "Code": "AMZN",
+        "Name": "Amazon.com Inc",
+        "Assets_%": 3.1833199999999997
+      },
+      {
+        "Code": "GOOGL",
+        "Name": "Alphabet Inc Class A",
+        "Assets_%": 2.8369
+      },
+      {
+        "Code": "JNJ",
+        "Name": "Johnson & Johnson",
+        "Assets_%": 2.6655199
+      },
+      {
+        "Code": "2330.TW",
+        "Name": "Taiwan Semiconductor Manufacturing Co Ltd",
+        "Assets_%": 2.2896900000000002
+      }
+    ]
+  }
+}

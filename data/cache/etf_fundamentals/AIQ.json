@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Artificial Intelligence & Technology ETF",
+    "Description": "The fund invests at least 80% of its total assets in the securities of the underlying index. The underlying index is designed to track the performance of companies involved in the development and utilization of artificial intelligence (\"AI\") and big data. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.68,
+    "Asset_Under_Management": 8611765248,
+    "Holdings": [
+      {
+        "Code": "000660.KS",
+        "Name": "SK Hynix Inc",
+        "Assets_%": 4.8165597
+      },
+      {
+        "Code": "INTC",
+        "Name": "Intel Corp",
+        "Assets_%": 4.1592598
+      },
+      {
+        "Code": "005930.KS",
+        "Name": "Samsung Electronics Co Ltd",
+        "Assets_%": 4.0938802
+      },
+      {
+        "Code": "AMD",
+        "Name": "Advanced Micro Devices Inc",
+        "Assets_%": 3.9868599999999996
+      },
+      {
+        "Code": "MU",
+        "Name": "Micron Technology Inc",
+        "Assets_%": 3.71176
+      },
+      {
+        "Code": "AVGO",
+        "Name": "Broadcom Inc",
+        "Assets_%": 3.6596200000000003
+      },
+      {
+        "Code": "CSCO",
+        "Name": "Cisco Systems Inc",
+        "Assets_%": 3.51253
+      },
+      {
+        "Code": "TSM",
+        "Name": "Taiwan Semiconductor Manufacturing Co Ltd ADR",
+        "Assets_%": 3.45188
+      },
+      {
+        "Code": "GOOGL",
+        "Name": "Alphabet Inc Class A",
+        "Assets_%": 3.32186
+      },
+      {
+        "Code": "AMZN",
+        "Name": "Amazon.com Inc",
+        "Assets_%": 3.2276399999999996
+      }
+    ]
+  }
+}

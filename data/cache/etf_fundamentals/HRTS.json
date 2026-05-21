@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Tema Heart & Health ETF",
+    "Description": "Under normal circumstances, the fund seeks to achieve its investment objective by investing at least 80% of its net assets, which include borrowings for investment purposes, in publicly listed companies that derive at least 50% of revenues from products or services related to GLP-1 and the treatment of cardiovascular diseases and/or metabolic diseases, as defined by the Centers for Diseases Control and Preventions. The fund generally is expected to consist of more than 15 companies but not more than 100 companies. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.75,
+    "Asset_Under_Management": 50159092,
+    "Holdings": [
+      {
+        "Code": "LLY",
+        "Name": "Eli Lilly and Co",
+        "Assets_%": 9.96811
+      },
+      {
+        "Code": "UNH",
+        "Name": "UnitedHealth Group Inc",
+        "Assets_%": 5.2249096
+      },
+      {
+        "Code": "RHHBY",
+        "Name": "Roche Holding AG ADR",
+        "Assets_%": 4.81119
+      },
+      {
+        "Code": "JNJ",
+        "Name": "Johnson & Johnson",
+        "Assets_%": 4.24688
+      },
+      {
+        "Code": "AZN.L",
+        "Name": "AstraZeneca PLC",
+        "Assets_%": 4.17895
+      },
+      {
+        "Code": "NOVO-B.CO",
+        "Name": "Novo Nordisk AS Class B",
+        "Assets_%": 4.035550000000001
+      },
+      {
+        "Code": "MRK",
+        "Name": "Merck & Co Inc",
+        "Assets_%": 4.0158402
+      },
+      {
+        "Code": "TMO",
+        "Name": "Thermo Fisher Scientific Inc",
+        "Assets_%": 3.94963
+      },
+      {
+        "Code": "GILD",
+        "Name": "Gilead Sciences Inc",
+        "Assets_%": 3.41808
+      },
+      {
+        "Code": "NOVN.SW",
+        "Name": "Novartis AG Registered Shares",
+        "Assets_%": 3.39717
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Biotechnology & Genome ETF",
+    "Description": "The fund generally will invest at least 90% of its total assets in securities that comprise the underlying index. The underlying index was composed of common stocks of U.S. biotechnology and genome companies. These companies are engaged principally in the research, development, manufacture and marketing and distribution of various biotechnological products, services and processes, etc. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.58,
+    "Asset_Under_Management": 247382624,
+    "Holdings": [
+      {
+        "Code": "UTHR",
+        "Name": "United Therapeutics Corp",
+        "Assets_%": 6.27678
+      },
+      {
+        "Code": "ILMN",
+        "Name": "Illumina Inc",
+        "Assets_%": 5.3639103
+      },
+      {
+        "Code": "BIIB",
+        "Name": "Biogen Inc",
+        "Assets_%": 5.0453
+      },
+      {
+        "Code": "INCY",
+        "Name": "Incyte Corp",
+        "Assets_%": 4.90385
+      },
+      {
+        "Code": "ALNY",
+        "Name": "Alnylam Pharmaceuticals Inc",
+        "Assets_%": 4.8361402
+      },
+      {
+        "Code": "REGN",
+        "Name": "Regeneron Pharmaceuticals Inc",
+        "Assets_%": 4.7624502
+      },
+      {
+        "Code": "AMGN",
+        "Name": "Amgen Inc",
+        "Assets_%": 4.70394
+      },
+      {
+        "Code": "GILD",
+        "Name": "Gilead Sciences Inc",
+        "Assets_%": 4.60946
+      },
+      {
+        "Code": "BCRX",
+        "Name": "BioCryst Pharmaceuticals Inc",
+        "Assets_%": 3.41497
+      },
+      {
+        "Code": "CPRX",
+        "Name": "Catalyst Pharmaceuticals Inc",
+        "Assets_%": 3.2992
+      }
+    ]
+  }
+}

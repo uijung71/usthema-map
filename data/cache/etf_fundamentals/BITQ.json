@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Bitwise Crypto Industry Innovators ETF",
+    "Description": "The index was designed by Bitwise Index Services, LLC to measure the performance of companies involved in servicing the cryptocurrency markets, including crypto mining firms, crypto mining equipment suppliers, crypto financial services companies, or other financial institutions servicing primarily crypto-related clientele (i.e., the crypto ecosystem). Normally, the fund invests at least 80% of its net assets in securities of Crypto Innovators. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.85,
+    "Asset_Under_Management": 435631808,
+    "Holdings": [
+      {
+        "Code": "IREN",
+        "Name": "IREN Ltd",
+        "Assets_%": 10.17014
+      },
+      {
+        "Code": "MSTR",
+        "Name": "Strategy Inc Class A",
+        "Assets_%": 10.1615295
+      },
+      {
+        "Code": "HUT",
+        "Name": "Hut 8 Corp",
+        "Assets_%": 5.94144
+      },
+      {
+        "Code": "WULF",
+        "Name": "TeraWulf Inc",
+        "Assets_%": 5.83256
+      },
+      {
+        "Code": "MARA",
+        "Name": "MARA Holdings Inc",
+        "Assets_%": 5.5244397
+      },
+      {
+        "Code": "CLSK",
+        "Name": "Cleanspark Inc",
+        "Assets_%": 5.02105
+      },
+      {
+        "Code": "CORZ",
+        "Name": "Core Scientific Inc Ordinary Shares - New",
+        "Assets_%": 4.96717
+      },
+      {
+        "Code": "CIFR",
+        "Name": "Cipher Digital Inc",
+        "Assets_%": 4.80703
+      },
+      {
+        "Code": "RIOT",
+        "Name": "Riot Platforms Inc",
+        "Assets_%": 4.4918097999999995
+      },
+      {
+        "Code": "BMNR",
+        "Name": "BitMine Immersion Technologies Inc",
+        "Assets_%": 4.18327
+      }
+    ]
+  }
+}

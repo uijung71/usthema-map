@@ -1,0 +1,53 @@
+{
+  "General": {
+    "Name": "ProShares Long Online/Short Stores ETF",
+    "Description": "The fund invests in financial instruments that ProShare Advisors believes, in combination, should track the performance of the index. The index consists of a 100% long position in the equity securities contained in the ProShares Online Retail Index (the “Online Index”) and a 50% short position in the equity securities contained in the Solactive-ProShares Bricks and Mortar Retail Store Index (the “Retail Store Index”). The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.65,
+    "Asset_Under_Management": 7397641,
+    "Holdings": [
+      {
+        "Code": "AMZN",
+        "Name": "Amazon.com Inc",
+        "Assets_%": 23.60828
+      },
+      {
+        "Code": "BABA",
+        "Name": "Alibaba Group Holding Ltd ADR",
+        "Assets_%": 10.02289
+      },
+      {
+        "Code": "EBAY",
+        "Name": "eBay Inc",
+        "Assets_%": 9.067099500000001
+      },
+      {
+        "Code": "CVNA",
+        "Name": "Carvana Co Class A",
+        "Assets_%": 4.5517102
+      },
+      {
+        "Code": "ETSY",
+        "Name": "Etsy Inc",
+        "Assets_%": 4.09864
+      },
+      {
+        "Code": "CPNG",
+        "Name": "Coupang Inc Ordinary Shares - Class A",
+        "Assets_%": 3.55401
+      },
+      {
+        "Code": "RVLV",
+        "Name": "Revolve Group Inc Class A",
+        "Assets_%": 3.51417
+      },
+      {
+        "Code": "BKE",
+        "Name": "Buckle Inc",
+        "Assets_%": 3.44782
+      }
+    ]
+  }
+}

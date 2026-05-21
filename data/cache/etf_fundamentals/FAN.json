@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "First Trust Global Wind Energy ETF",
+    "Description": "The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks and depositary receipts that comprise the index. The index provides a benchmark for investors interested in tracking public companies throughout the world that are active in the wind energy industry. In order to be eligible for inclusion in the index, a security must be issued by a company that is actively engaged in some aspect of the wind energy industry. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.6,
+    "Asset_Under_Management": 280919648,
+    "Holdings": [
+      {
+        "Code": "VWS.CO",
+        "Name": "Vestas Wind Systems AS",
+        "Assets_%": 8.806569999999999
+      },
+      {
+        "Code": "ORSTED.CO",
+        "Name": "Orsted AS",
+        "Assets_%": 8.29513
+      },
+      {
+        "Code": "NDX1.DE",
+        "Name": "Nordex SE Akt. nach Kapitalherabsetzung",
+        "Assets_%": 8.23498
+      },
+      {
+        "Code": "EDPR.LS",
+        "Name": "EDP Renovaveis SA",
+        "Assets_%": 6.51706
+      },
+      {
+        "Code": "NPI.TO",
+        "Name": "Northland Power Inc",
+        "Assets_%": 5.750649800000001
+      },
+      {
+        "Code": "ENLT.TA",
+        "Name": "Enlight Renewable Energy Ltd",
+        "Assets_%": 4.67526
+      },
+      {
+        "Code": "BLX.TO",
+        "Name": "Boralex Inc Class A",
+        "Assets_%": 3.16585
+      },
+      {
+        "Code": "00916",
+        "Name": "China Longyuan Power Group Corp Ltd Class H",
+        "Assets_%": 2.5907199999999997
+      },
+      {
+        "Code": "02208",
+        "Name": "Goldwind Science & Technology Co Ltd Class H",
+        "Assets_%": 2.38393
+      },
+      {
+        "Code": "PRY.MI",
+        "Name": "Prysmian SpA",
+        "Assets_%": 2.3103499999999997
+      }
+    ]
+  }
+}

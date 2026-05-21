@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Aerospace & Defense ETF",
+    "Description": "The fund generally will invest at least 90% of its total assets in securities that comprise the underlying index. The underlying index is composed of common stocks of companies that are systematically important to the defense sector and are involved with the development, manufacture, operation and support of U.S. defense, military, national/homeland security, and government space operations. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.58,
+    "Asset_Under_Management": 8036136960,
+    "Holdings": [
+      {
+        "Code": "BA",
+        "Name": "Boeing Co",
+        "Assets_%": 9.1089
+      },
+      {
+        "Code": "GE",
+        "Name": "GE Aerospace",
+        "Assets_%": 7.847519999999999
+      },
+      {
+        "Code": "RTX",
+        "Name": "RTX Corp",
+        "Assets_%": 7.13159
+      },
+      {
+        "Code": "LMT",
+        "Name": "Lockheed Martin Corp",
+        "Assets_%": 6.386459599999999
+      },
+      {
+        "Code": "GD",
+        "Name": "General Dynamics Corp",
+        "Assets_%": 4.52177
+      },
+      {
+        "Code": "NOC",
+        "Name": "Northrop Grumman Corp",
+        "Assets_%": 4.45334
+      },
+      {
+        "Code": "HON",
+        "Name": "Honeywell International Inc",
+        "Assets_%": 4.38456
+      },
+      {
+        "Code": "HWM",
+        "Name": "Howmet Aerospace Inc",
+        "Assets_%": 4.1754898
+      },
+      {
+        "Code": "LHX",
+        "Name": "L3Harris Technologies Inc",
+        "Assets_%": 3.7626399999999998
+      },
+      {
+        "Code": "PH",
+        "Name": "Parker Hannifin Corp",
+        "Assets_%": 3.73924
+      }
+    ]
+  }
+}

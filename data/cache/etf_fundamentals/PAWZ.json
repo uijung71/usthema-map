@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "ProShares Pet Care ETF",
+    "Description": "The fund invests in financial instruments that ProShare Advisors believes, in combination, should track the performance of the index. The index is designed to measure the performance of companies that stand to benefit from interest in or resources spent on pet ownership. Under normal circumstances, it will invest at least 80% of its total assets in components of the index or in instruments with similar economic characteristics. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.5,
+    "Asset_Under_Management": 40403828,
+    "Holdings": [
+      {
+        "Code": "FRPT",
+        "Name": "Freshpet Inc",
+        "Assets_%": 10.4027
+      },
+      {
+        "Code": "CHWY",
+        "Name": "Chewy Inc",
+        "Assets_%": 10.0877196
+      },
+      {
+        "Code": "IDXX",
+        "Name": "IDEXX Laboratories Inc",
+        "Assets_%": 9.96523
+      },
+      {
+        "Code": "ZTS",
+        "Name": "Zoetis Inc Class A",
+        "Assets_%": 9.759120000000001
+      },
+      {
+        "Code": "VIRP.PA",
+        "Name": "Virbac SA",
+        "Assets_%": 7.7260800000000005
+      },
+      {
+        "Code": "PET.TO",
+        "Name": "Pet Valu Holdings Ltd",
+        "Assets_%": 4.68998
+      },
+      {
+        "Code": "NESN.SW",
+        "Name": "Nestle SA",
+        "Assets_%": 4.5307998000000005
+      },
+      {
+        "Code": "CVSG.L",
+        "Name": "CVS Group PLC",
+        "Assets_%": 4.4674499999999995
+      },
+      {
+        "Code": "TRUP",
+        "Name": "Trupanion Inc",
+        "Assets_%": 4.35823
+      },
+      {
+        "Code": "PETS.L",
+        "Name": "Pets at Home Group PLC",
+        "Assets_%": 4.34552
+      }
+    ]
+  }
+}

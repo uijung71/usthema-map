@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "State Street S&P Kensho Final Frontiers ETF",
+    "Description": "Under normal market conditions, the fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index is designed to capture companies whose products and services are driving innovation behind the exploration of deep space and deep sea. The fund may invest in equity securities that are not included in the index, cash and cash equivalents or money market instruments. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.45,
+    "Asset_Under_Management": 154855568,
+    "Holdings": [
+      {
+        "Code": "PL",
+        "Name": "Planet Labs PBC Class A",
+        "Assets_%": 7.28061
+      },
+      {
+        "Code": "LUNR",
+        "Name": "Intuitive Machines Inc Ordinary Shares - Class A",
+        "Assets_%": 5.46078
+      },
+      {
+        "Code": "IRDM",
+        "Name": "Iridium Communications Inc",
+        "Assets_%": 5.2804098
+      },
+      {
+        "Code": "ESE",
+        "Name": "ESCO Technologies Inc",
+        "Assets_%": 4.0721502
+      },
+      {
+        "Code": "RKLB",
+        "Name": "Rocket Lab Corp",
+        "Assets_%": 3.65734
+      },
+      {
+        "Code": "DCO",
+        "Name": "Ducommun Inc",
+        "Assets_%": 3.52697
+      },
+      {
+        "Code": "OII",
+        "Name": "Oceaneering International Inc",
+        "Assets_%": 3.5057699999999996
+      },
+      {
+        "Code": "TTMI",
+        "Name": "TTM Technologies Inc",
+        "Assets_%": 3.4475899999999995
+      },
+      {
+        "Code": "MOG-A",
+        "Name": "Moog Inc Class A",
+        "Assets_%": 3.21563
+      },
+      {
+        "Code": "TDY",
+        "Name": "Teledyne Technologies Inc",
+        "Assets_%": 3.1882
+      }
+    ]
+  }
+}

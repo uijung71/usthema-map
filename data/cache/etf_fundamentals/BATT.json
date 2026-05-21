@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Amplify Lithium & Battery Technology ETF",
+    "Description": "The fund will normally invest at least 80% of its net assets in the securities that comprise the index. The index seeks to provide exposure to global companies deriving material revenue associated with the development, production and use of lithium battery technology. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.59,
+    "Asset_Under_Management": 126083808,
+    "Holdings": [
+      {
+        "Code": "300750.SZ",
+        "Name": "Contemporary Amperex Technology Co Ltd Class A",
+        "Assets_%": 7.7163704
+      },
+      {
+        "Code": "BHP.AX",
+        "Name": "BHP Group Ltd",
+        "Assets_%": 6.71858
+      },
+      {
+        "Code": "TSLA",
+        "Name": "Tesla Inc",
+        "Assets_%": 5.98731
+      },
+      {
+        "Code": "01211",
+        "Name": "BYD Co Ltd Class H",
+        "Assets_%": 5.5050902
+      },
+      {
+        "Code": "FCX",
+        "Name": "Freeport-McMoRan Inc",
+        "Assets_%": 4.51338
+      },
+      {
+        "Code": "BE",
+        "Name": "Bloom Energy Corp Class A",
+        "Assets_%": 4.49861
+      },
+      {
+        "Code": "006400.KS",
+        "Name": "Samsung SDI Co Ltd",
+        "Assets_%": 2.8534701
+      },
+      {
+        "Code": "6762.T",
+        "Name": "TDK Corp",
+        "Assets_%": 2.8020598
+      },
+      {
+        "Code": "GMEXICOB.MX",
+        "Name": "Grupo Mexico SAB de CV Class B",
+        "Assets_%": 2.3646701
+      },
+      {
+        "Code": "TECK-B.TO",
+        "Name": "Teck Resources Ltd Class B (Sub Voting)",
+        "Assets_%": 2.1744201000000003
+      }
+    ]
+  }
+}

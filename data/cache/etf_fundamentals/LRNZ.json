@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "TrueShares Technology, AI and Deep Learning ETF",
+    "Description": "Under normal circumstances, at least 80% of its net assets (plus any borrowings made for investment purposes) in the common stock of technology, artificial intelligence and deep learning companies. It may also invest in small and medium capitalized companies, as the Adviser believes these relatively smaller companies may provide above average capital appreciation and dividend yield. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.69,
+    "Asset_Under_Management": 31287954,
+    "Holdings": [
+      {
+        "Code": "NET",
+        "Name": "Cloudflare Inc",
+        "Assets_%": 12.27214
+      },
+      {
+        "Code": "NVDA",
+        "Name": "NVIDIA Corp",
+        "Assets_%": 11.54061
+      },
+      {
+        "Code": "CRWD",
+        "Name": "CrowdStrike Holdings Inc Class A",
+        "Assets_%": 9.3273096
+      },
+      {
+        "Code": "AMD",
+        "Name": "Advanced Micro Devices Inc",
+        "Assets_%": 7.58312
+      },
+      {
+        "Code": "GOOG",
+        "Name": "Alphabet Inc Class C",
+        "Assets_%": 5.2808598
+      },
+      {
+        "Code": "ARM",
+        "Name": "ARM Holdings PLC ADR",
+        "Assets_%": 4.9595498000000005
+      },
+      {
+        "Code": "MDB",
+        "Name": "MongoDB Inc Class A",
+        "Assets_%": 4.80849
+      },
+      {
+        "Code": "SNOW",
+        "Name": "Snowflake Inc Ordinary Shares",
+        "Assets_%": 4.42935
+      },
+      {
+        "Code": "GPCR",
+        "Name": "Structure Therapeutics Inc ADR",
+        "Assets_%": 4.425990199999999
+      },
+      {
+        "Code": "LLY",
+        "Name": "Eli Lilly and Co",
+        "Assets_%": 4.1371196999999995
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "HealthTech ETF",
+    "Description": "The underlying index is designed to provide exposure to exchange-listed companies that are positioned to benefit from further advances in the field of healthcare technology and the applications thereof, as determined by the index administrator. The principal investment strategy of the fund will be to invest at least 80% of its total assets, plus borrowings for investment purposes (if any), in the securities of the underlying index. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.5,
+    "Asset_Under_Management": 25265492,
+    "Holdings": [
+      {
+        "Code": "MASI",
+        "Name": "Masimo Corp",
+        "Assets_%": 5.96463
+      },
+      {
+        "Code": "DXCM",
+        "Name": "DexCom Inc",
+        "Assets_%": 5.18364
+      },
+      {
+        "Code": "PHIA.AS",
+        "Name": "Koninklijke Philips NV",
+        "Assets_%": 4.4792198
+      },
+      {
+        "Code": "ALHC",
+        "Name": "Alignment Healthcare Inc",
+        "Assets_%": 4.2859998
+      },
+      {
+        "Code": "RMD",
+        "Name": "ResMed Inc",
+        "Assets_%": 4.08153
+      },
+      {
+        "Code": "TMDX",
+        "Name": "TransMedics Group Inc",
+        "Assets_%": 4.0491600000000005
+      },
+      {
+        "Code": "OSCR",
+        "Name": "Oscar Health Inc Class A",
+        "Assets_%": 4.0370204
+      },
+      {
+        "Code": "GEHC",
+        "Name": "GE HealthCare Technologies Inc Common Stock",
+        "Assets_%": 3.99122
+      },
+      {
+        "Code": "ISRG",
+        "Name": "Intuitive Surgical Inc",
+        "Assets_%": 3.8913200000000003
+      },
+      {
+        "Code": "TEM",
+        "Name": "Tempus AI Inc Class A common stock",
+        "Assets_%": 3.71932
+      }
+    ]
+  }
+}

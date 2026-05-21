@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Biotechnology ETF",
+    "Description": "The fund generally will invest at least 80% of its assets in the component securities of its underlying index and may invest up to 20% of its assets in certain futures, options and swap contracts, cash and cash equivalents. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.44,
+    "Asset_Under_Management": 7946963968,
+    "Holdings": [
+      {
+        "Code": "AMGN",
+        "Name": "Amgen Inc",
+        "Assets_%": 7.4629
+      },
+      {
+        "Code": "GILD",
+        "Name": "Gilead Sciences Inc",
+        "Assets_%": 7.34902
+      },
+      {
+        "Code": "VRTX",
+        "Name": "Vertex Pharmaceuticals Inc",
+        "Assets_%": 7.1967505
+      },
+      {
+        "Code": "REGN",
+        "Name": "Regeneron Pharmaceuticals Inc",
+        "Assets_%": 6.66511
+      },
+      {
+        "Code": "ALNY",
+        "Name": "Alnylam Pharmaceuticals Inc",
+        "Assets_%": 3.7690599999999996
+      },
+      {
+        "Code": "ARGX",
+        "Name": "argenx SE ADR",
+        "Assets_%": 3.31956
+      },
+      {
+        "Code": "INSM",
+        "Name": "Insmed Inc",
+        "Assets_%": 2.69112
+      },
+      {
+        "Code": "BIIB",
+        "Name": "Biogen Inc",
+        "Assets_%": 2.56754
+      },
+      {
+        "Code": "NTRA",
+        "Name": "Natera Inc",
+        "Assets_%": 2.5134299999999996
+      },
+      {
+        "Code": "RVMD",
+        "Name": "Revolution Medicines Inc Ordinary Shares",
+        "Assets_%": 2.2997798
+      }
+    ]
+  }
+}

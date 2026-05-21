@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "WisdomTree Cloud Computing Fund",
+    "Description": "Under normal circumstances, at least 80% of the fund’s total assets (exclusive of collateral held from securities lending) will be invested in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is designed to track the performance of emerging public companies primarily involved in providing cloud computing software and services to their customers. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.45,
+    "Asset_Under_Management": 226912688,
+    "Holdings": [
+      {
+        "Code": "DOCN",
+        "Name": "DigitalOcean Holdings Inc",
+        "Assets_%": 2.38349
+      },
+      {
+        "Code": "FSLY",
+        "Name": "Fastly Inc Class A",
+        "Assets_%": 2.1976098
+      },
+      {
+        "Code": "TWLO",
+        "Name": "Twilio Inc Class A",
+        "Assets_%": 2.05639
+      },
+      {
+        "Code": "BRZE",
+        "Name": "Braze Inc Class A",
+        "Assets_%": 2.01118
+      },
+      {
+        "Code": "FROG",
+        "Name": "JFrog Ltd Ordinary Shares",
+        "Assets_%": 1.9332200000000002
+      },
+      {
+        "Code": "PANW",
+        "Name": "Palo Alto Networks Inc",
+        "Assets_%": 1.89093
+      },
+      {
+        "Code": "KVYO",
+        "Name": "Klaviyo Inc Class A common stock",
+        "Assets_%": 1.82558
+      },
+      {
+        "Code": "NET",
+        "Name": "Cloudflare Inc",
+        "Assets_%": 1.8203500000000001
+      },
+      {
+        "Code": "CRWD",
+        "Name": "CrowdStrike Holdings Inc Class A",
+        "Assets_%": 1.8039
+      },
+      {
+        "Code": "DDOG",
+        "Name": "Datadog Inc Class A",
+        "Assets_%": 1.79769
+      }
+    ]
+  }
+}

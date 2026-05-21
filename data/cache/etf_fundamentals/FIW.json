@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "First Trust Water ETF",
+    "Description": "The fund will normally invest at least 90% of its net assets (including investment borrowings) in the securities that comprise the index. The index is designed to track the performance of small, mid and large capitalization companies that derive a substantial portion of their revenues from the potable water and wastewater industry, according to Clean Edge.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.5,
+    "Asset_Under_Management": 1832569088,
+    "Holdings": [
+      {
+        "Code": "FERG",
+        "Name": "Ferguson Enterprises Inc",
+        "Assets_%": 4.34626
+      },
+      {
+        "Code": "ROP",
+        "Name": "Roper Technologies Inc",
+        "Assets_%": 4.2948898
+      },
+      {
+        "Code": "MLI",
+        "Name": "Mueller Industries Inc",
+        "Assets_%": 4.25285
+      },
+      {
+        "Code": "WAT",
+        "Name": "Waters Corp",
+        "Assets_%": 4.0989198
+      },
+      {
+        "Code": "A",
+        "Name": "Agilent Technologies Inc",
+        "Assets_%": 4.0301
+      },
+      {
+        "Code": "AWK",
+        "Name": "American Water Works Co Inc",
+        "Assets_%": 3.9965897999999997
+      },
+      {
+        "Code": "XYL",
+        "Name": "Xylem Inc",
+        "Assets_%": 3.8609299999999998
+      },
+      {
+        "Code": "IEX",
+        "Name": "IDEX Corp",
+        "Assets_%": 3.8524299999999996
+      },
+      {
+        "Code": "VLTO",
+        "Name": "Veralto Corp",
+        "Assets_%": 3.83237
+      },
+      {
+        "Code": "MAS",
+        "Name": "Masco Corp",
+        "Assets_%": 3.7145900000000003
+      }
+    ]
+  }
+}

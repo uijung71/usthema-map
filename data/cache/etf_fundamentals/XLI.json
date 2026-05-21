@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "State Street Industrial Select Sector ETF",
+    "Description": "Under normal market conditions, the fund generally invests substantially all, but at least 95%, of its total assets in the securities comprising the index. The index includes companies that have been identified as Industrial companies by the Global Industry Classification Standard, including securities of companies from the following industries: aerospace and defense; industrial conglomerates; marine transportation. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.08,
+    "Asset_Under_Management": 30091372544,
+    "Holdings": [
+      {
+        "Code": "CAT",
+        "Name": "Caterpillar Inc",
+        "Assets_%": 7.60566
+      },
+      {
+        "Code": "GE",
+        "Name": "GE Aerospace",
+        "Assets_%": 5.5844102
+      },
+      {
+        "Code": "GEV",
+        "Name": "GE Vernova Inc",
+        "Assets_%": 5.363049999999999
+      },
+      {
+        "Code": "RTX",
+        "Name": "RTX Corp",
+        "Assets_%": 4.340249999999999
+      },
+      {
+        "Code": "BA",
+        "Name": "Boeing Co",
+        "Assets_%": 3.30331
+      },
+      {
+        "Code": "ETN",
+        "Name": "Eaton Corp PLC",
+        "Assets_%": 3.08865
+      },
+      {
+        "Code": "UNP",
+        "Name": "Union Pacific Corp",
+        "Assets_%": 2.9367099
+      },
+      {
+        "Code": "UBER",
+        "Name": "Uber Technologies Inc",
+        "Assets_%": 2.8200800000000004
+      },
+      {
+        "Code": "DE",
+        "Name": "Deere & Co",
+        "Assets_%": 2.7309
+      },
+      {
+        "Code": "HON",
+        "Name": "Honeywell International Inc",
+        "Assets_%": 2.4990499
+      }
+    ]
+  }
+}

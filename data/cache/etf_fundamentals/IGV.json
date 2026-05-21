@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Expanded Tech-Software Sector ETF",
+    "Description": "The fund generally will invest at least 80% of its assets in the component securities of its underlying index and in investments that have economic characteristics that are substantially identical to the component securities of its underlying index. The index measures the performance of U.S.-traded stocks from the software industry and select companies from the interactive home entertainment and interactive media and services sub-industries in the U.S. and Canada. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.39,
+    "Asset_Under_Management": 12107472896,
+    "Holdings": [
+      {
+        "Code": "MSFT",
+        "Name": "Microsoft Corp",
+        "Assets_%": 8.7913506
+      },
+      {
+        "Code": "ORCL",
+        "Name": "Oracle Corp",
+        "Assets_%": 8.6362496
+      },
+      {
+        "Code": "PLTR",
+        "Name": "Palantir Technologies Inc Ordinary Shares - Class A",
+        "Assets_%": 8.0097
+      },
+      {
+        "Code": "CRM",
+        "Name": "Salesforce Inc",
+        "Assets_%": 6.6799800000000005
+      },
+      {
+        "Code": "PANW",
+        "Name": "Palo Alto Networks Inc",
+        "Assets_%": 5.85194
+      },
+      {
+        "Code": "APP",
+        "Name": "AppLovin Corp Ordinary Shares - Class A",
+        "Assets_%": 4.884970200000001
+      },
+      {
+        "Code": "CRWD",
+        "Name": "CrowdStrike Holdings Inc Class A",
+        "Assets_%": 4.59311
+      },
+      {
+        "Code": "ADBE",
+        "Name": "Adobe Inc",
+        "Assets_%": 4.1292
+      },
+      {
+        "Code": "INTU",
+        "Name": "Intuit Inc",
+        "Assets_%": 4.0760897
+      },
+      {
+        "Code": "SNPS",
+        "Name": "Synopsys Inc",
+        "Assets_%": 3.7738599999999995
+      }
+    ]
+  }
+}

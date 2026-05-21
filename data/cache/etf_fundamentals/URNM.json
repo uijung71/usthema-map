@@ -1,0 +1,58 @@
+{
+  "General": {
+    "Name": "Sprott Uranium Miners ETF",
+    "Description": "The fund will, under normal circumstances, invest at least 80% of its total assets in securities of the index. The index consists of securities of both U.S. and foreign issuers, including securities of issuers located in emerging and frontier market countries. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.75,
+    "Asset_Under_Management": 2438628352,
+    "Holdings": [
+      {
+        "Code": "CCO.TO",
+        "Name": "Cameco Corp",
+        "Assets_%": 21.43713
+      },
+      {
+        "Code": "NXE.TO",
+        "Name": "NexGen Energy Ltd",
+        "Assets_%": 12.536729999999999
+      },
+      {
+        "Code": "UEC",
+        "Name": "Uranium Energy Corp",
+        "Assets_%": 5.15199
+      },
+      {
+        "Code": "KAP",
+        "Name": "National Atomic Co Kazatomprom JSC ADR",
+        "Assets_%": 5.12743
+      },
+      {
+        "Code": "EFR.TO",
+        "Name": "Energy Fuels Inc",
+        "Assets_%": 5.0839799999999995
+      },
+      {
+        "Code": "DML.TO",
+        "Name": "Denison Mines Corp",
+        "Assets_%": 4.66421
+      },
+      {
+        "Code": "PDN.AX",
+        "Name": "Paladin Energy Ltd",
+        "Assets_%": 4.389609800000001
+      },
+      {
+        "Code": "1164.HK",
+        "Name": "CGN Mining Co Ltd",
+        "Assets_%": 3.85833
+      },
+      {
+        "Code": "YCA.L",
+        "Name": "Yellow Cake PLC Ordinary Shares",
+        "Assets_%": 3.8548999999999998
+      }
+    ]
+  }
+}

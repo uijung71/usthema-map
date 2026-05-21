@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "First Trust RBA American Industrial RenaissanceTM ETF",
+    "Description": "The fund will normally invest at least 90% of its net assets (including investment borrowings) in the equity securities that comprise the index. The index is designed to measure the performance of small and mid cap U.S. companies in the industrial and community banking sectors.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.69,
+    "Asset_Under_Management": 10137935872,
+    "Holdings": [
+      {
+        "Code": "FIX",
+        "Name": "Comfort Systems USA Inc",
+        "Assets_%": 4.30402
+      },
+      {
+        "Code": "EME",
+        "Name": "EMCOR Group Inc",
+        "Assets_%": 4.22785
+      },
+      {
+        "Code": "AGX",
+        "Name": "Argan Inc",
+        "Assets_%": 4.165039999999999
+      },
+      {
+        "Code": "MTZ",
+        "Name": "MasTec Inc",
+        "Assets_%": 4.1575998
+      },
+      {
+        "Code": "CHRW",
+        "Name": "C.H. Robinson Worldwide Inc",
+        "Assets_%": 4.13387
+      },
+      {
+        "Code": "SAIA",
+        "Name": "Saia Inc",
+        "Assets_%": 3.95174
+      },
+      {
+        "Code": "STRL",
+        "Name": "Sterling Infrastructure Inc",
+        "Assets_%": 3.86716
+      },
+      {
+        "Code": "BWXT",
+        "Name": "BWX Technologies Inc",
+        "Assets_%": 3.4621199999999996
+      },
+      {
+        "Code": "HII",
+        "Name": "Huntington Ingalls Industries Inc",
+        "Assets_%": 3.33856
+      },
+      {
+        "Code": "DY",
+        "Name": "Dycom Industries Inc",
+        "Assets_%": 3.22983
+      }
+    ]
+  }
+}

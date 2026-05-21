@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "State Street S&P Global Natural Resources ETF",
+    "Description": "The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in depositary receipts based on securities comprising the index. The index is comprised of 90 of the largest U.S. and foreign publicly-traded companies, based on market capitalization, in natural resources and commodities businesses that meet certain investability requirements.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.4,
+    "Asset_Under_Management": 4867213312,
+    "Holdings": [
+      {
+        "Code": "NTR.TO",
+        "Name": "Nutrien Ltd",
+        "Assets_%": 5.26189
+      },
+      {
+        "Code": "SHEL.L",
+        "Name": "Shell PLC",
+        "Assets_%": 5.0620697
+      },
+      {
+        "Code": "XOM",
+        "Name": "Exxon Mobil Corp",
+        "Assets_%": 5.00634
+      },
+      {
+        "Code": "BHP.AX",
+        "Name": "BHP Group Ltd",
+        "Assets_%": 4.44099
+      },
+      {
+        "Code": "TTE.PA",
+        "Name": "TotalEnergies SE",
+        "Assets_%": 3.66958
+      },
+      {
+        "Code": "CVX",
+        "Name": "Chevron Corp",
+        "Assets_%": 2.8189002000000003
+      },
+      {
+        "Code": "UPM.HE",
+        "Name": "UPM-Kymmene Oyj",
+        "Assets_%": 2.79449
+      },
+      {
+        "Code": "NEM",
+        "Name": "Newmont Corp",
+        "Assets_%": 2.7448101
+      },
+      {
+        "Code": "CTVA",
+        "Name": "Corteva Inc",
+        "Assets_%": 2.5310699999999997
+      },
+      {
+        "Code": "BP.L",
+        "Name": "BP PLC",
+        "Assets_%": 2.4154201
+      }
+    ]
+  }
+}

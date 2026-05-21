@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "State Street S&P Semiconductor ETF",
+    "Description": "In seeking to track the performance of the S&P Semiconductor Select Industry Index (the \"index\"), the fund employs a sampling strategy. It generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index represents the semiconductors segment of the S&P Total Market Index (\"S&P TMI\").",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.35,
+    "Asset_Under_Management": 2475979008,
+    "Holdings": [
+      {
+        "Code": "MXL",
+        "Name": "MaxLinear Inc",
+        "Assets_%": 5.96077
+      },
+      {
+        "Code": "INTC",
+        "Name": "Intel Corp",
+        "Assets_%": 3.6781800000000002
+      },
+      {
+        "Code": "MRVL",
+        "Name": "Marvell Technology Inc",
+        "Assets_%": 3.4107600000000002
+      },
+      {
+        "Code": "AMD",
+        "Name": "Advanced Micro Devices Inc",
+        "Assets_%": 3.2246202000000004
+      },
+      {
+        "Code": "ON",
+        "Name": "ON Semiconductor Corp",
+        "Assets_%": 3.17117
+      },
+      {
+        "Code": "SITM",
+        "Name": "SiTime Corp Ordinary Shares",
+        "Assets_%": 2.99227
+      },
+      {
+        "Code": "ALAB",
+        "Name": "Astera Labs Inc",
+        "Assets_%": 2.9168100999999997
+      },
+      {
+        "Code": "POWI",
+        "Name": "Power Integrations Inc",
+        "Assets_%": 2.89891
+      },
+      {
+        "Code": "NVTS",
+        "Name": "Navitas Semiconductor Corp Class A",
+        "Assets_%": 2.81759
+      },
+      {
+        "Code": "MPWR",
+        "Name": "Monolithic Power Systems Inc",
+        "Assets_%": 2.8083999
+      }
+    ]
+  }
+}

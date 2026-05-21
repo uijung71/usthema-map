@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Video Games & Esports ETF",
+    "Description": "The fund invests at least 80% of its total assets in the securities of the underlying index and in American Depositary Receipts (\"ADRs\") and Global Depositary Receipts (\"GDRs\") based on the securities in the underlying index. The underlying index is designed to provide exposure to exchange-listed companies that are positioned to benefit from increased consumption related to video games and esports. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.5,
+    "Asset_Under_Management": 71261296,
+    "Holdings": [
+      {
+        "Code": "EA",
+        "Name": "Electronic Arts Inc",
+        "Assets_%": 6.966310000000001
+      },
+      {
+        "Code": "TTWO",
+        "Name": "Take-Two Interactive Software Inc",
+        "Assets_%": 6.29943
+      },
+      {
+        "Code": "NTES",
+        "Name": "NetEase Inc ADR",
+        "Assets_%": 5.989789999999999
+      },
+      {
+        "Code": "259960.KS",
+        "Name": "Krafton Inc",
+        "Assets_%": 5.7718802
+      },
+      {
+        "Code": "CDR.WA",
+        "Name": "CD Projekt SA",
+        "Assets_%": 5.23552
+      },
+      {
+        "Code": "3293.TWO",
+        "Name": "International Games System Co Ltd",
+        "Assets_%": 5.23037
+      },
+      {
+        "Code": "7974.T",
+        "Name": "Nintendo Co Ltd",
+        "Assets_%": 5.1964596
+      },
+      {
+        "Code": "9697.T",
+        "Name": "Capcom Co Ltd",
+        "Assets_%": 4.80426
+      },
+      {
+        "Code": "9766.T",
+        "Name": "Konami Group Corp",
+        "Assets_%": 4.6594299999999995
+      },
+      {
+        "Code": "U",
+        "Name": "Unity Software Inc Ordinary Shares",
+        "Assets_%": 4.5700498
+      }
+    ]
+  }
+}

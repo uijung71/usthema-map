@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Uranium and Nuclear ETF",
+    "Description": "The fund normally invests at least 80% of its total assets in securities that comprise the fund's benchmark index. The index includes equity securities and depositary receipts issued by companies involved in uranium and nuclear energy. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.52,
+    "Asset_Under_Management": 5147035648,
+    "Holdings": [
+      {
+        "Code": "CEG",
+        "Name": "Constellation Energy Corp",
+        "Assets_%": 8.05352
+      },
+      {
+        "Code": "CCO.TO",
+        "Name": "Cameco Corp",
+        "Assets_%": 8.01318
+      },
+      {
+        "Code": "BWXT",
+        "Name": "BWX Technologies Inc",
+        "Assets_%": 6.4927600000000005
+      },
+      {
+        "Code": "PEG",
+        "Name": "Public Service Enterprise Group Inc",
+        "Assets_%": 5.7488396999999996
+      },
+      {
+        "Code": "PCG",
+        "Name": "PG&E Corp",
+        "Assets_%": 4.9819697000000005
+      },
+      {
+        "Code": "FORTUM.HE",
+        "Name": "Fortum Oyj",
+        "Assets_%": 4.9134497
+      },
+      {
+        "Code": "OKLO",
+        "Name": "Oklo Inc Class A Shares",
+        "Assets_%": 4.74863
+      },
+      {
+        "Code": "KAP",
+        "Name": "National Atomic Co Kazatomprom JSC ADR",
+        "Assets_%": 4.65177
+      },
+      {
+        "Code": "1816.HK",
+        "Name": "CGN Power Co Ltd Shs -H- Unitary 144A/Reg S",
+        "Assets_%": 4.49529
+      },
+      {
+        "Code": "EFR.TO",
+        "Name": "Energy Fuels Inc",
+        "Assets_%": 4.47441
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Agribusiness ETF",
+    "Description": "The fund normally invests at least 80% of its total assets in securities that comprise the fund's benchmark index. The index includes equity securities of companies that generate at least 50% of their revenues from agri-chemicals, animal health and fertilizers, seeds and traits, from farm/irrigation equipment and farm machinery, aquaculture and fishing, livestock, cultivation and plantations and trading of agricultural products. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.56,
+    "Asset_Under_Management": 1164515328,
+    "Holdings": [
+      {
+        "Code": "DE",
+        "Name": "Deere & Co",
+        "Assets_%": 7.69991
+      },
+      {
+        "Code": "BAYN.DE",
+        "Name": "Bayer AG",
+        "Assets_%": 7.49809
+      },
+      {
+        "Code": "ZTS",
+        "Name": "Zoetis Inc Class A",
+        "Assets_%": 6.79062
+      },
+      {
+        "Code": "CTVA",
+        "Name": "Corteva Inc",
+        "Assets_%": 6.6981
+      },
+      {
+        "Code": "ADM",
+        "Name": "Archer-Daniels-Midland Co",
+        "Assets_%": 5.8874797
+      },
+      {
+        "Code": "NTR.TO",
+        "Name": "Nutrien Ltd",
+        "Assets_%": 5.7252202
+      },
+      {
+        "Code": "CF",
+        "Name": "CF Industries Holdings Inc",
+        "Assets_%": 5.16603
+      },
+      {
+        "Code": "TSN",
+        "Name": "Tyson Foods Inc Class A",
+        "Assets_%": 4.88347
+      },
+      {
+        "Code": "6326.T",
+        "Name": "Kubota Corp",
+        "Assets_%": 3.99177
+      },
+      {
+        "Code": "BG",
+        "Name": "Bunge Global SA",
+        "Assets_%": 3.9411797999999996
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Amplify Online Retail ETF",
+    "Description": "The fund will invest at least 80% of its net assets in global equity securities that comprise the index, which will primarily include common stocks and/or depositary receipts, such as ADRs and GDRs. The index seeks to measure the performance of global equity securities of publicly traded companies with significant revenue from the online retail business. The index methodology is designed to result in a portfolio that has the potential for capital appreciation.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.65,
+    "Asset_Under_Management": 118555376,
+    "Holdings": [
+      {
+        "Code": "FIGS",
+        "Name": "FIGS Inc Class A",
+        "Assets_%": 5.09025
+      },
+      {
+        "Code": "LQDT",
+        "Name": "Liquidity Services Inc",
+        "Assets_%": 3.91768
+      },
+      {
+        "Code": "CVNA",
+        "Name": "Carvana Co Class A",
+        "Assets_%": 3.29679
+      },
+      {
+        "Code": "EBAY",
+        "Name": "eBay Inc",
+        "Assets_%": 3.29471
+      },
+      {
+        "Code": "MSM",
+        "Name": "MSC Industrial Direct Co Inc Class A",
+        "Assets_%": 3.04346
+      },
+      {
+        "Code": "CART",
+        "Name": "Maplebear Inc",
+        "Assets_%": 3.00169
+      },
+      {
+        "Code": "EXPE",
+        "Name": "Expedia Group Inc",
+        "Assets_%": 2.99665
+      },
+      {
+        "Code": "RVLV",
+        "Name": "Revolve Group Inc Class A",
+        "Assets_%": 2.95947
+      },
+      {
+        "Code": "ABNB",
+        "Name": "Airbnb Inc Ordinary Shares - Class A",
+        "Assets_%": 2.9553002
+      },
+      {
+        "Code": "ETSY",
+        "Name": "Etsy Inc",
+        "Assets_%": 2.7530099999999997
+      }
+    ]
+  }
+}

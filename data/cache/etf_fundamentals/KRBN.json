@@ -1,0 +1,23 @@
+{
+  "General": {
+    "Name": "KraneShares Global Carbon ETF",
+    "Description": "The advisor attempts to maintain exposure to carbon credit futures that are substantially the same as those included in the index. The index is comprised of futures contracts on emission allowances issued by various “cap and trade” regulatory regimes that seek to reduce greenhouse gas emissions over time. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.9,
+    "Asset_Under_Management": 135772672,
+    "Holdings": [
+      {
+        "Code": "KCSH",
+        "Name": "Kraneshares Sust Ultra Shrt Dur Idx ETF",
+        "Assets_%": 62.213589999999996
+      },
+      {
+        "Code": "GVMXX",
+        "Name": "State Street Instl US Govt MMkt Premier",
+        "Assets_%": 1.7374500000000002
+      }
+    ]
+  }
+}

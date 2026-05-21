@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "State Street Health Care Select Sector ETF",
+    "Description": "In seeking to track the performance of the index, the fund employs a replication strategy. It generally invests substantially all, but at least 95%, of its total assets in the securities comprising the index. The index includes companies from the following industries: pharmaceuticals; health care equipment & supplies; health care providers & services; biotechnology; life sciences tools & services; and health care technology. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.08,
+    "Asset_Under_Management": 37880406016,
+    "Holdings": [
+      {
+        "Code": "LLY",
+        "Name": "Eli Lilly and Co",
+        "Assets_%": 14.069511000000002
+      },
+      {
+        "Code": "JNJ",
+        "Name": "Johnson & Johnson",
+        "Assets_%": 10.52304
+      },
+      {
+        "Code": "ABBV",
+        "Name": "AbbVie Inc",
+        "Assets_%": 7.0952399999999995
+      },
+      {
+        "Code": "UNH",
+        "Name": "UnitedHealth Group Inc",
+        "Assets_%": 6.3754599999999995
+      },
+      {
+        "Code": "MRK",
+        "Name": "Merck & Co Inc",
+        "Assets_%": 5.14807
+      },
+      {
+        "Code": "AMGN",
+        "Name": "Amgen Inc",
+        "Assets_%": 3.54207
+      },
+      {
+        "Code": "TMO",
+        "Name": "Thermo Fisher Scientific Inc",
+        "Assets_%": 3.41855
+      },
+      {
+        "Code": "ISRG",
+        "Name": "Intuitive Surgical Inc",
+        "Assets_%": 3.0872699999999997
+      },
+      {
+        "Code": "GILD",
+        "Name": "Gilead Sciences Inc",
+        "Assets_%": 3.0838799
+      },
+      {
+        "Code": "ABT",
+        "Name": "Abbott Laboratories",
+        "Assets_%": 2.99916
+      }
+    ]
+  }
+}

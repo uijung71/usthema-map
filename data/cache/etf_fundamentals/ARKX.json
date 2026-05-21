@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Space & Defense Innovation ETF",
+    "Description": "The fund is an actively-managed exchange-traded fund (\"ETF\") that will invest under normal circumstances primarily (at least 80% of its assets) in domestic and foreign equity securities of companies that are engaged in its investment theme of Space Exploration and Innovation. Under normal circumstances, substantially all of the fund's assets will be invested in equity securities, including common stocks, partnership interests, business trust shares and other equity investments or ownership interests in business enterprises. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.75,
+    "Asset_Under_Management": 893041920,
+    "Holdings": [
+      {
+        "Code": "LHX",
+        "Name": "L3Harris Technologies Inc",
+        "Assets_%": 7.828200000000001
+      },
+      {
+        "Code": "RKLB",
+        "Name": "Rocket Lab Corp",
+        "Assets_%": 7.77714
+      },
+      {
+        "Code": "TER",
+        "Name": "Teradyne Inc",
+        "Assets_%": 6.6416900000000005
+      },
+      {
+        "Code": "AMD",
+        "Name": "Advanced Micro Devices Inc",
+        "Assets_%": 6.13609
+      },
+      {
+        "Code": "DE",
+        "Name": "Deere & Co",
+        "Assets_%": 5.8551400000000005
+      },
+      {
+        "Code": "KTOS",
+        "Name": "Kratos Defense & Security Solutions Inc",
+        "Assets_%": 5.447579999999999
+      },
+      {
+        "Code": "AVAV",
+        "Name": "AeroVironment Inc",
+        "Assets_%": 5.01309
+      },
+      {
+        "Code": "AMZN",
+        "Name": "Amazon.com Inc",
+        "Assets_%": 4.23293
+      },
+      {
+        "Code": "GOOG",
+        "Name": "Alphabet Inc Class C",
+        "Assets_%": 4.0370102999999995
+      },
+      {
+        "Code": "ACHR",
+        "Name": "Archer Aviation Inc Class A",
+        "Assets_%": 3.72224
+      }
+    ]
+  }
+}

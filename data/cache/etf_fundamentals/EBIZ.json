@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "E-commerce ETF",
+    "Description": "The fund invests at least 80% of its total assets in the securities of the underlying index. The index is designed to provide exposure to exchange-listed companies that are positioned to benefit from the increased adoption of e-commerce as a distribution model, including but not limited to companies whose principal business is in operating e-commerce platforms, providing e-commerce software and services, and/or selling goods and services online. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.5,
+    "Asset_Under_Management": 29230164,
+    "Holdings": [
+      {
+        "Code": "AMZN",
+        "Name": "Amazon.com Inc",
+        "Assets_%": 5.32174
+      },
+      {
+        "Code": "EBAY",
+        "Name": "eBay Inc",
+        "Assets_%": 5.20715
+      },
+      {
+        "Code": "JD",
+        "Name": "JD.com Inc ADR",
+        "Assets_%": 4.829350000000001
+      },
+      {
+        "Code": "ETSY",
+        "Name": "Etsy Inc",
+        "Assets_%": 4.4959404
+      },
+      {
+        "Code": "RBA.TO",
+        "Name": "RB Global Inc",
+        "Assets_%": 4.4696397999999995
+      },
+      {
+        "Code": "PDD",
+        "Name": "PDD Holdings Inc ADR",
+        "Assets_%": 4.4001296000000005
+      },
+      {
+        "Code": "WSM",
+        "Name": "Williams-Sonoma Inc",
+        "Assets_%": 4.16632
+      },
+      {
+        "Code": "TCOM",
+        "Name": "Trip.com Group Ltd ADR",
+        "Assets_%": 4.1027397
+      },
+      {
+        "Code": "CVNA",
+        "Name": "Carvana Co Class A",
+        "Assets_%": 4.1005902
+      },
+      {
+        "Code": "EXPE",
+        "Name": "Expedia Group Inc",
+        "Assets_%": 4.05898
+      }
+    ]
+  }
+}

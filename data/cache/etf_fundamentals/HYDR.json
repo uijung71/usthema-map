@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Hydrogen ETF",
+    "Description": "The fund invests at least 80% of its total assets, plus borrowings for investments purposes (if any), in the securities of the index and in American Depositary Receipts (\"ADRs\") and Global Depositary Receipts (\"GDRs\") based on the securities in the index. The underlying index is designed to provide exposure to companies that are positioned to benefit from further advances in the field of hydrogen technology. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.5,
+    "Asset_Under_Management": 112953880,
+    "Holdings": [
+      {
+        "Code": "BE",
+        "Name": "Bloom Energy Corp Class A",
+        "Assets_%": 18.708229000000003
+      },
+      {
+        "Code": "336260.KS",
+        "Name": "Doosan Fuel Cell Ordinary Shares",
+        "Assets_%": 13.41825
+      },
+      {
+        "Code": "PLUG",
+        "Name": "Plug Power Inc",
+        "Assets_%": 10.37618
+      },
+      {
+        "Code": "126340.KQ",
+        "Name": "VINATech Co Ltd",
+        "Assets_%": 7.10354
+      },
+      {
+        "Code": "ITM.L",
+        "Name": "ITM Power PLC",
+        "Assets_%": 6.680510000000001
+      },
+      {
+        "Code": "BLDP.TO",
+        "Name": "Ballard Power Systems Inc",
+        "Assets_%": 5.99083
+      },
+      {
+        "Code": "FCEL",
+        "Name": "FuelCell Energy Inc",
+        "Assets_%": 5.22496
+      },
+      {
+        "Code": "CWR.L",
+        "Name": "Ceres Power Holdings PLC",
+        "Assets_%": 5.075270300000001
+      },
+      {
+        "Code": "F3C.DE",
+        "Name": "SFC Energy AG",
+        "Assets_%": 4.0258598
+      },
+      {
+        "Code": "NEL.OL",
+        "Name": "NEL ASA",
+        "Assets_%": 3.7512
+      }
+    ]
+  }
+}

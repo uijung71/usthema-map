@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "MSCI Agriculture Producers ETF",
+    "Description": "The fund generally will invest at least 80% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index measures the combined performance of equity securities of companies in both developed and emerging markets that are primarily engaged in the business of agriculture. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.39,
+    "Asset_Under_Management": 160522416,
+    "Holdings": [
+      {
+        "Code": "DE",
+        "Name": "Deere & Co",
+        "Assets_%": 27.016250000000003
+      },
+      {
+        "Code": "CTVA",
+        "Name": "Corteva Inc",
+        "Assets_%": 9.7582795
+      },
+      {
+        "Code": "NTR.TO",
+        "Name": "Nutrien Ltd",
+        "Assets_%": 6.5360195999999995
+      },
+      {
+        "Code": "ADM",
+        "Name": "Archer-Daniels-Midland Co",
+        "Assets_%": 6.385630000000001
+      },
+      {
+        "Code": "CF",
+        "Name": "CF Industries Holdings Inc",
+        "Assets_%": 3.4532800000000003
+      },
+      {
+        "Code": "BG",
+        "Name": "Bunge Global SA",
+        "Assets_%": 3.06656
+      },
+      {
+        "Code": "6326.T",
+        "Name": "Kubota Corp",
+        "Assets_%": 2.8129699
+      },
+      {
+        "Code": "MOWI.OL",
+        "Name": "Mowi ASA",
+        "Assets_%": 1.8656300000000001
+      },
+      {
+        "Code": "DAR",
+        "Name": "Darling Ingredients Inc",
+        "Assets_%": 1.81121
+      },
+      {
+        "Code": "0288.HK",
+        "Name": "WH Group Ltd Shs Unitary 144A/Reg S",
+        "Assets_%": 1.8066501
+      }
+    ]
+  }
+}

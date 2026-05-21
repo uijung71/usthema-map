@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "U.S. Digital Infrastructure and Real Estate ETF",
+    "Description": "The underlying index which measures the performance of stocks of U.S.-listed companies, as well as U.S.-listed ADRs of foreign companies from developed markets, involved in the ownership and management of data centers, telecommunication towers, and related equipment, as determined by S&P Dow Jones Indices LLC. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.39,
+    "Asset_Under_Management": 274596352,
+    "Holdings": [
+      {
+        "Code": "EQIX",
+        "Name": "Equinix Inc",
+        "Assets_%": 9.09854
+      },
+      {
+        "Code": "DLR",
+        "Name": "Digital Realty Trust Inc",
+        "Assets_%": 8.3377704
+      },
+      {
+        "Code": "AMT",
+        "Name": "American Tower Corp",
+        "Assets_%": 8.2495496
+      },
+      {
+        "Code": "SBAC",
+        "Name": "SBA Communications Corp Class A",
+        "Assets_%": 6.6060300000000005
+      },
+      {
+        "Code": "CRDO",
+        "Name": "Credo Technology Group Holding Ltd",
+        "Assets_%": 5.6096803
+      },
+      {
+        "Code": "UNIT",
+        "Name": "Uniti Group Inc",
+        "Assets_%": 5.38258
+      },
+      {
+        "Code": "NOK",
+        "Name": "Nokia Oyj ADR",
+        "Assets_%": 5.3207103
+      },
+      {
+        "Code": "CIEN",
+        "Name": "Ciena Corp",
+        "Assets_%": 5.30448
+      },
+      {
+        "Code": "CRWV",
+        "Name": "CoreWeave Inc Ordinary Shares - Class A",
+        "Assets_%": 4.96725
+      },
+      {
+        "Code": "CCI",
+        "Name": "Crown Castle Inc",
+        "Assets_%": 4.8204400000000005
+      }
+    ]
+  }
+}

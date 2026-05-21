@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Global Clean Energy ETF",
+    "Description": "The index is designed to track the performance of approximately 100 clean energy-related companies. The fund generally invests at least 80% of its assets in the component securities of the index and in investments that have economic characteristics that are substantially identical to the component securities of the index and may invest up to 20% of its assets in certain futures, options and swap contracts, cash and cash equivalents, as well as in securities not included in the index. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.39,
+    "Asset_Under_Management": 2502674688,
+    "Holdings": [
+      {
+        "Code": "BE",
+        "Name": "Bloom Energy Corp Class A",
+        "Assets_%": 13.727629
+      },
+      {
+        "Code": "NXT",
+        "Name": "Nextpower Inc Class A",
+        "Assets_%": 7.27705
+      },
+      {
+        "Code": "FSLR",
+        "Name": "First Solar Inc",
+        "Assets_%": 7.1502
+      },
+      {
+        "Code": "600900.SS",
+        "Name": "China Yangtze Power Co Ltd Class A",
+        "Assets_%": 5.88774
+      },
+      {
+        "Code": "VWS.CO",
+        "Name": "Vestas Wind Systems AS",
+        "Assets_%": 3.3512599999999995
+      },
+      {
+        "Code": "PLUG",
+        "Name": "Plug Power Inc",
+        "Assets_%": 3.27682
+      },
+      {
+        "Code": "ENPH",
+        "Name": "Enphase Energy Inc",
+        "Assets_%": 3.24491
+      },
+      {
+        "Code": "EQTL3.SA",
+        "Name": "Equatorial SA",
+        "Assets_%": 2.8707599999999998
+      },
+      {
+        "Code": "SUZLON.BO",
+        "Name": "Suzlon Energy Ltd",
+        "Assets_%": 2.36133
+      },
+      {
+        "Code": "EDP.LS",
+        "Name": "EDP-Energias De Portugal SA",
+        "Assets_%": 2.3309901
+      }
+    ]
+  }
+}

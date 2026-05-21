@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Virtus LifeSci Biotech Products ETF",
+    "Description": "Under normal market conditions, the fund will invest not less than 80% of its assets in component securities of the index. The index seeks to track the performance of the common stock of U.S. exchange-listed biotechnology companies with at least one drug therapy approved by the U.S. Food and Drug Administration (\"FDA\") for marketing.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.34,
+    "Asset_Under_Management": 59285992,
+    "Holdings": [
+      {
+        "Code": "IBRX",
+        "Name": "ImmunityBio Inc Ordinary Shares",
+        "Assets_%": 4.801819999999999
+      },
+      {
+        "Code": "APLS",
+        "Name": "Apellis Pharmaceuticals Inc",
+        "Assets_%": 2.59052
+      },
+      {
+        "Code": "KALV",
+        "Name": "KalVista Pharmaceuticals Inc",
+        "Assets_%": 2.51632
+      },
+      {
+        "Code": "MRNA",
+        "Name": "Moderna Inc",
+        "Assets_%": 2.48881
+      },
+      {
+        "Code": "IOVA",
+        "Name": "Iovance Biotherapeutics Inc",
+        "Assets_%": 2.4376599999999997
+      },
+      {
+        "Code": "MIRM",
+        "Name": "Mirum Pharmaceuticals Inc",
+        "Assets_%": 2.38922
+      },
+      {
+        "Code": "AXSM",
+        "Name": "Axsome Therapeutics Inc",
+        "Assets_%": 2.23752
+      },
+      {
+        "Code": "KNSA",
+        "Name": "Kiniksa Pharmaceuticals International PLC Class A",
+        "Assets_%": 2.0638399
+      },
+      {
+        "Code": "ROIV",
+        "Name": "Roivant Sciences Ltd Ordinary Shares",
+        "Assets_%": 2.06042
+      },
+      {
+        "Code": "ZLAB",
+        "Name": "Zai Lab Ltd ADR Repr 1 Shs",
+        "Assets_%": 1.94367
+      }
+    ]
+  }
+}

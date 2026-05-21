@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Vanguard Health Care Index Fund ETF Shares",
+    "Description": "The fund employs an indexing investment approach designed to track the performance of the index, an index made up of stocks of large, mid-size, and small U.S. companies within the health care sector, as classified under the GICS. The Advisor attempts to replicate the target index by seeking to invest all, or substantially all, of its assets in the stocks that make up the index, in order to hold each stock in approximately the same proportion as its weighting in the index. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.09,
+    "Asset_Under_Management": 18514036736,
+    "Holdings": [
+      {
+        "Code": "LLY",
+        "Name": "Eli Lilly and Co",
+        "Assets_%": 12.13038
+      },
+      {
+        "Code": "JNJ",
+        "Name": "Johnson & Johnson",
+        "Assets_%": 8.82037
+      },
+      {
+        "Code": "ABBV",
+        "Name": "AbbVie Inc",
+        "Assets_%": 6.0323
+      },
+      {
+        "Code": "UNH",
+        "Name": "UnitedHealth Group Inc",
+        "Assets_%": 5.4205499999999995
+      },
+      {
+        "Code": "MRK",
+        "Name": "Merck & Co Inc",
+        "Assets_%": 4.3769397
+      },
+      {
+        "Code": "AMGN",
+        "Name": "Amgen Inc",
+        "Assets_%": 3.0113999999999996
+      },
+      {
+        "Code": "TMO",
+        "Name": "Thermo Fisher Scientific Inc",
+        "Assets_%": 2.9064799999999997
+      },
+      {
+        "Code": "GILD",
+        "Name": "Gilead Sciences Inc",
+        "Assets_%": 2.6219001
+      },
+      {
+        "Code": "ISRG",
+        "Name": "Intuitive Surgical Inc",
+        "Assets_%": 2.6201
+      },
+      {
+        "Code": "ABT",
+        "Name": "Abbott Laboratories",
+        "Assets_%": 2.54988
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "KraneShares Electric Vehicles and Future Mobility Index ETF",
+    "Description": "The fund will invest at least 80% of its net assets (plus borrowings for investment purposes) in instruments in its underlying index or in instruments that have economic characteristics similar to those in the underlying index. The index is designed to track the equity market performance of companies engaged in the production of electric vehicles or their components or in other initiatives that may change the future of mobility, as determined by index provider.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.72,
+    "Asset_Under_Management": 100996080,
+    "Holdings": [
+      {
+        "Code": "STMPA.PA",
+        "Name": "STMicroelectronics NV",
+        "Assets_%": 5.54851
+      },
+      {
+        "Code": "6752.T",
+        "Name": "Panasonic Holdings Corp",
+        "Assets_%": 4.51163
+      },
+      {
+        "Code": "002594.SZ",
+        "Name": "BYD Co Ltd Class A",
+        "Assets_%": 4.2238798
+      },
+      {
+        "Code": "300750.SZ",
+        "Name": "Contemporary Amperex Technology Co Ltd Class A",
+        "Assets_%": 4.17547
+      },
+      {
+        "Code": "ALB",
+        "Name": "Albemarle Corp",
+        "Assets_%": 4.17302
+      },
+      {
+        "Code": "006400.KS",
+        "Name": "Samsung SDI Co Ltd",
+        "Assets_%": 3.9643400000000004
+      },
+      {
+        "Code": "TSLA",
+        "Name": "Tesla Inc",
+        "Assets_%": 3.3799799999999998
+      },
+      {
+        "Code": "BMW.DE",
+        "Name": "Bayerische Motoren Werke AG",
+        "Assets_%": 3.0376501
+      },
+      {
+        "Code": "0175.HK",
+        "Name": "Geely Automobile Holdings Ltd",
+        "Assets_%": 2.99619
+      },
+      {
+        "Code": "1810.HK",
+        "Name": "Xiaomi Corp Class B",
+        "Assets_%": 2.90344
+      }
+    ]
+  }
+}

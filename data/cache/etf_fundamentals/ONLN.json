@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "ProShares Online Retail ETF",
+    "Description": "The fund invests in financial instruments that ProShare Advisors believes, in combination, should track the performance of the index. The index is designed to measure the performance of U.S.-listed companies deemed to be “Online Retailers.”Under normal circumstances, it will invest at least 80% of its total assets in components of the index or in instruments with similar economic characteristics. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.58,
+    "Asset_Under_Management": 68398448,
+    "Holdings": [
+      {
+        "Code": "AMZN",
+        "Name": "Amazon.com Inc",
+        "Assets_%": 27.073809999999998
+      },
+      {
+        "Code": "BABA",
+        "Name": "Alibaba Group Holding Ltd ADR",
+        "Assets_%": 11.4953004
+      },
+      {
+        "Code": "EBAY",
+        "Name": "eBay Inc",
+        "Assets_%": 10.398340000000001
+      },
+      {
+        "Code": "CVNA",
+        "Name": "Carvana Co Class A",
+        "Assets_%": 5.22006
+      },
+      {
+        "Code": "ETSY",
+        "Name": "Etsy Inc",
+        "Assets_%": 4.7009602
+      },
+      {
+        "Code": "CPNG",
+        "Name": "Coupang Inc Ordinary Shares - Class A",
+        "Assets_%": 4.07591
+      },
+      {
+        "Code": "RVLV",
+        "Name": "Revolve Group Inc Class A",
+        "Assets_%": 4.03019
+      },
+      {
+        "Code": "BKE",
+        "Name": "Buckle Inc",
+        "Assets_%": 3.95462
+      },
+      {
+        "Code": "BBBY",
+        "Name": "Bed Bath & Beyond Inc",
+        "Assets_%": 3.75213
+      },
+      {
+        "Code": "GCT",
+        "Name": "GigaCloud Technology Inc Class A",
+        "Assets_%": 3.6021699999999996
+      }
+    ]
+  }
+}

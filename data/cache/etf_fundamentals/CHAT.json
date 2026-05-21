@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Roundhill Generative AI & Technology ETF",
+    "Description": "The fund is an actively managed exchange-traded fund (ETF) that seeks to achieve its investment objective by investing in the equity securities of exchange-listed companies globally, including those in emerging markets, which are involved in the investment theme of artificial intelligence (AI), focused on generative AI and related technologies. Under normal circumstances, the fund will invest at least 80% of its net assets, plus borrowings for investment purposes, in equity securities of AI and Technology Companies. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.75,
+    "Asset_Under_Management": 1427469696,
+    "Holdings": [
+      {
+        "Code": "GOOGL",
+        "Name": "Alphabet Inc Class A",
+        "Assets_%": 7.15773
+      },
+      {
+        "Code": "NVDA",
+        "Name": "NVIDIA Corp",
+        "Assets_%": 6.94837
+      },
+      {
+        "Code": "AMD",
+        "Name": "Advanced Micro Devices Inc",
+        "Assets_%": 4.97983
+      },
+      {
+        "Code": "000660.KS",
+        "Name": "SK Hynix Inc",
+        "Assets_%": 4.36374
+      },
+      {
+        "Code": "AMZN",
+        "Name": "Amazon.com Inc",
+        "Assets_%": 4.17578
+      },
+      {
+        "Code": "MU",
+        "Name": "Micron Technology Inc",
+        "Assets_%": 4.07926
+      },
+      {
+        "Code": "AVGO",
+        "Name": "Broadcom Inc",
+        "Assets_%": 3.8852703
+      },
+      {
+        "Code": "005930.KS",
+        "Name": "Samsung Electronics Co Ltd",
+        "Assets_%": 3.6167
+      },
+      {
+        "Code": "MSFT",
+        "Name": "Microsoft Corp",
+        "Assets_%": 3.5798598
+      },
+      {
+        "Code": "9984.T",
+        "Name": "SoftBank Group Corp",
+        "Assets_%": 3.33793
+      }
+    ]
+  }
+}

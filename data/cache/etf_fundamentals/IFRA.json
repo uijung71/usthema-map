@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "U.S. Infrastructure ETF",
+    "Description": "The fund will invest at least 80% of its assets in the component securities of the index and in investments that are substantially identical to the component securities of the index and may invest up to 20% of its assets in certain futures, options and swap contracts, cash and cash equivalents, as well as in securities not included in the index, but which BFA believes will help the fund track the index.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.3,
+    "Asset_Under_Management": 4138640384,
+    "Holdings": [
+      {
+        "Code": "CAT",
+        "Name": "Caterpillar Inc",
+        "Assets_%": 4.82681
+      },
+      {
+        "Code": "PWR",
+        "Name": "Quanta Services Inc",
+        "Assets_%": 4.139600000000001
+      },
+      {
+        "Code": "NEE",
+        "Name": "NextEra Energy Inc",
+        "Assets_%": 3.9695099999999996
+      },
+      {
+        "Code": "UNP",
+        "Name": "Union Pacific Corp",
+        "Assets_%": 3.9145399999999997
+      },
+      {
+        "Code": "CSX",
+        "Name": "CSX Corp",
+        "Assets_%": 3.24175
+      },
+      {
+        "Code": "CRH",
+        "Name": "CRH PLC",
+        "Assets_%": 3.0349
+      },
+      {
+        "Code": "NSC",
+        "Name": "Norfolk Southern Corp",
+        "Assets_%": 2.72476
+      },
+      {
+        "Code": "SO",
+        "Name": "Southern Co",
+        "Assets_%": 2.67803
+      },
+      {
+        "Code": "CEG",
+        "Name": "Constellation Energy Corp",
+        "Assets_%": 2.60044
+      },
+      {
+        "Code": "DUK",
+        "Name": "Duke Energy Corp",
+        "Assets_%": 2.49197
+      }
+    ]
+  }
+}

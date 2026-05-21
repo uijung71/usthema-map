@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "State Street Consumer Discretionary Select Sector ETF",
+    "Description": "The Advisor employs a replication strategy. The fund generally invests substantially all, but at least 95%, of its total assets in the securities comprising the index. The index includes companies that have been identified as Consumer Discretionary companies by the Global Industry Classification Standard (GICS®). It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.08,
+    "Asset_Under_Management": 23127506944,
+    "Holdings": [
+      {
+        "Code": "AMZN",
+        "Name": "Amazon.com Inc",
+        "Assets_%": 27.57897
+      },
+      {
+        "Code": "TSLA",
+        "Name": "Tesla Inc",
+        "Assets_%": 17.93434
+      },
+      {
+        "Code": "HD",
+        "Name": "The Home Depot Inc",
+        "Assets_%": 5.46941
+      },
+      {
+        "Code": "TJX",
+        "Name": "TJX Companies Inc",
+        "Assets_%": 3.9898500000000006
+      },
+      {
+        "Code": "MCD",
+        "Name": "McDonald's Corp",
+        "Assets_%": 3.9080999999999997
+      },
+      {
+        "Code": "BKNG",
+        "Name": "Booking Holdings Inc",
+        "Assets_%": 3.1098399999999997
+      },
+      {
+        "Code": "LOW",
+        "Name": "Lowe's Companies Inc",
+        "Assets_%": 3.0703299
+      },
+      {
+        "Code": "SBUX",
+        "Name": "Starbucks Corp",
+        "Assets_%": 2.75066
+      },
+      {
+        "Code": "ORLY",
+        "Name": "O'Reilly Automotive Inc",
+        "Assets_%": 1.9182299999999999
+      },
+      {
+        "Code": "MAR",
+        "Name": "Marriott International Inc Class A",
+        "Assets_%": 1.82323
+      }
+    ]
+  }
+}

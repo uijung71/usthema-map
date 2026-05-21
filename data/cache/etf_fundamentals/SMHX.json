@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Fabless Semiconductor ETF",
+    "Description": "The fund normally invests at least 80% of its total assets in securities that comprise the fund’s benchmark index. The Fabless Index is composed of U.S.-listed common stocks of companies that derive at least 50% of their revenues from the semiconductor industry and operate as fabless semiconductor companies. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.35,
+    "Asset_Under_Management": 202395120,
+    "Holdings": [
+      {
+        "Code": "NVDA",
+        "Name": "NVIDIA Corp",
+        "Assets_%": 17.404030000000002
+      },
+      {
+        "Code": "AVGO",
+        "Name": "Broadcom Inc",
+        "Assets_%": 13.77474
+      },
+      {
+        "Code": "AMD",
+        "Name": "Advanced Micro Devices Inc",
+        "Assets_%": 6.366330400000001
+      },
+      {
+        "Code": "MRVL",
+        "Name": "Marvell Technology Inc",
+        "Assets_%": 6.02698
+      },
+      {
+        "Code": "ARM",
+        "Name": "ARM Holdings PLC ADR",
+        "Assets_%": 5.84641
+      },
+      {
+        "Code": "ALAB",
+        "Name": "Astera Labs Inc",
+        "Assets_%": 5.4951902
+      },
+      {
+        "Code": "MPWR",
+        "Name": "Monolithic Power Systems Inc",
+        "Assets_%": 4.9629199999999996
+      },
+      {
+        "Code": "QCOM",
+        "Name": "Qualcomm Inc",
+        "Assets_%": 4.49934
+      },
+      {
+        "Code": "SNPS",
+        "Name": "Synopsys Inc",
+        "Assets_%": 4.29906
+      },
+      {
+        "Code": "RMBS",
+        "Name": "Rambus Inc",
+        "Assets_%": 3.96269
+      }
+    ]
+  }
+}

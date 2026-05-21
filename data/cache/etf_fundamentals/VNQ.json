@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Vanguard Real Estate Index Fund ETF Shares",
+    "Description": "The advisor attempts to track the index by investing all, or substantially all, of its assets-either directly or indirectly through a wholly owned subsidiary, which is itself a registered investment company-in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.13,
+    "Asset_Under_Management": 69945008128,
+    "Holdings": [
+      {
+        "Code": "VRTPX",
+        "Name": "Vanguard Real Estate II Index",
+        "Assets_%": 14.57946
+      },
+      {
+        "Code": "WELL",
+        "Name": "Welltower Inc",
+        "Assets_%": 7.804220000000001
+      },
+      {
+        "Code": "PLD",
+        "Name": "Prologis Inc",
+        "Assets_%": 6.97354
+      },
+      {
+        "Code": "EQIX",
+        "Name": "Equinix Inc",
+        "Assets_%": 5.6203097
+      },
+      {
+        "Code": "AMT",
+        "Name": "American Tower Corp",
+        "Assets_%": 4.5216199999999995
+      },
+      {
+        "Code": "DLR",
+        "Name": "Digital Realty Trust Inc",
+        "Assets_%": 3.6487600000000002
+      },
+      {
+        "Code": "SPG",
+        "Name": "Simon Property Group Inc",
+        "Assets_%": 3.5155598
+      },
+      {
+        "Code": "O",
+        "Name": "Realty Income Corp",
+        "Assets_%": 3.0991999999999997
+      },
+      {
+        "Code": "PSA",
+        "Name": "Public Storage",
+        "Assets_%": 2.52483
+      },
+      {
+        "Code": "CBRE",
+        "Name": "CBRE Group Inc Class A",
+        "Assets_%": 2.24537
+      }
+    ]
+  }
+}

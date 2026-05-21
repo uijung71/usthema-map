@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "FlexShares Morningstar Global Upstream Natural Resources Index Fund",
+    "Description": "The index is designed to the performance of a selection of equity securities that are traded in or are issued by companies classified as developed or emerging markets, as determined by the index provider pursuant to its index methodology. The fund will invest at least 80% of its total assets (exclusive of collateral held from securities lending) in the securities of the index and in ADRs and GDRs based on the securities in the index.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.46,
+    "Asset_Under_Management": 7493664768,
+    "Holdings": [
+      {
+        "Code": "CTVA",
+        "Name": "Corteva Inc",
+        "Assets_%": 5.0013700000000005
+      },
+      {
+        "Code": "XOM",
+        "Name": "Exxon Mobil Corp",
+        "Assets_%": 4.96085
+      },
+      {
+        "Code": "NTR.TO",
+        "Name": "Nutrien Ltd",
+        "Assets_%": 4.83258
+      },
+      {
+        "Code": "BHP.AX",
+        "Name": "BHP Group Ltd",
+        "Assets_%": 4.1608
+      },
+      {
+        "Code": "SHEL.L",
+        "Name": "Shell PLC",
+        "Assets_%": 3.88726
+      },
+      {
+        "Code": "CVX",
+        "Name": "Chevron Corp",
+        "Assets_%": 3.77621
+      },
+      {
+        "Code": "ADM",
+        "Name": "Archer-Daniels-Midland Co",
+        "Assets_%": 3.25449
+      },
+      {
+        "Code": "TTE.PA",
+        "Name": "TotalEnergies SE",
+        "Assets_%": 2.86776
+      },
+      {
+        "Code": "RIO.L",
+        "Name": "Rio Tinto PLC Ordinary Shares",
+        "Assets_%": 2.2379601
+      },
+      {
+        "Code": "NEM",
+        "Name": "Newmont Corp",
+        "Assets_%": 2.0486299999999997
+      }
+    ]
+  }
+}

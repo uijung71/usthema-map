@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Robo Global Artificial Intelligence ETF",
+    "Description": "The fund will normally invest at least 80% of its total assets in securities of the index or in depositary receipts representing securities of the index. The index is designed to measure the performance of publicly-traded companies that have a significant portion of their revenue derived from the field of artificial intelligence. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.68,
+    "Asset_Under_Management": 322418976,
+    "Holdings": [
+      {
+        "Code": "AMD",
+        "Name": "Advanced Micro Devices Inc",
+        "Assets_%": 3.44978
+      },
+      {
+        "Code": "NBIS",
+        "Name": "Nebius Group NV Shs Class-A-",
+        "Assets_%": 2.92895
+      },
+      {
+        "Code": "3443.TW",
+        "Name": "Global Unichip Corp",
+        "Assets_%": 2.91431
+      },
+      {
+        "Code": "LITE",
+        "Name": "Lumentum Holdings Inc",
+        "Assets_%": 2.8307099
+      },
+      {
+        "Code": "ALAB",
+        "Name": "Astera Labs Inc",
+        "Assets_%": 2.6975801
+      },
+      {
+        "Code": "IFX.DE",
+        "Name": "Infineon Technologies AG",
+        "Assets_%": 2.66093
+      },
+      {
+        "Code": "CRDO",
+        "Name": "Credo Technology Group Holding Ltd",
+        "Assets_%": 2.6160699999999997
+      },
+      {
+        "Code": "GOOGL",
+        "Name": "Alphabet Inc Class A",
+        "Assets_%": 2.5956799999999998
+      },
+      {
+        "Code": "2454.TW",
+        "Name": "MediaTek Inc",
+        "Assets_%": 2.53191
+      },
+      {
+        "Code": "AMBA",
+        "Name": "Ambarella Inc",
+        "Assets_%": 2.4599599999999997
+      }
+    ]
+  }
+}

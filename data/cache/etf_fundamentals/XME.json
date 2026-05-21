@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "State Street S&P Metals & Mining ETF",
+    "Description": "In seeking to track the performance of the S&P Metals & Mining Select Industry Index (the \"index\"), the fund employs a sampling strategy. It generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index represents the metals and mining segment of the S&P Total Market Index (\"S&P TMI\"). The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.35,
+    "Asset_Under_Management": 5302542336,
+    "Holdings": [
+      {
+        "Code": "NUE",
+        "Name": "Nucor Corp",
+        "Assets_%": 5.4454997
+      },
+      {
+        "Code": "STLD",
+        "Name": "Steel Dynamics Inc",
+        "Assets_%": 5.1535502
+      },
+      {
+        "Code": "RS",
+        "Name": "Reliance Inc",
+        "Assets_%": 4.886340000000001
+      },
+      {
+        "Code": "CLF",
+        "Name": "Cleveland-Cliffs Inc",
+        "Assets_%": 4.56465
+      },
+      {
+        "Code": "HCC",
+        "Name": "Warrior Met Coal Inc",
+        "Assets_%": 4.4059099999999995
+      },
+      {
+        "Code": "MP",
+        "Name": "MP Materials Corp Ordinary Shares - Class A",
+        "Assets_%": 4.40579
+      },
+      {
+        "Code": "USAR",
+        "Name": "USA Rare Earth Inc",
+        "Assets_%": 4.39708
+      },
+      {
+        "Code": "LEU",
+        "Name": "Centrus Energy Corp Class A",
+        "Assets_%": 4.37289
+      },
+      {
+        "Code": "UEC",
+        "Name": "Uranium Energy Corp",
+        "Assets_%": 4.37012
+      },
+      {
+        "Code": "CMC",
+        "Name": "Commercial Metals Co",
+        "Assets_%": 4.3045804
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Roundhill Space & Technology ETF",
+    "Description": "The fund is an actively managed exchange-traded fund (“ETF”) that seeks to achieve its investment objective by investing in the equity securities of Space and Technology Companies. Under normal circumstances, the fund invests at least 80% of its net assets (plus borrowings for investment purposes) in Space and Technology Companies. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.75,
+    "Asset_Under_Management": 28900416,
+    "Holdings": [
+      {
+        "Code": "RKLB",
+        "Name": "Rocket Lab Corp",
+        "Assets_%": 12.660229000000001
+      },
+      {
+        "Code": "SATS",
+        "Name": "EchoStar Corp Class A",
+        "Assets_%": 9.73079
+      },
+      {
+        "Code": "ASTS",
+        "Name": "AST SpaceMobile Inc Ordinary Shares - Class A",
+        "Assets_%": 8.046850599999999
+      },
+      {
+        "Code": "PL",
+        "Name": "Planet Labs PBC Class A",
+        "Assets_%": 5.72476
+      },
+      {
+        "Code": "GSAT",
+        "Name": "Globalstar Inc",
+        "Assets_%": 5.4355998
+      },
+      {
+        "Code": "VSAT",
+        "Name": "Viasat Inc",
+        "Assets_%": 4.47337
+      },
+      {
+        "Code": "LUNR",
+        "Name": "Intuitive Machines Inc Ordinary Shares - Class A",
+        "Assets_%": 4.22351
+      },
+      {
+        "Code": "9412.T",
+        "Name": "SKY Perfect JSAT Corp",
+        "Assets_%": 3.78678
+      },
+      {
+        "Code": "OHB.DE",
+        "Name": "OHB SE",
+        "Assets_%": 3.7854
+      },
+      {
+        "Code": "FLY",
+        "Name": "Firefly Aerospace Inc",
+        "Assets_%": 3.4428302
+      }
+    ]
+  }
+}

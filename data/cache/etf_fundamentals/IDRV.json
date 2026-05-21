@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Self-Driving EV and Tech ETF",
+    "Description": "The index is composed of equity securities of companies listed in one of 43 developed or emerging market countries that derive a certain specified percentage of their revenue from selected autonomous or electric vehicle-related industries, as defined by IDI. The fund generally will invest at least 80% of its assets in the component securities of the index and in investments that have economic characteristics that are substantially identical to the component securities of the index. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.48,
+    "Asset_Under_Management": 160824944,
+    "Holdings": [
+      {
+        "Code": "006400.KS",
+        "Name": "Samsung SDI Co Ltd",
+        "Assets_%": 8.17819
+      },
+      {
+        "Code": "ALB",
+        "Name": "Albemarle Corp",
+        "Assets_%": 5.7400998
+      },
+      {
+        "Code": "PLS.AX",
+        "Name": "PLS Group Ltd",
+        "Assets_%": 5.1031798
+      },
+      {
+        "Code": "ABBN.SW",
+        "Name": "ABB Ltd",
+        "Assets_%": 4.61139
+      },
+      {
+        "Code": "373220.KS",
+        "Name": "LG Energy Solution Ltd",
+        "Assets_%": 3.91142
+      },
+      {
+        "Code": "012330.KS",
+        "Name": "Hyundai Mobis Co Ltd",
+        "Assets_%": 3.8952797999999995
+      },
+      {
+        "Code": "03750",
+        "Name": "Contemporary Amperex Technology Co Ltd Ordinary Shares - Class H",
+        "Assets_%": 3.88458
+      },
+      {
+        "Code": "051910.KS",
+        "Name": "LG Chem Ltd",
+        "Assets_%": 3.7653899999999996
+      },
+      {
+        "Code": "01211",
+        "Name": "BYD Co Ltd Class H",
+        "Assets_%": 3.7534699999999996
+      },
+      {
+        "Code": "9866.HK",
+        "Name": "NIO Inc Class A",
+        "Assets_%": 3.60419
+      }
+    ]
+  }
+}

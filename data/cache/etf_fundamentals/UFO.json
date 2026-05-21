@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Procure Space ETF",
+    "Description": "The fund invests, under normal circumstances, at least 80% of its net assets in companies of the underlying index that receive at least 50% of their revenues or profits from space-related businesses. The underlying index is designed to serve as an equity benchmark for a globally traded portfolio of companies that are engaged in space-related business, such as those utilizing satellite technology. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.75,
+    "Asset_Under_Management": 749256064,
+    "Holdings": [
+      {
+        "Code": "PL",
+        "Name": "Planet Labs PBC Class A",
+        "Assets_%": 6.1644502
+      },
+      {
+        "Code": "VSAT",
+        "Name": "Viasat Inc",
+        "Assets_%": 5.89959
+      },
+      {
+        "Code": "GSAT",
+        "Name": "Globalstar Inc",
+        "Assets_%": 5.28372
+      },
+      {
+        "Code": "SIRI",
+        "Name": "Sirius XM Holdings Inc",
+        "Assets_%": 5.04662
+      },
+      {
+        "Code": "RKLB",
+        "Name": "Rocket Lab Corp",
+        "Assets_%": 5.0239902
+      },
+      {
+        "Code": "SATS",
+        "Name": "EchoStar Corp Class A",
+        "Assets_%": 4.75819
+      },
+      {
+        "Code": "IRDM",
+        "Name": "Iridium Communications Inc",
+        "Assets_%": 4.49956
+      },
+      {
+        "Code": "GRMN",
+        "Name": "Garmin Ltd",
+        "Assets_%": 4.42911
+      },
+      {
+        "Code": "TRMB",
+        "Name": "Trimble Inc",
+        "Assets_%": 4.2354897000000005
+      },
+      {
+        "Code": "MDA.TO",
+        "Name": "MDA Space Ltd",
+        "Assets_%": 4.1019
+      }
+    ]
+  }
+}

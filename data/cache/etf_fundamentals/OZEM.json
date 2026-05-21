@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Roundhill Glp-1 & Weight Loss ETF",
+    "Description": "The fund's manager will invest at least 80% of its net assets (plus any borrowings for investment purposes) in the equity securities of GLP-1 & Weight Loss Companies or any derivative instruments (such as swap agreements or forward contracts) that utilize one or more GLP-1 & Weight Loss Companies as the reference asset. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.59,
+    "Asset_Under_Management": 51454820,
+    "Holdings": [
+      {
+        "Code": "LLY",
+        "Name": "Eli Lilly and Co",
+        "Assets_%": 16.352610000000002
+      },
+      {
+        "Code": "NVO",
+        "Name": "Novo Nordisk AS ADR",
+        "Assets_%": 15.08405
+      },
+      {
+        "Code": "PFE",
+        "Name": "Pfizer Inc",
+        "Assets_%": 7.182589999999999
+      },
+      {
+        "Code": "1801.HK",
+        "Name": "Innovent Biologics Inc",
+        "Assets_%": 5.4145
+      },
+      {
+        "Code": "VKTX",
+        "Name": "Viking Therapeutics Inc",
+        "Assets_%": 5.0640203
+      },
+      {
+        "Code": "1672.HK",
+        "Name": "Ascletis Pharma Inc Ordinary Shares",
+        "Assets_%": 4.6294298
+      },
+      {
+        "Code": "ROP.SW",
+        "Name": "Roche Holding AG Ordinary Shares new",
+        "Assets_%": 4.07176
+      },
+      {
+        "Code": "AMGN",
+        "Name": "Amgen Inc",
+        "Assets_%": 3.87737
+      },
+      {
+        "Code": "ZEAL.CO",
+        "Name": "Zealand Pharma AS",
+        "Assets_%": 3.7163302000000003
+      },
+      {
+        "Code": "AZN.L",
+        "Name": "AstraZeneca PLC",
+        "Assets_%": 3.57554
+      }
+    ]
+  }
+}

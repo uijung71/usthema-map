@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "State Street S&P Kensho New Economies Composite ETF",
+    "Description": "Under normal market conditions, the fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index is designed to capture companies whose products and services are driving innovation and transforming the global economy through the use of existing and emerging technologies, and rapid developments in robotics, automation, artificial intelligence, connectedness and processing power.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.2,
+    "Asset_Under_Management": 2652921600,
+    "Holdings": [
+      {
+        "Code": "ESLT.TA",
+        "Name": "Elbit Systems Ltd",
+        "Assets_%": 1.7479600000000002
+      },
+      {
+        "Code": "BE",
+        "Name": "Bloom Energy Corp Class A",
+        "Assets_%": 1.28956
+      },
+      {
+        "Code": "TDY",
+        "Name": "Teledyne Technologies Inc",
+        "Assets_%": 1.12826
+      },
+      {
+        "Code": "ON",
+        "Name": "ON Semiconductor Corp",
+        "Assets_%": 1.05675
+      },
+      {
+        "Code": "AVAV",
+        "Name": "AeroVironment Inc",
+        "Assets_%": 0.88501
+      },
+      {
+        "Code": "IRDM",
+        "Name": "Iridium Communications Inc",
+        "Assets_%": 0.84013995
+      },
+      {
+        "Code": "DDD",
+        "Name": "3D Systems Corp",
+        "Assets_%": 0.8068900999999999
+      },
+      {
+        "Code": "TWST",
+        "Name": "Twist Bioscience Corp",
+        "Assets_%": 0.7976300000000001
+      },
+      {
+        "Code": "GNRC",
+        "Name": "Generac Holdings Inc",
+        "Assets_%": 0.76403
+      },
+      {
+        "Code": "OII",
+        "Name": "Oceaneering International Inc",
+        "Assets_%": 0.74354
+      }
+    ]
+  }
+}

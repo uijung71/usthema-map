@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Roundhill Sports Betting & iGaming ETF",
+    "Description": "The index was developed by Morningstar, Inc. and is designed to provide pure exposure to sports and online betting themes. The fund will generally invest all, or substantially all, of its assets in the component securities of the index, but also may invest in investments that provide comparable exposure, including but not limited to depositary receipts representing Index components and investments in other ETFs. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.75,
+    "Asset_Under_Management": 50728516,
+    "Holdings": [
+      {
+        "Code": "RSI",
+        "Name": "Rush Street Interactive Inc Ordinary Shares - Class A",
+        "Assets_%": 7.777279600000001
+      },
+      {
+        "Code": "EVO.ST",
+        "Name": "Evolution AB",
+        "Assets_%": 6.75886
+      },
+      {
+        "Code": "TAH.AX",
+        "Name": "Tabcorp Holdings Ltd",
+        "Assets_%": 6.6370700000000005
+      },
+      {
+        "Code": "LTMC.MI",
+        "Name": "Lottomatica Group SpA",
+        "Assets_%": 6.4564200000000005
+      },
+      {
+        "Code": "SGHC",
+        "Name": "Super Group (SGHC) Ltd",
+        "Assets_%": 5.899509800000001
+      },
+      {
+        "Code": "TLC.AX",
+        "Name": "The Lottery Corp Ltd",
+        "Assets_%": 5.8223400000000005
+      },
+      {
+        "Code": "FDJU.PA",
+        "Name": "FDJ United Ordinary Shares",
+        "Assets_%": 5.39005
+      },
+      {
+        "Code": "FLUT",
+        "Name": "Flutter Entertainment PLC",
+        "Assets_%": 5.322620000000001
+      },
+      {
+        "Code": "CHDN",
+        "Name": "Churchill Downs Inc",
+        "Assets_%": 5.10897
+      },
+      {
+        "Code": "DKNG",
+        "Name": "DraftKings Inc Ordinary Shares - Class A",
+        "Assets_%": 4.94074
+      }
+    ]
+  }
+}

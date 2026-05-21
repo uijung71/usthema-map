@@ -1,0 +1,12 @@
+{
+  "General": {
+    "Name": "Gaming ETF",
+    "Description": "",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0,
+    "Asset_Under_Management": 0,
+    "Holdings": []
+  }
+}

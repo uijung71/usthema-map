@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Genomics Immunology and Healthcare ETF",
+    "Description": "The fund generally will invest at least 80% of its assets in the component securities of the index and in investments that have economic characteristics that are substantially identical to the component securities of the index and may invest up to 20% of its assets in certain futures, options and swap contracts, cash and cash equivalents. The index is composed of developed and emerging market companies that could benefit from the long-term growth and innovation in genomics, immunology and bioengineering. -null-. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.47,
+    "Asset_Under_Management": 160477920,
+    "Holdings": [
+      {
+        "Code": "RVMD",
+        "Name": "Revolution Medicines Inc Ordinary Shares",
+        "Assets_%": 6.85684
+      },
+      {
+        "Code": "MRNA",
+        "Name": "Moderna Inc",
+        "Assets_%": 6.28408
+      },
+      {
+        "Code": "IPN.PA",
+        "Name": "Ipsen SA",
+        "Assets_%": 5.2277002
+      },
+      {
+        "Code": "4502.T",
+        "Name": "Takeda Pharmaceutical Co Ltd",
+        "Assets_%": 4.48615
+      },
+      {
+        "Code": "BAYN.DE",
+        "Name": "Bayer AG",
+        "Assets_%": 4.35956
+      },
+      {
+        "Code": "MRK",
+        "Name": "Merck & Co Inc",
+        "Assets_%": 4.14851
+      },
+      {
+        "Code": "GSK.L",
+        "Name": "GSK PLC",
+        "Assets_%": 4.12295
+      },
+      {
+        "Code": "BNTX",
+        "Name": "BioNTech SE ADR",
+        "Assets_%": 4.0724599999999995
+      },
+      {
+        "Code": "ROP.SW",
+        "Name": "Roche Holding AG Ordinary Shares new",
+        "Assets_%": 3.99056
+      },
+      {
+        "Code": "EXEL",
+        "Name": "Exelixis Inc",
+        "Assets_%": 3.79759
+      }
+    ]
+  }
+}

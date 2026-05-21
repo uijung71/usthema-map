@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Xtrackers Semiconductor Select Equity ETF",
+    "Description": "The fund, using a “passive” or indexing investment approach, seeks investment results that correspond generally to the performance, before fees and expenses, of the underlying index, which is comprised of companies that have business operations in the semiconductor industry and that fulfill certain sustainability criteria. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.15,
+    "Asset_Under_Management": 65844372,
+    "Holdings": [
+      {
+        "Code": "INTC",
+        "Name": "Intel Corp",
+        "Assets_%": 7.0777304
+      },
+      {
+        "Code": "AMD",
+        "Name": "Advanced Micro Devices Inc",
+        "Assets_%": 5.4075397999999995
+      },
+      {
+        "Code": "000660.KS",
+        "Name": "SK Hynix Inc",
+        "Assets_%": 5.4072097
+      },
+      {
+        "Code": "MU",
+        "Name": "Micron Technology Inc",
+        "Assets_%": 4.87748
+      },
+      {
+        "Code": "TXN",
+        "Name": "Texas Instruments Inc",
+        "Assets_%": 4.8449800000000005
+      },
+      {
+        "Code": "ADI",
+        "Name": "Analog Devices Inc",
+        "Assets_%": 4.3994498
+      },
+      {
+        "Code": "AMAT",
+        "Name": "Applied Materials Inc",
+        "Assets_%": 4.319859999999999
+      },
+      {
+        "Code": "KLAC",
+        "Name": "KLA Corp",
+        "Assets_%": 4.11637
+      },
+      {
+        "Code": "LRCX",
+        "Name": "Lam Research Corp",
+        "Assets_%": 4.0612202
+      },
+      {
+        "Code": "2330.TW",
+        "Name": "Taiwan Semiconductor Manufacturing Co Ltd",
+        "Assets_%": 4.0482
+      }
+    ]
+  }
+}

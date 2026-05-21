@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "MSCI Global Metals & Mining Producers ETF",
+    "Description": "The fund will invest at least 80% of its assets in the component securities of the index and in investments that have economic characteristics that are substantially identical to the component securities of the index. The index measure the combined performance of equities of companies in both developed and emerging markets that are primarily involved in the extraction or production of diversified metals, the production of aluminum or steel and in the mining of precious metals and minerals. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.39,
+    "Asset_Under_Management": 1908997632,
+    "Holdings": [
+      {
+        "Code": "BHP.AX",
+        "Name": "BHP Group Ltd",
+        "Assets_%": 12.231579400000001
+      },
+      {
+        "Code": "RIO.L",
+        "Name": "Rio Tinto PLC Ordinary Shares",
+        "Assets_%": 7.02845
+      },
+      {
+        "Code": "FCX",
+        "Name": "Freeport-McMoRan Inc",
+        "Assets_%": 5.17355
+      },
+      {
+        "Code": "GLEN.L",
+        "Name": "Glencore PLC",
+        "Assets_%": 4.7991
+      },
+      {
+        "Code": "VALE3.SA",
+        "Name": "Vale SA",
+        "Assets_%": 3.6892500000000004
+      },
+      {
+        "Code": "AAL.L",
+        "Name": "Anglo American PLC",
+        "Assets_%": 3.401
+      },
+      {
+        "Code": "NUE",
+        "Name": "Nucor Corp",
+        "Assets_%": 3.2150499999999997
+      },
+      {
+        "Code": "RIO.AX",
+        "Name": "Rio Tinto Ltd",
+        "Assets_%": 2.7868299
+      },
+      {
+        "Code": "GMEXICOB.MX",
+        "Name": "Grupo Mexico SAB de CV Class B",
+        "Assets_%": 2.12007
+      },
+      {
+        "Code": "STLD",
+        "Name": "Steel Dynamics Inc",
+        "Assets_%": 1.9786399
+      }
+    ]
+  }
+}

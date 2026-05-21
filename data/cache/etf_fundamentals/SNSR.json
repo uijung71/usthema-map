@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Internet of Things ETF",
+    "Description": "The fund invests at least 80% of its total assets in the securities of the underlying index. The underlying index is designed to provide exposure to exchange-listed companies in developed markets that facilitate the Internet of Things industry, including companies involved in wearable technology, home automation, connected automotive technology, sensors, networking infrastructure/software, smart metering and energy control devices. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.68,
+    "Asset_Under_Management": 218085248,
+    "Holdings": [
+      {
+        "Code": "STMPA.PA",
+        "Name": "STMicroelectronics NV",
+        "Assets_%": 8.553099999999999
+      },
+      {
+        "Code": "LSCC",
+        "Name": "Lattice Semiconductor Corp",
+        "Assets_%": 5.99849
+      },
+      {
+        "Code": "GRMN",
+        "Name": "Garmin Ltd",
+        "Assets_%": 5.487410000000001
+      },
+      {
+        "Code": "RMBS",
+        "Name": "Rambus Inc",
+        "Assets_%": 4.44955
+      },
+      {
+        "Code": "DXCM",
+        "Name": "DexCom Inc",
+        "Assets_%": 4.42101
+      },
+      {
+        "Code": "SWKS",
+        "Name": "Skyworks Solutions Inc",
+        "Assets_%": 3.78449
+      },
+      {
+        "Code": "IOT",
+        "Name": "Samsara Inc Ordinary Shares - Class A",
+        "Assets_%": 3.6920599999999997
+      },
+      {
+        "Code": "2395.TW",
+        "Name": "Advantech Co Ltd",
+        "Assets_%": 3.52557
+      },
+      {
+        "Code": "3529.TWO",
+        "Name": "eMemory Technology Inc",
+        "Assets_%": 3.3124000000000002
+      },
+      {
+        "Code": "2454.TW",
+        "Name": "MediaTek Inc",
+        "Assets_%": 2.5804501
+      }
+    ]
+  }
+}

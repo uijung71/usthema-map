@@ -1,0 +1,58 @@
+{
+  "General": {
+    "Name": "Blockchain ETF",
+    "Description": "The fund invests at least 80% of its total assets, plus borrowings for investments purposes (if any), in the securities of the index and in American Depositary Receipts (\"ADRs\") and Global Depositary Receipts (\"GDRs\") based on the securities in the underlying index. The underlying index is designed to provide exposure to companies that are positioned to benefit from further advances in the field of blockchain technology. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.5,
+    "Asset_Under_Management": 314120896,
+    "Holdings": [
+      {
+        "Code": "IREN",
+        "Name": "IREN Ltd",
+        "Assets_%": 11.47945
+      },
+      {
+        "Code": "APLD",
+        "Name": "Applied Digital Corp",
+        "Assets_%": 10.048110000000001
+      },
+      {
+        "Code": "COIN",
+        "Name": "Coinbase Global Inc Ordinary Shares - Class A",
+        "Assets_%": 9.63425
+      },
+      {
+        "Code": "BMNR",
+        "Name": "BitMine Immersion Technologies Inc",
+        "Assets_%": 8.11094
+      },
+      {
+        "Code": "WULF",
+        "Name": "TeraWulf Inc",
+        "Assets_%": 7.21387
+      },
+      {
+        "Code": "HUT",
+        "Name": "Hut 8 Corp",
+        "Assets_%": 5.972029999999999
+      },
+      {
+        "Code": "RIOT",
+        "Name": "Riot Platforms Inc",
+        "Assets_%": 4.9462600000000005
+      },
+      {
+        "Code": "CORZ",
+        "Name": "Core Scientific Inc Ordinary Shares - New",
+        "Assets_%": 4.93419
+      },
+      {
+        "Code": "CIFR",
+        "Name": "Cipher Digital Inc",
+        "Assets_%": 4.93346
+      }
+    ]
+  }
+}

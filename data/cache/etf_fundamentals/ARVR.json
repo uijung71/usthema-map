@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "First Trust Indxx Metaverse ETF",
+    "Description": "Under normal market conditions, the fund will invest at least 80% of its net assets (plus any borrowings for investment purposes) in the securities that comprise the index. The index is comprised of companies that provide services and products that support the infrastructure and applications of the Metaverse.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.7,
+    "Asset_Under_Management": 5176714,
+    "Holdings": [
+      {
+        "Code": "INTC",
+        "Name": "Intel Corp",
+        "Assets_%": 4.27938
+      },
+      {
+        "Code": "AMD",
+        "Name": "Advanced Micro Devices Inc",
+        "Assets_%": 4.18889
+      },
+      {
+        "Code": "STMPA.PA",
+        "Name": "STMicroelectronics NV",
+        "Assets_%": 3.9803699999999997
+      },
+      {
+        "Code": "QCOM",
+        "Name": "Qualcomm Inc",
+        "Assets_%": 3.92804
+      },
+      {
+        "Code": "TXN",
+        "Name": "Texas Instruments Inc",
+        "Assets_%": 3.6530397999999997
+      },
+      {
+        "Code": "MCHP",
+        "Name": "Microchip Technology Inc",
+        "Assets_%": 3.6494400000000002
+      },
+      {
+        "Code": "MU",
+        "Name": "Micron Technology Inc",
+        "Assets_%": 3.43063
+      },
+      {
+        "Code": "SNPS",
+        "Name": "Synopsys Inc",
+        "Assets_%": 3.33204
+      },
+      {
+        "Code": "ZM",
+        "Name": "Zoom Communications Inc",
+        "Assets_%": 3.23166
+      },
+      {
+        "Code": "MSFT",
+        "Name": "Microsoft Corp",
+        "Assets_%": 3.05205
+      }
+    ]
+  }
+}

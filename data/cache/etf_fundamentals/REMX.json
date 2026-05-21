@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Rare Earth and Strategic Metals ETF",
+    "Description": "The fund normally invests at least 80% of its total assets in securities that comprise the fund's benchmark index. The index includes companies primarily engaged in a variety of activities that are related to the producing, refining and recycling of rare earth and strategic metals and minerals. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.53,
+    "Asset_Under_Management": 3016671488,
+    "Holdings": [
+      {
+        "Code": "ALB",
+        "Name": "Albemarle Corp",
+        "Assets_%": 8.6938
+      },
+      {
+        "Code": "PLS.AX",
+        "Name": "PLS Group Ltd",
+        "Assets_%": 7.4832805
+      },
+      {
+        "Code": "LYC.AX",
+        "Name": "Lynas Rare Earths Ltd",
+        "Assets_%": 7.2142800000000005
+      },
+      {
+        "Code": "600111.SS",
+        "Name": "China Northern Rare Earth (Group) High-Tech Co Ltd Class A",
+        "Assets_%": 6.5216996
+      },
+      {
+        "Code": "LTR.AX",
+        "Name": "Liontown Ltd",
+        "Assets_%": 6.304659999999999
+      },
+      {
+        "Code": "01772",
+        "Name": "Ganfeng Lithium Group Co Ltd",
+        "Assets_%": 5.8288199999999994
+      },
+      {
+        "Code": "MP",
+        "Name": "MP Materials Corp Ordinary Shares - Class A",
+        "Assets_%": 5.6512199999999995
+      },
+      {
+        "Code": "SQM",
+        "Name": "Sociedad Quimica Y Minera De Chile SA ADR",
+        "Assets_%": 5.5914797
+      },
+      {
+        "Code": "600549.SS",
+        "Name": "Xiamen Tungsten Co Ltd Class A",
+        "Assets_%": 4.514060000000001
+      },
+      {
+        "Code": "600392.SS",
+        "Name": "Shenghe Resources Holding Co Ltd Class A",
+        "Assets_%": 4.0949896
+      }
+    ]
+  }
+}

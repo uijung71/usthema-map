@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Amplify Blockchain Technology ETF",
+    "Description": "The fund is an actively managed ETF that seeks to provide total return by investing at least 80% of its net assets (plus borrowings for investment purposes) in the equity securities of companies actively involved in the development and utilization of blockchain technologies.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.7,
+    "Asset_Under_Management": 1167725440,
+    "Holdings": [
+      {
+        "Code": "WULF",
+        "Name": "TeraWulf Inc",
+        "Assets_%": 3.9829098
+      },
+      {
+        "Code": "HUT",
+        "Name": "Hut 8 Corp",
+        "Assets_%": 3.94866
+      },
+      {
+        "Code": "GLXY",
+        "Name": "Galaxy Digital Inc Ordinary Shares - Class A",
+        "Assets_%": 3.92222
+      },
+      {
+        "Code": "CIFR",
+        "Name": "Cipher Digital Inc",
+        "Assets_%": 3.74627
+      },
+      {
+        "Code": "OPRA",
+        "Name": "Opera Ltd ADR",
+        "Assets_%": 3.0692302000000002
+      },
+      {
+        "Code": "CORZ",
+        "Name": "Core Scientific Inc Ordinary Shares - New",
+        "Assets_%": 2.90429
+      },
+      {
+        "Code": "COIN",
+        "Name": "Coinbase Global Inc Ordinary Shares - Class A",
+        "Assets_%": 2.8948199
+      },
+      {
+        "Code": "NU",
+        "Name": "Nu Holdings Ltd Ordinary Shares Class A",
+        "Assets_%": 2.83471
+      },
+      {
+        "Code": "8473.T",
+        "Name": "SBI Holdings Inc",
+        "Assets_%": 2.74566
+      },
+      {
+        "Code": "BBBY",
+        "Name": "Bed Bath & Beyond Inc",
+        "Assets_%": 2.7437799
+      }
+    ]
+  }
+}

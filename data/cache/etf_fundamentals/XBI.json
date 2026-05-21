@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "State Street S&P Biotech ETF",
+    "Description": "In seeking to track the performance of the S&P Biotechnology Select Industry Index (the \"index\"), the fund employs a sampling strategy. It generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index represents the biotechnology segment of the S&P Total Market Index (\"S&P TMI\").",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.35,
+    "Asset_Under_Management": 8295757312,
+    "Holdings": [
+      {
+        "Code": "APLS",
+        "Name": "Apellis Pharmaceuticals Inc",
+        "Assets_%": 1.86512
+      },
+      {
+        "Code": "RVMD",
+        "Name": "Revolution Medicines Inc Ordinary Shares",
+        "Assets_%": 1.6474699999999998
+      },
+      {
+        "Code": "TVTX",
+        "Name": "Travere Therapeutics Inc Ordinary Shares",
+        "Assets_%": 1.6204600999999998
+      },
+      {
+        "Code": "ARWR",
+        "Name": "Arrowhead Pharmaceuticals Inc",
+        "Assets_%": 1.4397699
+      },
+      {
+        "Code": "TWST",
+        "Name": "Twist Bioscience Corp",
+        "Assets_%": 1.41993
+      },
+      {
+        "Code": "SMMT",
+        "Name": "Summit Therapeutics Inc Ordinary Shares",
+        "Assets_%": 1.4032499999999999
+      },
+      {
+        "Code": "ALKS",
+        "Name": "Alkermes PLC",
+        "Assets_%": 1.3819599999999999
+      },
+      {
+        "Code": "TGTX",
+        "Name": "TG Therapeutics Inc",
+        "Assets_%": 1.3710000999999998
+      },
+      {
+        "Code": "MDGL",
+        "Name": "Madrigal Pharmaceuticals Inc",
+        "Assets_%": 1.3647701
+      },
+      {
+        "Code": "BEAM",
+        "Name": "Beam Therapeutics Inc",
+        "Assets_%": 1.32399
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "U.S. Insurance ETF",
+    "Description": "The fund generally will invest at least 80% of its assets in the component securities of its underlying index and in investments that have economic characteristics that are substantially identical to the component securities of its underlying index and may invest up to 20% of its assets in certain futures, options and swap contracts, cash and cash equivalents as well as in securities not included in the underlying index, but which BFA believes will help the fund track the index. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.38,
+    "Asset_Under_Management": 370618912,
+    "Holdings": [
+      {
+        "Code": "CB",
+        "Name": "Chubb Ltd",
+        "Assets_%": 13.32161
+      },
+      {
+        "Code": "PGR",
+        "Name": "Progressive Corp",
+        "Assets_%": 13.213349999999998
+      },
+      {
+        "Code": "TRV",
+        "Name": "The Travelers Companies Inc",
+        "Assets_%": 7.3904700000000005
+      },
+      {
+        "Code": "ALL",
+        "Name": "Allstate Corp",
+        "Assets_%": 6.32685
+      },
+      {
+        "Code": "MET",
+        "Name": "MetLife Inc",
+        "Assets_%": 5.0068498
+      },
+      {
+        "Code": "AFL",
+        "Name": "Aflac Inc",
+        "Assets_%": 4.54661
+      },
+      {
+        "Code": "HIG",
+        "Name": "The Hartford Insurance Group Inc",
+        "Assets_%": 4.432869999999999
+      },
+      {
+        "Code": "AIG",
+        "Name": "American International Group Inc",
+        "Assets_%": 4.1952502
+      },
+      {
+        "Code": "PRU",
+        "Name": "Prudential Financial Inc",
+        "Assets_%": 4.04847
+      },
+      {
+        "Code": "ACGL",
+        "Name": "Arch Capital Group Ltd",
+        "Assets_%": 3.92292
+      }
+    ]
+  }
+}

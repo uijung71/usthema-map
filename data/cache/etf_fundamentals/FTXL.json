@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "First Trust Nasdaq Semiconductor ETF",
+    "Description": "The fund invests at least 90% of its net assets (including investment borrowings) in the securities that comprise the index. The index is designed to provide exposure to U.S. companies comprising the semiconductor sector that have been selected based upon their liquidity and ranking. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.6,
+    "Asset_Under_Management": 2218653952,
+    "Holdings": [
+      {
+        "Code": "INTC",
+        "Name": "Intel Corp",
+        "Assets_%": 12.00618
+      },
+      {
+        "Code": "AVGO",
+        "Name": "Broadcom Inc",
+        "Assets_%": 7.57123
+      },
+      {
+        "Code": "QCOM",
+        "Name": "Qualcomm Inc",
+        "Assets_%": 7.311280000000001
+      },
+      {
+        "Code": "MU",
+        "Name": "Micron Technology Inc",
+        "Assets_%": 7.26882
+      },
+      {
+        "Code": "NVDA",
+        "Name": "NVIDIA Corp",
+        "Assets_%": 6.52799
+      },
+      {
+        "Code": "MRVL",
+        "Name": "Marvell Technology Inc",
+        "Assets_%": 5.8587197
+      },
+      {
+        "Code": "AMD",
+        "Name": "Advanced Micro Devices Inc",
+        "Assets_%": 5.13118
+      },
+      {
+        "Code": "ON",
+        "Name": "ON Semiconductor Corp",
+        "Assets_%": 4.39449
+      },
+      {
+        "Code": "TXN",
+        "Name": "Texas Instruments Inc",
+        "Assets_%": 3.8402899999999995
+      },
+      {
+        "Code": "NXPI",
+        "Name": "NXP Semiconductors NV",
+        "Assets_%": 3.74791
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "State Street Utilities Select Sector ETF",
+    "Description": "In seeking to track the performance of the index, the fund employs a replication strategy. It generally invests substantially all, but at least 95%, of its total assets in the securities comprising the index. The index includes securities of companies from the following industries: electric utilities; water utilities; multi-utilities; independent power and renewable electricity producers; and gas utilities. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.08,
+    "Asset_Under_Management": 24051787776,
+    "Holdings": [
+      {
+        "Code": "NEE",
+        "Name": "NextEra Energy Inc",
+        "Assets_%": 13.995550000000001
+      },
+      {
+        "Code": "SO",
+        "Name": "Southern Co",
+        "Assets_%": 7.3103299999999996
+      },
+      {
+        "Code": "DUK",
+        "Name": "Duke Energy Corp",
+        "Assets_%": 6.9170095
+      },
+      {
+        "Code": "CEG",
+        "Name": "Constellation Energy Corp",
+        "Assets_%": 6.696879999999999
+      },
+      {
+        "Code": "AEP",
+        "Name": "American Electric Power Co Inc",
+        "Assets_%": 5.09141
+      },
+      {
+        "Code": "SRE",
+        "Name": "Sempra",
+        "Assets_%": 4.2625297
+      },
+      {
+        "Code": "D",
+        "Name": "Dominion Energy Inc",
+        "Assets_%": 3.7815300000000005
+      },
+      {
+        "Code": "ETR",
+        "Name": "Entergy Corp",
+        "Assets_%": 3.66181
+      },
+      {
+        "Code": "VST",
+        "Name": "Vistra Corp",
+        "Assets_%": 3.4512899999999997
+      },
+      {
+        "Code": "XEL",
+        "Name": "Xcel Energy Inc",
+        "Assets_%": 3.3688200000000004
+      }
+    ]
+  }
+}

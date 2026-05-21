@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Cybersecurity ETF",
+    "Description": "The fund invests at least 80% of its total assets in the securities of the underlying index and in American Depositary Receipts (\"ADRs\") and Global Depositary Receipts (\"GDRs\") based on the securities in the underlying index. The underlying index is designed to provide exposure to exchange-listed companies that are positioned to benefit from increased adoption of cybersecurity technology. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.5,
+    "Asset_Under_Management": 875786560,
+    "Holdings": [
+      {
+        "Code": "PANW",
+        "Name": "Palo Alto Networks Inc",
+        "Assets_%": 12.164
+      },
+      {
+        "Code": "AKAM",
+        "Name": "Akamai Technologies Inc",
+        "Assets_%": 7.877049599999999
+      },
+      {
+        "Code": "FTNT",
+        "Name": "Fortinet Inc",
+        "Assets_%": 7.79296
+      },
+      {
+        "Code": "BB.TO",
+        "Name": "BlackBerry Ltd",
+        "Assets_%": 6.52639
+      },
+      {
+        "Code": "CRWD",
+        "Name": "CrowdStrike Holdings Inc Class A",
+        "Assets_%": 6.23013
+      },
+      {
+        "Code": "S",
+        "Name": "SentinelOne Inc Class A",
+        "Assets_%": 4.83291
+      },
+      {
+        "Code": "OKTA",
+        "Name": "Okta Inc Class A",
+        "Assets_%": 4.78876
+      },
+      {
+        "Code": "ATEN",
+        "Name": "A10 Networks Inc",
+        "Assets_%": 4.382
+      },
+      {
+        "Code": "VRNS",
+        "Name": "Varonis Systems Inc",
+        "Assets_%": 4.30511
+      },
+      {
+        "Code": "CHKP",
+        "Name": "Check Point Software Technologies Ltd",
+        "Assets_%": 4.26084
+      }
+    ]
+  }
+}

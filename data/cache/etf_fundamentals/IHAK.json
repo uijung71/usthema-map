@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Cybersecurity and Tech ETF",
+    "Description": "The fund generally will invest at least 80% of its assets in the component securities of the index and in investments that have economic characteristics that are substantially identical to the component securities of the index and may invest up to 20% of its assets in certain futures, options and swap contracts, cash and cash equivalents. The index is composed of developed and emerging market companies that are involved in cyber security and technology, including cyber security hardware, software, products, and services. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.47,
+    "Asset_Under_Management": 744322304,
+    "Holdings": [
+      {
+        "Code": "2345.TW",
+        "Name": "Accton Technology Corp",
+        "Assets_%": 9.89166
+      },
+      {
+        "Code": "YOU",
+        "Name": "Clear Secure Inc Ordinary Shares Class A",
+        "Assets_%": 6.74534
+      },
+      {
+        "Code": "AKAM",
+        "Name": "Akamai Technologies Inc",
+        "Assets_%": 5.3571800000000005
+      },
+      {
+        "Code": "BB.TO",
+        "Name": "BlackBerry Ltd",
+        "Assets_%": 4.52817
+      },
+      {
+        "Code": "S",
+        "Name": "SentinelOne Inc Class A",
+        "Assets_%": 4.2364
+      },
+      {
+        "Code": "FTNT",
+        "Name": "Fortinet Inc",
+        "Assets_%": 4.2133298
+      },
+      {
+        "Code": "SAIC",
+        "Name": "Science Applications International Corp",
+        "Assets_%": 4.17882
+      },
+      {
+        "Code": "PANW",
+        "Name": "Palo Alto Networks Inc",
+        "Assets_%": 3.9169500000000004
+      },
+      {
+        "Code": "BAH",
+        "Name": "Booz Allen Hamilton Holding Corp Class A",
+        "Assets_%": 3.8379700000000003
+      },
+      {
+        "Code": "CACI",
+        "Name": "CACI International Inc Class A",
+        "Assets_%": 3.7892200000000003
+      }
+    ]
+  }
+}

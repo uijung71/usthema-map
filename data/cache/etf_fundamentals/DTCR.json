@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Data Center & Digital Infrastructure ETF",
+    "Description": "The fund invests at least 80% of its total assets, plus borrowings for investments purposes, in the securities of the Solactive Data Center REITs & Digital Infrastructure Index and in ADRs and GDRs based on the securities in the index. The index is designed to provide exposure to companies that have business operations in the fields of data centers, cellular towers, and/or digital infrastructure hardware. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.5,
+    "Asset_Under_Management": 1672684032,
+    "Holdings": [
+      {
+        "Code": "EQIX",
+        "Name": "Equinix Inc",
+        "Assets_%": 13.58938
+      },
+      {
+        "Code": "DLR",
+        "Name": "Digital Realty Trust Inc",
+        "Assets_%": 12.65345
+      },
+      {
+        "Code": "AMT",
+        "Name": "American Tower Corp",
+        "Assets_%": 10.32281
+      },
+      {
+        "Code": "CCI",
+        "Name": "Crown Castle Inc",
+        "Assets_%": 7.53126
+      },
+      {
+        "Code": "NXT.AX",
+        "Name": "Nextdc Ltd",
+        "Assets_%": 5.44766
+      },
+      {
+        "Code": "SBAC",
+        "Name": "SBA Communications Corp Class A",
+        "Assets_%": 4.33015
+      },
+      {
+        "Code": "AJBU.SI",
+        "Name": "Keppel DC REIT",
+        "Assets_%": 3.95292
+      },
+      {
+        "Code": "UNIT",
+        "Name": "Uniti Group Inc",
+        "Assets_%": 3.7402100000000003
+      },
+      {
+        "Code": "GDS",
+        "Name": "GDS Holdings Ltd ADR",
+        "Assets_%": 3.61871
+      },
+      {
+        "Code": "APLD",
+        "Name": "Applied Digital Corp",
+        "Assets_%": 3.5677800000000004
+      }
+    ]
+  }
+}

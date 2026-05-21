@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Semiconductor ETF",
+    "Description": "The fund normally invests at least 80% of its total assets in securities that comprise the fund's benchmark index. The index includes common stocks and depositary receipts of U.S. exchange-listed companies in the semiconductor industry. Such companies may include medium-capitalization companies and foreign companies that are listed on a U.S. exchange. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.35,
+    "Asset_Under_Management": 58790612992,
+    "Holdings": [
+      {
+        "Code": "NVDA",
+        "Name": "NVIDIA Corp",
+        "Assets_%": 18.08606
+      },
+      {
+        "Code": "TSM",
+        "Name": "Taiwan Semiconductor Manufacturing Co Ltd ADR",
+        "Assets_%": 10.58562
+      },
+      {
+        "Code": "AVGO",
+        "Name": "Broadcom Inc",
+        "Assets_%": 7.8333706
+      },
+      {
+        "Code": "INTC",
+        "Name": "Intel Corp",
+        "Assets_%": 7.14436
+      },
+      {
+        "Code": "AMD",
+        "Name": "Advanced Micro Devices Inc",
+        "Assets_%": 5.95423
+      },
+      {
+        "Code": "MU",
+        "Name": "Micron Technology Inc",
+        "Assets_%": 4.9776003
+      },
+      {
+        "Code": "TXN",
+        "Name": "Texas Instruments Inc",
+        "Assets_%": 4.9025300000000005
+      },
+      {
+        "Code": "KLAC",
+        "Name": "KLA Corp",
+        "Assets_%": 4.48522
+      },
+      {
+        "Code": "ADI",
+        "Name": "Analog Devices Inc",
+        "Assets_%": 4.4122
+      },
+      {
+        "Code": "LRCX",
+        "Name": "Lam Research Corp",
+        "Assets_%": 4.1117102
+      }
+    ]
+  }
+}

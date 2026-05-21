@@ -1,0 +1,63 @@
+{
+    "General": {
+        "Name": "First Trust Cloud Computing ETF",
+        "Description": "The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks and depositary receipts that comprise the index. The index is designed to track the performance of companies involved in the cloud computing industry.",
+        "UpdatedAt": "2026-05-21"
+    },
+    "ETF_Data": {
+        "Expense_Ratio": 0.6,
+        "Asset_Under_Management": 2441676800,
+        "Holdings": [
+            {
+                "Code": "ANET",
+                "Name": "Arista Networks Inc",
+                "Assets_%": 4.42104
+            },
+            {
+                "Code": "AMZN",
+                "Name": "Amazon.com Inc",
+                "Assets_%": 4.3133304
+            },
+            {
+                "Code": "GOOGL",
+                "Name": "Alphabet Inc Class A",
+                "Assets_%": 4.21805
+            },
+            {
+                "Code": "CRWV",
+                "Name": "CoreWeave Inc Ordinary Shares - Class A",
+                "Assets_%": 3.9946202
+            },
+            {
+                "Code": "DOCN",
+                "Name": "DigitalOcean Holdings Inc",
+                "Assets_%": 3.98148
+            },
+            {
+                "Code": "P",
+                "Name": "Everpure Inc Class A",
+                "Assets_%": 3.80206
+            },
+            {
+                "Code": "ORCL",
+                "Name": "Oracle Corp",
+                "Assets_%": 3.79321
+            },
+            {
+                "Code": "NTNX",
+                "Name": "Nutanix Inc Class A",
+                "Assets_%": 3.6503599999999996
+            },
+            {
+                "Code": "MSFT",
+                "Name": "Microsoft Corp",
+                "Assets_%": 3.5482096999999997
+            },
+            {
+                "Code": "LUMN",
+                "Name": "Lumen Technologies Inc Ordinary Shares",
+                "Assets_%": 3.54071
+            }
+        ]
+    }
+}

@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "MSCI Sustainable Future ETF",
+    "Description": "The fund generally invests at least 90% of its total assets in securities that comprise the underlying index. The underlying index is a custom index comprised of companies that the index provider has determined focus on offering products or services that contribute to a more environmentally sustainable economy by making a more efficient use of limited global natural resources.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.66,
+    "Asset_Under_Management": 147093184,
+    "Holdings": [
+      {
+        "Code": "DLR",
+        "Name": "Digital Realty Trust Inc",
+        "Assets_%": 5.5342697
+      },
+      {
+        "Code": "NVDA",
+        "Name": "NVIDIA Corp",
+        "Assets_%": 5.34553
+      },
+      {
+        "Code": "01211",
+        "Name": "BYD Co Ltd Class H",
+        "Assets_%": 5.2641800000000005
+      },
+      {
+        "Code": "VWS.CO",
+        "Name": "Vestas Wind Systems AS",
+        "Assets_%": 4.6707301999999995
+      },
+      {
+        "Code": "TSLA",
+        "Name": "Tesla Inc",
+        "Assets_%": 4.60457
+      },
+      {
+        "Code": "FSLR",
+        "Name": "First Solar Inc",
+        "Assets_%": 3.0972199999999996
+      },
+      {
+        "Code": "NXT",
+        "Name": "Nextpower Inc Class A",
+        "Assets_%": 2.66018
+      },
+      {
+        "Code": "300750.SZ",
+        "Name": "Contemporary Amperex Technology Co Ltd Class A",
+        "Assets_%": 2.55459
+      },
+      {
+        "Code": "URW.PA",
+        "Name": "Unibail-Rodamco-Westfield Act. SIIC ET STES FONC.EUROP.",
+        "Assets_%": 2.22473
+      },
+      {
+        "Code": "373220.KS",
+        "Name": "LG Energy Solution Ltd",
+        "Assets_%": 2.2107301
+      }
+    ]
+  }
+}

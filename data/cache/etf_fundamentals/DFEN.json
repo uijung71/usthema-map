@@ -1,0 +1,53 @@
+{
+  "General": {
+    "Name": "Direxion Daily Aerospace & Defense Bull 3X Shares",
+    "Description": "The fund invests at least 80% of its net assets (plus borrowing for investment purposes) in financial instruments, such as swap agreements, securities of the index, and exchange-traded funds (\"ETFs\") that track the index, that, in combination, provide 3X daily leveraged exposure to the index, consistent with the fund's investment objective. The index attempts to measure the performance of the aerospace and defense industry of the U.S. equity market. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.96,
+    "Asset_Under_Management": 365965088,
+    "Holdings": [
+      {
+        "Code": "GE",
+        "Name": "GE Aerospace",
+        "Assets_%": 13.39239
+      },
+      {
+        "Code": "RTX",
+        "Name": "RTX Corp",
+        "Assets_%": 10.40885
+      },
+      {
+        "Code": "BA",
+        "Name": "Boeing Co",
+        "Assets_%": 7.06513
+      },
+      {
+        "Code": "GD",
+        "Name": "General Dynamics Corp",
+        "Assets_%": 3.29622
+      },
+      {
+        "Code": "HWM",
+        "Name": "Howmet Aerospace Inc",
+        "Assets_%": 3.2717000000000005
+      },
+      {
+        "Code": "TDG",
+        "Name": "TransDigm Group Inc",
+        "Assets_%": 3.12266
+      },
+      {
+        "Code": "LHX",
+        "Name": "L3Harris Technologies Inc",
+        "Assets_%": 2.98107
+      },
+      {
+        "Code": "LMT",
+        "Name": "Lockheed Martin Corp",
+        "Assets_%": 2.7017301000000002
+      }
+    ]
+  }
+}

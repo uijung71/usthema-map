@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "First Trust NASDAQ Clean Edge Green Energy Index Fund",
+    "Description": "The fund will normally invest at least 90% of its net assets (including investment borrowings) in the securities that comprise the index. The index is designed to track the performance of small, mid and large capitalization clean energy companies that are publicly traded in the United States. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.59,
+    "Asset_Under_Management": 738733952,
+    "Holdings": [
+      {
+        "Code": "BE",
+        "Name": "Bloom Energy Corp Class A",
+        "Assets_%": 11.967310000000001
+      },
+      {
+        "Code": "ON",
+        "Name": "ON Semiconductor Corp",
+        "Assets_%": 9.96955
+      },
+      {
+        "Code": "MPWR",
+        "Name": "Monolithic Power Systems Inc",
+        "Assets_%": 9.28815
+      },
+      {
+        "Code": "TSLA",
+        "Name": "Tesla Inc",
+        "Assets_%": 6.23348
+      },
+      {
+        "Code": "FSLR",
+        "Name": "First Solar Inc",
+        "Assets_%": 5.7620503
+      },
+      {
+        "Code": "AEIS",
+        "Name": "Advanced Energy Industries Inc",
+        "Assets_%": 3.76077
+      },
+      {
+        "Code": "NXT",
+        "Name": "Nextpower Inc Class A",
+        "Assets_%": 3.72607
+      },
+      {
+        "Code": "ALB",
+        "Name": "Albemarle Corp",
+        "Assets_%": 3.6189698
+      },
+      {
+        "Code": "MP",
+        "Name": "MP Materials Corp Ordinary Shares - Class A",
+        "Assets_%": 3.6081299999999996
+      },
+      {
+        "Code": "RIVN",
+        "Name": "Rivian Automotive Inc Class A",
+        "Assets_%": 3.5166999999999997
+      }
+    ]
+  }
+}

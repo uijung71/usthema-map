@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Copper Miners ETF",
+    "Description": "The fund invests at least 80% of its total assets in the securities of the underlying index and in American Depositary Receipts (\"ADRs\") and Global Depositary Receipts (\"GDRs\") based on the securities in the underlying index. The underlying index is designed to measure broad-based equity market performance of global companies involved in the copper mining industry. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.65,
+    "Asset_Under_Management": 7406607872,
+    "Holdings": [
+      {
+        "Code": "LUN.TO",
+        "Name": "Lundin Mining Corp",
+        "Assets_%": 6.0742400000000005
+      },
+      {
+        "Code": "GLEN.L",
+        "Name": "Glencore PLC",
+        "Assets_%": 6.00321
+      },
+      {
+        "Code": "5713.T",
+        "Name": "Sumitomo Metal Mining Co Ltd",
+        "Assets_%": 5.9828
+      },
+      {
+        "Code": "KGH.WA",
+        "Name": "KGHM Polska Miedz SA",
+        "Assets_%": 5.82256
+      },
+      {
+        "Code": "FCX",
+        "Name": "Freeport-McMoRan Inc",
+        "Assets_%": 5.055970299999999
+      },
+      {
+        "Code": "HBM.TO",
+        "Name": "Hudbay Minerals Inc",
+        "Assets_%": 4.95
+      },
+      {
+        "Code": "BHP.AX",
+        "Name": "BHP Group Ltd",
+        "Assets_%": 4.921670000000001
+      },
+      {
+        "Code": "ANTO.L",
+        "Name": "Antofagasta PLC",
+        "Assets_%": 4.8733603
+      },
+      {
+        "Code": "TECK-B.TO",
+        "Name": "Teck Resources Ltd Class B (Sub Voting)",
+        "Assets_%": 4.85888
+      },
+      {
+        "Code": "SCCO",
+        "Name": "Southern Copper Corp",
+        "Assets_%": 4.847720300000001
+      }
+    ]
+  }
+}

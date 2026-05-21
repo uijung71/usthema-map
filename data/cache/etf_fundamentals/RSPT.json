@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "S&P 500 Equal Weight Technology ETF",
+    "Description": "The fund generally will invest at least 90% of its total assets in securities that comprise the underlying index. The underlying index, which is composed of securities of all companies included in the S&P 500® Index that are classified as members of the information technology services sector, as defined according to the Global Industry Classification Standard (“GICS®”).",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.4,
+    "Asset_Under_Management": 4586319872,
+    "Holdings": [
+      {
+        "Code": "INTC",
+        "Name": "Intel Corp",
+        "Assets_%": 2.3440002
+      },
+      {
+        "Code": "STX",
+        "Name": "Seagate Technology Holdings PLC",
+        "Assets_%": 2.08097
+      },
+      {
+        "Code": "AMD",
+        "Name": "Advanced Micro Devices Inc",
+        "Assets_%": 2.06247
+      },
+      {
+        "Code": "ON",
+        "Name": "ON Semiconductor Corp",
+        "Assets_%": 2.02783
+      },
+      {
+        "Code": "SNDK",
+        "Name": "SanDisk Corp Ordinary Shares",
+        "Assets_%": 1.9916099999999999
+      },
+      {
+        "Code": "WDC",
+        "Name": "Western Digital Corp",
+        "Assets_%": 1.9271099999999999
+      },
+      {
+        "Code": "CIEN",
+        "Name": "Ciena Corp",
+        "Assets_%": 1.8472299
+      },
+      {
+        "Code": "MPWR",
+        "Name": "Monolithic Power Systems Inc",
+        "Assets_%": 1.79829
+      },
+      {
+        "Code": "NXPI",
+        "Name": "NXP Semiconductors NV",
+        "Assets_%": 1.75054
+      },
+      {
+        "Code": "DELL",
+        "Name": "Dell Technologies Inc Ordinary Shares - Class C",
+        "Assets_%": 1.6911201
+      }
+    ]
+  }
+}

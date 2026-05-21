@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "First Trust NASDAQ Clean Edge Smart Grid Infrastructure Index Fund",
+    "Description": "The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks and depositary receipts that comprise the index. The index includes companies that are primarily engaged and involved in electric grid, electric meters and devices, networks, energy storage and management, and enabling software used by the smart grid infrastructure sector. The fund is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.56,
+    "Asset_Under_Management": 10045891584,
+    "Holdings": [
+      {
+        "Code": "ETN",
+        "Name": "Eaton Corp PLC",
+        "Assets_%": 8.59747
+      },
+      {
+        "Code": "ABBN.SW",
+        "Name": "ABB Ltd",
+        "Assets_%": 8.0836
+      },
+      {
+        "Code": "JCI",
+        "Name": "Johnson Controls International PLC Registered Shares",
+        "Assets_%": 7.55357
+      },
+      {
+        "Code": "SU.PA",
+        "Name": "Schneider Electric SE",
+        "Assets_%": 7.2702
+      },
+      {
+        "Code": "NG.L",
+        "Name": "National Grid PLC",
+        "Assets_%": 7.14446
+      },
+      {
+        "Code": "PWR",
+        "Name": "Quanta Services Inc",
+        "Assets_%": 4.82332
+      },
+      {
+        "Code": "PRY.MI",
+        "Name": "Prysmian SpA",
+        "Assets_%": 4.6907
+      },
+      {
+        "Code": "EOAN.DE",
+        "Name": "E.ON SE",
+        "Assets_%": 3.56084
+      },
+      {
+        "Code": "HUBB",
+        "Name": "Hubbell Inc",
+        "Assets_%": 2.54407
+      },
+      {
+        "Code": "NVT",
+        "Name": "nVent Electric PLC",
+        "Assets_%": 2.17623
+      }
+    ]
+  }
+}

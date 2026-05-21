@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Environmental Services ETF",
+    "Description": "The fund normally invests at least 80% of its total assets in securities that comprise the index. The index is a modified market-capitalization weighted, float-adjusted index comprised of publicly traded companies primarily involved in environmental consulting and modeling, wastewater management and drainage solutions, general waste management services, environmental remediation and protection, air filtration and carbon capture technologies, or waste-to-energy and biofuels. It is non-diversified.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.55,
+    "Asset_Under_Management": 98471296,
+    "Holdings": [
+      {
+        "Code": "WM",
+        "Name": "Waste Management Inc",
+        "Assets_%": 7.831639999999999
+      },
+      {
+        "Code": "ECL",
+        "Name": "Ecolab Inc",
+        "Assets_%": 7.450270000000001
+      },
+      {
+        "Code": "WCN",
+        "Name": "Waste Connections Inc",
+        "Assets_%": 6.912699999999999
+      },
+      {
+        "Code": "VIE.PA",
+        "Name": "Veolia Environnement SA",
+        "Assets_%": 6.4402096
+      },
+      {
+        "Code": "RSG",
+        "Name": "Republic Services Inc",
+        "Assets_%": 6.0821
+      },
+      {
+        "Code": "XYL",
+        "Name": "Xylem Inc",
+        "Assets_%": 5.21496
+      },
+      {
+        "Code": "DAR",
+        "Name": "Darling Ingredients Inc",
+        "Assets_%": 5.1132
+      },
+      {
+        "Code": "VLTO",
+        "Name": "Veralto Corp",
+        "Assets_%": 4.9218003
+      },
+      {
+        "Code": "CLH",
+        "Name": "Clean Harbors Inc",
+        "Assets_%": 4.7880303
+      },
+      {
+        "Code": "WMS",
+        "Name": "Advanced Drainage Systems Inc",
+        "Assets_%": 4.4982098
+      }
+    ]
+  }
+}

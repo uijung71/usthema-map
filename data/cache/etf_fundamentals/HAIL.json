@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "State Street S&P Kensho Smart Mobility ETF",
+    "Description": "Under normal market conditions, the fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index is comprised of U.S.-listed equity securities (including depositary receipts) of companies domiciled across developed and emerging markets worldwide which are included in the Smart Transportation sector as determined by a classification standard produced by the index provider.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.45,
+    "Asset_Under_Management": 19887652,
+    "Holdings": [
+      {
+        "Code": "STM",
+        "Name": "STMicroelectronics NV ADR",
+        "Assets_%": 2.7064199
+      },
+      {
+        "Code": "ON",
+        "Name": "ON Semiconductor Corp",
+        "Assets_%": 2.36321
+      },
+      {
+        "Code": "ALGM",
+        "Name": "Allegro Microsystems Inc Ordinary Shares",
+        "Assets_%": 2.1406801
+      },
+      {
+        "Code": "DAN",
+        "Name": "Dana Inc",
+        "Assets_%": 2.07548
+      },
+      {
+        "Code": "INTC",
+        "Name": "Intel Corp",
+        "Assets_%": 2.0574998
+      },
+      {
+        "Code": "GTX",
+        "Name": "Garrett Motion Inc Ordinary Shares - New",
+        "Assets_%": 1.97975
+      },
+      {
+        "Code": "IRDM",
+        "Name": "Iridium Communications Inc",
+        "Assets_%": 1.8398299999999999
+      },
+      {
+        "Code": "RCAT",
+        "Name": "Red Cat Holdings Inc",
+        "Assets_%": 1.8058099
+      },
+      {
+        "Code": "UMAC",
+        "Name": "Unusual Machines Inc",
+        "Assets_%": 1.7915
+      },
+      {
+        "Code": "PLUG",
+        "Name": "Plug Power Inc",
+        "Assets_%": 1.7898399999999999
+      }
+    ]
+  }
+}

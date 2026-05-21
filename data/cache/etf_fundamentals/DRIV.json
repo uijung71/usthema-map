@@ -1,0 +1,63 @@
+{
+  "General": {
+    "Name": "Autonomous & Electric Vehicles ETF",
+    "Description": "The fund invests at least 80% of its total assets in the securities of the index. The index is designed to provide exposure to exchange-listed companies that are involved in the development of electric vehicles and/or autonomous vehicles, including companies that produce electric/hybrid vehicles, electric/hybrid vehicle components and materials, autonomous driving technology, and network connected services for transportation.",
+    "UpdatedAt": "2026-05-21"
+  },
+  "ETF_Data": {
+    "Expense_Ratio": 0.68,
+    "Asset_Under_Management": 400979072,
+    "Holdings": [
+      {
+        "Code": "INTC",
+        "Name": "Intel Corp",
+        "Assets_%": 4.5917302
+      },
+      {
+        "Code": "GOOGL",
+        "Name": "Alphabet Inc Class A",
+        "Assets_%": 2.98529
+      },
+      {
+        "Code": "NVDA",
+        "Name": "NVIDIA Corp",
+        "Assets_%": 2.8050201
+      },
+      {
+        "Code": "QCOM",
+        "Name": "Qualcomm Inc",
+        "Assets_%": 2.32703
+      },
+      {
+        "Code": "006400.KS",
+        "Name": "Samsung SDI Co Ltd",
+        "Assets_%": 2.2976099999999997
+      },
+      {
+        "Code": "BE",
+        "Name": "Bloom Energy Corp Class A",
+        "Assets_%": 2.2803
+      },
+      {
+        "Code": "MSFT",
+        "Name": "Microsoft Corp",
+        "Assets_%": 2.2594
+      },
+      {
+        "Code": "TSLA",
+        "Name": "Tesla Inc",
+        "Assets_%": 2.2256
+      },
+      {
+        "Code": "AMPX",
+        "Name": "Amprius Technologies Inc",
+        "Assets_%": 2.0029399999999997
+      },
+      {
+        "Code": "7203.T",
+        "Name": "Toyota Motor Corp",
+        "Assets_%": 1.97417
+      }
+    ]
+  }
+}
