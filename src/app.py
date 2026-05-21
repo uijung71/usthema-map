@@ -489,6 +489,18 @@ def inject_css():
         box-shadow: 0 4px 20px rgba(0, 212, 255, 0.35), 0 0 0 1px rgba(0,212,255,0.2) !important;
         font-weight: 900 !important;
     }
+    /* ── Responsive Layout Overrides ── */
+    @media (max-width: 1024px) {
+        /* 강제 상하단 배치 (2단 레이아웃 풀기) */
+        div[data-testid="stHorizontalBlock"] {
+            flex-direction: column !important;
+            gap: 1.5rem !important;
+        }
+        div[data-testid="column"] {
+            width: 100% !important;
+            min-width: 100% !important;
+        }
+    }
     </style>""", unsafe_allow_html=True)
 
 
@@ -1226,10 +1238,12 @@ def main():
 
                 # ── Header ────────────────────────────────────────────────
                 st.markdown(f"""
-                    <div style="margin: 40px 0 20px 0; padding: 15px 20px; background: linear-gradient(90deg, rgba(255, 215, 0, 0.15), transparent); border-left: 6px solid #FFD700; border-radius: 8px;">
-                        <span style="font-size: 2.2rem; margin-right: 15px;">🎯</span>
-                        <span style="font-size: 2.0rem; font-weight: 950; color: #fff; letter-spacing: -1.5px; line-height: 1.2;">{active_theme} 테마 상세 분석</span>
-                        <span style="float: right; font-size: 1.8rem; font-weight: 900; color: {'#ff4b4b' if theme_avg_ret >= 0 else '#4ba3ff'};">{fmt_return(theme_avg_ret)}</span>
+                    <div style="margin: 40px 0 20px 0; padding: 15px 20px; background: linear-gradient(90deg, rgba(255, 215, 0, 0.15), transparent); border-left: 6px solid #FFD700; border-radius: 8px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px;">
+                        <div style="display: flex; align-items: center;">
+                            <span style="font-size: 2.2rem; margin-right: 15px;">🎯</span>
+                            <span style="font-size: 2.0rem; font-weight: 950; color: #fff; letter-spacing: -1.5px; line-height: 1.2; word-break: keep-all;">{active_theme} 테마 상세 분석</span>
+                        </div>
+                        <span style="font-size: 1.8rem; font-weight: 900; color: {'#ff4b4b' if theme_avg_ret >= 0 else '#4ba3ff'}; white-space: nowrap;">{fmt_return(theme_avg_ret)}</span>
                     </div>
                 """, unsafe_allow_html=True)
 
@@ -1295,7 +1309,7 @@ def main():
                     st.markdown('<div style="font-size:1.05rem; font-weight:900; color:#e8eaf0; margin-bottom:10px;">📈 기간별 평균 수익률</div>', unsafe_allow_html=True)
                     if not theme_stocks.empty:
                         score_html = (
-                            '<div style="display:grid; grid-template-columns:repeat(6,1fr); '
+                            '<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(70px, 1fr)); '
                             'gap:6px; margin-bottom:8px;">'
                         )
                         for period_label, period_col in ALL_PERIODS.items():
@@ -1359,8 +1373,8 @@ def main():
                         )
                         st.markdown('<div style="margin-bottom:4px;"></div>', unsafe_allow_html=True)
 
-                        # 2열 카드 그리드
-                        cards_html = '<div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:20px;">'
+                        # 2열 카드 그리드 -> 반응형 1~2열 카드 그리드
+                        cards_html = '<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:20px; margin-bottom:20px;">'
                         for _, row in stocks_sorted.iterrows():
                             ret   = row[return_col]
                             close = row.get('close', None)
