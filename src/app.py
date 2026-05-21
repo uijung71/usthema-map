@@ -1239,6 +1239,10 @@ def main():
                     md_text, youtube_url = get_notion_markdown(theme_id)
 
                 # ── 2-컬럼 레이아웃: 왼쪽=영상, 오른쪽=종목+ETF ─────────
+                ALL_PERIODS = {
+                    '1일': 'return_1d', '1주': 'return_1w', '1개월': 'return_1m',
+                    '3개월': 'return_3m', '6개월': 'return_6m', '1년': 'return_1y'
+                }
                 col_left, col_right = st.columns([1.15, 0.85])
 
                 with col_left:
@@ -1286,13 +1290,9 @@ def main():
                             </div>
                         """, unsafe_allow_html=True)
 
-                with col_right:
                     # ── ① 기간별 수익률 스코어보드 ────────────────────────
+                    st.markdown('<div style="margin-top:20px;"></div>', unsafe_allow_html=True)
                     st.markdown('<div style="font-size:1.05rem; font-weight:900; color:#e8eaf0; margin-bottom:10px;">📈 기간별 평균 수익률</div>', unsafe_allow_html=True)
-                    ALL_PERIODS = {
-                        '1일': 'return_1d', '1주': 'return_1w', '1개월': 'return_1m',
-                        '3개월': 'return_3m', '6개월': 'return_6m', '1년': 'return_1y'
-                    }
                     if not theme_stocks.empty:
                         score_html = (
                             '<div style="display:grid; grid-template-columns:repeat(6,1fr); '
@@ -1315,24 +1315,8 @@ def main():
                             )
                         score_html += '</div>'
                         st.markdown(score_html, unsafe_allow_html=True)
-                        
-                        def sync_period_from_pills():
-                            pill_key = f"theme_pill_{active_theme}_{st.session_state.period}"
-                            new_val = st.session_state.get(pill_key)
-                            if new_val:
-                                st.session_state.period = new_val
 
-                        # 기간 인터랙티브 연동 (Pills)
-                        st.pills(
-                            "기간 연동", 
-                            options=list(ALL_PERIODS.keys()), 
-                            default=st.session_state.period, 
-                            key=f"theme_pill_{active_theme}_{st.session_state.period}", 
-                            label_visibility="collapsed",
-                            on_change=sync_period_from_pills
-                        )
-                        st.markdown('<div style="margin-bottom:12px;"></div>', unsafe_allow_html=True)
-
+                with col_right:
                     # ── ② 구성 종목 카드 (2열, 큰 텍스트) ─────────────────
                     if not theme_stocks.empty:
                         stocks_sorted = theme_stocks.sort_values(by=return_col, ascending=False)
@@ -1390,6 +1374,23 @@ def main():
                             )
                         cards_html += '</div>'
                         st.markdown(cards_html, unsafe_allow_html=True)
+                        
+                        def sync_period_from_pills():
+                            pill_key = f"theme_pill_{active_theme}_{st.session_state.period}"
+                            new_val = st.session_state.get(pill_key)
+                            if new_val:
+                                st.session_state.period = new_val
+
+                        # 기간 인터랙티브 연동 (Pills)
+                        st.pills(
+                            "기간 연동", 
+                            options=list(ALL_PERIODS.keys()), 
+                            default=st.session_state.period, 
+                            key=f"theme_pill_{active_theme}_{st.session_state.period}", 
+                            label_visibility="collapsed",
+                            on_change=sync_period_from_pills
+                        )
+                        st.markdown('<div style="margin-bottom:12px;"></div>', unsafe_allow_html=True)
                     else:
                         st.info("구성 종목 정보가 없습니다.")
 
@@ -1438,7 +1439,12 @@ def main():
         st.info(f"💡 현재 선택된 **{st.session_state.period}** 기간 동안의 누적 수익률 흐름입니다.")
         
         all_themes_in_view = theme_df['theme_name'].tolist() if not theme_df.empty else get_theme_list()['theme_name'].tolist()
-        default_sel = all_themes_in_view[:3] if len(all_themes_in_view) >= 3 else all_themes_in_view
+        
+        if active_theme and active_theme in all_themes_in_view:
+            default_sel = [active_theme]
+        else:
+            default_sel = all_themes_in_view[:3] if len(all_themes_in_view) >= 3 else all_themes_in_view
+            
         selected_trend_themes = st.multiselect("비교할 테마를 선택하세요 (다중 선택 가능):", options=all_themes_in_view, default=default_sel, label_visibility="collapsed")
         
         if selected_trend_themes:
