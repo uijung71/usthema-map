@@ -15,7 +15,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "ACHR": {
         "symbol": "ACHR",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "ADBE": {
         "symbol": "ADBE",
@@ -27,7 +27,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "ADYEY": {
         "symbol": "ADYEY",
-        "exchange": "NASDAQ"
+        "exchange": "OTCMKTS"
     },
     "AEIS": {
         "symbol": "AEIS",
@@ -39,11 +39,11 @@ GOOGLE_FINANCE_MAP = {
     },
     "AGCO": {
         "symbol": "AGCO",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "AI": {
         "symbol": "AI",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "AIQ": {
         "symbol": "AIQ",
@@ -59,7 +59,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "ALB": {
         "symbol": "ALB",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "ALT": {
         "symbol": "ALT",
@@ -87,7 +87,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "AMT": {
         "symbol": "AMT",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "AMZN": {
         "symbol": "AMZN",
@@ -95,7 +95,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "APD": {
         "symbol": "APD",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "APP": {
         "symbol": "APP",
@@ -151,7 +151,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "BE": {
         "symbol": "BE",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "BEAM": {
         "symbol": "BEAM",
@@ -159,7 +159,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "BEP": {
         "symbol": "BEP",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "BETZ": {
         "symbol": "BETZ",
@@ -183,7 +183,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "BKSY": {
         "symbol": "BKSY",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "BLDP": {
         "symbol": "BLDP",
@@ -191,7 +191,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "BLK": {
         "symbol": "BLK",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "BLOK": {
         "symbol": "BLOK",
@@ -199,7 +199,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "BMI": {
         "symbol": "BMI",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "BOTT": {
         "symbol": "BOTT",
@@ -211,7 +211,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "BSX": {
         "symbol": "BSX",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "BSY": {
         "symbol": "BSY",
@@ -223,7 +223,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "BWXT": {
         "symbol": "BWXT",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "BYDDY": {
         "symbol": "BYDDY",
@@ -235,23 +235,23 @@ GOOGLE_FINANCE_MAP = {
     },
     "CARR": {
         "symbol": "CARR",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "CAT": {
         "symbol": "CAT",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "CB": {
         "symbol": "CB",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "CCJ": {
         "symbol": "CCJ",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "CDLR": {
         "symbol": "CDLR",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "CDNS": {
         "symbol": "CDNS",
@@ -287,7 +287,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "CHWY": {
         "symbol": "CHWY",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "CIBR": {
         "symbol": "CIBR",
@@ -295,7 +295,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "CLH": {
         "symbol": "CLH",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "CLIX": {
         "symbol": "CLIX",
@@ -307,11 +307,11 @@ GOOGLE_FINANCE_MAP = {
     },
     "CNH": {
         "symbol": "CNH",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "COHR": {
         "symbol": "COHR",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "COIN": {
         "symbol": "COIN",
@@ -331,7 +331,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "CRM": {
         "symbol": "CRM",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "CRON": {
         "symbol": "CRON",
@@ -351,7 +351,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "CTVA": {
         "symbol": "CTVA",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "CWST": {
         "symbol": "CWST",
@@ -359,19 +359,19 @@ GOOGLE_FINANCE_MAP = {
     },
     "CXM": {
         "symbol": "CXM",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "DAR": {
         "symbol": "DAR",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "DE": {
         "symbol": "DE",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "DELL": {
         "symbol": "DELL",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "DFEN": {
         "symbol": "DFEN",
@@ -387,15 +387,15 @@ GOOGLE_FINANCE_MAP = {
     },
     "DLR": {
         "symbol": "DLR",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "DNA": {
         "symbol": "DNA",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "DOCS": {
         "symbol": "DOCS",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "DRIV": {
         "symbol": "DRIV",
@@ -427,15 +427,15 @@ GOOGLE_FINANCE_MAP = {
     },
     "EL": {
         "symbol": "EL",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "ELAN": {
         "symbol": "ELAN",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "EMR": {
         "symbol": "EMR",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "ENPH": {
         "symbol": "ENPH",
@@ -451,7 +451,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "EQNR": {
         "symbol": "EQNR",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "ERTH": {
         "symbol": "ERTH",
@@ -459,19 +459,19 @@ GOOGLE_FINANCE_MAP = {
     },
     "ETN": {
         "symbol": "ETN",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "ETSY": {
         "symbol": "ETSY",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "EVEX": {
         "symbol": "EVEX",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "EVTL": {
         "symbol": "EVTL",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "EVX": {
         "symbol": "EVX",
@@ -491,7 +491,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "FCX": {
         "symbol": "FCX",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "FINX": {
         "symbol": "FINX",
@@ -507,7 +507,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "FLUT": {
         "symbol": "FLUT",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "FRPT": {
         "symbol": "FRPT",
@@ -523,7 +523,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "FTI": {
         "symbol": "FTI",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "FTNT": {
         "symbol": "FTNT",
@@ -539,7 +539,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "GD": {
         "symbol": "GD",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "GERN": {
         "symbol": "GERN",
@@ -547,11 +547,11 @@ GOOGLE_FINANCE_MAP = {
     },
     "GEV": {
         "symbol": "GEV",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "GFL": {
         "symbol": "GFL",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "GILT": {
         "symbol": "GILT",
@@ -563,7 +563,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "GLUX": {
         "symbol": "GLUX",
-        "exchange": "NYSEARCA"
+        "exchange": "OTCMKTS"
     },
     "GNR": {
         "symbol": "GNR",
@@ -575,7 +575,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "GOOS": {
         "symbol": "GOOS",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "GPCR": {
         "symbol": "GPCR",
@@ -595,7 +595,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "GWRE": {
         "symbol": "GWRE",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "HACK": {
         "symbol": "HACK",
@@ -615,11 +615,11 @@ GOOGLE_FINANCE_MAP = {
     },
     "HIMS": {
         "symbol": "HIMS",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "HLX": {
         "symbol": "HLX",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "HON": {
         "symbol": "HON",
@@ -635,11 +635,11 @@ GOOGLE_FINANCE_MAP = {
     },
     "HUBB": {
         "symbol": "HUBB",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "HUBS": {
         "symbol": "HUBS",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "HYDR": {
         "symbol": "HYDR",
@@ -663,7 +663,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "ICE": {
         "symbol": "ICE",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "ICLN": {
         "symbol": "ICLN",
@@ -703,7 +703,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "IIPR": {
         "symbol": "IIPR",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "INTU": {
         "symbol": "INTU",
@@ -711,11 +711,11 @@ GOOGLE_FINANCE_MAP = {
     },
     "IONQ": {
         "symbol": "IONQ",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "IOT": {
         "symbol": "IOT",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "IPAY": {
         "symbol": "IPAY",
@@ -727,7 +727,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "IRM": {
         "symbol": "IRM",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "ISRG": {
         "symbol": "ISRG",
@@ -743,11 +743,11 @@ GOOGLE_FINANCE_MAP = {
     },
     "JCI": {
         "symbol": "JCI",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "JOBY": {
         "symbol": "JOBY",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "KARS": {
         "symbol": "KARS",
@@ -755,7 +755,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "KEYS": {
         "symbol": "KEYS",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "KIE": {
         "symbol": "KIE",
@@ -783,7 +783,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "LCTX": {
         "symbol": "LCTX",
-        "exchange": "NASDAQ"
+        "exchange": "AMEX"
     },
     "LIN": {
         "symbol": "LIN",
@@ -799,11 +799,11 @@ GOOGLE_FINANCE_MAP = {
     },
     "LLY": {
         "symbol": "LLY",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "LMT": {
         "symbol": "LMT",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "LOUP": {
         "symbol": "LOUP",
@@ -827,15 +827,15 @@ GOOGLE_FINANCE_MAP = {
     },
     "LUXE": {
         "symbol": "LUXE",
-        "exchange": "NYSEARCA"
+        "exchange": "NYSE"
     },
     "LZAGY": {
         "symbol": "LZAGY",
-        "exchange": "NASDAQ"
+        "exchange": "OTCMKTS"
     },
     "LZM": {
         "symbol": "LZM",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "MARS": {
         "symbol": "MARS",
@@ -843,7 +843,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "MEG": {
         "symbol": "MEG",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "MELI": {
         "symbol": "MELI",
@@ -859,7 +859,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "MGM": {
         "symbol": "MGM",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "MGTX": {
         "symbol": "MGTX",
@@ -875,7 +875,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "MOD": {
         "symbol": "MOD",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "MOO": {
         "symbol": "MOO",
@@ -887,11 +887,11 @@ GOOGLE_FINANCE_MAP = {
     },
     "MP": {
         "symbol": "MP",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "MRSH": {
         "symbol": "MRSH",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "MSFT": {
         "symbol": "MSFT",
@@ -915,15 +915,15 @@ GOOGLE_FINANCE_MAP = {
     },
     "NEE": {
         "symbol": "NEE",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "NEM": {
         "symbol": "NEM",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "NET": {
         "symbol": "NET",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "NICE": {
         "symbol": "NICE",
@@ -935,7 +935,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "NOW": {
         "symbol": "NOW",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "NTLA": {
         "symbol": "NTLA",
@@ -947,11 +947,11 @@ GOOGLE_FINANCE_MAP = {
     },
     "NU": {
         "symbol": "NU",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "NUE": {
         "symbol": "NUE",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "NUKZ": {
         "symbol": "NUKZ",
@@ -963,11 +963,11 @@ GOOGLE_FINANCE_MAP = {
     },
     "NVO": {
         "symbol": "NVO",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "NVT": {
         "symbol": "NVT",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "NXPI": {
         "symbol": "NXPI",
@@ -975,19 +975,19 @@ GOOGLE_FINANCE_MAP = {
     },
     "O": {
         "symbol": "O",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "OGN": {
         "symbol": "OGN",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "OII": {
         "symbol": "OII",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "OKLO": {
         "symbol": "OKLO",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "OKTA": {
         "symbol": "OKTA",
@@ -1011,19 +1011,19 @@ GOOGLE_FINANCE_MAP = {
     },
     "ONTO": {
         "symbol": "ONTO",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "ORA": {
         "symbol": "ORA",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "ORCL": {
         "symbol": "ORCL",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "OXY": {
         "symbol": "OXY",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "OZEM": {
         "symbol": "OZEM",
@@ -1035,7 +1035,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "PATH": {
         "symbol": "PATH",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "PAVE": {
         "symbol": "PAVE",
@@ -1067,7 +1067,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "PH": {
         "symbol": "PH",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "PHO": {
         "symbol": "PHO",
@@ -1079,11 +1079,11 @@ GOOGLE_FINANCE_MAP = {
     },
     "PL": {
         "symbol": "PL",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "PLD": {
         "symbol": "PLD",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "PLTR": {
         "symbol": "PLTR",
@@ -1095,7 +1095,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "PNR": {
         "symbol": "PNR",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "PODD": {
         "symbol": "PODD",
@@ -1123,7 +1123,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "PWR": {
         "symbol": "PWR",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "PYPL": {
         "symbol": "PYPL",
@@ -1131,7 +1131,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "QBTS": {
         "symbol": "QBTS",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "QCLN": {
         "symbol": "QCLN",
@@ -1151,15 +1151,15 @@ GOOGLE_FINANCE_MAP = {
     },
     "RACE": {
         "symbol": "RACE",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "RBLX": {
         "symbol": "RBLX",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "RBRK": {
         "symbol": "RBRK",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "RCAT": {
         "symbol": "RCAT",
@@ -1167,7 +1167,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "RDW": {
         "symbol": "RDW",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "REAL": {
         "symbol": "REAL",
@@ -1191,7 +1191,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "RL": {
         "symbol": "RL",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "RNRG": {
         "symbol": "RNRG",
@@ -1207,7 +1207,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "ROK": {
         "symbol": "ROK",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "ROKT": {
         "symbol": "ROKT",
@@ -1219,7 +1219,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "RSG": {
         "symbol": "RSG",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "RSPT": {
         "symbol": "RSPT",
@@ -1227,11 +1227,11 @@ GOOGLE_FINANCE_MAP = {
     },
     "RTX": {
         "symbol": "RTX",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "S": {
         "symbol": "S",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "SATS": {
         "symbol": "SATS",
@@ -1239,7 +1239,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "SCCO": {
         "symbol": "SCCO",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "SERV": {
         "symbol": "SERV",
@@ -1275,11 +1275,11 @@ GOOGLE_FINANCE_MAP = {
     },
     "SN": {
         "symbol": "SN",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "SNOW": {
         "symbol": "SNOW",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "SNPS": {
         "symbol": "SNPS",
@@ -1319,7 +1319,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "SYK": {
         "symbol": "SYK",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "SYM": {
         "symbol": "SYM",
@@ -1331,7 +1331,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "TDOC": {
         "symbol": "TDOC",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "TDUP": {
         "symbol": "TDUP",
@@ -1339,7 +1339,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "TECK": {
         "symbol": "TECK",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "TER": {
         "symbol": "TER",
@@ -1359,7 +1359,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "TPR": {
         "symbol": "TPR",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "TRMB": {
         "symbol": "TRMB",
@@ -1367,7 +1367,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "TRV": {
         "symbol": "TRV",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "TSLA": {
         "symbol": "TSLA",
@@ -1379,7 +1379,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "TT": {
         "symbol": "TT",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "TTEK": {
         "symbol": "TTEK",
@@ -1391,15 +1391,15 @@ GOOGLE_FINANCE_MAP = {
     },
     "TXT": {
         "symbol": "TXT",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "TYL": {
         "symbol": "TYL",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "U": {
         "symbol": "U",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "UFO": {
         "symbol": "UFO",
@@ -1415,7 +1415,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "URI": {
         "symbol": "URI",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "URNM": {
         "symbol": "URNM",
@@ -1423,7 +1423,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "V": {
         "symbol": "V",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "VCR": {
         "symbol": "VCR",
@@ -1431,7 +1431,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "VEEV": {
         "symbol": "VEEV",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "VEGI": {
         "symbol": "VEGI",
@@ -1451,11 +1451,11 @@ GOOGLE_FINANCE_MAP = {
     },
     "VMC": {
         "symbol": "VMC",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "VMI": {
         "symbol": "VMI",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "VNQ": {
         "symbol": "VNQ",
@@ -1467,7 +1467,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "VRT": {
         "symbol": "VRT",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "VRTX": {
         "symbol": "VRTX",
@@ -1479,7 +1479,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "VST": {
         "symbol": "VST",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "VUZI": {
         "symbol": "VUZI",
@@ -1491,15 +1491,15 @@ GOOGLE_FINANCE_MAP = {
     },
     "WCN": {
         "symbol": "WCN",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "WELL": {
         "symbol": "WELL",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "WM": {
         "symbol": "WM",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "WMT": {
         "symbol": "WMT",
@@ -1511,15 +1511,15 @@ GOOGLE_FINANCE_MAP = {
     },
     "WT": {
         "symbol": "WT",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "WTRG": {
         "symbol": "WTRG",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "WTS": {
         "symbol": "WTS",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "XBI": {
         "symbol": "XBI",
@@ -1551,7 +1551,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "XOM": {
         "symbol": "XOM",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "XSD": {
         "symbol": "XSD",
@@ -1567,7 +1567,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "XYL": {
         "symbol": "XYL",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "ZBRA": {
         "symbol": "ZBRA",
@@ -1579,7 +1579,7 @@ GOOGLE_FINANCE_MAP = {
     },
     "ZTS": {
         "symbol": "ZTS",
-        "exchange": "NASDAQ"
+        "exchange": "NYSE"
     },
     "삼성바이오로직스": {
         "symbol": "207940",
