@@ -739,7 +739,7 @@ def render_ai_report():
         return
         
     # Render UI
-    st.markdown(f'<div class="section-header">테마별 수익률 추이 상세비교</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-header">AI 기간별 테마분석</div>', unsafe_allow_html=True)
     
     with st.container(border=True):
         st.markdown(report_text)
@@ -1619,7 +1619,7 @@ def main():
         if selected_cat != '전체':
             theme_df = theme_df[theme_df['category'] == selected_cat]
             
-        st.markdown('<br><div class="sub-header">테마 수익률 누적 추이</div>', unsafe_allow_html=True)
+        st.markdown('<div class="section-header">테마별 수익률 추이 비교</div>', unsafe_allow_html=True)
         st.info(f"💡 현재 선택된 **{st.session_state.period}** 기간 동안의 누적 수익률 흐름입니다.")
         
         all_themes_in_view = theme_df['theme_name'].tolist() if not theme_df.empty else get_theme_list()['theme_name'].tolist()
