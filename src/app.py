@@ -1573,7 +1573,6 @@ def main():
         theme_df_all = get_theme_returns(return_col)
         if selected_cat != '전체':
             theme_df_all = theme_df_all[theme_df_all['category'] == selected_cat]
-        st.markdown(f'<div class="sub-header">ETF 목록 (총 {len(theme_df_all)}개 테마)</div>', unsafe_allow_html=True)
         theme_df_all = theme_df_all.sort_values(by='theme_id', ascending=True)
         themes = list(theme_df_all['theme_name'])
         cols_per_row = 4
