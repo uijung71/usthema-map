@@ -260,8 +260,11 @@ def inject_css():
     .etf-ticker { font-size: 1.3rem; font-weight: 900; color: #ffffff; margin-bottom: 6px; letter-spacing: 0.5px; }
     .etf-return { font-size: 1.15rem; font-weight: 800; color: #ffffff; }
     
-    div[data-testid="stRadio"] {
+    div[data-testid="stRadio"],
+    div.row-widget.stRadio,
+    div.stRadio {
         width: 100% !important;
+        min-width: 100% !important;
     }
 
     /* ── Main Top View Mode Tabs ── */
@@ -277,13 +280,14 @@ def inject_css():
         width: 100% !important;
         margin: 5px 0 25px 0 !important;
         gap: 0 !important;
+        flex-wrap: nowrap !important;
     }
     div[aria-label="뷰 모드"][role="radiogroup"] label > div:first-child {
         display: none !important;
     }
     div[aria-label="뷰 모드"][role="radiogroup"] label {
         flex: 1 1 0 !important;
-        min-width: 48% !important;
+        min-width: 0 !important;
         width: 100% !important;
         text-align: center !important;
         padding: 12px 24px !important;
@@ -363,7 +367,7 @@ def inject_css():
     }
     div[aria-label="대분류 요약"][role="radiogroup"] label {
         flex: 1 1 0 !important;
-        min-width: 15.5% !important;
+        min-width: 0 !important;
         width: 100% !important;
         text-align: center !important;
         padding: 16px 8px !important;
