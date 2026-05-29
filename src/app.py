@@ -43,11 +43,11 @@ def inject_css():
         letter-spacing: normal;
     }
     .sub-header {
-        font-size: 1.65rem !important; font-weight: 800 !important;
-        color: #ffffff !important;
-        border-left: 4px solid #00d4ff;
-        padding-left: 14px;
-        margin-bottom: 25px !important; margin-top: 45px !important;
+        font-size: 1.3rem !important; font-weight: 700 !important;
+        color: #e0e0e0 !important;
+        border: none;
+        padding-left: 0;
+        margin-bottom: 20px !important; margin-top: 25px !important;
     }
     .date-info { font-size: 0.85rem; color: #888; text-align: right; margin-top: 4px; }
 
