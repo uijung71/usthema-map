@@ -266,20 +266,22 @@ def inject_css():
         justify-content: center !important;
         align-items: center !important;
         background-color: rgba(255, 255, 255, 0.05) !important;
-        padding: 5px !important;
-        border-radius: 30px !important;
+        padding: 6px !important;
+        border-radius: 12px !important;
         border: 1px solid rgba(255, 255, 255, 0.1) !important;
-        width: fit-content !important;
-        margin: 5px auto 25px auto !important;
+        width: 100% !important;
+        margin: 5px 0 25px 0 !important;
         gap: 0 !important;
     }
     div[aria-label="뷰 모드"][role="radiogroup"] label > div:first-child {
         display: none !important;
     }
     div[aria-label="뷰 모드"][role="radiogroup"] label {
-        padding: 8px 24px !important;
+        flex: 1 !important;
+        text-align: center !important;
+        padding: 12px 24px !important;
         margin: 0 4px !important;
-        border-radius: 25px !important;
+        border-radius: 8px !important;
         cursor: pointer !important;
         transition: all 0.25s ease-in-out !important;
         background: transparent !important;
@@ -309,8 +311,7 @@ def inject_css():
         font-weight: 900 !important;
     }
     
-    /* ── Segmented Pill Toggles (Period & Sort) ── */
-    div[aria-label="기간 설정"][role="radiogroup"],
+    /* ── Segmented Pill Toggles (Sort) & Underline Tabs (Period) ── */
     div[aria-label="정렬 기준"][role="radiogroup"] {
         display: flex !important;
         justify-content: center !important;
@@ -323,11 +324,24 @@ def inject_css():
         margin: 5px auto 15px auto !important;
         gap: 0 !important;
     }
+    
+    div[aria-label="기간 설정"][role="radiogroup"] {
+        display: flex !important;
+        justify-content: flex-end !important;
+        align-items: center !important;
+        background-color: transparent !important;
+        padding: 0 !important;
+        border: none !important;
+        width: 100% !important;
+        margin: 0 !important;
+        gap: 5px !important;
+    }
+
     div[aria-label="기간 설정"][role="radiogroup"] label > div:first-child,
     div[aria-label="정렬 기준"][role="radiogroup"] label > div:first-child {
         display: none !important;
     }
-    div[aria-label="기간 설정"][role="radiogroup"] label,
+    
     div[aria-label="정렬 기준"][role="radiogroup"] label {
         padding: 6px 16px !important;
         margin: 0 2px !important;
@@ -337,14 +351,25 @@ def inject_css():
         background: transparent !important;
         border: none !important;
     }
+    
+    div[aria-label="기간 설정"][role="radiogroup"] label {
+        padding: 4px 8px !important;
+        margin: 0 4px !important;
+        border-radius: 0 !important;
+        cursor: pointer !important;
+        transition: all 0.2s ease-in-out !important;
+        background: transparent !important;
+        border: none !important;
+        border-bottom: 2px solid transparent !important;
+    }
+
     div[aria-label="기간 설정"][role="radiogroup"] label p,
     div[aria-label="정렬 기준"][role="radiogroup"] label p {
-        font-size: 1.1rem !important;
+        font-size: 1.05rem !important;
         font-weight: 700 !important;
         color: #b3b3b3 !important;
         margin: 0 !important;
     }
-    div[aria-label="기간 설정"][role="radiogroup"] label:hover,
     div[aria-label="정렬 기준"][role="radiogroup"] label:hover {
         background-color: rgba(255, 255, 255, 0.04) !important;
     }
@@ -353,12 +378,13 @@ def inject_css():
         color: #ffffff !important;
     }
     
-    /* Active cyan style for 기간 설정 */
+    /* Active cyan style for 기간 설정 (Seohak 100 style) */
     div[aria-label="기간 설정"][role="radiogroup"] label[data-checked="true"],
     div[aria-label="기간 설정"][role="radiogroup"] label:has(input:checked) {
-        background: rgba(0, 212, 255, 0.15) !important;
-        border: 1px solid rgba(0, 212, 255, 0.3) !important;
-        box-shadow: 0 2px 8px rgba(0, 212, 255, 0.2) !important;
+        background: transparent !important;
+        border: none !important;
+        border-bottom: 2px solid #00d4ff !important;
+        box-shadow: none !important;
     }
     div[aria-label="기간 설정"][role="radiogroup"] label[data-checked="true"] p,
     div[aria-label="기간 설정"][role="radiogroup"] label:has(input:checked) p {
@@ -1233,7 +1259,11 @@ def main():
     st.markdown("<hr style='border-top: 1px solid rgba(255,255,255,0.1); margin: 10px 0 20px 0;'>", unsafe_allow_html=True)
     
     # ── Secondary Filter: Period ──────────────────────────
-    st.radio("기간 설정", list(PERIOD_MAP.keys()), key='period', horizontal=True, label_visibility="collapsed")
+    col_empty, col_p_text, col_p_radio = st.columns([1, 4, 5])
+    with col_p_text:
+        st.markdown('<div style="text-align: right; font-size: 0.85rem; color: #888; margin-top: 10px;">(하단 콘텐츠 전체기간이 변경됩니다.)</div>', unsafe_allow_html=True)
+    with col_p_radio:
+        st.radio("기간 설정", list(PERIOD_MAP.keys()), key='period', horizontal=True, label_visibility="collapsed")
     
     # (return_col was pre-calculated at top)
 
