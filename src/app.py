@@ -196,6 +196,16 @@ def inject_css():
         overflow: hidden;
     }
     
+    /* ── Enhance Native Tabs Font Size ── */
+    div[data-baseweb="tab-list"] button {
+        font-size: 1.25rem !important;
+        font-weight: 700 !important;
+    }
+    div[data-baseweb="tab-list"] button p {
+        font-size: 1.25rem !important;
+        font-weight: 700 !important;
+    }
+
     /* Reduce vertical gap between elements inside Streamlit containers */
     [data-testid="stVerticalBlock"] > div {
         gap: 0.5rem !important;
@@ -636,7 +646,7 @@ def fmt_return(val):
 
 
 # ── Render Functions ───────────────────────────────────────────
-def render_category_bar(cat_df):
+def render_category_bar(cat_df, key_suffix="1"):
     """Render category summary chips as KPI cards."""
     if 'selected_category' not in st.session_state:
         st.session_state.selected_category = '전체'
@@ -695,7 +705,7 @@ def render_category_bar(cat_df):
         index=current_idx, 
         horizontal=True, 
         label_visibility="collapsed",
-        key="cat_filter_radio"
+        key=f"cat_filter_radio_{key_suffix}"
     )
     
     new_cat = opts[selected_label]
@@ -1655,7 +1665,7 @@ def main():
         st.markdown('<div class="section-header">60대 테마 살펴보기</div>', unsafe_allow_html=True)
         cat_df = get_category_returns(return_col)
         if not cat_df.empty:
-            render_category_bar(cat_df)
+            render_category_bar(cat_df, "stock")
         st.markdown("<br>", unsafe_allow_html=True)
         
         theme_df_all = get_theme_returns(return_col)
@@ -1687,8 +1697,8 @@ def main():
         
         cat_df = get_category_returns(return_col)
         if not cat_df.empty:
-            st.markdown('<p style="font-size:0.85rem; color:#888; margin-bottom:5px; text-align:center;">📋 카테고리 필터</p>', unsafe_allow_html=True)
-            render_category_bar(cat_df)
+            st.markdown('<p style="font-size:0.85rem; color:#888; margin-bottom:5px; text-align:center;">전체 카테고리 필터</p>', unsafe_allow_html=True)
+            render_category_bar(cat_df, "etf")
         
         sel_col1, sel_col2 = st.columns(2)
         with sel_col1:
