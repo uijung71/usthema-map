@@ -1210,14 +1210,19 @@ def main():
     
     selected_cat = st.session_state.get('selected_category', '전체')
     
-    # ── Top Level: View Mode Selection ──────────────────────────
-    view_mode = st.radio(
-        "뷰 모드", 
-        ["🏢 개별 주식 테마 지도", "📦 ETF 테마 보드"], 
-        horizontal=True, 
-        label_visibility="collapsed",
-        key="view_mode_radio"
-    )
+    # ── Master Controls: View Mode & Period ──────────────────────────
+    st.markdown('<div class="section-header" style="margin-top:20px; margin-bottom:10px;">🛠️ 대시보드 전역 설정</div>', unsafe_allow_html=True)
+    ctrl_col1, ctrl_col2 = st.columns([1, 1])
+    with ctrl_col1:
+        view_mode = st.radio(
+            "뷰 모드", 
+            ["🏢 개별 주식 테마 지도", "📦 ETF 테마 보드"], 
+            horizontal=True, 
+            label_visibility="collapsed",
+            key="view_mode_radio"
+        )
+    with ctrl_col2:
+        st.radio("기간 설정", list(PERIOD_MAP.keys()), key='period', horizontal=True, label_visibility="collapsed")
     
     # (return_col was pre-calculated at top)
 
@@ -1245,7 +1250,7 @@ def main():
         # ───────────────────────────────────────────────────────────────
 
         st.info("💡 지도의 테마 블록을 클릭하시면 하단에 실시간 상세 리포트와 구성 종목 시세가 나타납니다.")
-        st.radio("기간 설정", list(PERIOD_MAP.keys()), key='period', horizontal=True, label_visibility="collapsed")
+
         render_theme_heatmap(return_col, selected_cat)
         
         # --- AI Theme Analysis Report ---
@@ -1515,7 +1520,8 @@ def main():
                 st.info("📊 선택한 테마의 추이 데이터를 불러올 수 없습니다. 데이터 수집 상태를 확인해주세요.")
         
         if not theme_df_all.empty:
-            st.markdown('<div class="sub-header">📊 테마 랭킹</div>', unsafe_allow_html=True)
+            period_str = st.session_state.get('period', '1개월')
+            st.markdown(f'<div class="sub-header">🏆 [{period_str}] 테마 랭킹</div>', unsafe_allow_html=True)
             render_rankings(theme_df_all)
 
         # Bottom section only for Stock Map mode
@@ -1553,7 +1559,7 @@ def main():
         
         sel_col1, sel_col2 = st.columns(2)
         with sel_col1:
-            st.radio("기간 설정", list(PERIOD_MAP.keys()), key='period', horizontal=True, label_visibility="collapsed")
+            st.info("💡 카테고리를 선택하시면 하위 테마와 ETF 리스트를 볼 수 있습니다.")
         with sel_col2:
             sort_by = st.radio("정렬 기준", ["📂 카테고리별 정렬", "🔥 수익률 높은 순", "🔤 테마 이름 순"], horizontal=True, label_visibility="collapsed")
 
