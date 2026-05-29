@@ -101,22 +101,23 @@ def generate_report_claude(system_prompt: str, user_prompt: str) -> str:
         "content-type": "application/json"
     }
     payload = {
-        "model": "claude-3-5-sonnet-20241022",
-        "max_tokens": 800,
+        "model": "claude-sonnet-4-6",
+        "max_tokens": 2500,
         "system": system_prompt,
         "messages": [
             {"role": "user", "content": user_prompt}
         ]
     }
     
+    response = None
     try:
-        response = requests.post(url, headers=headers, json=payload, timeout=30)
+        response = requests.post(url, headers=headers, json=payload, timeout=120)
         response.raise_for_status()
         data = response.json()
         return data["content"][0]["text"].strip()
     except Exception as e:
         print(f"[Error] API Call failed: {e}")
-        if response and hasattr(response, 'text'):
+        if response is not None and hasattr(response, 'text'):
             print(f"Details: {response.text}")
         return f"API 호출 중 오류가 발생했습니다: {e}"
 

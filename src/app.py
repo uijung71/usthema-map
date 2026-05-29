@@ -594,16 +594,8 @@ def render_ai_report():
     # Render UI
     st.markdown(f'<div class="section-header" style="margin-top: 40px;">| {period_label} AI 테마장세 심층 분석</div>', unsafe_allow_html=True)
     
-    st.markdown(
-        """<div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); 
-                    border-radius: 12px; padding: 25px; margin-bottom: 30px; 
-                    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3); backdrop-filter: blur(4px);">""",
-        unsafe_allow_html=True
-    )
-    
-    st.markdown(report_text)
-    
-    st.markdown("</div>", unsafe_allow_html=True)
+    with st.container(border=True):
+        st.markdown(report_text)
 
 
 def render_theme_heatmap(return_col='avg_return', selected_cat='전체'):
