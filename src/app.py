@@ -10,6 +10,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 from pathlib import Path
 import sys
+import base64
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from src.theme_engine import (
@@ -659,6 +660,14 @@ def return_color(val):
 
 def return_text_class(val):
     return 'ret-up' if val >= 0 else 'ret-down'
+
+
+def get_image_base64(filepath):
+    path = Path(filepath)
+    if not path.exists():
+        return None
+    with open(path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode()
 
 
 def fmt_return(val):
@@ -1333,18 +1342,33 @@ def main():
     inject_css()
     
     # K-TREND US premium top navigation bar
-    st.markdown("""
-        <div class="top-nav-bar">
+    logo_base64 = get_image_base64("assets/logo.png")
+    
+    if logo_base64:
+        logo_html = f'''
+            <a href="https://uijung71.github.io/usthema-map/" target="_blank" style="text-decoration:none;">
+                <img src="data:image/png;base64,{logo_base64}" style="height: 40px; margin-right: 10px; transform: translateY(3px);">
+            </a>
+        '''
+    else:
+        logo_html = '''
             <div class="nav-logo-group">
-                <div class="nav-logo">
-                    <span style="color:#ffffff;">K-</span><span style="color:#8b5cf6;">TREND</span> <span style="color:#ffffff;">US</span>
-                </div>
-                <div class="nav-logo-sub">by KTrend Research</div>
+                <a href="https://uijung71.github.io/usthema-map/" target="_blank" style="text-decoration:none; display:flex; align-items:center; gap:10px;">
+                    <div class="nav-logo">
+                        <span style="color:#ffffff;">K-</span><span style="color:#8b5cf6;">TREND</span> <span style="color:#ffffff;">US</span>
+                    </div>
+                    <div class="nav-logo-sub">by KTrend Research</div>
+                </a>
             </div>
+        '''
+
+    st.markdown(f"""
+        <div class="top-nav-bar">
+            {logo_html}
             <div class="nav-divider">|</div>
             <div class="nav-links">
-                <a href="https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/" target="_blank" class="nav-item">🏢 서학 100 지수</a>
-                <a href="https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/" target="_blank" class="nav-item active">🗺️ 미국 60대 테마</a>
+                <a href="https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/" target="_blank" class="nav-item">서학 100 지수</a>
+                <a href="https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/" target="_blank" class="nav-item active">미국 60대 테마</a>
             </div>
             <div style="flex-grow: 1;"></div>
             <a href="https://www.youtube.com/@KTRENDUS" target="_blank" class="youtube-btn">▶ YouTube ↗</a>
