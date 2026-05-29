@@ -631,17 +631,17 @@ def inject_css():
     }
 
     /* ── Premium Top Navigation Header ── */
-    .top-nav-bar { display: flex; align-items: center; padding: 10px 10px 20px 10px; border-bottom: 1px solid rgba(255,255,255,0.05); margin-bottom: 15px; }
+    .top-nav-bar { display: flex; align-items: center; padding: 15px 25px; background-color: rgba(15, 20, 25, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); margin-bottom: 25px; margin-top: 10px; }
     .nav-logo-group { display: flex; align-items: center; gap: 10px; }
-    .nav-logo { font-size: 1.4rem; font-weight: 900; letter-spacing: 1px; }
-    .nav-logo-sub { font-size: 0.8rem; color: #888; font-weight: 500; margin-top: 4px; }
-    .nav-divider { color: #444; font-size: 1.2rem; margin: 0 25px; }
+    .nav-logo { font-size: 1.5rem; font-weight: 900; letter-spacing: 1px; }
+    .nav-logo-sub { font-size: 0.85rem; color: #888; font-weight: 500; margin-top: 4px; }
+    .nav-divider { color: #444; font-size: 1.3rem; margin: 0 25px; }
     .nav-links { display: flex; gap: 30px; align-items: center; }
-    .nav-item { text-decoration: none; color: #888; font-size: 1.15rem; font-weight: 600; padding-bottom: 6px; position: relative; transition: color 0.2s; }
+    .nav-item { text-decoration: none; color: #999; font-size: 1.25rem; font-weight: 600; padding-bottom: 6px; position: relative; transition: color 0.2s; }
     .nav-item:hover { color: #fff; }
     .nav-item.active { color: #fff; font-weight: 800; }
     .nav-item.active::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background-color: #8b5cf6; border-radius: 3px; }
-    .youtube-btn { display: flex; align-items: center; gap: 5px; padding: 6px 14px; border: 1px solid rgba(255,255,255,0.15); border-radius: 6px; color: #aaa; text-decoration: none; font-size: 0.9rem; transition: all 0.2s; }
+    .youtube-btn { display: flex; align-items: center; gap: 5px; padding: 8px 16px; border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; color: #aaa; text-decoration: none; font-size: 0.95rem; transition: all 0.2s; }
     .youtube-btn:hover { background-color: rgba(255,255,255,0.05); color: #fff; border-color: rgba(255,255,255,0.3); }
 
     </style>""", unsafe_allow_html=True)
@@ -1346,7 +1346,7 @@ def main():
     
     if logo_base64:
         logo_html = f'''<a href="https://uijung71.github.io/usthema-map/" target="_blank" style="text-decoration:none;">
-<img src="data:image/png;base64,{logo_base64}" style="height: 40px; margin-right: 10px; transform: translateY(3px);">
+<img src="data:image/png;base64,{logo_base64}" style="height: 48px; margin-right: 10px; transform: translateY(3px);">
 </a>'''
     else:
         logo_html = '''<div class="nav-logo-group">
