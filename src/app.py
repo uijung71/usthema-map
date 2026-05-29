@@ -1343,11 +1343,11 @@ def main():
             </div>
             <div class="nav-divider">|</div>
             <div class="nav-links">
-                <a href="https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/" target="_self" class="nav-item">🏢 서학 100 지수</a>
-                <a href="https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/" target="_self" class="nav-item active">🗺️ 미국 60대 테마</a>
+                <a href="https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/" target="_top" class="nav-item">🏢 서학 100 지수</a>
+                <a href="https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/" target="_top" class="nav-item active">🗺️ 미국 60대 테마</a>
             </div>
             <div style="flex-grow: 1;"></div>
-            <a href="https://youtube.com/" target="_blank" class="youtube-btn">▶ YouTube ↗</a>
+            <a href="https://www.youtube.com/@KTRENDUS" target="_blank" class="youtube-btn">▶ YouTube ↗</a>
         </div>
     """, unsafe_allow_html=True)
 
