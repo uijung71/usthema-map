@@ -282,7 +282,9 @@ def inject_css():
         display: none !important;
     }
     div[aria-label="뷰 모드"][role="radiogroup"] label {
-        flex: 1 !important;
+        flex: 1 1 0 !important;
+        min-width: 48% !important;
+        width: 100% !important;
         text-align: center !important;
         padding: 12px 24px !important;
         margin: 0 4px !important;
@@ -361,6 +363,7 @@ def inject_css():
     }
     div[aria-label="대분류 요약"][role="radiogroup"] label {
         flex: 1 1 0 !important;
+        min-width: 15.5% !important;
         width: 100% !important;
         text-align: center !important;
         padding: 16px 8px !important;
