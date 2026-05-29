@@ -1345,35 +1345,27 @@ def main():
     logo_base64 = get_image_base64("assets/logo.png")
     
     if logo_base64:
-        logo_html = f'''
-            <a href="https://uijung71.github.io/usthema-map/" target="_blank" style="text-decoration:none;">
-                <img src="data:image/png;base64,{logo_base64}" style="height: 40px; margin-right: 10px; transform: translateY(3px);">
-            </a>
-        '''
+        logo_html = f'''<a href="https://uijung71.github.io/usthema-map/" target="_blank" style="text-decoration:none;">
+<img src="data:image/png;base64,{logo_base64}" style="height: 40px; margin-right: 10px; transform: translateY(3px);">
+</a>'''
     else:
-        logo_html = '''
-            <div class="nav-logo-group">
-                <a href="https://uijung71.github.io/usthema-map/" target="_blank" style="text-decoration:none; display:flex; align-items:center; gap:10px;">
-                    <div class="nav-logo">
-                        <span style="color:#ffffff;">K-</span><span style="color:#8b5cf6;">TREND</span> <span style="color:#ffffff;">US</span>
-                    </div>
-                    <div class="nav-logo-sub">by KTrend Research</div>
-                </a>
-            </div>
-        '''
+        logo_html = '''<div class="nav-logo-group">
+<a href="https://uijung71.github.io/usthema-map/" target="_blank" style="text-decoration:none; display:flex; align-items:center; gap:10px;">
+<div class="nav-logo"><span style="color:#ffffff;">K-</span><span style="color:#8b5cf6;">TREND</span> <span style="color:#ffffff;">US</span></div>
+<div class="nav-logo-sub">by KTrend Research</div>
+</a>
+</div>'''
 
-    st.markdown(f"""
-        <div class="top-nav-bar">
-            {logo_html}
-            <div class="nav-divider">|</div>
-            <div class="nav-links">
-                <a href="https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/" target="_blank" class="nav-item">서학 100 지수</a>
-                <a href="https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/" target="_blank" class="nav-item active">미국 60대 테마</a>
-            </div>
-            <div style="flex-grow: 1;"></div>
-            <a href="https://www.youtube.com/@KTRENDUS" target="_blank" class="youtube-btn">▶ YouTube ↗</a>
-        </div>
-    """, unsafe_allow_html=True)
+    st.markdown(f"""<div class="top-nav-bar">
+{logo_html}
+<div class="nav-divider">|</div>
+<div class="nav-links">
+<a href="https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/" target="_blank" class="nav-item">서학 100 지수</a>
+<a href="https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/" target="_blank" class="nav-item active">미국 60대 테마</a>
+</div>
+<div style="flex-grow: 1;"></div>
+<a href="https://www.youtube.com/@KTRENDUS" target="_blank" class="youtube-btn">▶ YouTube ↗</a>
+</div>""", unsafe_allow_html=True)
 
     returns_df = load_returns()
     has_data = not returns_df.empty
