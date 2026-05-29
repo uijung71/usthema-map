@@ -263,13 +263,13 @@ def inject_css():
     /* ── Segmented Pill Toggle (Option 1) ── */
     div[aria-label="뷰 모드"][role="radiogroup"] {
         display: flex !important;
-        justify-content: center !important;
+        justify-content: flex-start !important;
         align-items: center !important;
         background-color: rgba(255, 255, 255, 0.05) !important;
         padding: 6px !important;
         border-radius: 12px !important;
         border: 1px solid rgba(255, 255, 255, 0.1) !important;
-        width: 100% !important;
+        width: 380px !important;
         margin: 5px 0 25px 0 !important;
         gap: 0 !important;
     }
@@ -279,7 +279,7 @@ def inject_css():
     div[aria-label="뷰 모드"][role="radiogroup"] label {
         flex: 1 !important;
         text-align: center !important;
-        padding: 12px 24px !important;
+        padding: 12px 0 !important;
         margin: 0 4px !important;
         border-radius: 8px !important;
         cursor: pointer !important;
@@ -327,7 +327,7 @@ def inject_css():
     
     div[aria-label="기간 설정"][role="radiogroup"] {
         display: flex !important;
-        justify-content: flex-end !important;
+        justify-content: flex-start !important;
         align-items: center !important;
         background-color: transparent !important;
         padding: 0 !important;
@@ -1259,8 +1259,11 @@ def main():
     st.markdown("<hr style='border-top: 1px solid rgba(255,255,255,0.1); margin: 10px 0 20px 0;'>", unsafe_allow_html=True)
     
     # ── Secondary Filter: Period ──────────────────────────
-    st.radio("기간 설정", list(PERIOD_MAP.keys()), key='period', horizontal=True, label_visibility="collapsed")
-    st.markdown('<div style="text-align: right; font-size: 0.85rem; color: #888; margin-top: 5px; margin-right: 5px;">(하단 콘텐츠 전체기간이 변경됩니다.)</div>', unsafe_allow_html=True)
+    col_p_radio, col_p_text = st.columns([7, 3])
+    with col_p_radio:
+        st.radio("기간 설정", list(PERIOD_MAP.keys()), key='period', horizontal=True, label_visibility="collapsed")
+    with col_p_text:
+        st.markdown('<div style="text-align: right; font-size: 0.85rem; color: #888; margin-top: 10px; margin-right: 5px;">(하단 콘텐츠 전체기간이 변경됩니다.)</div>', unsafe_allow_html=True)
     
     # (return_col was pre-calculated at top)
 
