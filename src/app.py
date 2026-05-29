@@ -1332,9 +1332,6 @@ def main():
         st.link_button("🗺️  미국 60대 테마", "https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/", use_container_width=True)
     st.markdown("<div style='margin-bottom:8px'></div>", unsafe_allow_html=True)
 
-    if BANNER_FILE.exists():
-        st.image(str(BANNER_FILE), use_container_width=True)
-    
     returns_df = load_returns()
     has_data = not returns_df.empty
     
@@ -1363,6 +1360,9 @@ def main():
     # (return_col was pre-calculated at top)
 
     with tab_stock:
+        if BANNER_FILE.exists():
+            st.image(str(BANNER_FILE), use_container_width=True)
+        
         header_text = "60개 주식 테마 실시간지도"
         st.markdown(f'<div class="section-header">{header_text}</div>', unsafe_allow_html=True)
 
@@ -1690,6 +1690,9 @@ def main():
                                 t_id = cat_themes[cat_themes['theme_name'] == theme].iloc[0]['theme_id']
                                 show_notion_dialog(t_id, theme)
     with tab_etf:
+        if BANNER_FILE.exists():
+            st.image(str(BANNER_FILE), use_container_width=True)
+            
         # ETF Board View
         header_text = "ETF 테마 보드"
         st.markdown(f'<div class="section-header">{header_text}</div>', unsafe_allow_html=True)
