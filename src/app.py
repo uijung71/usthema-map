@@ -636,7 +636,9 @@ def inject_css():
     .nav-logo { font-size: 1.5rem; font-weight: 900; letter-spacing: 1px; }
     .nav-logo-sub { font-size: 0.85rem; color: #888; font-weight: 500; margin-top: 4px; }
     .nav-divider { color: #444; font-size: 1.3rem; margin: 0 25px; }
-    .nav-item { text-decoration: none !important; border-bottom: none !important; color: #999; font-size: 1.25rem; font-weight: 600; padding-bottom: 6px; position: relative; transition: color 0.2s; }
+    .nav-links { display: flex !important; align-items: center; }
+    .nav-item { text-decoration: none !important; border-bottom: none !important; color: #999 !important; font-size: 1.25rem; font-weight: 600; padding-bottom: 6px; position: relative; transition: color 0.2s; margin-right: 40px !important; }
+    .nav-item:last-child { margin-right: 0 !important; }
     .nav-item:hover { color: #fff !important; }
     .nav-item.active { color: #fff !important; font-weight: 800; }
     .nav-item.active::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background-color: #8b5cf6; border-radius: 3px; }
@@ -1347,24 +1349,7 @@ def main():
         logo_html = f'''<a href="https://uijung71.github.io/usthema-map/" target="_blank" style="text-decoration:none;">
 <img src="data:image/png;base64,{logo_base64}" style="height: 58px; margin-right: 15px; transform: translateY(3px);">
 </a>'''
-    else:
-        logo_html = '''<div class="nav-logo-group">
-<a href="https://uijung71.github.io/usthema-map/" target="_blank" style="text-decoration:none; display:flex; align-items:center; gap:10px;">
-<div class="nav-logo"><span style="color:#ffffff;">K-</span><span style="color:#8b5cf6;">TREND</span> <span style="color:#ffffff;">US</span></div>
-<div class="nav-logo-sub">by KTrend Research</div>
-</a>
-</div>'''
-
-    st.markdown(f"""<div class="top-nav-bar">
-{logo_html}
-<div class="nav-divider">|</div>
-<div class="nav-links">
-<a href="https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/" target="_blank" class="nav-item">서학 100 지수</a>
-<a href="https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/" target="_blank" class="nav-item active">미국 60대 테마</a>
-</div>
-<div style="flex-grow: 1;"></div>
-<a href="https://www.youtube.com/@KTRENDUS" target="_blank" class="youtube-btn">▶ YouTube ↗</a>
-</div>""", unsafe_allow_html=True)
+    st.markdown(f"""<div class="top-nav-bar">{logo_html}<div class="nav-divider">|</div><div class="nav-links"><a href="https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/" target="_blank" class="nav-item">서학 100 지수</a><a href="https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/" target="_blank" class="nav-item active">미국 60대 테마</a></div><div style="flex-grow: 1;"></div><a href="https://www.youtube.com/@KTRENDUS" target="_blank" class="youtube-btn">▶ YouTube ↗</a></div>""", unsafe_allow_html=True)
 
     returns_df = load_returns()
     has_data = not returns_df.empty
