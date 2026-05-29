@@ -33,11 +33,22 @@ def inject_css():
     html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
     [data-testid="stAppViewBlockContainer"] { max-width: 1200px; margin: auto; }
     .section-header {
-        font-size: clamp(1.4rem, 5vw, 1.8rem); font-weight: 900; margin: 30px 0 15px 0;
-        background: linear-gradient(90deg, #00d4ff, #9b59b6);
-        -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        font-size: 1.65rem !important; font-weight: 800 !important;
+        color: #ffffff !important;
+        border-left: 4px solid #00d4ff;
+        padding-left: 14px;
+        margin-bottom: 25px !important; margin-top: 45px !important;
+        border-bottom: none;
+        text-shadow: none;
+        letter-spacing: normal;
     }
-    .sub-header { font-size: 1.2rem; font-weight: 700; color: #ddd; margin: 10px 0 8px 0; }
+    .sub-header {
+        font-size: 1.65rem !important; font-weight: 800 !important;
+        color: #ffffff !important;
+        border-left: 4px solid #00d4ff;
+        padding-left: 14px;
+        margin-bottom: 25px !important; margin-top: 45px !important;
+    }
     .date-info { font-size: 0.85rem; color: #888; text-align: right; margin-top: 4px; }
 
     /* ── Theme Heatmap Tiles ──── */
@@ -275,7 +286,7 @@ def inject_css():
         border: none !important;
     }
     div[aria-label="뷰 모드"][role="radiogroup"] label p {
-        font-size: 0.95rem !important;
+        font-size: 1.1rem !important;
         font-weight: 700 !important;
         color: #b0b3c0 !important;
         margin: 0 !important;
@@ -294,6 +305,7 @@ def inject_css():
     div[aria-label="뷰 모드"][role="radiogroup"] label[data-checked="true"] p,
     div[aria-label="뷰 모드"][role="radiogroup"] label:has(input:checked) p {
         color: #1a1c24 !important;
+        font-size: 1.1rem !important;
         font-weight: 900 !important;
     }
     
@@ -327,9 +339,9 @@ def inject_css():
     }
     div[aria-label="기간 설정"][role="radiogroup"] label p,
     div[aria-label="정렬 기준"][role="radiogroup"] label p {
-        font-size: 0.85rem !important;
+        font-size: 1.1rem !important;
         font-weight: 700 !important;
-        color: #9da0b0 !important;
+        color: #b3b3b3 !important;
         margin: 0 !important;
     }
     div[aria-label="기간 설정"][role="radiogroup"] label:hover,
@@ -592,7 +604,7 @@ def render_ai_report():
         return
         
     # Render UI
-    st.markdown(f'<div class="section-header" style="margin-top: 40px;">| {period_label} AI 테마장세 심층 분석</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-header">테마별 수익률 추이 상세비교</div>', unsafe_allow_html=True)
     
     with st.container(border=True):
         st.markdown(report_text)
@@ -1201,22 +1213,22 @@ def main():
     # --- 1. Global View Mode Persistence ---
     q_params = st.query_params
     if 'view_mode_radio' not in st.session_state:
-        st.session_state['view_mode_radio'] = "🏢 개별 주식 테마 지도"
+        st.session_state['view_mode_radio'] = "개별 주식 테마 지도"
     
     if "view" in q_params and q_params["view"] == "ETF":
-        st.session_state['view_mode_radio'] = "📦 ETF 테마 보드"
+        st.session_state['view_mode_radio'] = "ETF 테마 보드"
 
     # -------------------------------------------------------------
     
     selected_cat = st.session_state.get('selected_category', '전체')
     
     # ── Master Controls: View Mode & Period ──────────────────────────
-    st.markdown('<div class="section-header" style="margin-top:20px; margin-bottom:10px;">🛠️ 대시보드 전역 설정</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-header" style="margin-top:20px; margin-bottom:10px;">대시보드 전역 설정</div>', unsafe_allow_html=True)
     ctrl_col1, ctrl_col2 = st.columns([1, 1])
     with ctrl_col1:
         view_mode = st.radio(
             "뷰 모드", 
-            ["🏢 개별 주식 테마 지도", "📦 ETF 테마 보드"], 
+            ["개별 주식 테마 지도", "ETF 테마 보드"], 
             horizontal=True, 
             label_visibility="collapsed",
             key="view_mode_radio"
@@ -1226,8 +1238,8 @@ def main():
     
     # (return_col was pre-calculated at top)
 
-    if view_mode == "🏢 개별 주식 테마 지도":
-        header_text = f"🗺️ {selected_cat} 주식 테마 지도 ({st.session_state.period} 수익률)" if selected_cat != '전체' else f"🗺️ 60개 주식 테마 실시간 지도 ({st.session_state.period} 수익률)"
+    if view_mode == "개별 주식 테마 지도":
+        header_text = "60개 주식 테마 실시간지도"
         st.markdown(f'<div class="section-header">{header_text}</div>', unsafe_allow_html=True)
 
         # ── Data date / update time info bar ──────────────────────────
@@ -1483,7 +1495,7 @@ def main():
         if selected_cat != '전체':
             theme_df = theme_df[theme_df['category'] == selected_cat]
             
-        st.markdown('<br><div class="sub-header">📈 테마별 수익률 추이 상세 비교</div>', unsafe_allow_html=True)
+        st.markdown('<br><div class="sub-header">테마 수익률 누적 추이</div>', unsafe_allow_html=True)
         st.info(f"💡 현재 선택된 **{st.session_state.period}** 기간 동안의 누적 수익률 흐름입니다.")
         
         all_themes_in_view = theme_df['theme_name'].tolist() if not theme_df.empty else get_theme_list()['theme_name'].tolist()
@@ -1521,12 +1533,12 @@ def main():
         
         if not theme_df_all.empty:
             period_str = st.session_state.get('period', '1개월')
-            st.markdown(f'<div class="sub-header">🏆 [{period_str}] 테마 랭킹</div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="section-header">테마랭킹</div>', unsafe_allow_html=True)
             render_rankings(theme_df_all)
 
         # Bottom section only for Stock Map mode
         st.markdown("<br><hr style='border:1px solid rgba(255,255,255,0.1);'><br>", unsafe_allow_html=True)
-        st.markdown('<div class="sub-header">📋 60대 테마 살펴보기</div>', unsafe_allow_html=True)
+        st.markdown('<div class="section-header">60대 테마 살펴보기</div>', unsafe_allow_html=True)
         cat_df = get_category_returns(return_col)
         if not cat_df.empty:
             render_category_bar(cat_df)
@@ -1535,7 +1547,7 @@ def main():
         theme_df_all = get_theme_returns(return_col)
         if selected_cat != '전체':
             theme_df_all = theme_df_all[theme_df_all['category'] == selected_cat]
-        st.markdown(f'<div class="sub-header">📖 리포트 읽기 (총 {len(theme_df_all)}개 테마)</div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="sub-header">ETF 목록 (총 {len(theme_df_all)}개 테마)</div>', unsafe_allow_html=True)
         theme_df_all = theme_df_all.sort_values(by='theme_id', ascending=True)
         themes = list(theme_df_all['theme_name'])
         cols_per_row = 4
@@ -1548,7 +1560,7 @@ def main():
                         show_notion_dialog(t_id, theme)
     else:
         # ETF Board View
-        header_text = f"📦 {selected_cat} ETF 테마 보드 ({st.session_state.period} 수익률)" if selected_cat != '전체' else f"📦 60개 ETF 테마 실시간 보드 ({st.session_state.period} 수익률)"
+        header_text = "ETF 테마 보드"
         st.markdown(f'<div class="section-header">{header_text}</div>', unsafe_allow_html=True)
         st.info("💡 카드의 우측 상단은 해당 테마의 '주식 평균 수익률'입니다. 리포트 버튼을 통해 상세 내용을 확인하세요.")
         
