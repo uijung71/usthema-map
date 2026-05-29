@@ -641,35 +641,48 @@ def render_category_bar(cat_df):
     if 'selected_category' not in st.session_state:
         st.session_state.selected_category = '전체'
     
-    opts = {}
-    opts["🌐 전체보기\n전체 테마 분석"] = '전체'
-    
     desired_order = ['기술 패권', '미래 소비', '바이오 혁명', '신공급망', '에너지 주권']
     cat_lookup = {row['category'].split("&")[0].strip(): row for _, row in cat_df.iterrows()}
     
+    # 1. Render Metrics (Information)
+    metric_cols = st.columns(6)
+    
+    with metric_cols[0]:
+        st.metric(label="🌐 전체 테마", value="60개 분석")
+        
+    ordered_cats = []
+    
+    col_idx = 1
     for cat_name in desired_order:
         if cat_name in cat_lookup:
             row = cat_lookup[cat_name]
             cat = row['category']
+            ordered_cats.append(cat)
             cfg = CATEGORY_CONFIG.get(cat, {'icon': '📦', 'color': '#aaa'})
             ret = row['avg_return']
+            with metric_cols[col_idx]:
+                st.metric(label=f"{cfg['icon']} {cat_name}", value=f"{ret:+.2f}%")
+            col_idx += 1
             
-            sign = "+" if ret > 0 else ""
-            ret_text = f"{sign}{ret:.2f}%"
-            
-            label = f"{cfg['icon']} {cat_name}\n{ret_text}"
-            opts[label] = cat
-            
-    # Add any remaining categories that were not in desired_order
+    # Add any remaining categories
     for _, row in cat_df.iterrows():
         cat = row['category']
         short_name = cat.split("&")[0].strip()
-        if short_name not in desired_order:
+        if short_name not in desired_order and col_idx < 6:
+            ordered_cats.append(cat)
             cfg = CATEGORY_CONFIG.get(cat, {'icon': '📦', 'color': '#aaa'})
             ret = row['avg_return']
-            sign = "+" if ret > 0 else ""
-            label = f"{cfg['icon']} {short_name}\n{sign}{ret:.2f}%"
-            opts[label] = cat
+            with metric_cols[col_idx]:
+                st.metric(label=f"{cfg['icon']} {short_name}", value=f"{ret:+.2f}%")
+            col_idx += 1
+            
+    st.markdown("<br>", unsafe_allow_html=True)
+    
+    # 2. Render Selection Filter (Control)
+    opts = {"전체보기": '전체'}
+    for cat in ordered_cats:
+        short_name = cat.split("&")[0].strip()
+        opts[short_name] = cat
         
     try:
         current_idx = list(opts.values()).index(st.session_state.selected_category)
@@ -677,12 +690,12 @@ def render_category_bar(cat_df):
         current_idx = 0
         
     selected_label = st.radio(
-        "대분류 요약", 
+        "카테고리 필터", 
         list(opts.keys()), 
         index=current_idx, 
         horizontal=True, 
         label_visibility="collapsed",
-        key="cat_kpi_radio"
+        key="cat_filter_radio"
     )
     
     new_cat = opts[selected_label]
@@ -1323,24 +1336,13 @@ def main():
     
     # --- 1. Global View Mode Persistence ---
     q_params = st.query_params
-    if 'view_mode_radio' not in st.session_state:
-        st.session_state['view_mode_radio'] = "개별 주식 테마 지도"
     
-    if "view" in q_params and q_params["view"] == "ETF":
-        st.session_state['view_mode_radio'] = "ETF 테마 보드"
-
     # -------------------------------------------------------------
     
     selected_cat = st.session_state.get('selected_category', '전체')
     
     # ── Top Navigation: View Mode ──────────────────────────
-    view_mode = st.radio(
-        "뷰 모드", 
-        ["개별 주식 테마 지도", "ETF 테마 보드"], 
-        horizontal=True, 
-        label_visibility="collapsed",
-        key="view_mode_radio"
-    )
+    tab_stock, tab_etf = st.tabs(["개별 주식 테마 지도", "ETF 테마 보드"])
     
     st.markdown("<hr style='border-top: 1px solid rgba(255,255,255,0.1); margin: 10px 0 20px 0;'>", unsafe_allow_html=True)
     
@@ -1350,7 +1352,7 @@ def main():
     
     # (return_col was pre-calculated at top)
 
-    if view_mode == "개별 주식 테마 지도":
+    with tab_stock:
         header_text = "60개 주식 테마 실시간지도"
         st.markdown(f'<div class="section-header">{header_text}</div>', unsafe_allow_html=True)
 
@@ -1677,7 +1679,7 @@ def main():
                             if st.button(f" {theme}", use_container_width=True, key=f"btn_rep_{cat}_{theme}", type="tertiary"):
                                 t_id = cat_themes[cat_themes['theme_name'] == theme].iloc[0]['theme_id']
                                 show_notion_dialog(t_id, theme)
-    else:
+    with tab_etf:
         # ETF Board View
         header_text = "ETF 테마 보드"
         st.markdown(f'<div class="section-header">{header_text}</div>', unsafe_allow_html=True)
