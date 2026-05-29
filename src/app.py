@@ -679,27 +679,25 @@ def render_theme_heatmap(return_col='avg_return', selected_cat='전체'):
         """, unsafe_allow_html=True)
 
     if is_zoomed or selected_cat != '전체':
-        col_a, col_b = st.columns([4.2, 1.8])
+        col_a, col_b = st.columns([8, 2])
         with col_a:
             if is_zoomed:
                 st.markdown(f"""
-                    <div style="font-size: clamp(1.4rem, 6vw, 2.2rem); font-weight: 950; color: #FFD700; padding: 10px 0; letter-spacing: -1.5px; text-shadow: 0 0 15px rgba(255, 215, 0, 0.4); margin-bottom: 10px; line-height: 1.2;">
-                        🔍 {st.session_state.active_theme} 테마 선택됨
+                    <div style="font-size: 1.05rem; font-weight: 700; color: #FFD700; margin-bottom: 5px; margin-top: 10px;">
+                        {st.session_state.active_theme} 테마 선택됨
                     </div>
                 """, unsafe_allow_html=True)
             else:
                 st.markdown(f"""
-                    <div style="font-size: clamp(1.4rem, 6vw, 2.2rem); font-weight: 950; color: #FFD700; padding: 10px 0; letter-spacing: -1.5px; text-shadow: 0 0 15px rgba(255, 215, 0, 0.4); margin-bottom: 10px; line-height: 1.2;">
-                        🔍 {selected_cat} 대분류 선택됨
+                    <div style="font-size: 1.05rem; font-weight: 700; color: #FFD700; margin-bottom: 5px; margin-top: 10px;">
+                        {selected_cat} 대분류 선택됨
                     </div>
                 """, unsafe_allow_html=True)
         with col_b:
-            st.markdown('<div style="margin-top: 18px;">', unsafe_allow_html=True)
-            if st.button("⬅️ 전체 테마 보기", use_container_width=True):
+            if st.button("전체 테마 보기", use_container_width=True):
                 st.session_state.active_theme = None
                 st.session_state.selected_category = '전체'
                 st.rerun()
-            st.markdown('</div>', unsafe_allow_html=True)
 
     stocks_df[return_col] = stocks_df[return_col].round(2)
 
