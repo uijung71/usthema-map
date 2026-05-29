@@ -626,6 +626,7 @@ def inject_css():
         div[data-testid="stLinkButton"] a {
             padding: 7px 12px !important;
             font-size: 0.82rem !important;
+        }
     }
 
     /* ── Premium Top Navigation Header ── */
