@@ -689,13 +689,13 @@ def render_theme_heatmap(return_col='avg_return', selected_cat='전체'):
             with col_b:
                 if is_zoomed:
                     st.markdown(f"""
-                        <div style="font-size: 1.05rem; font-weight: 700; color: #FFD700; margin-top: 6px; margin-left: 10px;">
+                        <div style="text-align: right; font-size: 1.05rem; font-weight: 700; color: #FFD700; margin-top: 6px; margin-right: 5px;">
                             {st.session_state.active_theme} 테마 선택됨
                         </div>
                     """, unsafe_allow_html=True)
                 else:
                     st.markdown(f"""
-                        <div style="font-size: 1.05rem; font-weight: 700; color: #FFD700; margin-top: 6px; margin-left: 10px;">
+                        <div style="text-align: right; font-size: 1.05rem; font-weight: 700; color: #FFD700; margin-top: 6px; margin-right: 5px;">
                             {selected_cat} 대분류 선택됨
                         </div>
                     """, unsafe_allow_html=True)
