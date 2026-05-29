@@ -278,7 +278,16 @@ def inject_css():
     }
 
     /* ── Main Top View Mode Tabs ── */
-    div[aria-label="뷰 모드"][role="radiogroup"],
+    div[aria-label="뷰 모드"][role="radiogroup"] {
+        background-color: rgba(0, 0, 0, 0.2) !important;
+        border-radius: 12px !important;
+        padding: 5px !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        width: 100% !important;
+        margin: 5px 0 25px 0 !important;
+        gap: 0 !important;
+        flex-wrap: nowrap !important;
+    }
     div[aria-label="뷰 모드"][role="radiogroup"] > div {
         display: flex !important;
         justify-content: center !important;
@@ -617,11 +626,23 @@ def inject_css():
         div[data-testid="stLinkButton"] a {
             padding: 7px 12px !important;
             font-size: 0.82rem !important;
-        }
     }
+
+    /* ── Premium Top Navigation Header ── */
+    .top-nav-bar { display: flex; align-items: center; padding: 10px 10px 20px 10px; border-bottom: 1px solid rgba(255,255,255,0.05); margin-bottom: 15px; }
+    .nav-logo-group { display: flex; align-items: center; gap: 10px; }
+    .nav-logo { font-size: 1.4rem; font-weight: 900; letter-spacing: 1px; }
+    .nav-logo-sub { font-size: 0.8rem; color: #888; font-weight: 500; margin-top: 4px; }
+    .nav-divider { color: #444; font-size: 1.2rem; margin: 0 25px; }
+    .nav-links { display: flex; gap: 30px; align-items: center; }
+    .nav-item { text-decoration: none; color: #888; font-size: 1.15rem; font-weight: 600; padding-bottom: 6px; position: relative; transition: color 0.2s; }
+    .nav-item:hover { color: #fff; }
+    .nav-item.active { color: #fff; font-weight: 800; }
+    .nav-item.active::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background-color: #8b5cf6; border-radius: 3px; }
+    .youtube-btn { display: flex; align-items: center; gap: 5px; padding: 6px 14px; border: 1px solid rgba(255,255,255,0.15); border-radius: 6px; color: #aaa; text-decoration: none; font-size: 0.9rem; transition: all 0.2s; }
+    .youtube-btn:hover { background-color: rgba(255,255,255,0.05); color: #fff; border-color: rgba(255,255,255,0.3); }
+
     </style>""", unsafe_allow_html=True)
-
-
 
 
 # ── Helper Functions ───────────────────────────────────────────
@@ -1311,26 +1332,23 @@ def main():
     inject_css()
     
     # K-TREND US premium top navigation bar
-    nav_col1, nav_col2, nav_col3 = st.columns([2.2, 1, 1])
-    with nav_col1:
-        st.markdown(
-            '<div style="padding:4px 0 2px 4px;">'
-            '<a href="https://uijung71.github.io/usthema-map/" target="_blank" style="text-decoration:none;">'
-            '<span style="font-size:1.25rem;font-weight:900;letter-spacing:2px;'
-            'background:linear-gradient(90deg,#ffffff,#00d4ff);'
-            '-webkit-background-clip:text;-webkit-text-fill-color:transparent;">K-TREND</span>'
-            '<span style="font-size:1.25rem;font-weight:900;color:#00d4ff;letter-spacing:2px;"> US</span>'
-            '</a>'
-            '<span style="font-size:0.75rem;color:#556;margin-left:10px;font-weight:500;'
-            'vertical-align:middle;">by KTrend Research</span>'
-            '</div>',
-            unsafe_allow_html=True
-        )
-    with nav_col2:
-        st.link_button("🏢  서학 100 지수", "https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/", use_container_width=True)
-    with nav_col3:
-        st.link_button("🗺️  미국 60대 테마", "https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/", use_container_width=True)
-    st.markdown("<div style='margin-bottom:8px'></div>", unsafe_allow_html=True)
+    st.markdown("""
+        <div class="top-nav-bar">
+            <div class="nav-logo-group">
+                <div class="nav-logo">
+                    <span style="color:#ffffff;">K-</span><span style="color:#8b5cf6;">TREND</span> <span style="color:#ffffff;">US</span>
+                </div>
+                <div class="nav-logo-sub">by KTrend Research</div>
+            </div>
+            <div class="nav-divider">|</div>
+            <div class="nav-links">
+                <a href="https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/" target="_self" class="nav-item">🏢 서학 100 지수</a>
+                <a href="https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/" target="_self" class="nav-item active">🗺️ 미국 60대 테마</a>
+            </div>
+            <div style="flex-grow: 1;"></div>
+            <a href="https://youtube.com/" target="_blank" class="youtube-btn">▶ YouTube ↗</a>
+        </div>
+    """, unsafe_allow_html=True)
 
     returns_df = load_returns()
     has_data = not returns_df.empty
