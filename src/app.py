@@ -337,6 +337,62 @@ def inject_css():
         gap: 5px !important;
     }
 
+    /* ── KPI Summary Cards (Category Filter) ── */
+    div[aria-label="대분류 요약"][role="radiogroup"] {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: stretch !important;
+        background-color: transparent !important;
+        padding: 0 !important;
+        border: none !important;
+        width: 100% !important;
+        margin: 0 0 20px 0 !important;
+        gap: 12px !important;
+        flex-wrap: nowrap !important;
+    }
+    div[aria-label="대분류 요약"][role="radiogroup"] label > div:first-child {
+        display: none !important;
+    }
+    div[aria-label="대분류 요약"][role="radiogroup"] label {
+        flex: 1 !important;
+        text-align: center !important;
+        padding: 16px 8px !important;
+        margin: 0 !important;
+        border-radius: 12px !important;
+        cursor: pointer !important;
+        transition: all 0.2s ease-in-out !important;
+        background: rgba(255, 255, 255, 0.03) !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        white-space: pre-line !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        min-height: 80px !important;
+    }
+    div[aria-label="대분류 요약"][role="radiogroup"] label p {
+        font-size: 0.95rem !important;
+        font-weight: 600 !important;
+        color: #b0b3c0 !important;
+        margin: 0 !important;
+        line-height: 1.4 !important;
+    }
+    div[aria-label="대분류 요약"][role="radiogroup"] label:hover {
+        background: rgba(255, 255, 255, 0.08) !important;
+        border-color: rgba(255, 255, 255, 0.2) !important;
+    }
+    div[aria-label="대분류 요약"][role="radiogroup"] label[data-checked="true"],
+    div[aria-label="대분류 요약"][role="radiogroup"] label:has(input:checked) {
+        background: rgba(255, 215, 0, 0.1) !important;
+        border: 1px solid rgba(255, 215, 0, 0.5) !important;
+        box-shadow: 0 4px 15px rgba(255, 215, 0, 0.15) !important;
+    }
+    div[aria-label="대분류 요약"][role="radiogroup"] label[data-checked="true"] p,
+    div[aria-label="대분류 요약"][role="radiogroup"] label:has(input:checked) p {
+        color: #FFD700 !important;
+        font-weight: 800 !important;
+    }
+
     div[aria-label="기간 설정"][role="radiogroup"] label > div:first-child,
     div[aria-label="정렬 기준"][role="radiogroup"] label > div:first-child {
         display: none !important;
@@ -567,42 +623,43 @@ def fmt_return(val):
 
 # ── Render Functions ───────────────────────────────────────────
 def render_category_bar(cat_df):
-    """Render category summary chips as interactive buttons."""
+    """Render category summary chips as KPI cards."""
     if 'selected_category' not in st.session_state:
         st.session_state.selected_category = '전체'
     
-    with st.container():
-        cols = st.columns([1] * (len(cat_df) + 1))
+    opts = {}
+    opts["🌐 전체보기\n전체 테마 분석"] = '전체'
+    
+    for _, row in cat_df.iterrows():
+        cat = row['category']
+        cfg = CATEGORY_CONFIG.get(cat, {'icon': '📦', 'color': '#aaa'})
+        ret = row['avg_return']
+        short_name = cat.split("&")[0].strip()
         
-        # 1. 'All' (전체보기) Button
-        with cols[0]:
-            is_active = st.session_state.selected_category == '전체'
-            if st.button(
-                "🌐 전체보기", 
-                key="cat_all", 
-                use_container_width=True,
-                type="primary" if is_active else "secondary"
-            ):
-                st.session_state.selected_category = '전체'
-                st.rerun()
+        sign = "+" if ret > 0 else ""
+        ret_text = f"{sign}{ret:.2f}%"
         
-        # 2. Category Buttons
-        for i, (_, row) in enumerate(cat_df.iterrows()):
-            cat = row['category']
-            cfg = CATEGORY_CONFIG.get(cat, {'icon': '📦', 'color': '#aaa'})
-            ret = row['avg_return']
-            is_active = st.session_state.selected_category == cat
-            short_name = cat.split("&")[0].strip()
-            
-            with cols[i+1]:
-                if st.button(
-                    f"{cfg['icon']} {short_name} {fmt_return(ret)}", 
-                    key=f"cat_{i}", 
-                    use_container_width=True,
-                    type="primary" if is_active else "secondary"
-                ):
-                    st.session_state.selected_category = cat
-                    st.rerun()
+        label = f"{cfg['icon']} {short_name}\n{ret_text}"
+        opts[label] = cat
+        
+    try:
+        current_idx = list(opts.values()).index(st.session_state.selected_category)
+    except ValueError:
+        current_idx = 0
+        
+    selected_label = st.radio(
+        "대분류 요약", 
+        list(opts.keys()), 
+        index=current_idx, 
+        horizontal=True, 
+        label_visibility="collapsed",
+        key="cat_kpi_radio"
+    )
+    
+    new_cat = opts[selected_label]
+    if new_cat != st.session_state.selected_category:
+        st.session_state.selected_category = new_cat
+        st.rerun()
 
 
 def render_ai_report():
