@@ -42,6 +42,8 @@ def main():
     # ── 결과 추적용 변수 ────────────────────────────────────────
     step1_ok     = False
     step1_detail = ""
+    step15_ok    = False
+    step15_detail = ""
     step2_ok     = False
     step2_detail = ""
 
@@ -80,6 +82,27 @@ def main():
         err = (e.stderr or e.stdout or "")[:200]
         step1_detail = err
         print(f"    [FAIL] {err}")
+
+    # ── Step 1.5: AI 리포트 자동 생성 ────────────────────────
+    print("\n[1.5/2] Generating AI Theme Reports...")
+    if step1_ok:
+        try:
+            result_ai = subprocess.run(
+                [sys.executable, str(BASE_DIR / "src" / "generate_ai_report.py")],
+                cwd=str(BASE_DIR), capture_output=True, text=True, check=True,
+                encoding='utf-8', errors='replace'
+            )
+            print(result_ai.stdout)
+            step15_ok = True
+            step15_detail = "AI 리포트 (6개 기간) 생성 완료"
+            print("    [OK] AI Reports Generated.")
+        except subprocess.CalledProcessError as e:
+            err = (e.stderr or e.stdout or "")[:200]
+            step15_detail = f"생성 실패: {err}"
+            print(f"    [FAIL] {err}")
+    else:
+        step15_detail = "Step 1 실패로 스킵"
+        print("    [SKIP] Skipped due to Step 1 failure.")
 
     # ── Step 2: Git push ────────────────────────────────────────
     print("\n[2/2] Git push to GitHub (master)...")
@@ -127,6 +150,8 @@ def main():
         f"━━━━━━━━━━━━━━━━━━━━\n"
         f"{s1_icon} <b>Step 1</b> 가격 수집\n"
         f"    {step1_detail}\n\n"
+        f"{'✅' if step15_ok else '❌'} <b>Step 1.5</b> AI 리포트\n"
+        f"    {step15_detail}\n\n"
         f"{s2_icon} <b>Step 2</b> GitHub Push\n"
         f"    {step2_detail}\n"
         f"━━━━━━━━━━━━━━━━━━━━\n"

@@ -567,6 +567,45 @@ def render_category_bar(cat_df):
                     st.rerun()
 
 
+def render_ai_report():
+    """Render the AI-generated theme analysis report based on selected period."""
+    import json
+    from pathlib import Path
+    
+    report_file = Path("data/ai_reports.json")
+    if not report_file.exists():
+        return
+        
+    try:
+        with open(report_file, 'r', encoding='utf-8') as f:
+            reports = json.load(f)
+    except Exception:
+        return
+        
+    period_label = st.session_state.get('period', '1개월')
+    # Map back Korean label to JSON key
+    label_to_key = {'1일': '1d', '1주': '1w', '1개월': '1m', '3개월': '3m', '6개월': '6m', '1년': '1y'}
+    key = label_to_key.get(period_label, '1m')
+    
+    report_text = reports.get(key, "")
+    if not report_text:
+        return
+        
+    # Render UI
+    st.markdown(f'<div class="section-header" style="margin-top: 40px;">| {period_label} AI 테마장세 심층 분석</div>', unsafe_allow_html=True)
+    
+    st.markdown(
+        """<div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); 
+                    border-radius: 12px; padding: 25px; margin-bottom: 30px; 
+                    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3); backdrop-filter: blur(4px);">""",
+        unsafe_allow_html=True
+    )
+    
+    st.markdown(report_text)
+    
+    st.markdown("</div>", unsafe_allow_html=True)
+
+
 def render_theme_heatmap(return_col='avg_return', selected_cat='전체'):
     """Render theme treemap showing Category -> Theme hierarchy (no stocks at top level, stocks show when zoomed)."""
     if 'active_theme' not in st.session_state:
@@ -1217,6 +1256,10 @@ def main():
         st.radio("기간 설정", list(PERIOD_MAP.keys()), key='period', horizontal=True, label_visibility="collapsed")
         render_theme_heatmap(return_col, selected_cat)
         
+        # --- AI Theme Analysis Report ---
+        if not st.session_state.get('active_theme'):
+            render_ai_report()
+            
         # --- Theme Details Section (Option B Inline Details Panel) ---
         active_theme = st.session_state.get('active_theme')
         if active_theme:
