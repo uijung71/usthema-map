@@ -1221,19 +1221,19 @@ def main():
     
     selected_cat = st.session_state.get('selected_category', '전체')
     
-    # ── Master Controls: View Mode & Period ──────────────────────────
-    st.markdown('<div class="section-header" style="margin-top:20px; margin-bottom:10px;">대시보드 전역 설정</div>', unsafe_allow_html=True)
-    ctrl_col1, ctrl_col2 = st.columns([1, 1])
-    with ctrl_col1:
-        view_mode = st.radio(
-            "뷰 모드", 
-            ["개별 주식 테마 지도", "ETF 테마 보드"], 
-            horizontal=True, 
-            label_visibility="collapsed",
-            key="view_mode_radio"
-        )
-    with ctrl_col2:
-        st.radio("기간 설정", list(PERIOD_MAP.keys()), key='period', horizontal=True, label_visibility="collapsed")
+    # ── Top Navigation: View Mode ──────────────────────────
+    view_mode = st.radio(
+        "뷰 모드", 
+        ["개별 주식 테마 지도", "ETF 테마 보드"], 
+        horizontal=True, 
+        label_visibility="collapsed",
+        key="view_mode_radio"
+    )
+    
+    st.markdown("<hr style='border-top: 1px solid rgba(255,255,255,0.1); margin: 10px 0 20px 0;'>", unsafe_allow_html=True)
+    
+    # ── Secondary Filter: Period ──────────────────────────
+    st.radio("기간 설정", list(PERIOD_MAP.keys()), key='period', horizontal=True, label_visibility="collapsed")
     
     # (return_col was pre-calculated at top)
 
