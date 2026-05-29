@@ -1372,10 +1372,8 @@ def main():
     
     st.markdown("<hr style='border-top: 1px solid rgba(255,255,255,0.1); margin: 10px 0 20px 0;'>", unsafe_allow_html=True)
     
-    # ── Secondary Filter: Period ──────────────────────────
-    st.radio("기간 설정", list(PERIOD_MAP.keys()), key='period', horizontal=True, label_visibility="collapsed")
-    st.markdown('<div style="text-align: right; font-size: 0.85rem; color: #888; margin-top: 5px; margin-right: 5px;">(하단 콘텐츠 전체기간이 변경됩니다.)</div>', unsafe_allow_html=True)
     
+
     # (return_col was pre-calculated at top)
 
     with tab_stock:
@@ -1685,6 +1683,11 @@ def main():
         cat_df = get_category_returns(return_col)
         if not cat_df.empty:
             render_category_bar(cat_df, "stock")
+            
+        # ── Secondary Filter: Period ──────────────────────────
+        st.radio("기간 설정", list(PERIOD_MAP.keys()), key='period', horizontal=True, label_visibility="collapsed")
+        st.markdown('<div style="text-align: right; font-size: 0.85rem; color: #888; margin-top: 5px; margin-right: 5px;">(하단 콘텐츠 전체기간이 변경됩니다.)</div>', unsafe_allow_html=True)
+        
         st.markdown("<br>", unsafe_allow_html=True)
         
         theme_df_all = get_theme_returns(return_col)
