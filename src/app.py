@@ -637,11 +637,10 @@ def inject_css():
     .nav-logo-sub { font-size: 0.85rem; color: #888; font-weight: 500; margin-top: 4px; }
     .nav-divider { color: #444; font-size: 1.3rem; margin: 0 25px; }
     .nav-links { display: flex; gap: 30px; align-items: center; }
-    .nav-item { text-decoration: none; color: #999; font-size: 1.25rem; font-weight: 600; padding-bottom: 6px; position: relative; transition: color 0.2s; }
-    .nav-item:hover { color: #fff; }
-    .nav-item.active { color: #fff; font-weight: 800; }
-    .nav-item.active::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background-color: #8b5cf6; border-radius: 3px; }
-    .youtube-btn { display: flex; align-items: center; gap: 5px; padding: 8px 16px; border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; color: #aaa; text-decoration: none; font-size: 0.95rem; transition: all 0.2s; }
+    .nav-item { text-decoration: none !important; border-bottom: none !important; color: #999; font-size: 1.25rem; font-weight: 600; padding-bottom: 6px; position: relative; transition: color 0.2s; }
+    .nav-item:hover { color: #fff !important; }
+    .nav-item.active { color: #fff !important; font-weight: 800; }
+    .youtube-btn { display: flex; align-items: center; gap: 5px; padding: 8px 16px; border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; color: #aaa !important; text-decoration: none !important; font-size: 0.95rem; transition: all 0.2s; }
     .youtube-btn:hover { background-color: rgba(255,255,255,0.05); color: #fff; border-color: rgba(255,255,255,0.3); }
 
     </style>""", unsafe_allow_html=True)
@@ -1346,7 +1345,7 @@ def main():
     
     if logo_base64:
         logo_html = f'''<a href="https://uijung71.github.io/usthema-map/" target="_blank" style="text-decoration:none;">
-<img src="data:image/png;base64,{logo_base64}" style="height: 48px; margin-right: 10px; transform: translateY(3px);">
+<img src="data:image/png;base64,{logo_base64}" style="height: 58px; margin-right: 15px; transform: translateY(3px);">
 </a>'''
     else:
         logo_html = '''<div class="nav-logo-group">
