@@ -260,8 +260,13 @@ def inject_css():
     .etf-ticker { font-size: 1.3rem; font-weight: 900; color: #ffffff; margin-bottom: 6px; letter-spacing: 0.5px; }
     .etf-return { font-size: 1.15rem; font-weight: 800; color: #ffffff; }
     
-    /* ── Segmented Pill Toggle (Option 1) ── */
-    div[aria-label="뷰 모드"][role="radiogroup"] {
+    div[data-testid="stRadio"] {
+        width: 100% !important;
+    }
+
+    /* ── Main Top View Mode Tabs ── */
+    div[aria-label="뷰 모드"][role="radiogroup"],
+    div[aria-label="뷰 모드"][role="radiogroup"] > div {
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
@@ -338,9 +343,6 @@ def inject_css():
     }
 
     /* ── KPI Summary Cards (Category Filter) ── */
-    div[data-testid="stRadio"]:has(div[aria-label="대분류 요약"]) {
-        width: 100% !important;
-    }
     div[aria-label="대분류 요약"][role="radiogroup"],
     div[aria-label="대분류 요약"][role="radiogroup"] > div {
         display: flex !important;
