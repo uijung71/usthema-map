@@ -354,7 +354,8 @@ def inject_css():
         display: none !important;
     }
     div[aria-label="대분류 요약"][role="radiogroup"] label {
-        flex: 1 !important;
+        flex: 1 1 0 !important;
+        width: 100% !important;
         text-align: center !important;
         padding: 16px 8px !important;
         margin: 0 !important;
@@ -630,17 +631,32 @@ def render_category_bar(cat_df):
     opts = {}
     opts["🌐 전체보기\n전체 테마 분석"] = '전체'
     
+    desired_order = ['기술 패권', '미래 소비', '바이오 혁명', '신공급망', '에너지 주권']
+    cat_lookup = {row['category'].split("&")[0].strip(): row for _, row in cat_df.iterrows()}
+    
+    for cat_name in desired_order:
+        if cat_name in cat_lookup:
+            row = cat_lookup[cat_name]
+            cat = row['category']
+            cfg = CATEGORY_CONFIG.get(cat, {'icon': '📦', 'color': '#aaa'})
+            ret = row['avg_return']
+            
+            sign = "+" if ret > 0 else ""
+            ret_text = f"{sign}{ret:.2f}%"
+            
+            label = f"{cfg['icon']} {cat_name}\n{ret_text}"
+            opts[label] = cat
+            
+    # Add any remaining categories that were not in desired_order
     for _, row in cat_df.iterrows():
         cat = row['category']
-        cfg = CATEGORY_CONFIG.get(cat, {'icon': '📦', 'color': '#aaa'})
-        ret = row['avg_return']
         short_name = cat.split("&")[0].strip()
-        
-        sign = "+" if ret > 0 else ""
-        ret_text = f"{sign}{ret:.2f}%"
-        
-        label = f"{cfg['icon']} {short_name}\n{ret_text}"
-        opts[label] = cat
+        if short_name not in desired_order:
+            cfg = CATEGORY_CONFIG.get(cat, {'icon': '📦', 'color': '#aaa'})
+            ret = row['avg_return']
+            sign = "+" if ret > 0 else ""
+            label = f"{cfg['icon']} {short_name}\n{sign}{ret:.2f}%"
+            opts[label] = cat
         
     try:
         current_idx = list(opts.values()).index(st.session_state.selected_category)
