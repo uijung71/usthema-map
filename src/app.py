@@ -679,25 +679,26 @@ def render_theme_heatmap(return_col='avg_return', selected_cat='전체'):
         """, unsafe_allow_html=True)
 
     if is_zoomed or selected_cat != '전체':
-        col_a, col_b = st.columns([8, 2])
-        with col_a:
-            if is_zoomed:
-                st.markdown(f"""
-                    <div style="font-size: 1.05rem; font-weight: 700; color: #FFD700; margin-bottom: 5px; margin-top: 10px;">
-                        {st.session_state.active_theme} 테마 선택됨
-                    </div>
-                """, unsafe_allow_html=True)
-            else:
-                st.markdown(f"""
-                    <div style="font-size: 1.05rem; font-weight: 700; color: #FFD700; margin-bottom: 5px; margin-top: 10px;">
-                        {selected_cat} 대분류 선택됨
-                    </div>
-                """, unsafe_allow_html=True)
-        with col_b:
-            if st.button("전체 테마 보기", use_container_width=True):
-                st.session_state.active_theme = None
-                st.session_state.selected_category = '전체'
-                st.rerun()
+        with st.container(border=True):
+            col_a, col_b = st.columns([8, 2])
+            with col_a:
+                if is_zoomed:
+                    st.markdown(f"""
+                        <div style="font-size: 1.05rem; font-weight: 700; color: #FFD700; margin-top: 6px;">
+                            {st.session_state.active_theme} 테마 선택됨
+                        </div>
+                    """, unsafe_allow_html=True)
+                else:
+                    st.markdown(f"""
+                        <div style="font-size: 1.05rem; font-weight: 700; color: #FFD700; margin-top: 6px;">
+                            {selected_cat} 대분류 선택됨
+                        </div>
+                    """, unsafe_allow_html=True)
+            with col_b:
+                if st.button("전체 테마 보기", use_container_width=True):
+                    st.session_state.active_theme = None
+                    st.session_state.selected_category = '전체'
+                    st.rerun()
 
     stocks_df[return_col] = stocks_df[return_col].round(2)
 
