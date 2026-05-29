@@ -338,7 +338,11 @@ def inject_css():
     }
 
     /* ── KPI Summary Cards (Category Filter) ── */
-    div[aria-label="대분류 요약"][role="radiogroup"] {
+    div[data-testid="stRadio"]:has(div[aria-label="대분류 요약"]) {
+        width: 100% !important;
+    }
+    div[aria-label="대분류 요약"][role="radiogroup"],
+    div[aria-label="대분류 요약"][role="radiogroup"] > div {
         display: flex !important;
         justify-content: space-between !important;
         align-items: stretch !important;
@@ -346,7 +350,7 @@ def inject_css():
         padding: 0 !important;
         border: none !important;
         width: 100% !important;
-        margin: 0 0 20px 0 !important;
+        margin: 0 0 10px 0 !important;
         gap: 12px !important;
         flex-wrap: nowrap !important;
     }
