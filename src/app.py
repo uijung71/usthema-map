@@ -1573,16 +1573,24 @@ def main():
         theme_df_all = get_theme_returns(return_col)
         if selected_cat != '전체':
             theme_df_all = theme_df_all[theme_df_all['category'] == selected_cat]
-        theme_df_all = theme_df_all.sort_values(by='theme_id', ascending=True)
-        themes = list(theme_df_all['theme_name'])
+        theme_df_all = theme_df_all.sort_values(by=['category', 'theme_id'], ascending=[True, True])
+        
+        # ── Group by category and use Expanders (대안 1) ──
+        categories = theme_df_all['category'].unique()
         cols_per_row = 4
-        for i in range(0, len(themes), cols_per_row):
-            cols = st.columns(cols_per_row)
-            for j, theme in enumerate(themes[i:i+cols_per_row]):
-                with cols[j]:
-                    if st.button(f" {theme}", use_container_width=True, key=f"btn_rep_{theme}", type="tertiary"):
-                        t_id = theme_df_all[theme_df_all['theme_name'] == theme].iloc[0]['theme_id']
-                        show_notion_dialog(t_id, theme)
+        
+        for cat in categories:
+            cat_themes = theme_df_all[theme_df_all['category'] == cat]
+            themes_in_cat = list(cat_themes['theme_name'])
+            
+            with st.expander(f"📁 {cat} ({len(themes_in_cat)}개 테마)", expanded=(selected_cat != '전체')):
+                for i in range(0, len(themes_in_cat), cols_per_row):
+                    cols = st.columns(cols_per_row)
+                    for j, theme in enumerate(themes_in_cat[i:i+cols_per_row]):
+                        with cols[j]:
+                            if st.button(f" {theme}", use_container_width=True, key=f"btn_rep_{cat}_{theme}", type="tertiary"):
+                                t_id = cat_themes[cat_themes['theme_name'] == theme].iloc[0]['theme_id']
+                                show_notion_dialog(t_id, theme)
     else:
         # ETF Board View
         header_text = "ETF 테마 보드"
