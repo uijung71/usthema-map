@@ -360,71 +360,24 @@ def inject_css():
         display: flex !important;
         justify-content: flex-end !important;
         align-items: center !important;
-        background-color: transparent !important;
-        padding: 0 !important;
-        border: none !important;
+        background: rgba(26, 28, 36, 0.8) !important;
+        padding: 12px 18px !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 12px !important;
         width: 100% !important;
-        margin: 0 !important;
-        gap: 5px !important;
+        margin: 0 0 15px 0 !important;
+        gap: 8px !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25) !important;
     }
 
-    /* ── KPI Summary Cards (Category Filter) ── */
-    div[aria-label="대분류 요약"][role="radiogroup"],
-    div[aria-label="대분류 요약"][role="radiogroup"] > div {
-        display: flex !important;
-        justify-content: space-between !important;
-        align-items: stretch !important;
-        background-color: transparent !important;
-        padding: 0 !important;
-        border: none !important;
-        width: 100% !important;
-        margin: 0 0 10px 0 !important;
-        gap: 12px !important;
-        flex-wrap: nowrap !important;
-    }
-    div[aria-label="대분류 요약"][role="radiogroup"] label > div:first-child {
-        display: none !important;
-    }
-    div[aria-label="대분류 요약"][role="radiogroup"] label {
-        flex: 1 1 0 !important;
-        min-width: 0 !important;
-        width: 100% !important;
-        text-align: center !important;
-        padding: 16px 8px !important;
-        margin: 0 !important;
-        border-radius: 12px !important;
-        cursor: pointer !important;
-        transition: all 0.2s ease-in-out !important;
-        background: rgba(255, 255, 255, 0.03) !important;
-        border: 1px solid rgba(255, 255, 255, 0.08) !important;
-        white-space: pre-line !important;
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
-        min-height: 80px !important;
-    }
-    div[aria-label="대분류 요약"][role="radiogroup"] label p {
-        font-size: 0.95rem !important;
-        font-weight: 600 !important;
-        color: #b0b3c0 !important;
-        margin: 0 !important;
-        line-height: 1.4 !important;
-    }
-    div[aria-label="대분류 요약"][role="radiogroup"] label:hover {
-        background: rgba(255, 255, 255, 0.08) !important;
-        border-color: rgba(255, 255, 255, 0.2) !important;
-    }
-    div[aria-label="대분류 요약"][role="radiogroup"] label[data-checked="true"],
-    div[aria-label="대분류 요약"][role="radiogroup"] label:has(input:checked) {
-        background: rgba(255, 215, 0, 0.1) !important;
-        border: 1px solid rgba(255, 215, 0, 0.5) !important;
-        box-shadow: 0 4px 15px rgba(255, 215, 0, 0.15) !important;
-    }
-    div[aria-label="대분류 요약"][role="radiogroup"] label[data-checked="true"] p,
-    div[aria-label="대분류 요약"][role="radiogroup"] label:has(input:checked) p {
-        color: #FFD700 !important;
-        font-weight: 800 !important;
+    div[aria-label="기간 설정"][role="radiogroup"]::before {
+        content: "🗓️ 분석 기간 선택";
+        color: #e8eaf0;
+        font-weight: 800;
+        font-size: 1.05rem;
+        margin-right: auto;
+        padding-left: 5px;
+        letter-spacing: 0.5px;
     }
 
     div[aria-label="기간 설정"][role="radiogroup"] label > div:first-child,
@@ -443,14 +396,13 @@ def inject_css():
     }
     
     div[aria-label="기간 설정"][role="radiogroup"] label {
-        padding: 4px 8px !important;
-        margin: 0 4px !important;
-        border-radius: 0 !important;
+        padding: 6px 14px !important;
+        margin: 0 !important;
+        border-radius: 8px !important;
         cursor: pointer !important;
         transition: all 0.2s ease-in-out !important;
-        background: transparent !important;
-        border: none !important;
-        border-bottom: 2px solid transparent !important;
+        background: rgba(255, 255, 255, 0.04) !important;
+        border: 1px solid transparent !important;
     }
 
     div[aria-label="기간 설정"][role="radiogroup"] label p,
@@ -460,21 +412,25 @@ def inject_css():
         color: #b3b3b3 !important;
         margin: 0 !important;
     }
+    
     div[aria-label="정렬 기준"][role="radiogroup"] label:hover {
         background-color: rgba(255, 255, 255, 0.04) !important;
     }
+    div[aria-label="기간 설정"][role="radiogroup"] label:hover {
+        background-color: rgba(255, 255, 255, 0.08) !important;
+    }
+    
     div[aria-label="기간 설정"][role="radiogroup"] label:hover p,
     div[aria-label="정렬 기준"][role="radiogroup"] label:hover p {
         color: #ffffff !important;
     }
     
-    /* Active cyan style for 기간 설정 (Seohak 100 style) */
+    /* Active cyan style for 기간 설정 (Box style) */
     div[aria-label="기간 설정"][role="radiogroup"] label[data-checked="true"],
     div[aria-label="기간 설정"][role="radiogroup"] label:has(input:checked) {
-        background: transparent !important;
-        border: none !important;
-        border-bottom: 2px solid #00d4ff !important;
-        box-shadow: none !important;
+        background: rgba(0, 212, 255, 0.15) !important;
+        border: 1px solid rgba(0, 212, 255, 0.4) !important;
+        box-shadow: 0 2px 8px rgba(0, 212, 255, 0.2) !important;
     }
     div[aria-label="기간 설정"][role="radiogroup"] label[data-checked="true"] p,
     div[aria-label="기간 설정"][role="radiogroup"] label:has(input:checked) p {
