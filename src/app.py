@@ -777,26 +777,24 @@ def render_ai_report():
     
     with st.container(border=True):
         st.markdown(
-            f"""
-            <style>
-            .ai-report-body p, .ai-report-body li {{
-                font-size: 1.15rem !important;
-                line-height: 1.8 !important;
-                color: #e0e0e0;
-            }}
-            .ai-report-body h4 {{
-                font-size: 1.4rem !important;
-                margin-top: 25px !important;
-                margin-bottom: 10px !important;
-                color: #FFD700 !important;
-            }}
-            </style>
-            <div class="ai-report-body">
-            
+            f"""<style>
+.ai-report-body p, .ai-report-body li {{
+    font-size: 1.15rem !important;
+    line-height: 1.8 !important;
+    color: #e0e0e0;
+}}
+.ai-report-body h4 {{
+    font-size: 1.4rem !important;
+    margin-top: 25px !important;
+    margin-bottom: 10px !important;
+    color: #FFD700 !important;
+}}
+</style>
+<div class="ai-report-body">
+
 {report_text}
 
-            </div>
-            """, 
+</div>""", 
             unsafe_allow_html=True
         )
 
