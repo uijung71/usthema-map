@@ -356,7 +356,16 @@ def inject_css():
         gap: 0 !important;
     }
     
-    div[data-testid="stRadio"]:has(div[aria-label="기간 설정"]) {
+    div[data-testid="stElementContainer"]:has(div[aria-label="기간 설정"]),
+    div.element-container:has(div[aria-label="기간 설정"]),
+    div[data-testid="stRadio"]:has(div[aria-label="기간 설정"]),
+    div.stRadio:has(div[aria-label="기간 설정"]) {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: block !important;
+    }
+    
+    div[data-testid="stRadio"]:has(div[aria-label="기간 설정"]) > div {
         width: 100% !important;
         max-width: 100% !important;
     }
