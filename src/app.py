@@ -770,6 +770,8 @@ def render_ai_report():
     if not report_text:
         return
         
+
+    
     # Render UI
     st.markdown(f'<div class="section-header">AI 기간별 테마분석</div>', unsafe_allow_html=True)
     
