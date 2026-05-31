@@ -776,7 +776,29 @@ def render_ai_report():
     st.markdown(f'<div class="section-header">AI 기간별 테마분석</div>', unsafe_allow_html=True)
     
     with st.container(border=True):
-        st.markdown(report_text)
+        st.markdown(
+            f"""
+            <style>
+            .ai-report-body p, .ai-report-body li {{
+                font-size: 1.15rem !important;
+                line-height: 1.8 !important;
+                color: #e0e0e0;
+            }}
+            .ai-report-body h4 {{
+                font-size: 1.4rem !important;
+                margin-top: 25px !important;
+                margin-bottom: 10px !important;
+                color: #FFD700 !important;
+            }}
+            </style>
+            <div class="ai-report-body">
+            
+{report_text}
+
+            </div>
+            """, 
+            unsafe_allow_html=True
+        )
 
 
 def render_theme_heatmap(return_col='avg_return', selected_cat='전체'):
