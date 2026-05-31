@@ -356,6 +356,11 @@ def inject_css():
         gap: 0 !important;
     }
     
+    div[data-testid="stRadio"]:has(div[aria-label="기간 설정"]) {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
     div[aria-label="기간 설정"][role="radiogroup"] {
         display: flex !important;
         justify-content: flex-end !important;
@@ -365,6 +370,7 @@ def inject_css():
         border: 1px solid rgba(255, 255, 255, 0.1) !important;
         border-radius: 12px !important;
         width: 100% !important;
+        max-width: 100% !important;
         margin: 0 0 15px 0 !important;
         gap: 8px !important;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25) !important;
