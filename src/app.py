@@ -16,7 +16,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from src.theme_engine import (
     get_theme_returns, get_category_returns, get_theme_detail,
     get_theme_list, load_returns, get_stock_level_data, CATEGORY_CONFIG,
-    get_etf_level_data, get_theme_historical_trend
+    get_etf_level_data, get_theme_historical_trend, get_etf_historical_trend
 )
 from src.exchange_map import get_google_finance_url
 
@@ -1204,7 +1204,6 @@ def show_theme_stocks_dialog(theme_id, theme_name, return_col):
         st.markdown("<br><hr style='border:1px solid rgba(255,255,255,0.1); margin-top:20px; margin-bottom:20px;'>", unsafe_allow_html=True)
         st.markdown(f"### 📈 관련 ETF 수익률 추이 (최근 {st.session_state.get('period', '1개월')})")
         
-        from src.theme_engine import get_etf_historical_trend
         etf_tickers = etfs['ticker'].tolist()
         
         period_str = st.session_state.get('period', '1개월')
