@@ -1191,11 +1191,14 @@ def show_theme_stocks_dialog(theme_id, theme_name, return_col):
             ret = row[return_col]
             ret_cls = "color: #ff4b4b;" if ret > 0 else ("color: #4ba3ff;" if ret < 0 else "color: #888;")
             
+            g_url = get_google_finance_url(row['ticker'], is_etf=False)
             target_col.markdown(f"""
-                <div style="display:flex; justify-content:space-between; padding:8px 12px; background:rgba(255,255,255,0.03); border-radius:8px; margin-bottom:5px; border-left:3px solid {'#ff4b4b' if ret > 0 else '#4ba3ff' if ret < 0 else '#888'};">
+                <a href="{g_url}" target="_blank" style="text-decoration:none;">
+                <div style="display:flex; justify-content:space-between; padding:8px 12px; background:rgba(255,255,255,0.03); border-radius:8px; margin-bottom:5px; border-left:3px solid {'#ff4b4b' if ret > 0 else '#4ba3ff' if ret < 0 else '#888'}; cursor:pointer;">
                     <span style="font-weight:700; color:#00d4ff;">{row['ticker']}</span>
                     <span style="font-weight:800; {ret_cls}">{fmt_return(ret)}</span>
                 </div>
+                </a>
             """, unsafe_allow_html=True)
     else:
         st.warning("구성 종목 정보를 불러올 수 없습니다.")
