@@ -250,6 +250,53 @@ def get_theme_historical_trend(theme_names, period_key):
     theme_daily['value'] = theme_daily['value'] * 100 # %
     
     return theme_daily
+
+def get_etf_historical_trend(tickers, period_key):
+    """
+    Calculates daily cumulative returns for selected ETFs over the chosen period.
+    period_key: 'return_1d', 'return_1w', 'return_1m', 'return_3m', 'return_6m', 'return_1y'
+    """
+    # 1. Find latest price file
+    price_files = sorted(list(PRICES_DIR.glob("prices_*.csv")))
+    if not price_files:
+        return pd.DataFrame()
+    latest_price_file = price_files[-1]
+    
+    try:
+        df_prices = pd.read_csv(latest_price_file)
+        df_prices['date'] = pd.to_datetime(df_prices['date'])
+    except Exception:
+        return pd.DataFrame()
+        
+    # 2. Filter by period
+    latest_date = df_prices['date'].max()
+    period_days = {
+        'return_1d': 7,
+        'return_1w': 14,
+        'return_1m': 35,
+        'return_3m': 100,
+        'return_6m': 200,
+        'return_1y': 400
+    }
+    days = period_days.get(period_key, 35)
+    start_date = latest_date - timedelta(days=days)
+    df_prices = df_prices[df_prices['date'] >= start_date].copy()
+    
+    # 3. Filter by tickers
+    df_prices = df_prices[df_prices['ticker'].isin(tickers)]
+    if df_prices.empty:
+        return pd.DataFrame()
+        
+    # 4. Calculate daily returns per ticker
+    df_prices = df_prices.sort_values(['ticker', 'date'])
+    df_prices['daily_ret'] = df_prices.groupby('ticker')['close'].pct_change()
+    
+    # 5. Cumulative returns
+    df_prices = df_prices.dropna(subset=['daily_ret'])
+    df_prices['value'] = df_prices.groupby('ticker')['daily_ret'].transform(lambda x: (1 + x).cumprod() - 1)
+    df_prices['value'] = df_prices['value'] * 100 # %
+    
+    return df_prices[['date', 'ticker', 'value']]
     
 # ── ETF Korean Knowledge Base ────────────────────────────────────
 ETF_KOREAN_INFO = {

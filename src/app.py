@@ -1200,6 +1200,41 @@ def show_theme_stocks_dialog(theme_id, theme_name, return_col):
     else:
         st.warning("구성 종목 정보를 불러올 수 없습니다.")
 
+    if not etfs.empty:
+        st.markdown("<br><hr style='border:1px solid rgba(255,255,255,0.1); margin-top:20px; margin-bottom:20px;'>", unsafe_allow_html=True)
+        st.markdown(f"### 📈 관련 ETF 수익률 추이 (최근 {st.session_state.get('period', '1개월')})")
+        
+        from src.theme_engine import get_etf_historical_trend
+        etf_tickers = etfs['ticker'].tolist()
+        
+        period_str = st.session_state.get('period', '1개월')
+        period_map = {'1일': 'return_1d', '1주': 'return_1w', '1개월': 'return_1m', '3개월': 'return_3m', '6개월': 'return_6m', '1년': 'return_1y'}
+        period_key = period_map.get(period_str, 'return_1m')
+        
+        trend_df = get_etf_historical_trend(etf_tickers, period_key)
+        
+        if not trend_df.empty:
+            import plotly.express as px
+            fig_trend = px.line(
+                trend_df, 
+                x='date', 
+                y='value', 
+                color='ticker', 
+                labels={'ticker': 'ETF', 'value': '누적 수익률 (%)', 'date': '날짜'},
+                markers=True if len(trend_df)/len(etf_tickers) < 20 else False
+            )
+            fig_trend.update_layout(
+                plot_bgcolor="rgba(0,0,0,0)", 
+                paper_bgcolor="rgba(0,0,0,0)", 
+                font=dict(color="#ffffff", size=13), 
+                margin=dict(t=10, b=20, l=40, r=20), 
+                xaxis=dict(showgrid=True, gridcolor="rgba(255,255,255,0.1)", title=""), 
+                yaxis=dict(showgrid=True, gridcolor="rgba(255,255,255,0.1)", zeroline=True, zerolinecolor="rgba(255,255,255,0.5)"), 
+                legend=dict(title_text='', orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+            )
+            st.plotly_chart(fig_trend, use_container_width=True)
+        else:
+            st.info("선택한 기간의 ETF 추이 데이터를 불러올 수 없습니다.")
 
 def render_etf_card(theme_row, etf_df, return_col, i, j):
     """Helper to render a theme card with clean structural targeting."""
