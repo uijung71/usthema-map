@@ -58,6 +58,26 @@ def fetch_prices(tickers: list = None, days_back: int = 90) -> pd.DataFrame:
     
     for ticker in tickers:
         eodhd_sym = _eodhd_suffix(ticker)
+        
+        # Use yfinance for Korean stocks since EODHD returns dummy data (999999.99)
+        if eodhd_sym.endswith('.KO'):
+            yf_sym = eodhd_sym.replace('.KO', '.KS')
+            import yfinance as yf
+            try:
+                hist = yf.Ticker(yf_sym).history(start=from_date)
+                for date, row in hist.iterrows():
+                    all_data.append({
+                        'date': date.strftime('%Y-%m-%d'),
+                        'ticker': ticker,
+                        'close': float(row['Close']),
+                        'volume': int(row['Volume']),
+                    })
+                success += 1
+            except Exception as e:
+                print(f"[YF] Failed for {ticker}: {e}")
+                fail += 1
+            continue
+
         url = f"https://eodhd.com/api/eod/{eodhd_sym}"
         params = {
             "api_token": API_KEY,
