@@ -14,7 +14,7 @@ BASE_DIR = Path(__file__).resolve().parent
 KST = datetime.timezone(datetime.timedelta(hours=9))
 
 # ── Telegram Config ─────────────────────────────────────────────
-TG_TOKEN   = "8720582478:AAGakD7M2_-8uoGXYSTGK-fsZmJzpxBJZRU"
+TG_TOKEN   = "8667045475:AAEU46vgVjMtuqRhdnd1o7ZhMthi_wjqAms"
 TG_CHAT_ID = "8356746472"
 
 
@@ -56,7 +56,11 @@ def main():
             encoding='utf-8', errors='replace'
         )
         output = result.stdout
-        print(output)
+        # Safe print for Windows console
+        try:
+            print(output.encode(sys.stdout.encoding, errors='replace').decode(sys.stdout.encoding))
+        except:
+            print(output.encode('utf-8', errors='replace').decode('utf-8', errors='ignore'))
 
         # Parse counts from stdout
         success_count, fail_count, rows = "-", "-", "-"
@@ -92,7 +96,10 @@ def main():
                 cwd=str(BASE_DIR), capture_output=True, text=True, check=True,
                 encoding='utf-8', errors='replace'
             )
-            print(result_ai.stdout)
+            try:
+                print(result_ai.stdout.encode(sys.stdout.encoding, errors='replace').decode(sys.stdout.encoding))
+            except:
+                print(result_ai.stdout.encode('utf-8', errors='replace').decode('utf-8', errors='ignore'))
             step15_ok = True
             step15_detail = "AI 리포트 (6개 기간) 생성 완료"
             print("    [OK] AI Reports Generated.")
