@@ -1,4 +1,4 @@
-﻿category,theme_id,theme_name,ticker,type,rank
+category,theme_id,theme_name,ticker,type,rank
 기술 패권 & 디지털 혁신 (Technological Disruption),1,AI & 데이터 지능,NVDA,stock,1
 기술 패권 & 디지털 혁신 (Technological Disruption),1,AI & 데이터 지능,MSFT,stock,2
 기술 패권 & 디지털 혁신 (Technological Disruption),1,AI & 데이터 지능,PLTR,stock,3
@@ -305,7 +305,7 @@
 신공급망 & 국가 안보 (Geopolitics & Infrastructure),44,차세대 드론,ONDS,stock,5
 신공급망 & 국가 안보 (Geopolitics & Infrastructure),44,차세대 드론,DFEN,etf,1
 신공급망 & 국가 안보 (Geopolitics & Infrastructure),44,차세대 드론,ARKQ,etf,2
-신공급망 & 국가 안보 (Geopolitics & Infrastructure),45,우주 경제,LUNR,stock,1
+신공급망 & 국가 안보 (Geopolitics & Infrastructure),45,우주 경제,SPCX,stock,1
 신공급망 & 국가 안보 (Geopolitics & Infrastructure),45,우주 경제,ASTS,stock,2
 신공급망 & 국가 안보 (Geopolitics & Infrastructure),45,우주 경제,BKSY,stock,3
 신공급망 & 국가 안보 (Geopolitics & Infrastructure),45,우주 경제,RKLB,stock,4
