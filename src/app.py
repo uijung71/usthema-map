@@ -708,7 +708,7 @@ def render_category_bar(cat_df, key_suffix="1"):
         index=current_idx, 
         horizontal=True, 
         label_visibility="collapsed",
-        key=f"cat_filter_radio_{key_suffix}"
+        key=f"cat_filter_radio_{key_suffix}_{st.session_state.selected_category}"
     )
     
     new_cat = opts[selected_label]
