@@ -52,6 +52,8 @@ def get_market_cap(ticker):
         'UNH': 480, 'JNJ': 380, 'PFE': 160, 'ABBV': 300, 'MRK': 330,
         'XOM': 500, 'CVX': 280, 'CAT': 170, 'GE': 180, 'BA': 110,
         'PLTR': 50, 'SNOW': 50, 'WDAY': 70, 'TEAM': 50, 'MSTR': 30,
+        # 우주 경제 테마
+        'SPCX': 315, 'ASTS': 8, 'RKLB': 2, 'PL': 1, 'BKSY': 0.2,
     }
     return MCAP_MAP.get(ticker, 20)  # Default 20B for others
 

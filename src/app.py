@@ -777,6 +777,11 @@ def render_theme_heatmap(return_col='avg_return', selected_cat='전체'):
     active_theme = st.session_state.active_theme
 
     stocks_df = get_stock_level_data(return_col)
+    
+    # Apply Sizing Method
+    if not stocks_df.empty and st.session_state.get('sizing_method', '').startswith('제곱근'):
+        stocks_df['mcap'] = stocks_df['mcap'] ** 0.5
+        
     if not stocks_df.empty and 'category' in stocks_df.columns:
         stocks_df['category'] = stocks_df['category'].str.replace(r'\s*\([^)]*\)', '', regex=True).str.strip()
 
@@ -1443,6 +1448,14 @@ def main():
         # ───────────────────────────────────────────────────────────────
 
         st.info("💡 지도의 테마 블록을 클릭하시면 하단에 실시간 상세 리포트와 구성 종목 시세가 나타납니다.")
+
+        # Sizing Method Toggle
+        if 'sizing_method' not in st.session_state:
+            st.session_state.sizing_method = '제곱근 스케일 (추천, 소형주 가독성 향상)'
+            
+        st.radio("맵 크기 기준", 
+                 ['제곱근 스케일 (추천, 소형주 가독성 향상)', '시가총액 그대로 (전통적 핀비즈 방식)'], 
+                 key='sizing_method', horizontal=True)
 
         render_theme_heatmap(return_col, selected_cat)
         
