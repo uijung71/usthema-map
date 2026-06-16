@@ -1411,11 +1411,13 @@ def main():
             st.image(str(BANNER_FILE), use_container_width=True)
             
         def sync_stock_period():
-            st.session_state.period = st.session_state.period_stock
+            key = f"period_stock_{st.session_state.period}"
+            if key in st.session_state:
+                st.session_state.period = st.session_state[key]
             
         # ── Secondary Filter: Period ──────────────────────────
         period_idx = list(PERIOD_MAP.keys()).index(st.session_state.period)
-        st.radio("기간 설정", list(PERIOD_MAP.keys()), key='period_stock', index=period_idx, horizontal=True, label_visibility="collapsed", on_change=sync_stock_period)
+        st.radio("기간 설정", list(PERIOD_MAP.keys()), key=f'period_stock_{st.session_state.period}', index=period_idx, horizontal=True, label_visibility="collapsed", on_change=sync_stock_period)
         st.markdown('<div style="text-align: right; font-size: 0.85rem; color: #888; margin-top: 5px; margin-right: 5px;">(하단 콘텐츠 전체기간이 변경됩니다.)</div>', unsafe_allow_html=True)
         
         header_text = "60개 주식 테마 실시간지도"
@@ -1750,11 +1752,13 @@ def main():
             st.image(str(BANNER_FILE), use_container_width=True)
             
         def sync_etf_period():
-            st.session_state.period = st.session_state.period_etf
+            key = f"period_etf_{st.session_state.period}"
+            if key in st.session_state:
+                st.session_state.period = st.session_state[key]
             
         # ── Secondary Filter: Period ──────────────────────────
         period_idx = list(PERIOD_MAP.keys()).index(st.session_state.period)
-        st.radio("기간 설정", list(PERIOD_MAP.keys()), key='period_etf', index=period_idx, horizontal=True, label_visibility="collapsed", on_change=sync_etf_period)
+        st.radio("기간 설정", list(PERIOD_MAP.keys()), key=f'period_etf_{st.session_state.period}', index=period_idx, horizontal=True, label_visibility="collapsed", on_change=sync_etf_period)
         st.markdown('<div style="text-align: right; font-size: 0.85rem; color: #888; margin-top: 5px; margin-right: 5px;">(하단 콘텐츠 전체기간이 변경됩니다.)</div>', unsafe_allow_html=True)
             
         # ETF Board View
