@@ -1265,6 +1265,10 @@ GOOGLE_FINANCE_MAP = {
         "symbol": "SMCI",
         "exchange": "NASDAQ"
     },
+    "SPCX": {
+        "symbol": "SPCX",
+        "exchange": "NASDAQ"
+    },
     "SMH": {
         "symbol": "SMH",
         "exchange": "NASDAQ"

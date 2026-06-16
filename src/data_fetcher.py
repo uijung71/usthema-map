@@ -135,7 +135,11 @@ def calculate_returns(df_prices: pd.DataFrame) -> pd.DataFrame:
         def get_past_close(n_days):
             target = latest_date - timedelta(days=n_days)
             past = grp[grp['date'] <= target]
-            return past.iloc[-1]['close'] if not past.empty else None
+            if not past.empty:
+                return past.iloc[-1]['close']
+            else:
+                # Fallback to the first available price (IPO price)
+                return grp.iloc[0]['close']
         
         close_now = last['close']
         close_1d = prev['close']
