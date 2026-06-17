@@ -5,6 +5,7 @@ Aggregates stock returns into theme/category performance.
 
 import pandas as pd
 from pathlib import Path
+import streamlit as st
 from datetime import datetime, timedelta
 
 BASE_DIR = Path(__file__).resolve().parent.parent
