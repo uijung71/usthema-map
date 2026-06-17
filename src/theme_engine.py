@@ -38,24 +38,24 @@ def load_returns():
     return pd.DataFrame()
 
 
-_mcap_cache = None
+@st.cache_data(ttl=60)
+def _load_mcap_dict():
+    try:
+        mcap_file = BASE_DIR / "data" / "mcap_latest.csv"
+        df = pd.read_csv(mcap_file)
+        return dict(zip(df['ticker'], df['mcap']))
+    except Exception as e:
+        print(f"Error loading mcap data: {e}")
+        return {}
+
 
 def get_market_cap(ticker):
     """Estimate market cap for weighting. Reads from mcap_latest.csv."""
-    global _mcap_cache
-    if _mcap_cache is None:
-        try:
-            mcap_file = BASE_DIR / "data" / "mcap_latest.csv"
-            if mcap_file.exists():
-                df = pd.read_csv(mcap_file)
-                _mcap_cache = dict(zip(df['ticker'], df['mcap']))
-            else:
-                _mcap_cache = {}
-        except Exception as e:
-            print(f"[ERROR] Failed to load market caps: {e}")
-            _mcap_cache = {}
-            
-    return _mcap_cache.get(ticker, 1.0)  # Default 1B for unknown
+    mcap_dict = _load_mcap_dict()
+    val = mcap_dict.get(ticker)
+    if val and val > 0:
+        return val
+    return 1.0  # Fallback
 
 
 def get_theme_returns(return_col='return_1d'):
