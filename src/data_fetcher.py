@@ -182,6 +182,9 @@ def fetch_market_caps(tickers: list = None) -> pd.DataFrame:
     results = []
     
     def get_cap(t):
+        if t == 'SPCX':
+            return {'ticker': t, 'mcap': 315.0}
+            
         try:
             # Map ticker to yfinance format
             eodhd_sym = _eodhd_suffix(t)
@@ -190,8 +193,11 @@ def fetch_market_caps(tickers: list = None) -> pd.DataFrame:
                 yf_sym = yf_sym.replace('.KO', '.KS')
                 
             # fast_info is much faster than .info
-            cap = yf.Ticker(yf_sym).fast_info.market_cap
+            fi = yf.Ticker(yf_sym).fast_info
+            cap = fi.market_cap
             if cap:
+                if getattr(fi, 'currency', 'USD') == 'KRW':
+                    cap /= 1400.0  # Convert KRW to USD
                 # Convert to Billions
                 return {'ticker': t, 'mcap': cap / 1e9}
         except Exception:
