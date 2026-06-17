@@ -183,8 +183,14 @@ def fetch_market_caps(tickers: list = None) -> pd.DataFrame:
     
     def get_cap(t):
         try:
+            # Map ticker to yfinance format
+            eodhd_sym = _eodhd_suffix(t)
+            yf_sym = eodhd_sym.replace('.US', '')
+            if yf_sym.endswith('.KO'):
+                yf_sym = yf_sym.replace('.KO', '.KS')
+                
             # fast_info is much faster than .info
-            cap = yf.Ticker(t).fast_info.market_cap
+            cap = yf.Ticker(yf_sym).fast_info.market_cap
             if cap:
                 # Convert to Billions
                 return {'ticker': t, 'mcap': cap / 1e9}
