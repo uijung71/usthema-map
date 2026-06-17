@@ -170,8 +170,37 @@ def calculate_returns(df_prices: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(results)
 
 
+def fetch_market_caps(tickers: list = None) -> pd.DataFrame:
+    """Fetch market caps for all tickers using yfinance fast_info."""
+    if tickers is None:
+        tickers = get_all_tickers()
+    
+    import yfinance as yf
+    from concurrent.futures import ThreadPoolExecutor
+    
+    print(f"[YF] Fetching market caps for {len(tickers)} tickers...", flush=True)
+    results = []
+    
+    def get_cap(t):
+        try:
+            # fast_info is much faster than .info
+            cap = yf.Ticker(t).fast_info.market_cap
+            if cap:
+                # Convert to Billions
+                return {'ticker': t, 'mcap': cap / 1e9}
+        except Exception:
+            pass
+        return {'ticker': t, 'mcap': 1.0} # Fallback 1B if failed
+        
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        results = list(executor.map(get_cap, tickers))
+        
+    df_mcap = pd.DataFrame(results)
+    return df_mcap
+
+
 def run_fetch_pipeline():
-    """Full pipeline: fetch prices → calculate returns → save."""
+    """Full pipeline: fetch prices → calculate returns → fetch mcaps → save."""
     # Fetch 380 days back to cover 1 year (365 days) plus buffer
     df_prices = fetch_prices(days_back=380)
     if df_prices.empty:
@@ -188,6 +217,12 @@ def run_fetch_pipeline():
     returns_file = BASE_DIR / "data" / "returns_latest.csv"
     df_returns.to_csv(returns_file, index=False, encoding='utf-8-sig')
     print(f"[SAVED] {returns_file} ({len(df_returns)} rows)")
+    
+    # Fetch and save market caps
+    df_mcap = fetch_market_caps(get_all_tickers())
+    mcap_file = BASE_DIR / "data" / "mcap_latest.csv"
+    df_mcap.to_csv(mcap_file, index=False, encoding='utf-8-sig')
+    print(f"[SAVED] {mcap_file} ({len(df_mcap)} rows)")
     
     return df_returns
 

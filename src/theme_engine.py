@@ -38,24 +38,24 @@ def load_returns():
     return pd.DataFrame()
 
 
+_mcap_cache = None
+
 def get_market_cap(ticker):
-    """Estimate market cap for weighting. (Approximate Billions USD)"""
-    MCAP_MAP = {
-        'AAPL': 3000, 'MSFT': 3100, 'NVDA': 2600, 'GOOGL': 2000, 'GOOG': 2000,
-        'AMZN': 1900, 'META': 1200, 'TSM': 800, 'LLY': 750, 'AVGO': 650,
-        'V': 500, 'MA': 450, 'ASML': 400, 'COST': 350, 'ORCL': 340,
-        'ADBE': 220, 'NFLX': 260, 'AMD': 250, 'CRM': 230, 'TXN': 180,
-        'QCOM': 210, 'INTC': 130, 'AMAT': 180, 'MU': 140, 'LRCX': 120,
-        'PANW': 100, 'SNPS': 85, 'CDNS': 80, 'KLAC': 90, 'ARM': 150,
-        'TSLA': 550, 'TM': 300, 'F': 50, 'GM': 60, 'RIVN': 10,
-        'JPM': 550, 'BAC': 300, 'WFC': 220, 'C': 120, 'GS': 150,
-        'UNH': 480, 'JNJ': 380, 'PFE': 160, 'ABBV': 300, 'MRK': 330,
-        'XOM': 500, 'CVX': 280, 'CAT': 170, 'GE': 180, 'BA': 110,
-        'PLTR': 50, 'SNOW': 50, 'WDAY': 70, 'TEAM': 50, 'MSTR': 30,
-        # 우주 경제 테마
-        'SPCX': 315, 'ASTS': 8, 'RKLB': 2, 'PL': 1, 'BKSY': 0.2,
-    }
-    return MCAP_MAP.get(ticker, 20)  # Default 20B for others
+    """Estimate market cap for weighting. Reads from mcap_latest.csv."""
+    global _mcap_cache
+    if _mcap_cache is None:
+        try:
+            mcap_file = BASE_DIR / "data" / "mcap_latest.csv"
+            if mcap_file.exists():
+                df = pd.read_csv(mcap_file)
+                _mcap_cache = dict(zip(df['ticker'], df['mcap']))
+            else:
+                _mcap_cache = {}
+        except Exception as e:
+            print(f"[ERROR] Failed to load market caps: {e}")
+            _mcap_cache = {}
+            
+    return _mcap_cache.get(ticker, 1.0)  # Default 1B for unknown
 
 
 def get_theme_returns(return_col='return_1d'):
