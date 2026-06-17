@@ -1,4 +1,4 @@
-category,theme_id,theme_name,ticker,type,rank
+﻿category,theme_id,theme_name,ticker,type,rank
 기술 패권 & 디지털 혁신 (Technological Disruption),1,AI & 데이터 지능,NVDA,stock,1
 기술 패권 & 디지털 혁신 (Technological Disruption),1,AI & 데이터 지능,MSFT,stock,2
 기술 패권 & 디지털 혁신 (Technological Disruption),1,AI & 데이터 지능,PLTR,stock,3
@@ -7,7 +7,7 @@ category,theme_id,theme_name,ticker,type,rank
 기술 패권 & 디지털 혁신 (Technological Disruption),1,AI & 데이터 지능,AIQ,etf,1
 기술 패권 & 디지털 혁신 (Technological Disruption),1,AI & 데이터 지능,ARTY,etf,2
 기술 패권 & 디지털 혁신 (Technological Disruption),2,반도체 하드웨어,NVDA,stock,1
-기술 패권 & 디지털 혁신 (Technological Disruption),2,반도체 하드웨어,TSMC,stock,2
+기술 패권 & 디지털 혁신 (Technological Disruption),2,반도체 하드웨어,TSM,stock,2
 기술 패권 & 디지털 혁신 (Technological Disruption),2,반도체 하드웨어,ARM,stock,3
 기술 패권 & 디지털 혁신 (Technological Disruption),2,반도체 하드웨어,ASML,stock,4
 기술 패권 & 디지털 혁신 (Technological Disruption),2,반도체 하드웨어,AVGO,stock,5
@@ -242,7 +242,7 @@ category,theme_id,theme_name,ticker,type,rank
 바이오 혁명 & 인류의 진화 (Healthcare & Wellness),35,디지털 헬스,TALK,stock,4
 바이오 혁명 & 인류의 진화 (Healthcare & Wellness),35,디지털 헬스,VEEV,stock,5
 바이오 혁명 & 인류의 진화 (Healthcare & Wellness),35,디지털 헬스,HEAL,etf,1
-바이오 혁명 & 인류의 진화 (Healthcare & Wellness),35,디지털 헬스,CHPS,etf,2
+바이오 혁명 & 인류의 진화 (Healthcare & Wellness),35,디지털 헬스,HTEC,etf,2
 바이오 혁명 & 인류의 진화 (Healthcare & Wellness),36,마리화나,TLRY,stock,1
 바이오 혁명 & 인류의 진화 (Healthcare & Wellness),36,마리화나,VFF,stock,2
 바이오 혁명 & 인류의 진화 (Healthcare & Wellness),36,마리화나,IIPR,stock,3
