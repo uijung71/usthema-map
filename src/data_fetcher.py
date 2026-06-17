@@ -182,9 +182,6 @@ def fetch_market_caps(tickers: list = None) -> pd.DataFrame:
     results = []
     
     def get_cap(t):
-        if t == 'SPCX':
-            return {'ticker': t, 'mcap': 315.0}
-            
         try:
             # Map ticker to yfinance format
             eodhd_sym = _eodhd_suffix(t)
