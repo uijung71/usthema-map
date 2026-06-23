@@ -40,56 +40,20 @@
     }
 
     /* ── Nav ── */
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 14px 48px;
-      background: rgba(8,12,20,0.85);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(0,212,255,0.15);
+    .top-nav-bar { 
+      display: flex; align-items: center; padding: 15px 25px; 
+      background-color: rgba(15, 20, 25, 0.6); backdrop-filter: blur(10px); 
+      border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 0px; 
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); 
+      position: sticky; top: 0; z-index: 100;
     }
-
-    .nav-brand {
-      font-size: 1.4rem;
-      font-weight: 900;
-      letter-spacing: 2px;
-      background: linear-gradient(90deg, #fff, var(--cyan));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .nav-links { display: flex; gap: 12px; }
-
-    .nav-btn {
-      text-decoration: none;
-      font-size: 0.88rem;
-      font-weight: 700;
-      padding: 8px 20px;
-      border-radius: 50px;
-      border: 1px solid rgba(255,255,255,0.15);
-      color: #c8d0e0;
-      background: rgba(255,255,255,0.05);
-      transition: all 0.22s ease;
-      cursor: pointer;
-    }
-    .nav-btn:hover {
-      background: rgba(0,212,255,0.1);
-      border-color: rgba(0,212,255,0.4);
-      color: #fff;
-      transform: translateY(-1px);
-      box-shadow: 0 0 18px rgba(0,212,255,0.2);
-    }
-    .nav-btn.primary {
-      background: linear-gradient(135deg, var(--purple), var(--cyan));
-      border: none;
-      color: #fff;
-      box-shadow: 0 4px 20px rgba(0,212,255,0.3);
-    }
-    .nav-btn.primary:hover { opacity: 0.9; box-shadow: 0 6px 28px rgba(0,212,255,0.45); }
+    .nav-divider { font-size: 1.2rem; color: rgba(255, 255, 255, 0.2); margin: 0 15px; }
+    .nav-links { display: flex; gap: 20px; align-items: center; }
+    .nav-item { font-size: 1.05rem; font-weight: 700; color: #888; text-decoration: none; padding-bottom: 4px; transition: color 0.2s ease; }
+    .nav-item:hover { color: #fff; }
+    .nav-item.active { color: #fff; border-bottom: 3px solid #7c3aed; }
+    .youtube-btn { font-size: 0.9rem; font-weight: 700; color: #aaa; text-decoration: none; border: 1px solid rgba(255, 255, 255, 0.1); padding: 6px 14px; border-radius: 6px; transition: all 0.2s ease; }
+    .youtube-btn:hover { color: #fff; border-color: rgba(255, 255, 255, 0.3); background: rgba(255, 255, 255, 0.05); transform: translateY(-1px) !important; }
 
     /* ── Hero ── */
     .hero {
@@ -343,12 +307,17 @@
 <body>
 
 <!-- Nav -->
-<nav>
-  <div class="nav-brand">K-TREND US</div>
+<nav class="top-nav-bar">
+  <a href="https://uijung71.github.io/usthema-map/" style="text-decoration:none;">
+    <img src="logo.png" alt="K-TREND US Logo" style="height: 58px; margin-right: 15px; transform: translateY(3px);">
+  </a>
+  <div class="nav-divider">|</div>
   <div class="nav-links">
-    <a href="https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/" class="nav-btn">⚡ 서학 100 지수</a>
-    <a href="https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/" class="nav-btn primary">🗺️ 60대 테마지도</a>
+    <a href="https://seohak-index-vpj39neemamdaw7ptfxspm.streamlit.app/" class="nav-item">서학 100 지수</a>
+    <a href="https://usthema-map-jovtj2y3bgbbnmvtluubzp.streamlit.app/" class="nav-item">미국 60대 테마</a>
   </div>
+  <div style="flex-grow: 1;"></div>
+  <a href="https://www.youtube.com/@KTRENDUS" target="_blank" class="youtube-btn">▶ YouTube ↗</a>
 </nav>
 
 <!-- Hero -->
