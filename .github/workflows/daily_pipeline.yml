@@ -1,9 +1,6 @@
 name: US Theme Map Daily Pipeline
 
 on:
-  push:
-    branches:
-      - master
   schedule:
     # 21:00 UTC corresponds to 6:00 AM KST
     - cron: '0 21 * * *'
